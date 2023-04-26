@@ -173,6 +173,30 @@ namespace XIV.Core
             Debug.DrawLine(p3, p7, Color.green, duration);
             Debug.DrawLine(p4, p8, Color.cyan, duration);
         }
+
+        // Rectangle
+        public static void DrawRectangle(Vector3 center, Vector3 halfExtends, Quaternion orientation, float duration = 0f)
+        {
+            halfExtends.z = 0f;
+            var bottomLeft = center - halfExtends;
+            var topRight = center + halfExtends;
+            var topLeft = new Vector3(bottomLeft.x, topRight.y);
+            var bottomRight = new Vector3(topRight.x, bottomLeft.y);
+            bottomLeft = center + orientation * (bottomLeft - center);
+            topRight = center + orientation * (topRight - center);
+            topLeft = center + orientation * (topLeft - center);
+            bottomRight = center + orientation * (bottomRight - center);
+            
+            Debug.DrawLine(bottomLeft, bottomRight, Color.red, duration);
+            Debug.DrawLine(bottomRight, topRight, Color.green, duration);
+            Debug.DrawLine(topRight, topLeft, Color.red, duration);
+            Debug.DrawLine(topLeft, bottomLeft, Color.green, duration);
+        }
+
+        public static void DrawRectangle(Vector3 center, Vector3 halfExtends, float duration = 0f)
+        {
+            DrawRectangle(center, halfExtends, Quaternion.identity, duration);
+        }
         
         // Text
         class TextHelper : MonoBehaviour
