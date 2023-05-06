@@ -54,5 +54,19 @@ namespace XIV.Core.XIVMath
 
             return currentGuess;
         }
+
+        public static Vector3[] CreateCurve(Vector3 start, Vector3 end, float midPointDistance = 1f)
+        {
+            var mid = (end - start) * 0.5f;
+            var dirToStart = start - mid;
+            var dirToEnd = end - mid;
+            return new Vector3[]
+            {
+                start,
+                mid + (dirToStart * 0.5f) + Random.insideUnitSphere * midPointDistance,
+                mid + (dirToEnd * 0.5f) + Random.insideUnitSphere * midPointDistance,
+                end,
+            };
+        }
     }
 }
