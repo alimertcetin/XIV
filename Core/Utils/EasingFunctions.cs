@@ -600,64 +600,64 @@ namespace XIV.Core.Utils
             return a * Mathf.Pow(2, -10 * (value -= 1)) * Mathf.Sin((value * d - s) * (2 * Mathf.PI) / p) * 0.5f + end + start;
         }
         
-        public static float SmoothStart1(float t, float start, float end)
+        public static float SmoothStart1(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStart1(t));
+            return Mathf.Lerp(start, end, SmoothStart1(value));
         }
 
-        public static float SmoothStart2(float t, float start, float end)
+        public static float SmoothStart2(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStart2(t));
+            return Mathf.Lerp(start, end, SmoothStart2(value));
         }
 
-        public static float SmoothStart3(float t, float start, float end)
+        public static float SmoothStart3(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStart3(t));
+            return Mathf.Lerp(start, end, SmoothStart3(value));
         }
 
-        public static float SmoothStart4(float t, float start, float end)
+        public static float SmoothStart4(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStart4(t));
+            return Mathf.Lerp(start, end, SmoothStart4(value));
         }
 
-        public static float SmoothStart5(float t, float start, float end)
+        public static float SmoothStart5(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStart5(t));
+            return Mathf.Lerp(start, end, SmoothStart5(value));
         }
 
-        public static float SmoothStart6(float t, float start, float end)
+        public static float SmoothStart6(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStart6(t));
+            return Mathf.Lerp(start, end, SmoothStart6(value));
         }
 
-        public static float SmoothStop1(float t, float start, float end)
+        public static float SmoothStop1(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStop1(t));
+            return Mathf.Lerp(start, end, SmoothStop1(value));
         }
 
-        public static float SmoothStop2(float t, float start, float end)
+        public static float SmoothStop2(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStop2(t));
+            return Mathf.Lerp(start, end, SmoothStop2(value));
         }
 
-        public static float SmoothStop3(float t, float start, float end)
+        public static float SmoothStop3(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStop3(t));
+            return Mathf.Lerp(start, end, SmoothStop3(value));
         }
 
-        public static float SmoothStop4(float t, float start, float end)
+        public static float SmoothStop4(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStop4(t));
+            return Mathf.Lerp(start, end, SmoothStop4(value));
         }
 
-        public static float SmoothStop5(float t, float start, float end)
+        public static float SmoothStop5(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStop5(t));
+            return Mathf.Lerp(start, end, SmoothStop5(value));
         }
 
-        public static float SmoothStop6(float t, float start, float end)
+        public static float SmoothStop6(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStop6(t));
+            return Mathf.Lerp(start, end, SmoothStop6(value));
         }
 
         //
