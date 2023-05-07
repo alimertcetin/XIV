@@ -51,6 +51,12 @@ namespace XIV.Core.Utils
             EaseSmoothStop4,
             EaseSmoothStop5,
             EaseSmoothStop6,
+            EaseSmoothStartAndStop1,
+            EaseSmoothStartAndStop2,
+            EaseSmoothStartAndStop3,
+            EaseSmoothStartAndStop4,
+            EaseSmoothStartAndStop5,
+            EaseSmoothStartAndStop6,
         }
 
         private const float NATURAL_LOG_OF_2 = 0.693147181f;
@@ -660,6 +666,48 @@ namespace XIV.Core.Utils
             return Mathf.Lerp(start, end, SmoothStop6(value));
         }
 
+        public static float SmoothStartAndStop1(float start, float end, float value)
+        {
+            float smoothStart = SmoothStart1(value);
+            float smoothStop = SmoothStop1(value);
+            return Mathf.Lerp(start, end, Mathf.Lerp(smoothStart, smoothStop, value));
+        }
+
+        public static float SmoothStartAndStop2(float start, float end, float value)
+        {
+            float smoothStart = SmoothStart2(value);
+            float smoothStop = SmoothStop2(value);
+            return Mathf.Lerp(start, end, Mathf.Lerp(smoothStart, smoothStop, value));
+        }
+
+        public static float SmoothStartAndStop3(float start, float end, float value)
+        {
+            float smoothStart = SmoothStart3(value);
+            float smoothStop = SmoothStop3(value);
+            return Mathf.Lerp(start, end, Mathf.Lerp(smoothStart, smoothStop, value));
+        }
+
+        public static float SmoothStartAndStop4(float start, float end, float value)
+        {
+            float smoothStart = SmoothStart4(value);
+            float smoothStop = SmoothStop4(value);
+            return Mathf.Lerp(start, end, Mathf.Lerp(smoothStart, smoothStop, value));
+        }
+
+        public static float SmoothStartAndStop5(float start, float end, float value)
+        {
+            float smoothStart = SmoothStart5(value);
+            float smoothStop = SmoothStop5(value);
+            return Mathf.Lerp(start, end, Mathf.Lerp(smoothStart, smoothStop, value));
+        }
+
+        public static float SmoothStartAndStop6(float start, float end, float value)
+        {
+            float smoothStart = SmoothStart6(value) * SmoothStart6(value);
+            float smoothStop = SmoothStop6(value) * SmoothStop6(value);
+            return Mathf.Lerp(start, end, Mathf.Lerp(smoothStart, smoothStop, value));
+        }
+
         //
         // These are derived functions that the motor can use to get the speed at a specific time.
         //
@@ -1110,6 +1158,18 @@ namespace XIV.Core.Utils
                     return SmoothStop5;
                 case Ease.EaseSmoothStop6:
                     return SmoothStop6;
+                case Ease.EaseSmoothStartAndStop1:
+                    return SmoothStartAndStop1;
+                case Ease.EaseSmoothStartAndStop2:
+                    return SmoothStartAndStop2;
+                case Ease.EaseSmoothStartAndStop3:
+                    return SmoothStartAndStop3;
+                case Ease.EaseSmoothStartAndStop4:
+                    return SmoothStartAndStop4;
+                case Ease.EaseSmoothStartAndStop5:
+                    return SmoothStartAndStop5;
+                case Ease.EaseSmoothStartAndStop6:
+                    return SmoothStartAndStop6;
                 default:
                     Debug.LogError(easingFunction + " is not implemented");
                     return Linear;
