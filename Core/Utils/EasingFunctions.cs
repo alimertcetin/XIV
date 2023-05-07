@@ -39,6 +39,18 @@ namespace XIV.Core.Utils
             EaseInElastic,
             EaseOutElastic,
             EaseInOutElastic,
+            EaseSmoothStart1,
+            EaseSmoothStart2,
+            EaseSmoothStart3,
+            EaseSmoothStart4,
+            EaseSmoothStart5,
+            EaseSmoothStart6,
+            EaseSmoothStop1,
+            EaseSmoothStop2,
+            EaseSmoothStop3,
+            EaseSmoothStop4,
+            EaseSmoothStop5,
+            EaseSmoothStop6,
         }
 
         private const float NATURAL_LOG_OF_2 = 0.693147181f;
