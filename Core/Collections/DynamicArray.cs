@@ -26,6 +26,24 @@ namespace XIV.Core.Collections
             Count = 0;
         }
 
+        public DynamicArray() : this(DEFAULT_SIZE)
+        {
+            
+        }
+
+        public DynamicArray(IEnumerable<T> enumerable) : this(DEFAULT_SIZE)
+        {
+            AddRange(enumerable);
+        }
+
+        public void AddRange(IEnumerable<T> enumerable)
+        {
+            foreach (var item in enumerable)
+            {
+                Add() = item;
+            }
+        }
+
         public ref T Add()
         {
             if (Count >= values.Length)
