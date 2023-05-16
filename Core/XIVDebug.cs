@@ -62,11 +62,31 @@ namespace XIV.Core
             DrawBezier(p0, p1, p2, p3, DefaultBezierColor, DEFAULT_BEZIER_DETAIL, duration);
         }
         
-        public static void DrawBezier(Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float t, float duration = 0f)
+        public static void DrawBezier(Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float t, float duration)
         {
             DrawBezier(p0, p1, p2, p3, DefaultBezierColor, DEFAULT_BEZIER_DETAIL, duration);
             var current = BezierMath.GetPoint(p0, p1, p2, p3, t);
             DrawSphere(current, 0.2f, Color.red, duration);
+        }
+        
+        public static void DrawBezier(Vector3[] curve, Color color, int detail, float duration = 0f)
+        {
+            DrawBezier(curve[0], curve[1], curve[2], curve[3], color, detail, duration);
+        }
+        
+        public static void DrawBezier(Vector3[] curve, Color color, float duration = 0f)
+        {
+            DrawBezier(curve[0], curve[1], curve[2], curve[3], color, duration);
+        }
+        
+        public static void DrawBezier(Vector3[] curve, float duration = 0f)
+        {
+            DrawBezier(curve[0], curve[1], curve[2], curve[3], duration);
+        }
+        
+        public static void DrawBezier(Vector3[] curve, float t, float duration)
+        {
+            DrawBezier(curve[0], curve[1], curve[2], curve[3], t, duration);
         }
         
         // Spline
