@@ -49,9 +49,14 @@ namespace XIV.XIVEditor.Utils
             SetProperty(fieldName, instance, fieldValue, DefaultFieldBindingFlags);
         }
 
-        public static MethodInfo[] GetMethods<TAttribute>(Type type) where TAttribute : Attribute
+        public static MethodInfo[] GetMethodsHasAttribute<TAttribute>(Type type) where TAttribute : Attribute
         {
-            return type.GetMethods(DefaultFieldBindingFlags).Split((m) => CustomAttributeExtensions.GetCustomAttribute<TAttribute>((MemberInfo)m) != null);
+            return type.GetMethods(DefaultFieldBindingFlags).RemoveIf((m) => m.GetCustomAttribute<TAttribute>() == null);
+        }
+
+        public static MethodInfo[] GetMethods(Type type)
+        {
+            return type.GetMethods(DefaultFieldBindingFlags);
         }
     }
 }

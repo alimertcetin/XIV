@@ -62,31 +62,4 @@ namespace XIV.XIVEditor
             }
         }
     }
-    
-    public class ButtonAttribute : PropertyAttribute
-    {
-        public string label;
-        
-        public ButtonAttribute(string label)
-        {
-            this.label = label;
-        }
-    }
-    
-    [CustomPropertyDrawer(typeof(ButtonAttribute))]
-    public class ButtonAttributeDrawer : PropertyDrawer
-    {
-        public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
-        {
-            // Draw the default property field
-            EditorGUI.PropertyField(position, property, label);
-
-            var buttonAttribute = (ButtonAttribute)attribute;
-            
-            if (GUILayout.Button(buttonAttribute.label))
-            {
-                ReflectionUtils.GetMethods<ButtonAttribute>(fieldInfo.FieldType);
-            }
-        }
-    }
 }
