@@ -10,10 +10,10 @@ namespace XIV.XIVEditor.Utils
 {
     public static class AssetUtils
     {
-        /// <summary>Load .asset files via their base class</summary>
+        /// <summary>Load asset files via their base class</summary>
         /// <typeparam name="TAsset">Asset Type</typeparam>
         /// <returns>Dictionary that contains the types of assets as key and value as the list of objects</returns>
-        public static Dictionary<Type, List<TAsset>> LoadAssetsOfType<TAsset>(string folderPath, SearchOption searchOption = SearchOption.AllDirectories) 
+        public static Dictionary<Type, List<TAsset>> LoadAssetsByBaseClass<TAsset>(string folderPath, SearchOption searchOption = SearchOption.AllDirectories) 
             where TAsset : Object
         {
             Dictionary<Type, List<TAsset>> typeValuePair = new Dictionary<Type, List<TAsset>>();
@@ -40,21 +40,33 @@ namespace XIV.XIVEditor.Utils
             return typeValuePair;
         }
         
+        /// <summary>Load asset files via their base class</summary>
+        /// <typeparam name="TAsset">Asset Type</typeparam>
+        /// <returns>List that contains the assets</returns>
+        public static List<TAsset> LoadAssetsOfType<TAsset>(string folderPath, SearchOption searchOption = SearchOption.AllDirectories) where TAsset : Object
+        {
+            string[] assetPaths = Directory.GetFiles(folderPath, "*", searchOption);
+            
+            List<TAsset> list = new List<TAsset>();
+            for (int i = 0; i < assetPaths.Length; i++)
+            {
+                TAsset asset = AssetDatabase.LoadAssetAtPath<TAsset>(assetPaths[i]);
+                if (asset == null) continue;
+                list.Add(asset);
+            }
+
+            return list;
+        }
+        
         public static T GetScriptableObject<T>(string scriptableObjectName) where T : ScriptableObject
         {
-            Dictionary<Type, List<T>> scriptableObjects = AssetUtils.LoadAssetsOfType<T>("Assets/ScriptableObjects");
-            var type = typeof(T);
+            List<T> scriptableObjects = AssetUtils.LoadAssetsOfType<T>("Assets/ScriptableObjects");
             scriptableObjectName = scriptableObjectName.ToLower();
-            foreach (KeyValuePair<Type, List<T>> keyValuePair in scriptableObjects)
+            foreach (T scriptableObject in scriptableObjects)
             {
-                if (keyValuePair.Key != type) continue;
-
-                foreach (T scriptableObject in keyValuePair.Value)
+                if (scriptableObject.name.ToLower() == scriptableObjectName)
                 {
-                    if (scriptableObject.name.ToLower() == scriptableObjectName)
-                    {
-                        return scriptableObject;
-                    }
+                    return scriptableObject;
                 }
             }
 
