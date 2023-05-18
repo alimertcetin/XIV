@@ -14,6 +14,7 @@ namespace XIV.Core.Utils
         public bool IsDone => timer >= duration;
         public float Duration => duration;
         public float PassedTime => timer;
+        public float TimeLeft => duration - timer;
 
         public Timer(float duration)
         {
@@ -34,6 +35,12 @@ namespace XIV.Core.Utils
 
         public void Restart()
         {
+            timer = 0;
+        }
+
+        public void Restart(float newDuration)
+        {
+            duration = newDuration;
             timer = 0;
         }
 
