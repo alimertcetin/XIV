@@ -168,5 +168,52 @@ namespace XIV.TweenSystem
             var t = GetPooledTween<FollowCurveTween>().Set(component.transform, points, duration, easingFunc, isPingPong, loopCount);
             return AddTween(t);
         }
+
+        public XIVTweenFactory ImageFill(float from, float to, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
+        {
+            if (TryGetComponent<UnityEngine.UI.Image>(out var image) == false) return CastError(typeof(UnityEngine.UI.Image));
+            var t = GetPooledTween<ImageFillTween>().Set(image, from, to, duration, easingFunc, isPingPong, loopCount);
+            return AddTween(t);
+        }
+
+        public XIVTweenFactory ImageColor(Color from, Color to, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
+        {
+            if (TryGetComponent<UnityEngine.UI.Image>(out var image) == false) return CastError(typeof(UnityEngine.UI.Image));
+            var t = GetPooledTween<ImageColorTween>().Set(image, from, to, duration, easingFunc, isPingPong, loopCount);
+            return AddTween(t);
+        }
+
+        public XIVTweenFactory ImageAlpha(float from, float to, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
+        {
+            if (TryGetComponent<UnityEngine.UI.Image>(out var image) == false) return CastError(typeof(UnityEngine.UI.Image));
+            var t = GetPooledTween<ImageAlphaTween>().Set(image, from, to, duration, easingFunc, isPingPong, loopCount);
+            return AddTween(t);
+        }
+
+        // public XIVTweenFactory ImageColorCurve(Color[] colors, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
+        // {
+        //     if (TryGetComponent<UnityEngine.UI.Image>(out var image) == false) return CastError(typeof(UnityEngine.UI.Image));
+        //
+        //     var t = GetPooledTween<ImageColorCurveTween>().Set(image, colors, duration, easingFunc, isPingPong, loopCount);
+        //     return AddTween(t);
+        // }
+
+        bool TryGetComponent<T>(out T comp) where T : Component
+        {
+            comp = component as T;
+            if (comp == default) comp = component.GetComponent<T>();
+            return comp != default;
+        }
+
+        XIVTweenFactory CastError(Type type)
+        {
+            return LogError("Cannot cast " + component.GetType() + " to " + type);
+        }
+
+        XIVTweenFactory LogError(string error)
+        {
+            Debug.LogError(error);
+            return this;
+        }
     }
 }
