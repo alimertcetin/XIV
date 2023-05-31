@@ -103,6 +103,7 @@ namespace XIV.TweenSystem
             return AddTween(t);
         }
 
+        // Transform
         public XIVTweenFactory Scale(Vector3 from, Vector3 to, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
         {
             return AddTween<ScaleTween>(from, to, duration, easingFunc, isPingPong, loopCount);
@@ -169,6 +170,7 @@ namespace XIV.TweenSystem
             return AddTween(t);
         }
 
+        // Image
         public XIVTweenFactory ImageFill(float from, float to, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
         {
             if (TryGetComponent<UnityEngine.UI.Image>(out var image) == false) return CastError(typeof(UnityEngine.UI.Image));
@@ -190,13 +192,20 @@ namespace XIV.TweenSystem
             return AddTween(t);
         }
 
-        // public XIVTweenFactory ImageColorCurve(Color[] colors, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
-        // {
-        //     if (TryGetComponent<UnityEngine.UI.Image>(out var image) == false) return CastError(typeof(UnityEngine.UI.Image));
-        //
-        //     var t = GetPooledTween<ImageColorCurveTween>().Set(image, colors, duration, easingFunc, isPingPong, loopCount);
-        //     return AddTween(t);
-        // }
+        public XIVTweenFactory ImageColorCurve(Color[] colors, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
+        {
+            if (TryGetComponent<UnityEngine.UI.Image>(out var image) == false) return CastError(typeof(UnityEngine.UI.Image));
+            var t = GetPooledTween<ImageColorCurveTween>().Set(image, colors, duration, easingFunc, isPingPong, loopCount);
+            return AddTween(t);
+        }
+        
+        // Renderer
+        public XIVTweenFactory RendererColorCurve(Color[] colors, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
+        {
+            if (TryGetComponent<Renderer>(out var renderer) == false) return CastError(typeof(Renderer));
+            var t = GetPooledTween<RendererColorCurveTween>().Set(renderer, colors, duration, easingFunc, isPingPong, loopCount);
+            return AddTween(t);
+        }
 
         bool TryGetComponent<T>(out T comp) where T : Component
         {
