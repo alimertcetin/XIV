@@ -1,8 +1,9 @@
 ﻿using System.Text;
+using UnityEngine;
 
 namespace XIV.Core.Extensions
 {
-    public static class StringHTMLTagExtensions
+    public static class StringHtmlTagExtensions
     {
 		static StringBuilder stringBuilder = new StringBuilder();
 
@@ -23,32 +24,47 @@ namespace XIV.Core.Extensions
         {
 			if (string.IsNullOrEmpty(tagValue)) return Format(tag, value);
 
-			return Format(tag + "=" + tagValue, value);
+			stringBuilder.Clear();
+			stringBuilder.Append("<" + tag + "=" + tagValue + ">");
+			stringBuilder.Append(value);
+			stringBuilder.Append("</" + tag + ">");
+
+			return stringBuilder.ToString();
         }
 
-        public static string Bold(this string value)
+        public static string ToBold(this string value)
 		{
 			return Format(TAG_BOLD, value);
         }
 
-        public static string Red(this string value)
+        public static string ToColorRed(this string value)
 		{
 			return Format(TAG_COLOR, "red", value);
         }
 
-        public static string Green(this string value)
+        public static string ToColorGreen(this string value)
         {
             return Format(TAG_COLOR, "green", value);
         }
 
-        public static string Blue(this string value)
+        public static string ToColorBlue(this string value)
         {
             return Format(TAG_COLOR, "blue", value);
         }
 
-        public static string Yellow(this string value)
+        public static string ToColorYellow(this string value)
 		{
 			return Format(TAG_COLOR, "yellow", value);
+        }
+
+        public static string ToColor(this string value, string colorHex)
+		{
+			return Format(TAG_COLOR, colorHex, value);
+        }
+
+        public static string ToColor(this string value, Color color)
+        {
+	        return ToColor(value, ColorUtility.ToHtmlStringRGBA(color));
         }
 	}
 }
