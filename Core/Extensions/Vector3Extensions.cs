@@ -66,5 +66,10 @@ namespace XIV.Core.Extensions
             if (magnitude > max) magnitude = max;
             return vec3.normalized * magnitude;
         }
+
+        public static bool IsNaN(this Vector3 vec3)
+        {
+            return float.IsNaN(vec3.x) || float.IsNaN(vec3.y) || float.IsNaN(vec3.z);
+        }
     }
 }
