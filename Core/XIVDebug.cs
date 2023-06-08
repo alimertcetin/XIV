@@ -101,6 +101,13 @@ namespace XIV.Core
                 p1 = p2;
             }
         }
+
+        public static void DrawSpline(IList<Vector3> points, float t, Color color, int detail, float duration = 0f)
+        {
+            DrawSpline(points, color, detail, duration);
+            var current = SplineMath.GetPoint(points, t);
+            DrawSphere(current, 0.2f, Color.red, duration);
+        }
         
         // Sphere
         public static void DrawSphere(Vector3 position, float radius, Color color, int detail, int circleDetail, float duration = 0)
@@ -143,8 +150,6 @@ namespace XIV.Core
                 Debug.DrawLine(p1, p2, color, duration);
                 p1 = p2;
             }
-            
-            Debug.DrawLine(p1, startPoint, color, duration);
         }
         
         public static void DrawCircle(Vector3 position, float radius, float duration = 0)
@@ -160,6 +165,11 @@ namespace XIV.Core
         public static void DrawCircle(Vector3 position, float radius, Vector3 axis, Color color, float duration = 0)
         {
             DrawCircle(position, radius, axis, color, DEFAULT_CIRCLE_DETAIL, duration);
+        }
+
+        public static void DrawCircle(Vector3 position, float radius, Color color, float duration = 0f)
+        {
+            DrawCircle(position, radius, Vector3.forward, color, duration);
         }
         
         // Bounds
