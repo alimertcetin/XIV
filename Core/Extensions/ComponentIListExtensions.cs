@@ -5,9 +5,8 @@ namespace XIV.Core.Extensions
 {
     public static class ComponentIListExtensions
     {
-        public static T GetClosest<T>(this IList<T> searchArray, Vector3 currentPosition, out float distance) where T : Component
+        public static T GetClosest<T>(this IList<T> searchArray, Vector3 currentPosition, int length, out float distance) where T : Component
         {
-            var length = searchArray.Count;
             distance = float.MaxValue;
             if (length == 0) return default;
 
@@ -27,9 +26,21 @@ namespace XIV.Core.Extensions
             return selected;
         }
         
+        public static T GetClosest<T>(this IList<T> searchArray, Vector3 currentPosition, out float distance) where T : Component
+        {
+            var length = searchArray.Count;
+            return GetClosest(searchArray, currentPosition, length, out distance);
+        }
+        
         public static T GetClosest<T>(this IList<T> searchArray, Vector3 currentPosition) where T : Component
         {
-            return GetClosest(searchArray, currentPosition, out _);
+            var length = searchArray.Count;
+            return GetClosest(searchArray, currentPosition, length, out _);
+        }
+        
+        public static T GetClosest<T>(this IList<T> searchArray, Vector3 currentPosition, int length) where T : Component
+        {
+            return GetClosest(searchArray, currentPosition, length, out _);
         }
 
         public static T GetClosest<T>(this IList<T> searchArray, Vector3 currentPosition, out float distance, params T[] exclude) where T : Component
