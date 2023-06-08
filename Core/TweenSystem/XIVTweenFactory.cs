@@ -200,6 +200,13 @@ namespace XIV.TweenSystem
         }
         
         // Renderer
+        public XIVTweenFactory RendererColor(Color from, Color to, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
+        {
+            if (TryGetComponent<Renderer>(out var renderer) == false) return CastError(typeof(Renderer));
+            var t = GetPooledTween<RendererColorTween>().Set(renderer, from, to, duration, easingFunc, isPingPong, loopCount);
+            return AddTween(t);
+        }
+        
         public XIVTweenFactory RendererColorCurve(Color[] colors, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
         {
             if (TryGetComponent<Renderer>(out var renderer) == false) return CastError(typeof(Renderer));
