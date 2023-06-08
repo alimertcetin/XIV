@@ -48,6 +48,10 @@ namespace XIV.Core.Utils
         {
             timer = duration;
         }
-        
+
+        public override string ToString()
+        {
+            return $"{timer}/{duration}, NormalizedTime = {NormalizedTime}";
+        }
     }
 }
