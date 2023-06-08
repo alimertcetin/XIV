@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using UnityEditor;
+using UnityEngine;
 using XIV.XIVEditor.CodeGeneration;
 
 namespace XIV.XIVEditor
@@ -7,6 +8,7 @@ namespace XIV.XIVEditor
     public static class MenuItems
     {
         public const string BASE_MENU = "XIV Utilities";
+        
         public const string CODE_GENERATION_MENU = BASE_MENU + "/Code Generation";
         public const string UPDATE_ALL_CONSTANTS_MENU = CODE_GENERATION_MENU + "/Update All Constants";
         public const string GENERATE_ANIMATION_CONSTANTS_MENU = CODE_GENERATION_MENU + "/Generate Animation Constants";
@@ -14,44 +16,84 @@ namespace XIV.XIVEditor
         public const string GENERATE_TAG_CONSTANTS_MENU = CODE_GENERATION_MENU + "/Generate Tag Constants";
         public const string GENERATE_SHADER_CONSTANTS_MENU = CODE_GENERATION_MENU + "/Generate Shader Constants";
 
+        public const string FRAME_RATE_MENU = BASE_MENU + "/Frame Rate";
+        public const string SET_FRAME_RATE_MAX_MENU = FRAME_RATE_MENU + "/Set Max";
+        public const string SET_FRAME_RATE_120_MENU = FRAME_RATE_MENU + "/Set 120";
+        public const string SET_FRAME_RATE_90_MENU = FRAME_RATE_MENU + "/Set 90";
+        public const string SET_FRAME_RATE_60_MENU = FRAME_RATE_MENU + "/Set 60";
+        public const string SET_FRAME_RATE_45_MENU = FRAME_RATE_MENU + "/Set 45";
+        public const string SET_FRAME_RATE_30_MENU = FRAME_RATE_MENU + "/Set 30";
+        public const string SET_FRAME_RATE_15_MENU = FRAME_RATE_MENU + "/Set 15";
+        public const string SET_FRAME_RATE_5_MENU = FRAME_RATE_MENU + "/Set 5";
+
         [MenuItem(UPDATE_ALL_CONSTANTS_MENU)]
         public static void UpdateAllConstants()
         {
-            File.WriteAllText(FilePaths.ANIMATION_CONSTANTS_FILE, AnimationConstantsGenerator.GetClassString());
-            File.WriteAllText(FilePaths.PHYSICS_CONSTANTS_FILE, PhysicsConstantsGenerator.GetClassString());
-            File.WriteAllText(FilePaths.TAG_CONSTANTS_FILE, TagConstantsGenerator.GetClassString());
-            File.WriteAllText(FilePaths.SHADER_CONSTANTS_FILE, ShaderConstantsGenerator.GetClassString());
+            WriteCodeGeneration(FilePaths.ANIMATION_CONSTANTS_FILE, AnimationConstantsGenerator.GetClassString());
+            WriteCodeGeneration(FilePaths.PHYSICS_CONSTANTS_FILE, PhysicsConstantsGenerator.GetClassString());
+            WriteCodeGeneration(FilePaths.TAG_CONSTANTS_FILE, TagConstantsGenerator.GetClassString());
+            WriteCodeGeneration(FilePaths.SHADER_CONSTANTS_FILE, ShaderConstantsGenerator.GetClassString());
             AssetDatabase.Refresh();
         }
 
         [MenuItem(GENERATE_ANIMATION_CONSTANTS_MENU)]
         public static void GenerateAnimationConstants()
         {
-            File.WriteAllText(FilePaths.ANIMATION_CONSTANTS_FILE, AnimationConstantsGenerator.GetClassString());
+            WriteCodeGeneration(FilePaths.ANIMATION_CONSTANTS_FILE, AnimationConstantsGenerator.GetClassString());
             AssetDatabase.Refresh();
         }
 
         [MenuItem(GENERATE_PHYSICS_CONSTANTS_MENU)]
         public static void GeneratePhysicsConstants()
         {
-            File.WriteAllText(FilePaths.PHYSICS_CONSTANTS_FILE, PhysicsConstantsGenerator.GetClassString());
+            WriteCodeGeneration(FilePaths.PHYSICS_CONSTANTS_FILE, PhysicsConstantsGenerator.GetClassString());
             AssetDatabase.Refresh();
         }
 
         [MenuItem(GENERATE_TAG_CONSTANTS_MENU)]
         public static void GenerateTagConstants()
         {
-            File.WriteAllText(FilePaths.TAG_CONSTANTS_FILE, TagConstantsGenerator.GetClassString());
+            WriteCodeGeneration(FilePaths.TAG_CONSTANTS_FILE, TagConstantsGenerator.GetClassString());
             AssetDatabase.Refresh();
         }
 
         [MenuItem(GENERATE_SHADER_CONSTANTS_MENU)]
         public static void GenerateShaderConstants()
         {
-            File.WriteAllText(FilePaths.SHADER_CONSTANTS_FILE, ShaderConstantsGenerator.GetClassString());
+            WriteCodeGeneration(FilePaths.SHADER_CONSTANTS_FILE, ShaderConstantsGenerator.GetClassString());
             AssetDatabase.Refresh();
         }
 
+        static void WriteCodeGeneration(string path, string fileContent)
+        {
+            if (Directory.Exists(FilePaths.CODE_GENERATION_FOLDER) == false) Directory.CreateDirectory(FilePaths.CODE_GENERATION_FOLDER);
+            if (File.Exists(path) == false) File.Create(path).Dispose();
+            File.WriteAllText(path, fileContent);
+        }
+
+        [MenuItem(SET_FRAME_RATE_MAX_MENU)]
+        public static void SetFrameRateMax() => Application.targetFrameRate = int.MaxValue;
+
+        [MenuItem(SET_FRAME_RATE_120_MENU)]
+        public static void SetFrameRate120() => Application.targetFrameRate = 120;
+
+        [MenuItem(SET_FRAME_RATE_90_MENU)]
+        public static void SetFrameRate90() => Application.targetFrameRate = 90;
+        
+        [MenuItem(SET_FRAME_RATE_60_MENU)]
+        public static void SetFrameRate60() => Application.targetFrameRate = 60;
+        
+        [MenuItem(SET_FRAME_RATE_45_MENU)]
+        public static void SetFrameRate45() => Application.targetFrameRate = 45;
+        
+        [MenuItem(SET_FRAME_RATE_30_MENU)]
+        public static void SetFrameRate30() => Application.targetFrameRate = 30;
+        
+        [MenuItem(SET_FRAME_RATE_15_MENU)]
+        public static void SetFrameRate15() => Application.targetFrameRate = 15;
+        
+        [MenuItem(SET_FRAME_RATE_5_MENU)]
+        public static void SetFrameRate5() => Application.targetFrameRate = 5;
     }
 
 }
