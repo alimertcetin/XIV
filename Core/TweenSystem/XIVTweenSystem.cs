@@ -85,7 +85,7 @@ namespace XIV.TweenSystem
             tweenData.timelines.Add() = tween;
         }
 
-        internal static void CancelTween(int instanceID, bool forceComplete = false)
+        internal static void CancelTween(int instanceID, bool forceComplete = true)
         {
             if (tweenLookup.Contains(instanceID) == false) return;
             tweenLookup.Remove(instanceID);
