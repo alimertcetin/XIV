@@ -85,7 +85,7 @@ namespace XIV.TweenSystem
             tweenData.timelines.Add() = tween;
         }
 
-        internal static void CancelTween(int instanceID)
+        internal static void CancelTween(int instanceID, bool forceComplete = false)
         {
             if (tweenLookup.Contains(instanceID) == false) return;
             tweenLookup.Remove(instanceID);
@@ -93,14 +93,28 @@ namespace XIV.TweenSystem
             int index = IndexOfTweenData(instanceID);
             var tweenDatas = TweenHelperMono.Instance.tweenDatas;
             var tweenData = tweenDatas[index];
-            tweenDatas.RemoveAt(index);
-            tweenData.Return();
 
             int count = tweenData.timelines.Count;
-            for (int i = 0; i < count; i++)
+            if (forceComplete)
             {
-                tweenData.timelines[i].Cancel();
+                for (int i = 0; i < count; i++)
+                {
+                    while (tweenData.timelines[i].IsDone() == false)
+                    {
+                        tweenData.timelines[i].Update();
+                    }
+                }
             }
+            else
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    tweenData.timelines[i].Cancel();
+                }
+            }
+
+            tweenDatas.RemoveAt(index);
+            tweenData.Return();
         }
 
         internal static bool HasTween(int instanceID)

@@ -10,10 +10,10 @@ namespace XIV.TweenSystem
             return XIVTweenSystem.HasTween(instanceID);
         }
 
-        public static void CancelTween(this Component component)
+        public static void CancelTween(this Component component, bool forceComplete = false)
         {
             int instanceID = component.gameObject.GetInstanceID();
-            XIVTweenSystem.CancelTween(instanceID);
+            XIVTweenSystem.CancelTween(instanceID, forceComplete);
         }
 
         public static XIVTweenFactory XIVTween(this Component component)
