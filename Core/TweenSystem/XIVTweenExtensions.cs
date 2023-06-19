@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace XIV.Core.TweenSystem.Extensions
+namespace XIV.Core.TweenSystem
 {
     public static class XIVTweenExtensions
     {
