@@ -64,7 +64,7 @@ namespace XIV.Core.Extensions
 
         public static string ToColor(this string value, Color color)
         {
-	        return ToColor(value, ColorUtility.ToHtmlStringRGBA(color));
+	        return ToColor(value, "#" + ColorUtility.ToHtmlStringRGBA(color));
         }
 	}
 }
