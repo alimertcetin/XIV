@@ -1,4 +1,4 @@
-﻿namespace XIV.TweenSystem
+﻿namespace XIV.Core.TweenSystem
 {
     public interface ITween
     {

@@ -1,151 +1,98 @@
-using System.Collections.Generic;
 using UnityEngine;
 using XIV.Core.Collections;
 using XIV.PoolSystem;
 
-namespace XIV.TweenSystem
+namespace XIV.Core.TweenSystem
 {
     internal static class XIVTweenSystem
     {
-        class TweenData : IPoolable
-        {
-            public int instanceID;
-            public DynamicArray<TweenTimeline> timelines;
-            IPool pool;
-
-            public TweenData()
-            {
-                timelines = new DynamicArray<TweenTimeline>(2);
-            }
-
-            public void Return()
-            {
-                pool.Return(this);
-            }
-
-            void IPoolable.OnPoolCreate(IPool pool)
-            {
-                this.pool = pool;
-            }
-
-            void IPoolable.OnPoolReturn()
-            {
-                instanceID = -1;
-                for (var i = 0; i < timelines.Count; i++)
-                {
-                    timelines[i].Return();
-                }
-
-                timelines.Clear();
-            }
-        }
-        
         class TweenHelperMono : MonoBehaviour
         {
-            internal List<TweenData> tweenDatas = new List<TweenData>();
-        
-            static TweenHelperMono instance;
-            public static TweenHelperMono Instance => instance == null ? instance = new GameObject("XIV-TweenSystem-Helper").AddComponent<TweenHelperMono>() : instance;
-
             void Update()
             {
                 int count = tweenDatas.Count;
                 for (int i = count - 1; i >= 0; i--)
                 {
-                    TweenData tweenData = tweenDatas[i];
+                    TweenData tweenData = XIVTweenSystem.tweenDatas[i];
                     TweenTimeline timeline = tweenData.timelines[0];
                     timeline.Update();
                     if (timeline.IsDone())
                     {
                         tweenData.timelines.RemoveAt(0);
-                        timeline.Return();
+                        XIVPoolSystem.ReturnItem(timeline);
                     }
 
                     if (tweenData.timelines.Count == 0)
                     {
-                        tweenDatas.RemoveAt(i);
-                        tweenLookup.Remove(tweenData.instanceID);
-                        tweenData.Return();
+                        XIVTweenSystem.tweenDatas.RemoveAt(i);
+                        XIVTweenSystem.instanceIDLookup.RemoveAt(i);
+                        XIVPoolSystem.ReturnItem(tweenData);
                     }
                 }
             }
+
+            void OnDestroy()
+            {
+                tweenHelperMono = null;
+                XIVTweenSystem.Clear();
+            }
         }
 
-        static HashSet<int> tweenLookup = new HashSet<int>();
-
-        [UnityEngine.RuntimeInitializeOnLoadMethod]
-        static void Init()
-        {
-            tweenLookup.Clear();
-        }
+        static DynamicArray<TweenData> tweenDatas = new DynamicArray<TweenData>(8);
+        static DynamicArray<int> instanceIDLookup = new DynamicArray<int>(8);
+        static TweenHelperMono tweenHelperMono;
 
         internal static void AddTween(int instanceID, TweenTimeline tween)
         {
-            var tweenData = GetTweenData(instanceID);
-            tweenData.timelines.Add() = tween;
+            tweenHelperMono ??= new GameObject("XIV-TweenSystem-Helper").AddComponent<TweenHelperMono>();
+            GetTweenData(instanceID).timelines.Add() = tween;
         }
 
         internal static void CancelTween(int instanceID, bool forceComplete = true)
         {
-            if (tweenLookup.Contains(instanceID) == false) return;
-            tweenLookup.Remove(instanceID);
+            var index = instanceIDLookup.IndexOf(ref instanceID);
+            if (index < 0) return;
 
-            int index = IndexOfTweenData(instanceID);
-            var tweenDatas = TweenHelperMono.Instance.tweenDatas;
             var tweenData = tweenDatas[index];
-
-            int count = tweenData.timelines.Count;
+            int timelineCount = tweenData.timelines.Count;
             if (forceComplete)
             {
-                for (int i = 0; i < count; i++)
+                for (int i = 0; i < timelineCount; i++)
                 {
-                    while (tweenData.timelines[i].IsDone() == false)
-                    {
-                        tweenData.timelines[i].Update();
-                    }
+                    tweenData.timelines[i].Update(int.MaxValue);
                 }
             }
             else
             {
-                for (int i = 0; i < count; i++)
+                for (int i = 0; i < timelineCount; i++)
                 {
                     tweenData.timelines[i].Cancel();
                 }
             }
 
             tweenDatas.RemoveAt(index);
-            tweenData.Return();
+            instanceIDLookup.RemoveAt(index);
+            XIVPoolSystem.ReturnItem(tweenData);
         }
 
-        internal static bool HasTween(int instanceID)
-        {
-            return tweenLookup.Contains(instanceID);
-        }
+        internal static bool HasTween(int instanceID) => instanceIDLookup.IndexOf(ref instanceID) > -1;
 
         static TweenData GetTweenData(int instanceID)
         {
-            if (tweenLookup.Contains(instanceID))
-            {
-                return TweenHelperMono.Instance.tweenDatas[IndexOfTweenData(instanceID)];
-            }
+            var index = instanceIDLookup.IndexOf(ref instanceID);
+            if (index > -1) return tweenDatas[index];
 
-            var tweenData = XIVPoolSystem.HasPool<TweenData>() ? XIVPoolSystem.GetItem<TweenData>() : XIVPoolSystem.AddPool(new XIVPool<TweenData>(() => new TweenData())).GetItem();
+            var tweenData = XIVPoolSystem.GetItem<TweenData>();
             tweenData.instanceID = instanceID;
-            tweenLookup.Add(instanceID);
-            TweenHelperMono.Instance.tweenDatas.Add(tweenData);
+            instanceIDLookup.Add() = instanceID;
+            tweenDatas.Add() = tweenData;
             return tweenData;
         }
 
-        static int IndexOfTweenData(int instanceID)
+        static void Clear()
         {
-            var tweenDatas = TweenHelperMono.Instance.tweenDatas;
-            int count = tweenDatas.Count;
-            for (int i = 0; i < count; i++)
-            {
-                if (tweenDatas[i].instanceID == instanceID) return i;
-            }
-
-            return -1;
+            instanceIDLookup.Clear();
+            tweenDatas.Clear();
         }
     }
 }

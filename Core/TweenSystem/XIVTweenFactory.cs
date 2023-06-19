@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using XIV.Core.TweenSystem.ImageTweens;
+using XIV.Core.TweenSystem.OtherTweens;
+using XIV.Core.TweenSystem.RendererTweens;
+using XIV.Core.TweenSystem.TransformTweens;
+using XIV.Core.TweenSystem.Drivers;
 using XIV.Core.Utils;
 using XIV.PoolSystem;
 
-namespace XIV.TweenSystem
+namespace XIV.Core.TweenSystem
 {
     public sealed class XIVTweenFactory
     {
@@ -18,7 +23,7 @@ namespace XIV.TweenSystem
         
         static T GetPooledTween<T>() where T : IPoolable
         {
-            return XIVPoolSystem.HasPool<T>() ? XIVPoolSystem.GetItem<T>() : XIVPoolSystem.AddPool(new XIVPool<T>(Activator.CreateInstance<T>)).GetItem();
+            return XIVPoolSystem.GetItem<T>();
         }
 
         public static XIVTweenFactory GetTween(Component component)
@@ -89,6 +94,12 @@ namespace XIV.TweenSystem
         {
             useCurrent = true;
             return this;
+        }
+
+        public XIVTweenFactory Wait(float duration)
+        {
+            var t = GetPooledTween<WaitTween>().Set(duration);
+            return AddTween(t);
         }
 
         public XIVTweenFactory OnComplete(Action action)

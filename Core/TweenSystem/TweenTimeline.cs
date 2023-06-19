@@ -2,16 +2,15 @@
 using XIV.Core.Collections;
 using XIV.PoolSystem;
 
-namespace XIV.TweenSystem
+namespace XIV.Core.TweenSystem
 {
     public sealed class TweenTimeline : IPoolable
     {
-        public DynamicArray<ITween> tweens;
-        IPool pool;
+        public DynamicArray<ITween> tweens = new DynamicArray<ITween>(2);
 
         public static TweenTimeline GetTimeline(params ITween[] tweens)
         {
-            var timeline = XIVPoolSystem.HasPool<TweenTimeline>() ? XIVPoolSystem.GetItem<TweenTimeline>() : XIVPoolSystem.AddPool(new XIVPool<TweenTimeline>(() => new TweenTimeline())).GetItem();
+            var timeline = XIVPoolSystem.GetItem<TweenTimeline>();
 
             int length = tweens.Length;
             for (int i = 0; i < length; i++)
@@ -22,18 +21,18 @@ namespace XIV.TweenSystem
             return timeline;
         }
 
-        TweenTimeline()
+        public void Update()
         {
-            tweens = new DynamicArray<ITween>(2);
+            Update(Time.deltaTime);
         }
 
-        public void Update()
+        public void Update(float deltaTime)
         {
             int count = tweens.Count;
             for (int i = 0; i < count; i++)
             {
                 ref var tween = ref tweens[i];
-                tween.Update(Time.deltaTime);
+                tween.Update(deltaTime);
                 
                 if (tween.IsDone() == false) continue;
                 tween.Complete();
@@ -62,19 +61,7 @@ namespace XIV.TweenSystem
             }
         }
 
-        public void Return()
-        {
-            pool.Return(this);
-        }
-
-        void IPoolable.OnPoolCreate(IPool pool)
-        {
-            this.pool = pool;
-        }
-
-        void IPoolable.OnPoolReturn()
-        {
-            tweens.Clear();
-        }
+        void IPoolable.OnPoolCreate(IPool pool) { }
+        void IPoolable.OnPoolReturn() => tweens.Clear();
     }
 }
