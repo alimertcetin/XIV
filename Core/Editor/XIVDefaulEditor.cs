@@ -5,7 +5,7 @@ using Object = UnityEngine.Object;
 
 namespace XIV.XIVEditor
 {
-    [CustomEditor(typeof(Object), true), CanEditMultipleObjects]
+    [CustomEditor(typeof(Object), true, isFallback = true), CanEditMultipleObjects]
     public class XIVDefaulEditor : Editor
     {
         public override void OnInspectorGUI()
