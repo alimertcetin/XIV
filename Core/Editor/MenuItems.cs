@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using XIV.XIVEditor.CodeGeneration;
@@ -25,6 +26,9 @@ namespace XIV.XIVEditor
         public const string SET_FRAME_RATE_30_MENU = FRAME_RATE_MENU + "/Set 30";
         public const string SET_FRAME_RATE_15_MENU = FRAME_RATE_MENU + "/Set 15";
         public const string SET_FRAME_RATE_5_MENU = FRAME_RATE_MENU + "/Set 5";
+        
+        
+        public const string FIND_OBJECTS_WITH_MISSING_SCRIPTS = BASE_MENU + "/Find Objects With Missing Scripts";
 
         [MenuItem(UPDATE_ALL_CONSTANTS_MENU)]
         public static void UpdateAllConstants()
@@ -94,6 +98,45 @@ namespace XIV.XIVEditor
         
         [MenuItem(SET_FRAME_RATE_5_MENU)]
         public static void SetFrameRate5() => Application.targetFrameRate = 5;
+        
+        [MenuItem(FIND_OBJECTS_WITH_MISSING_SCRIPTS)]
+        public static void FindObjectsWithMissingScripts()
+        {
+            GameObject[] rootObjects = UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects();
+
+            List<GameObject> list = UnityEngine.Pool.ListPool<GameObject>.Get();
+            foreach (GameObject rootObject in rootObjects)
+            {
+                FindMissingScriptsRecursive(rootObject, list);
+            }
+
+            Selection.objects = list.ToArray();
+            
+            UnityEngine.Pool.ListPool<GameObject>.Release(list);
+
+            static void FindMissingScriptsRecursive(GameObject gameObject, List<GameObject> list)
+            {
+                // Check if the game object has any missing scripts
+                Component[] components = gameObject.GetComponents<Component>();
+                for (int i = 0; i < components.Length; i++)
+                {
+                    if (components[i] == null)
+                    {
+                        list.Add(gameObject);
+                        Debug.LogWarning($"Missing script found on GameObject '{gameObject.name}'");
+                        break;
+                    }
+                }
+
+                // Recursively check child objects
+                for (int i = 0; i < gameObject.transform.childCount; i++)
+                {
+                    GameObject childObject = gameObject.transform.GetChild(i).gameObject;
+                    FindMissingScriptsRecursive(childObject, list);
+                }
+            }
+
+        }
     }
 
 }
