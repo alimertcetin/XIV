@@ -114,6 +114,19 @@ namespace XIV.Core.TweenSystem
             return AddTween(t);
         }
 
+
+        public XIVTweenFactory OnComplete(Action<GameObject> action)
+        {
+            var t = GetPooledTween<OnCompleteCallbackTween<GameObject>>().Set(action, component.gameObject);
+            return AddTween(t);
+        }
+
+        public XIVTweenFactory OnCanceled(Action<GameObject> action)
+        {
+            var t = GetPooledTween<OnCanceledCallbackTween<GameObject>>().Set(action, component.gameObject);
+            return AddTween(t);
+        }
+
         // Transform
         public XIVTweenFactory Scale(Vector3 from, Vector3 to, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
         {
