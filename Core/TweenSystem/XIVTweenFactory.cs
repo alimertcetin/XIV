@@ -154,6 +154,17 @@ namespace XIV.Core.TweenSystem
         {
             return AddTween<MoveTweenZ>(from, to, duration, easingFunc, isPingPong, loopCount);
         }
+
+        /// <summary>
+        /// Moves GameObject in world space but calculates the position on screen space
+        /// </summary>
+        public XIVTweenFactory WorldToUIMove(Vector3[] screenSpacePoints, Camera cam, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
+        {
+            var followCurve = GetPooledTween<FollowCurveScreenSpaceToWorldSpaceTween>();
+            followCurve.cam = cam;
+            var t = followCurve.Set(component.transform, screenSpacePoints, duration, easingFunc, isPingPong, loopCount);
+            return AddTween(t);
+        }
         
         public XIVTweenFactory Rotate(Quaternion from, Quaternion to, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
         {
