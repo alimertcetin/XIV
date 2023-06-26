@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using XIV.Core.Utils;
 using XIV.PoolSystem;
 
@@ -71,7 +72,19 @@ namespace XIV.Core.TweenSystem.Drivers
             }
 
             var easedTime = easingFunction.Invoke(0f, 1f, isPingPong ? timer.NormalizedTimePingPong : timer.NormalizedTime);
-            OnUpdate(easedTime);
+            
+            // Thats how you should not solve your problems.
+            try
+            {
+                OnUpdate(easedTime);
+            }
+            catch (Exception e)
+            {
+                Debug.LogWarning(e);
+                timer.Update(float.MaxValue);
+                loopCount = 0;
+            }
+
             if (timer.IsDone == false) return;
             
             if (loopCount > 0)
