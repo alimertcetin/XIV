@@ -90,6 +90,20 @@ namespace XIV.Core.Collections
         public bool Contains(ref T item) => IndexOf(ref item) != -1;
 
         /// <summary>
+        /// Checks if any of the values matches the given predicate.
+        /// </summary>
+        /// <param name="predicate">The predicate function used to determine the match.</param>
+        /// <returns>The index of the first matching value, or -1 if no match is found.</returns>
+        public int Exists(Func<T, bool> predicate)
+        {
+            for (int i = 0; i < Count; i++)
+            {
+                if (predicate.Invoke(values[i])) return i;
+            }
+            return -1;
+        }
+
+        /// <summary>
         /// Use <see cref="Contains(ref T)"/> for performance reasons
         /// </summary>
         bool ICollection<T>.Contains(T item) => Contains(ref item);
