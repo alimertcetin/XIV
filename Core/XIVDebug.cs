@@ -133,7 +133,6 @@ namespace XIV.Core
         // Circle
         public static void DrawCircle(Vector3 position, float radius, Vector3 axis, Color color, int detail, float duration = 0)
         {
-            radius *= 0.5f;
             var rotation = Quaternion.FromToRotation(Vector3.forward, axis);
             var startPoint = position + rotation * Vector3.right * radius;
             var p1 = startPoint;
@@ -141,12 +140,6 @@ namespace XIV.Core
             {
                 float angle = i * (360f / detail);
                 var p2 = position + rotation * Quaternion.AngleAxis(angle, Vector3.forward) * Vector3.right * radius;
-                /*
-                 * Using TAU
-                 * float angle = i * (TAU / detail);
-                 * var p2 = position + rotation * Quaternion.AngleAxis(angle * Mathf.Rad2Deg, Vector3.forward) * Vector3.right * radius;
-                 * Conversion is necessary
-                 */
                 Debug.DrawLine(p1, p2, color, duration);
                 p1 = p2;
             }
