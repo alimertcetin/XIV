@@ -50,7 +50,17 @@ namespace XIV.XIVEditor.CodeGeneration
                 }
 
                 paramaterNames = Environment.NewLine + "{" + Environment.NewLine + paramaterNames + Environment.NewLine + "}";
-                innerClass.AddField("exposedParameters", paramaterNames, "string[]", "static");
+                innerClass.AddField("exposedParameters", paramaterNames, "string[]", "static readonly");
+
+                AudioMixerGroup[] audioMixerGroups = audioMixer.FindMatchingGroups(string.Empty);
+
+                int mixerGroupsLength = audioMixerGroups.Length;
+                for (int j = 0; j < mixerGroupsLength; j++)
+                {
+                    AudioMixerGroup group = audioMixerGroups[j];
+                    var fieldValue = group.name;
+                    innerClass.AddField(fieldValue, FormatStringFieldValue(fieldValue), "string", "static readonly");
+                }
                 
                 generator.AddInnerClass(innerClass);
             }
