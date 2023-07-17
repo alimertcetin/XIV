@@ -270,6 +270,15 @@ namespace XIV.Core
         
         public static void DrawText(Vector3 position, string text, int size, Color color, float duration = 0f)
         {
+            // Do not create TextHelper if not in play mode
+            if (Application.isPlaying == false)
+            {
+                var style = new GUIStyle();
+                style.fontSize = size;
+                style.normal.textColor = color;
+                Handles.Label(position, text, style);
+                return;
+            }
             TextHelper.Instance.textDatas.Add() = new TextHelper.TextData
             {
                 position = position, 
