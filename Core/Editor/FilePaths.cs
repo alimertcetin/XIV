@@ -7,6 +7,7 @@
         public const string PHYSICS_CONSTANTS_FILE = CODE_GENERATION_FOLDER + "/PhysicsConstants.cs";
         public const string TAG_CONSTANTS_FILE = CODE_GENERATION_FOLDER + "/TagConstants.cs";
         public const string SHADER_CONSTANTS_FILE = CODE_GENERATION_FOLDER + "/ShaderConstants.cs";
+        public const string AUDIO_MIXER_CONSTANTS_FILE = CODE_GENERATION_FOLDER + "/AudioMixerConstants.cs";
     }
 
 }

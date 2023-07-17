@@ -16,6 +16,7 @@ namespace XIV.XIVEditor
         public const string GENERATE_PHYSICS_CONSTANTS_MENU = CODE_GENERATION_MENU + "/Generate Physics Constants";
         public const string GENERATE_TAG_CONSTANTS_MENU = CODE_GENERATION_MENU + "/Generate Tag Constants";
         public const string GENERATE_SHADER_CONSTANTS_MENU = CODE_GENERATION_MENU + "/Generate Shader Constants";
+        public const string GENERATE_AUDIO_MIXER_CONSTANTS_MENU = CODE_GENERATION_MENU + "/Generate Audio Mixer Constants";
 
         public const string FRAME_RATE_MENU = BASE_MENU + "/Frame Rate";
         public const string SET_FRAME_RATE_MAX_MENU = FRAME_RATE_MENU + "/Set Max";
@@ -37,6 +38,7 @@ namespace XIV.XIVEditor
             WriteCodeGeneration(FilePaths.PHYSICS_CONSTANTS_FILE, PhysicsConstantsGenerator.GetClassString());
             WriteCodeGeneration(FilePaths.TAG_CONSTANTS_FILE, TagConstantsGenerator.GetClassString());
             WriteCodeGeneration(FilePaths.SHADER_CONSTANTS_FILE, ShaderConstantsGenerator.GetClassString());
+            WriteCodeGeneration(FilePaths.AUDIO_MIXER_CONSTANTS_FILE, AudioMixerConstantsGenerator.GetClassString());
             AssetDatabase.Refresh();
         }
 
@@ -65,6 +67,13 @@ namespace XIV.XIVEditor
         public static void GenerateShaderConstants()
         {
             WriteCodeGeneration(FilePaths.SHADER_CONSTANTS_FILE, ShaderConstantsGenerator.GetClassString());
+            AssetDatabase.Refresh();
+        }
+
+        [MenuItem(GENERATE_AUDIO_MIXER_CONSTANTS_MENU)]
+        public static void GenerateAudioMixerConstants()
+        {
+            WriteCodeGeneration(FilePaths.AUDIO_MIXER_CONSTANTS_FILE, AudioMixerConstantsGenerator.GetClassString());
             AssetDatabase.Refresh();
         }
 
