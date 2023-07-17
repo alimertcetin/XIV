@@ -21,10 +21,7 @@ namespace XIV.PoolSystem
 
         public static T GetItem<T>() where T : IPoolable
         {
-#if UNITY_EDITOR
-            if (HasPool(typeof(T)) == false) return AddPool(new XIVPool<T>(Activator.CreateInstance<T>)).GetItem();
-#endif
-            return GetPool<T>().GetItem();
+            return HasPool(typeof(T)) == false ? AddPool(new XIVPool<T>(Activator.CreateInstance<T>)).GetItem() : GetPool<T>().GetItem();
         }
 
         public static void ReturnItem<T>(T item) where T : IPoolable
