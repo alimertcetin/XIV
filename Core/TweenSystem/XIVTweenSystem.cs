@@ -44,7 +44,12 @@ namespace XIV.Core.TweenSystem
 
         internal static void AddTween(int instanceID, TweenTimeline tween)
         {
-            tweenHelperMono ??= new GameObject("XIV-TweenSystem-Helper").AddComponent<TweenHelperMono>();
+            if (tweenHelperMono is null)
+            {
+                tweenHelperMono = new GameObject("XIV-TweenSystem-Helper").AddComponent<TweenHelperMono>();
+                Object.DontDestroyOnLoad(tweenHelperMono);
+            }
+
             GetTweenData(instanceID).timelines.Add() = tween;
         }
 
@@ -59,7 +64,7 @@ namespace XIV.Core.TweenSystem
             {
                 for (int i = 0; i < timelineCount; i++)
                 {
-                    tweenData.timelines[i].Update(int.MaxValue);
+                    tweenData.timelines[i].ForceComplete();
                 }
             }
             else

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using XIV.Core.Collections;
 using XIV.PoolSystem;
 
@@ -6,11 +7,39 @@ namespace XIV.Core.TweenSystem
 {
     public sealed class TweenTimeline : IPoolable
     {
-        public DynamicArray<ITween> tweens = new DynamicArray<ITween>(2);
+        /// <summary>
+        /// Equivalent of <see cref="UnityEngine.Time.deltaTime"/>
+        /// </summary>
+        public static readonly Func<float> defaulDeltaTimeFunc;
+        /// <summary>
+        /// Equivalent of <see cref="UnityEngine.Time.unscaledDeltaTime"/>
+        /// </summary>
+        public static readonly Func<float> unscaledDeltaTimeFunc;
+        // /// <summary>
+        // /// Equivalent of <see cref="UnityEngine.Time.fixedDeltaTime"/>
+        // /// </summary>
+        // public static readonly Func<float> fixedDeltaTimeFunc;
+        // /// <summary>
+        // /// Equivalent of <see cref="UnityEngine.Time.fixedUnscaledDeltaTime"/>
+        // /// </summary>
+        // public static readonly Func<float> fixedUnscaledDeltaTimeFunc;
+        
+        DynamicArray<ITween> tweens = new DynamicArray<ITween>(2);
+        
+        Func<float> dtFunc;
+
+        static TweenTimeline()
+        {
+            defaulDeltaTimeFunc = () => Time.deltaTime;
+            unscaledDeltaTimeFunc = () => Time.unscaledDeltaTime;
+            // fixedDeltaTimeFunc = () => Time.fixedDeltaTime;
+            // fixedUnscaledDeltaTimeFunc = () => Time.fixedUnscaledDeltaTime;
+        }
 
         public static TweenTimeline GetTimeline(params ITween[] tweens)
         {
             var timeline = XIVPoolSystem.GetItem<TweenTimeline>();
+            timeline.SetDeltaTimeFunc(defaulDeltaTimeFunc);
 
             int length = tweens.Length;
             for (int i = 0; i < length; i++)
@@ -21,12 +50,39 @@ namespace XIV.Core.TweenSystem
             return timeline;
         }
 
-        public void Update()
+        public void AddTween(ITween tween)
         {
-            Update(Time.deltaTime);
+            tweens.Add() = tween;
         }
 
-        public void Update(float deltaTime)
+        public bool RemoveTween(ITween tween)
+        {
+            return tweens.Remove(ref tween);
+        }
+
+        /// <summary>
+        /// Use static readonly member Funcs to not generate garbage.
+        /// <example>
+        /// <see cref="defaulDeltaTimeFunc"/>
+        /// <code>SetDeltaTimeFunc(TweenTimeline.defaulDeltaTimeFunc)</code>
+        /// </example>
+        /// </summary>
+        public void SetDeltaTimeFunc(Func<float> func)
+        {
+            dtFunc = func ?? dtFunc;
+        }
+
+        public void ForceComplete()
+        {
+            Update(float.MaxValue);
+        }
+
+        public void Update()
+        {
+            Update(dtFunc.Invoke());
+        }
+
+        void Update(float deltaTime)
         {
             int count = tweens.Count;
             for (int i = 0; i < count; i++)
@@ -62,6 +118,10 @@ namespace XIV.Core.TweenSystem
         }
 
         void IPoolable.OnPoolCreate(IPool pool) { }
-        void IPoolable.OnPoolReturn() => tweens.Clear();
+        void IPoolable.OnPoolReturn()
+        {
+            tweens.Clear();
+            dtFunc = default;
+        }
     }
 }

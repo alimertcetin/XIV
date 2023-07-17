@@ -56,7 +56,7 @@ namespace XIV.Core.TweenSystem
                 return this;
             }
 
-            currentTimeline.tweens.Add() = tween;
+            currentTimeline.AddTween(tween);
             useCurrent = false;
             return this;
         }
@@ -93,6 +93,18 @@ namespace XIV.Core.TweenSystem
         public XIVTweenFactory And()
         {
             useCurrent = true;
+            return this;
+        }
+
+        public XIVTweenFactory UseUnscaledDeltaTime()
+        {
+            currentTimeline.SetDeltaTimeFunc(TweenTimeline.unscaledDeltaTimeFunc);
+            return this;
+        }
+
+        public XIVTweenFactory UseCustomDeltaTime(Func<float> customDtFunc)
+        {
+            currentTimeline.SetDeltaTimeFunc(customDtFunc);
             return this;
         }
 
