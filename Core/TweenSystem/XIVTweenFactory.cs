@@ -6,6 +6,7 @@ using XIV.Core.TweenSystem.OtherTweens;
 using XIV.Core.TweenSystem.RendererTweens;
 using XIV.Core.TweenSystem.TransformTweens;
 using XIV.Core.TweenSystem.Drivers;
+using XIV.Core.TweenSystem.RectTransformTweens;
 using XIV.Core.Utils;
 using XIV.PoolSystem;
 
@@ -236,6 +237,14 @@ namespace XIV.Core.TweenSystem
         {
             if (TryGetComponent<UnityEngine.UI.Image>(out var image) == false) return CastError(typeof(UnityEngine.UI.Image));
             var t = GetPooledTween<ImageAlphaTween>().Set(image, from, to, duration, easingFunc, isPingPong, loopCount);
+            return AddTween(t);
+        }
+        
+        // RectTransform
+        public XIVTweenFactory RectTransformMove(Vector2 from, Vector2 to, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
+        {
+            if (TryGetComponent<RectTransform>(out var rectTransform) == false) return CastError(typeof(RectTransform));
+            var t = GetPooledTween<RectTransformMoveTween>().Set(rectTransform, from, to, duration, easingFunc, isPingPong, loopCount);
             return AddTween(t);
         }
 
