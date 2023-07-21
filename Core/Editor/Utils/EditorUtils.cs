@@ -95,5 +95,36 @@ namespace XIV.XIVEditor.Utils
                 }
             }
         }
+
+        public static object[] DragAndDropZone(string title, float width, float height)
+        {
+            GUILayout.Box(title, GUILayout.Width(width), GUILayout.Height(height));
+            return HandleDragAndDrop();
+        }
+
+        /// <summary>
+        /// Handles Drag and Drop without drawing anything
+        /// </summary>
+        /// <returns>Droped objects if drag performed, null otherwise</returns>
+        public static object[] HandleDragAndDrop()
+        {
+            EventType eventType = Event.current.type;
+            bool isAccepted = false;
+
+            if (eventType == EventType.DragUpdated || eventType == EventType.DragPerform)
+            {
+                DragAndDrop.visualMode = DragAndDropVisualMode.Copy;
+
+                if (eventType == EventType.DragPerform)
+                {
+                    DragAndDrop.AcceptDrag();
+                    isAccepted = true;
+                }
+
+                Event.current.Use();
+            }
+
+            return isAccepted ? DragAndDrop.objectReferences : null;
+        }
     }
 }
