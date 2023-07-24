@@ -105,7 +105,7 @@ namespace XIV.XIVEditor.Utils
         /// <summary>
         /// Handles Drag and Drop without drawing anything
         /// </summary>
-        /// <returns>Droped objects if drag performed, null otherwise</returns>
+        /// <returns>Dropped objects if drag performed, null otherwise</returns>
         public static object[] HandleDragAndDrop()
         {
             EventType eventType = Event.current.type;
