@@ -6,15 +6,17 @@ namespace XIV.Core
     public class ButtonAttribute : Attribute
     {
         public string label;
+        public bool playModeOnly;
 
         public ButtonAttribute() : this("")
         {
             
         }
-        
-        public ButtonAttribute(string label)
+
+        public ButtonAttribute(string label, bool playModeOnly = false)
         {
             this.label = label;
+            this.playModeOnly = playModeOnly;
         }
     }
 }

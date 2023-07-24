@@ -81,21 +81,6 @@ namespace XIV.XIVEditor.Utils
             }
         }
 
-        public static void DrawMethods(Object target, Type attribute = null)
-        {
-            var methods = attribute == null ? ReflectionUtils.GetMethods(target.GetType()) : 
-                ReflectionUtils.GetMethodsHasAttribute<ButtonAttribute>(target.GetType());
-            int length = methods.Length;
-            for (var i = 0; i < length; i++)
-            {
-                var method = methods[i];
-                if (GUILayout.Button(method.Name))
-                {
-                    method.Invoke(target, new object[method.GetParameters().Length]);
-                }
-            }
-        }
-
         public static object[] DragAndDropZone(string title, float width, float height)
         {
             GUILayout.Box(title, GUILayout.Width(width), GUILayout.Height(height));

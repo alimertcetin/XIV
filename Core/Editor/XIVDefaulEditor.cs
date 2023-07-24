@@ -1,4 +1,6 @@
-﻿using UnityEditor;
+﻿using System.Reflection;
+using UnityEditor;
+using UnityEngine;
 using XIV.Core;
 using XIV.XIVEditor.Utils;
 using Object = UnityEngine.Object;
@@ -11,7 +13,24 @@ namespace XIV.XIVEditor
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
-            EditorUtils.DrawMethods(target, typeof(ButtonAttribute));
+            
+            var methods = ReflectionUtils.GetMethodsHasAttribute<ButtonAttribute>(target.GetType());
+            int length = methods.Length;
+            for (var i = 0; i < length; i++)
+            {
+                var method = methods[i];
+                var buttonAttribute = method.GetCustomAttribute<ButtonAttribute>();
+                var buttonText = string.IsNullOrWhiteSpace(buttonAttribute.label) ? method.Name : buttonAttribute.label;
+                if (GUILayout.Button(buttonText))
+                {
+                    if (buttonAttribute.playModeOnly && Application.isPlaying == false)
+                    {
+                        Debug.LogWarning( $"\"{buttonText}\" is not allowed in editor mode");
+                        continue;
+                    }
+                    method.Invoke(target, new object[method.GetParameters().Length]);
+                }
+            }
         }
     }
 }
