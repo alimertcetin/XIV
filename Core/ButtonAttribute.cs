@@ -13,6 +13,11 @@ namespace XIV.Core
             
         }
 
+        public ButtonAttribute(bool playModeOnly) : this("", playModeOnly)
+        {
+            
+        }
+
         public ButtonAttribute(string label, bool playModeOnly = false)
         {
             this.label = label;
