@@ -67,9 +67,10 @@ namespace XIV.Core.Collections
 
         public int IndexOf(ref T item)
         {
+            EqualityComparer<T> equalityComparer = EqualityComparer<T>.Default;
             for (int i = 0; i < Count; i++)
             {
-                if (values[i].Equals(item)) return i;
+                if (equalityComparer.Equals(values[i], item)) return i;
             }
             return -1;
         }
