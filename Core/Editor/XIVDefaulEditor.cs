@@ -12,6 +12,9 @@ namespace XIV.XIVEditor
     {
         public override void OnInspectorGUI()
         {
+            // otherwise base.OnInspectorGUI throws NullReferenceException
+            if (target == false) return;
+
             base.OnInspectorGUI();
             
             var methods = ReflectionUtils.GetMethodsHasAttribute<ButtonAttribute>(target.GetType());
