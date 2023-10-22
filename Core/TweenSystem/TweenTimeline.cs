@@ -1,11 +1,10 @@
 ﻿using System;
 using UnityEngine;
 using XIV.Core.Collections;
-using XIV.PoolSystem;
 
 namespace XIV.Core.TweenSystem
 {
-    public sealed class TweenTimeline : IPoolable
+    public sealed class TweenTimeline
     {
         /// <summary>
         /// Equivalent of <see cref="UnityEngine.Time.deltaTime"/>
@@ -36,28 +35,9 @@ namespace XIV.Core.TweenSystem
             // fixedUnscaledDeltaTimeFunc = () => Time.fixedUnscaledDeltaTime;
         }
 
-        public static TweenTimeline GetTimeline(params ITween[] tweens)
-        {
-            var timeline = XIVPoolSystem.GetItem<TweenTimeline>();
-            timeline.SetDeltaTimeFunc(defaulDeltaTimeFunc);
-
-            int length = tweens.Length;
-            for (int i = 0; i < length; i++)
-            {
-                timeline.tweens.Add() = tweens[i];
-            }
-            
-            return timeline;
-        }
-
         public void AddTween(ITween tween)
         {
             tweens.Add() = tween;
-        }
-
-        public bool RemoveTween(ITween tween)
-        {
-            return tweens.Remove(ref tween);
         }
 
         /// <summary>
@@ -92,6 +72,8 @@ namespace XIV.Core.TweenSystem
                 
                 if (tween.IsDone() == false) continue;
                 tween.Complete();
+                XIVTweenSystem.ReleaseTween(tween);
+                
                 tweens.RemoveAt(i);
                 i -= 1;
                 count -= 1;
@@ -117,9 +99,14 @@ namespace XIV.Core.TweenSystem
             }
         }
 
-        void IPoolable.OnPoolCreate(IPool pool) { }
-        void IPoolable.OnPoolReturn()
+        public void Clear()
         {
+            int count = tweens.Count;
+            for (int i = 0; i < count; i++)
+            {
+                XIVTweenSystem.ReleaseTween(tweens[i]);
+            }
+            
             tweens.Clear();
             dtFunc = default;
         }

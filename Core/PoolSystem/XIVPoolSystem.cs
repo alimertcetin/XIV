@@ -12,30 +12,50 @@ namespace XIV.PoolSystem
         {
             pools.Clear();
         }
-        
-        static T AddPool<T>(T pool) where T : IPool
+
+        public static void SetOnGetAction<T>(Action<T> onGet)
         {
-            pools.Add(pool.StoredType, pool);
-            return pool;
+            GetPool<T>().SetOnGetItem(onGet);
         }
 
-        public static T GetItem<T>() where T : IPoolable
+        public static void SetOnReleaseAction<T>(Action<T> onRelease)
         {
-            return HasPool(typeof(T)) == false ? AddPool(new XIVPool<T>(Activator.CreateInstance<T>)).GetItem() : GetPool<T>().GetItem();
+            GetPool<T>().SetOnReleaseItem(onRelease);
         }
 
-        public static void ReturnItem<T>(T item) where T : IPoolable
+        public static T GetItem<T>()
         {
+            return GetPool<T>().GetItem();
+        }
+
+        public static void ReleaseItem<T>(T item)
+        {
+            var type = item.GetType();
 #if UNITY_EDITOR
-            if (HasPool(typeof(T)) == false) throw new NullReferenceException("Pool is null. You should add a pool for " + typeof(T) + " to get items from it");
+            if (HasPool(type) == false)
+            {
+                throw new NullReferenceException($"There is no pool for {type.Name} but you are calling {nameof(ReleaseItem)}");
+            }
 #endif
-            GetPool<T>().Return(item);
+            pools.TryGetValue(type, out var pool);
+            pool!.Release(item);
         }
 
         public static bool HasPool<T>() => HasPool(typeof(T));
 
         public static bool HasPool(Type type) => pools.ContainsKey(type);
 
-        static IPool<T> GetPool<T>() where T : IPoolable => (IPool<T>)pools[typeof(T)];
+        static XIVPool<T> GetPool<T>()
+        {
+            var type = typeof(T);
+            if (pools.TryGetValue(type, out var p))
+            {
+                return (XIVPool<T>)p;
+            }
+
+            var pool = new XIVPool<T>(Activator.CreateInstance<T>);
+            pools.Add(type, pool);
+            return pool;
+        }
     }
 }

@@ -12,8 +12,8 @@ namespace XIV.Core.TweenSystem.OtherTweens
             return this;
         }
         
-        protected override void OnComplete() { }
-        protected override void OnCanceled() => action.Invoke();
+        public override void Complete() { }
+        public override void Cancel() => action.Invoke();
     }
     
     internal sealed class OnCanceledCallbackTween<T> : CallbackTween
@@ -28,7 +28,7 @@ namespace XIV.Core.TweenSystem.OtherTweens
             return this;
         }
         
-        protected override void OnComplete() => action.Invoke(value);
-        protected override void OnCanceled() { }
+        public override void Complete() => action.Invoke(value);
+        public override void Cancel() { }
     }
 }

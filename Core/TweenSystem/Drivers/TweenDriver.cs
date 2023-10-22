@@ -27,21 +27,19 @@ namespace XIV.Core.TweenSystem.Drivers
         }
     }
 
-    public abstract class TweenDriver<TValueType> : ITween, IPoolable
+    public abstract class TweenDriver<TValueType> : ITween
     {
         protected TValueType startValue;
         protected TValueType endValue;
         protected EasingFunction.Function easingFunction;
         protected Timer timer;
-        IPool pool;
-        bool hasPool;
         bool isPingPong;
         bool reversed;
         int loopCount;
 
         public TweenDriver<TValueType> Set(TValueType startValue, TValueType endValue, float duration, EasingFunction.Function easingFunction, bool isPingPong = false, int loopCount = 0)
         {
-            Clear();
+            Clear(this);
             this.startValue = startValue;
             this.endValue = endValue;
             this.easingFunction = easingFunction;
@@ -55,12 +53,12 @@ namespace XIV.Core.TweenSystem.Drivers
         protected abstract void OnComplete();
         protected abstract void OnCancel();
         
-        void Clear()
+        static void Clear(TweenDriver<TValueType> tweenDriver)
         {
-            startValue = default;
-            endValue = default;
-            timer = default;
-            reversed = false;
+            tweenDriver.startValue = default;
+            tweenDriver.endValue = default;
+            tweenDriver.timer = default;
+            tweenDriver.reversed = false;
         }
 
         void ITween.Update(float deltaTime)
@@ -109,24 +107,11 @@ namespace XIV.Core.TweenSystem.Drivers
         void ITween.Complete()
         {
             OnComplete();
-            if (hasPool) pool.Return(this);
         }
 
         void ITween.Cancel()
         {
             OnCancel();
-            if (hasPool) pool.Return(this);
-        }
-
-        void IPoolable.OnPoolCreate(IPool pool)
-        {
-            this.pool = pool;
-            this.hasPool = pool != default;
-        }
-
-        void IPoolable.OnPoolReturn()
-        {
-            Clear();
         }
     }
 }

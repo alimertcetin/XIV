@@ -1,5 +1,5 @@
+using System.Collections.Generic;
 using UnityEngine;
-using XIV.Core.Collections;
 using XIV.PoolSystem;
 
 namespace XIV.Core.TweenSystem
@@ -10,39 +10,65 @@ namespace XIV.Core.TweenSystem
         {
             void Update()
             {
-                int count = tweenDatas.Count;
+                int count = XIVTweenSystem.tweenTimelines.Count;
                 for (int i = count - 1; i >= 0; i--)
                 {
-                    TweenData tweenData = XIVTweenSystem.tweenDatas[i];
-                    TweenTimeline timeline = tweenData.timelines[0];
+                    List<TweenTimeline> timelines = XIVTweenSystem.tweenTimelines[i];
+                    TweenTimeline timeline = timelines[0];
                     timeline.Update();
                     if (timeline.IsDone())
                     {
-                        tweenData.timelines.RemoveAt(0);
-                        XIVPoolSystem.ReturnItem(timeline);
+                        timelines.RemoveAt(0);
+                        timeline.Clear();
+                        XIVTweenSystem.ReleaseItem(timeline);
                     }
 
-                    if (tweenData.timelines.Count == 0)
+                    if (timelines.Count == 0)
                     {
-                        XIVTweenSystem.tweenDatas.RemoveAt(i);
+                        XIVTweenSystem.tweenTimelines.RemoveAt(i);
                         XIVTweenSystem.instanceIDLookup.RemoveAt(i);
-                        XIVPoolSystem.ReturnItem(tweenData);
+                        timelines.Clear();
+                        XIVTweenSystem.ReleaseItem(timelines);
                     }
                 }
             }
 
             void OnDestroy()
             {
-                tweenHelperMono = null;
+                XIVTweenSystem.tweenHelperMono = null;
                 XIVTweenSystem.Clear();
             }
         }
 
-        static DynamicArray<TweenData> tweenDatas = new DynamicArray<TweenData>(8);
-        static DynamicArray<int> instanceIDLookup = new DynamicArray<int>(8);
+        static List<List<TweenTimeline>> tweenTimelines = new List<List<TweenTimeline>>(8);
+        static List<int> instanceIDLookup = new List<int>(8);
         static TweenHelperMono tweenHelperMono;
 
-        internal static void AddTween(int instanceID, TweenTimeline tween)
+        internal static T GetTween<T>() where T : ITween
+        {
+            return GetItem<T>();
+        }
+
+        internal static TweenTimeline GetTimeline(params ITween[] tweens)
+        {
+            var timeline = GetItem<TweenTimeline>();
+            timeline.SetDeltaTimeFunc(TweenTimeline.defaulDeltaTimeFunc);
+
+            int length = tweens.Length;
+            for (int i = 0; i < length; i++)
+            {
+                timeline.AddTween(tweens[i]);
+            }
+
+            return timeline;
+        }
+
+        internal static void ReleaseTween(ITween tween)
+        {
+            ReleaseItem(tween);
+        }
+
+        internal static void AddTween(int instanceID, TweenTimeline timeline)
         {
             if (tweenHelperMono is null)
             {
@@ -50,54 +76,63 @@ namespace XIV.Core.TweenSystem
                 Object.DontDestroyOnLoad(tweenHelperMono);
             }
 
-            GetTweenData(instanceID).timelines.Add() = tween;
+            GetTweenTimelines(instanceID).Add(timeline);
         }
 
         internal static void CancelTween(int instanceID, bool forceComplete = true)
         {
-            var index = instanceIDLookup.IndexOf(ref instanceID);
+            var index = instanceIDLookup.IndexOf(instanceID);
             if (index < 0) return;
 
-            var tweenData = tweenDatas[index];
-            int timelineCount = tweenData.timelines.Count;
-            if (forceComplete)
+            List<TweenTimeline> timelines = tweenTimelines[index];
+            
+            int timelineCount = timelines.Count;
+            for (int i = 0; i < timelineCount; i++)
             {
-                for (int i = 0; i < timelineCount; i++)
-                {
-                    tweenData.timelines[i].ForceComplete();
-                }
+                TweenTimeline timeline = timelines[i];
+                if (forceComplete) timeline.ForceComplete();
+                else timeline.Cancel();
+                
+                timeline.Clear();
             }
-            else
-            {
-                for (int i = 0; i < timelineCount; i++)
-                {
-                    tweenData.timelines[i].Cancel();
-                }
-            }
-
-            tweenDatas.RemoveAt(index);
+            
+            timelines.Clear();
+            ReleaseItem(timelines);
+            
+            tweenTimelines.RemoveAt(index);
             instanceIDLookup.RemoveAt(index);
-            XIVPoolSystem.ReturnItem(tweenData);
         }
 
-        internal static bool HasTween(int instanceID) => instanceIDLookup.IndexOf(ref instanceID) > -1;
-
-        static TweenData GetTweenData(int instanceID)
+        internal static bool HasTween(int instanceID)
         {
-            var index = instanceIDLookup.IndexOf(ref instanceID);
-            if (index > -1) return tweenDatas[index];
+            return instanceIDLookup.IndexOf(instanceID) > -1;
+        }
 
-            var tweenData = XIVPoolSystem.GetItem<TweenData>();
-            tweenData.instanceID = instanceID;
-            instanceIDLookup.Add() = instanceID;
-            tweenDatas.Add() = tweenData;
-            return tweenData;
+        static List<TweenTimeline> GetTweenTimelines(int instanceID)
+        {
+            var index = instanceIDLookup.IndexOf(instanceID);
+            if (index > -1) return tweenTimelines[index];
+
+            List<TweenTimeline> timelines = GetItem<List<TweenTimeline>>();
+            instanceIDLookup.Add(instanceID);
+            tweenTimelines.Add(timelines);
+            return timelines;
+        }
+
+        static T GetItem<T>()
+        {
+            return XIVPoolSystem.GetItem<T>();
+        }
+
+        static void ReleaseItem<T>(T item)
+        {
+            XIVPoolSystem.ReleaseItem(item);
         }
 
         static void Clear()
         {
             instanceIDLookup.Clear();
-            tweenDatas.Clear();
+            tweenTimelines.Clear();
         }
     }
 }

@@ -5,10 +5,10 @@ namespace XIV.PoolSystem
     public interface IPool
     {
         Type StoredType { get; }
-        void Return(IPoolable item);
+        bool Release<T>(T item);
     }
 
-    public interface IPool<out T> : IPool where T : IPoolable
+    public interface IPool<out T> : IPool
     {
         T GetItem();
     }

@@ -1,41 +1,12 @@
-﻿using XIV.PoolSystem;
-
-namespace XIV.Core.TweenSystem.OtherTweens
+﻿namespace XIV.Core.TweenSystem.OtherTweens
 {
-    public abstract class CallbackTween : ITween, IPoolable
+    public abstract class CallbackTween : ITween
     {
-        IPool pool;
+        public abstract void Complete();
+        public abstract void Cancel();
         
-        protected abstract void OnComplete();
-        protected abstract void OnCanceled();
-
-        void ITween.Update(float deltaTime)
-        {
-            
-        }
+        void ITween.Update(float deltaTime) { }
         
         bool ITween.IsDone() => true;
-        
-        void ITween.Complete()
-        {
-            OnComplete();
-            pool?.Return(this);
-        }
-
-        void ITween.Cancel()
-        {
-            OnCanceled();
-            pool?.Return(this);
-        }
-
-        void IPoolable.OnPoolCreate(IPool pool)
-        {
-            this.pool = pool;
-        }
-
-        void IPoolable.OnPoolReturn()
-        {
-            
-        }
     }
 }

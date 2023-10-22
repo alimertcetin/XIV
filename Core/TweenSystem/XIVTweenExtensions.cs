@@ -16,9 +16,9 @@ namespace XIV.Core.TweenSystem
             XIVTweenSystem.CancelTween(instanceID, forceComplete);
         }
 
-        public static XIVTweenFactory XIVTween(this Component component)
+        public static XIVTweenBuilder XIVTween(this Component component)
         {
-            return XIVTweenFactory.GetTween(component);
+            return XIVTweenBuilder.GetTween(component);
         }
     }
 }
