@@ -122,6 +122,19 @@ namespace XIV.Core.Collections
             return true;
         }
 
+        public int RemoveAll(Predicate<T> match)
+        {
+            int removed = 0;
+            for (int i = Count - 1; i >= 0; i--)
+            {
+                if (match.Invoke(values[i]) == false) continue;
+                RemoveAt(i);
+                removed++;
+            }
+
+            return removed;
+        }
+
         /// <summary>
         /// Use <see cref="Remove(ref T)"/> for performance reasons
         /// </summary>
