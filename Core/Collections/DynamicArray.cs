@@ -140,6 +140,11 @@ namespace XIV.Core.Collections
         /// </summary>
         bool ICollection<T>.Remove(T item) => Remove(ref item);
 
+        public ReadOnlySpan<T> AsReadOnlySpan()
+        {
+            return new ReadOnlySpan<T>(values, 0, Count);
+        }
+
         public void Insert(int index, ref T item)
         {
             this.Add();
