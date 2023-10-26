@@ -13,7 +13,7 @@ namespace XIV.XIVEditor.CodeGeneration
             var guids = AssetDatabase.FindAssets("t: Shader", new[] { "Assets" });
             
             ClassGenerator generator = new ClassGenerator(CLASS_NAME, classModifier: "static");
-            generator.Use(nameof(UnityEngine));
+            generator.AddUsing(nameof(UnityEngine));
 
             for (var i = 0; i < guids.Length; i++)
             {

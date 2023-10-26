@@ -10,7 +10,7 @@ namespace XIV.XIVEditor.CodeGeneration
         public static string GetClassString()
         {
             ClassGenerator generator = new ClassGenerator(CLASS_NAME, classModifier: "static");
-            generator.Use(nameof(UnityEngine));
+            generator.AddUsing(nameof(UnityEngine));
 
             var layers = InternalEditorUtility.layers;
 
