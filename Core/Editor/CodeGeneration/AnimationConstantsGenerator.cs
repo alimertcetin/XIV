@@ -74,6 +74,7 @@ namespace XIV.XIVEditor.CodeGeneration
                 var fieldName = $"{animatorName}_{paramName}_{typeSuffix}";
                 var fieldValue = FormatStringFieldValue(paramName);
                 paramaterClass.AddField(fieldName, fieldValue, "string", "const");
+                paramaterClass.AddField(fieldName + "ID", ToHashField(fieldValue), "int", "static readonly");
             }
 
             innerClass.AddInnerClass(paramaterClass);
