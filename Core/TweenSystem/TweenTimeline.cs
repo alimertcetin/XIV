@@ -1,6 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
-using XIV.Core.Collections;
 
 namespace XIV.Core.TweenSystem
 {
@@ -23,7 +23,7 @@ namespace XIV.Core.TweenSystem
         // /// </summary>
         // public static readonly Func<float> fixedUnscaledDeltaTimeFunc;
         
-        DynamicArray<ITween> tweens = new DynamicArray<ITween>(2);
+        List<ITween> tweens = new List<ITween>(2);
         
         Func<float> dtFunc;
 
@@ -37,7 +37,7 @@ namespace XIV.Core.TweenSystem
 
         public void AddTween(ITween tween)
         {
-            tweens.Add() = tween;
+            tweens.Add(tween);
         }
 
         /// <summary>
@@ -67,7 +67,7 @@ namespace XIV.Core.TweenSystem
             int count = tweens.Count;
             for (int i = 0; i < count; i++)
             {
-                ref var tween = ref tweens[i];
+                var tween = tweens[i];
                 tween.Update(deltaTime);
                 
                 if (tween.IsDone() == false) continue;

@@ -9,6 +9,7 @@ using XIV.Core.TweenSystem.RectTransformTweens;
 using XIV.Core.TweenSystem.RendererTweens;
 using XIV.Core.TweenSystem.TransformTweens;
 using XIV.Core.Utils;
+using XIV.Core.DataStructures;
 
 namespace XIV.Core.TweenSystem
 {
@@ -141,7 +142,7 @@ namespace XIV.Core.TweenSystem
         /// <summary>
         /// Moves GameObject in world space but calculates the position on screen space
         /// </summary>
-        public XIVTweenBuilder WorldToUIMove(Vector3[] screenSpacePoints, Camera cam, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
+        public XIVTweenBuilder WorldToUIMove(XIVMemory<Vector3> screenSpacePoints, Camera cam, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
         {
             var followCurve = Get<FollowCurveScreenSpaceToWorldSpaceTween>();
             followCurve.cam = cam;
@@ -168,7 +169,7 @@ namespace XIV.Core.TweenSystem
             return AddTween(Get<RotationTweenZ>().Set(component.transform, from, to, duration, easingFunc, isPingPong, loopCount));
         }
         
-        public XIVTweenBuilder FollowCurve(Vector3[] points, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
+        public XIVTweenBuilder FollowCurve(XIVMemory<Vector3> points, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
         {
             return AddTween(Get<FollowCurveTween>().Set(component.transform, points, duration, easingFunc, isPingPong, loopCount));
         }
@@ -199,7 +200,7 @@ namespace XIV.Core.TweenSystem
             return AddTween(Get<RectTransformMoveTween>().Set(rectTransform, from, to, duration, easingFunc, isPingPong, loopCount));
         }
 
-        public XIVTweenBuilder ImageColorCurve(Color[] colors, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
+        public XIVTweenBuilder ImageColorCurve(XIVMemory<Color> colors, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
         {
             if (TryGetComponent<Image>(out var image) == false) return CastError(typeof(Image));
             return AddTween(Get<ImageColorCurveTween>().Set(image, colors, duration, easingFunc, isPingPong, loopCount));
@@ -212,7 +213,7 @@ namespace XIV.Core.TweenSystem
             return AddTween(Get<RendererColorTween>().Set(renderer, from, to, duration, easingFunc, isPingPong, loopCount));
         }
         
-        public XIVTweenBuilder RendererColorCurve(Color[] colors, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
+        public XIVTweenBuilder RendererColorCurve(XIVMemory<Color> colors, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
         {
             if (TryGetComponent<Renderer>(out var renderer) == false) return CastError(typeof(Renderer));
             return AddTween(Get<RendererColorCurveTween>().Set(renderer, colors, duration, easingFunc, isPingPong, loopCount));

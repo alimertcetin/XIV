@@ -31,7 +31,7 @@ namespace XIV.PoolSystem
         public static void ReleaseItem<T>(T item)
         {
             var type = item.GetType();
-#if UNITY_EDITOR
+#if UNITY_EDITOR && DEEP_PROFILING_ENABLED == false
             if (HasPool(type) == false)
             {
                 throw new NullReferenceException($"There is no pool for {type.Name} but you are calling {nameof(ReleaseItem)}");
