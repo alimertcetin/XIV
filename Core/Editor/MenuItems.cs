@@ -8,7 +8,7 @@ namespace XIV.XIVEditor
 {
     public static class MenuItems
     {
-        public const string BASE_MENU = "XIV Utilities";
+        public const string BASE_MENU = "XIV";
         
         public const string CODE_GENERATION_MENU = BASE_MENU + "/Code Generation";
         public const string UPDATE_ALL_CONSTANTS_MENU = CODE_GENERATION_MENU + "/Update All Constants";
@@ -27,9 +27,9 @@ namespace XIV.XIVEditor
         public const string SET_FRAME_RATE_30_MENU = FRAME_RATE_MENU + "/Set 30";
         public const string SET_FRAME_RATE_15_MENU = FRAME_RATE_MENU + "/Set 15";
         public const string SET_FRAME_RATE_5_MENU = FRAME_RATE_MENU + "/Set 5";
-        
-        
-        public const string FIND_OBJECTS_WITH_MISSING_SCRIPTS = BASE_MENU + "/Find Objects With Missing Scripts";
+
+        public const string UTILITIES_MENU = BASE_MENU + "/Utilities";
+        public const string FIND_OBJECTS_WITH_MISSING_SCRIPTS = UTILITIES_MENU + "/Find Objects With Missing Scripts";
 
         [MenuItem(UPDATE_ALL_CONSTANTS_MENU)]
         public static void UpdateAllConstants()
