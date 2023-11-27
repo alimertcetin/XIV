@@ -68,5 +68,22 @@ namespace XIV.Core.XIVMath
                 end,
             };
         }
+
+        /// <summary>
+        /// Writes the points to the buffer starting from <paramref name="startIndex"/> and ends in <paramref name="startIndex"/> + 3
+        /// </summary>
+        public static void CreateCurveNonAlloc(Vector3 start, Vector3 end, Vector3[] buffer, int startIndex, float midPointDistance = 1f)
+        {
+            var mid = (end - start) * 0.5f;
+            var dirToStart = start - mid;
+            var dirToEnd = end - mid;
+            var mid1 = mid + (dirToStart * 0.5f) + Random.insideUnitSphere * midPointDistance;
+            var mid2 = mid + (dirToEnd * 0.5f) + Random.insideUnitSphere * midPointDistance;
+
+            buffer[startIndex] = start;
+            buffer[startIndex + 1] = mid1;
+            buffer[startIndex + 2] = mid2;
+            buffer[startIndex + 3] = end;
+        }
     }
 }
