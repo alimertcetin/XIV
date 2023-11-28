@@ -1,7 +1,15 @@
 ﻿using UnityEngine;
+using XIV.Core.DataStructures;
 
 namespace XIV.Core.XIVMath
 {
+    public struct CurveData
+    {
+        public Vector3 point;
+        public Vector3 normal;
+        public Vector3 right;
+        public Vector3 forward;
+    }
     /// <summary>
     /// Cubic Bezier Math class
     /// </summary>
@@ -84,6 +92,45 @@ namespace XIV.Core.XIVMath
             buffer[startIndex + 1] = mid1;
             buffer[startIndex + 2] = mid2;
             buffer[startIndex + 3] = end;
+        }
+        
+        public static CurveData GetCurveData(XIVMemory<Vector3> points, float t)
+        {
+            if (points.Length != 4)
+            {
+                Debug.LogError("Bezier curve requires exactly 4 control points.");
+                return new CurveData();
+            }
+
+            float u = 1 - t;
+            float tt = t * t;
+            float uu = u * u;
+            float uuu = uu * u;
+            float ttt = tt * t;
+
+            Vector3 p = uuu * points[0] + 3 * uu * t * points[1] + 3 * u * tt * points[2] + ttt * points[3];
+
+            // Calculate derivative for normal, right, and forward vectors
+            Vector3 p1 = 3 * uu * (points[1] - points[0]);
+            Vector3 p2 = 6 * u * t * (points[2] - points[1]);
+            Vector3 p3 = 3 * tt * (points[3] - points[2]);
+
+            Vector3 derivative = p1 + p2 + p3;
+
+            // Calculate normal, right, and forward vectors
+            Vector3 normal = Vector3.Cross(derivative, Vector3.up).normalized;
+            Vector3 right = Vector3.Cross(normal, derivative).normalized;
+            Vector3 forward = Vector3.Cross(right, normal).normalized;
+
+            CurveData curveData = new CurveData
+            {
+                point = p,
+                normal = normal,
+                right = right,
+                forward = forward
+            };
+
+            return curveData;
         }
     }
 }
