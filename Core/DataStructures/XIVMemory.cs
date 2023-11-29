@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace XIV.Core.DataStructures
 {
@@ -45,24 +46,28 @@ namespace XIV.Core.DataStructures
         public int Length => length;
         public bool IsReversed => isReversed;
 
-        T[] array;
+        IList<T> array;
         int start;
         int length;
         bool isReversed;
 
-        XIVMemory(T[] array, int start, int length, bool isReversed)
+        XIVMemory(IList<T> array, int start, int length, bool isReversed)
         {
             this.array = array;
             this.start = start;
             this.length = length;
             this.isReversed = isReversed;
-            if (length <= 0 || start + length - 1 >= array.Length)
+            if (length <= 0 || start + length - 1 >= array.Count)
             {
                 throw new System.ArgumentOutOfRangeException(nameof(length), length, "Specified argument was out of the range of valid values.");
             }
         }
 
-        public XIVMemory(T[] array, int start, int length) : this(array, start, length, false)
+        public XIVMemory(IList<T> array, int start, int length) : this(array, start, length, false)
+        {
+        }
+
+        public XIVMemory(IList<T> array) : this(array, 0, array.Count, false)
         {
         }
 
@@ -82,7 +87,7 @@ namespace XIV.Core.DataStructures
                 new XIVMemory<T>(array, arrIndexStart, length, isReversed);
         }
 
-        public T[] GetUnderlyingArray() => array;
+        public IList<T> GetUnderlyingArray() => array;
 
         int GetArrayIndex(int index)
         {
