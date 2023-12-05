@@ -57,7 +57,7 @@ namespace XIV.Core.DataStructures
             this.start = start;
             this.length = length;
             this.isReversed = isReversed;
-            if (length <= 0 || start + length - 1 >= array.Count)
+            if (length < 0 || start + length - 1 >= array.Count)
             {
                 throw new System.ArgumentOutOfRangeException(nameof(length), length, "Specified argument was out of the range of valid values.");
             }
