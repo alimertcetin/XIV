@@ -14,7 +14,13 @@ namespace XIV.Core.TweenSystem
             public struct TweenD
             {
                 public GameObject go;
-                public List<string> tweens;
+                public List<TweenData> tweenDatas;
+            }
+
+            [System.Serializable]
+            public struct TweenData
+            {
+                public string name;
                 public string time;
             }
             
@@ -46,12 +52,15 @@ namespace XIV.Core.TweenSystem
                         TweenD tweenD = new TweenD()
                         {
                             go = (GameObject)UnityEditor.EditorUtility.InstanceIDToObject(instanceIDs[i]),
-                            tweens = new List<string>(),
-                            time = System.DateTime.Now.ToString("hh:mm:ss:ffffff tt", System.Globalization.CultureInfo.InvariantCulture),
+                            tweenDatas = new List<TweenData>(),
                         };
                         foreach (ITween t in tweenTimeline.Tweens)
                         {
-                            tweenD.tweens.Add(t.GetType().ToString().Split('.')[^1]);
+                            tweenD.tweenDatas.Add(new TweenData()
+                            {
+                                name = t.GetType().ToString().Split('.')[^1],
+                                time = System.DateTime.Now.ToString("hh:mm:ss:ffffff tt", System.Globalization.CultureInfo.InvariantCulture),
+                            });
                         }
                         XIVTweenGameObjects.Add(tweenD);
                     }
@@ -71,7 +80,7 @@ namespace XIV.Core.TweenSystem
                         int idx = history.FindIndex((p) => p.go == XIVTweenGameObjects[xivTweenDebugIdx].go);
                         if (idx != -1)
                         {
-                           history[idx].tweens.AddRange(XIVTweenGameObjects[xivTweenDebugIdx].tweens);
+                           history[idx].tweenDatas.AddRange(XIVTweenGameObjects[xivTweenDebugIdx].tweenDatas);
                         }
                         else
                         {
