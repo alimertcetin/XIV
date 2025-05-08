@@ -72,6 +72,7 @@ namespace XIV.Core.TweenSystem.Drivers
             var easedTime = easingFunction.Invoke(0f, 1f, isPingPong ? timer.NormalizedTimePingPong : timer.NormalizedTime);
             
             // Thats how you should not solve your problems.
+            // TODO : Throws exception when object is destroyed
             try
             {
                 OnUpdate(easedTime);

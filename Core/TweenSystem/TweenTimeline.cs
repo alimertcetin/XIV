@@ -24,6 +24,7 @@ namespace XIV.Core.TweenSystem
         // public static readonly Func<float> fixedUnscaledDeltaTimeFunc;
         
         List<ITween> tweens = new List<ITween>(2);
+        public IReadOnlyCollection<ITween> Tweens => tweens.AsReadOnly();
         
         Func<float> dtFunc;
 

@@ -8,12 +8,54 @@ namespace XIV.Core.TweenSystem
     {
         class TweenHelperMono : MonoBehaviour
         {
+            
+#if UNITY_EDITOR
+            [System.Serializable]
+            public struct TweenD
+            {
+                public GameObject go;
+                public List<string> tweens;
+                public string time;
+            }
+            
+            public List<TweenD> XIVTweenGameObjects = new List<TweenD>();
+            public List<TweenD> history = new List<TweenD>();
+#endif
             void Update()
             {
                 int count = XIVTweenSystem.tweenTimelines.Count;
                 for (int i = count - 1; i >= 0; i--)
                 {
                     List<TweenTimeline> timelines = XIVTweenSystem.tweenTimelines[i];
+#if UNITY_EDITOR
+                    int GetIdx()
+                    {
+                        for (var idx = 0; idx < XIVTweenGameObjects.Count; idx++)
+                        {
+                            var tweenD = XIVTweenGameObjects[idx];
+                            if (tweenD.go.GetInstanceID() == instanceIDs[i]) return idx;
+                        }
+
+                        return -1;
+                    }
+
+                    var xivTweenDebugIdx = GetIdx();
+                    foreach (var tweenTimeline in timelines)
+                    {
+                        if (xivTweenDebugIdx != -1) continue;
+                        TweenD tweenD = new TweenD()
+                        {
+                            go = (GameObject)UnityEditor.EditorUtility.InstanceIDToObject(instanceIDs[i]),
+                            tweens = new List<string>(),
+                            time = System.DateTime.Now.ToString("hh:mm:ss:ffffff tt", System.Globalization.CultureInfo.InvariantCulture),
+                        };
+                        foreach (ITween t in tweenTimeline.Tweens)
+                        {
+                            tweenD.tweens.Add(t.GetType().ToString().Split('.')[^1]);
+                        }
+                        XIVTweenGameObjects.Add(tweenD);
+                    }
+#endif
                     TweenTimeline timeline = timelines[0];
                     timeline.Update();
                     if (timeline.IsDone())
@@ -25,6 +67,20 @@ namespace XIV.Core.TweenSystem
 
                     if (timelines.Count == 0)
                     {
+#if UNITY_EDITOR
+                        int idx = history.FindIndex((p) => p.go == XIVTweenGameObjects[xivTweenDebugIdx].go);
+                        if (idx != -1)
+                        {
+                           history[idx].tweens.AddRange(XIVTweenGameObjects[xivTweenDebugIdx].tweens);
+                        }
+                        else
+                        {
+                            history.Add(XIVTweenGameObjects[xivTweenDebugIdx]);
+                        }
+
+                        if (history.Count > 10) history.RemoveAt(10);
+                        XIVTweenGameObjects.RemoveAt(xivTweenDebugIdx);
+#endif
                         XIVTweenSystem.Remove(instanceIDs[i]);
                         timelines.Clear();
                         XIVPoolSystem.ReleaseItem(timelines);
