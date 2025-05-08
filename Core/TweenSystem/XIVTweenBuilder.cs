@@ -10,6 +10,7 @@ using XIV.Core.TweenSystem.RendererTweens;
 using XIV.Core.TweenSystem.TransformTweens;
 using XIV.Core.Utils;
 using XIV.Core.DataStructures;
+using XIV.PoolSystem;
 
 namespace XIV.Core.TweenSystem
 {
@@ -224,7 +225,7 @@ namespace XIV.Core.TweenSystem
         /// </summary>
         static T Get<T>() where T : ITween
         {
-            return XIVTweenSystem.GetTween<T>();
+            return XIVPoolSystem.GetItem<T>();
         }
 
         void Initialize(Component component)

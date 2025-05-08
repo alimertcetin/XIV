@@ -1,9 +1,6 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
-using XIV.Core.Collections;
 using XIV.PoolSystem;
-using Object = UnityEngine.Object;
 
 namespace XIV.Core.TweenSystem
 {
@@ -23,14 +20,14 @@ namespace XIV.Core.TweenSystem
                     {
                         timelines.RemoveAt(0);
                         timeline.Clear();
-                        XIVTweenSystem.ReleaseItem(timeline);
+                        XIVPoolSystem.ReleaseItem(timeline);
                     }
 
                     if (timelines.Count == 0)
                     {
-                        XIVTweenSystem.Remove(instanceIDs[i], i);
+                        XIVTweenSystem.Remove(instanceIDs[i]);
                         timelines.Clear();
-                        XIVTweenSystem.ReleaseItem(timelines);
+                        XIVPoolSystem.ReleaseItem(timelines);
                     }
                 }
             }
@@ -44,17 +41,11 @@ namespace XIV.Core.TweenSystem
 
         static readonly List<List<TweenTimeline>> tweenTimelines = new(8);
         static readonly List<int> instanceIDs = new(8);
-        /// <summary>
-        /// (int, int) = (instanceID, index in <see cref="instanceIDs"/>)
-        /// Note that indexer in both InstanceIDs and <see cref="tweenTimelines"/> are targeting to the same object.
-        /// </summary>
-        static readonly Dictionary<int, int> instanceIDLookup = new(8);
         static TweenHelperMono tweenHelperMono;
 
-        internal static T GetTween<T>() where T : ITween => GetItem<T>();
         internal static TweenTimeline GetTimeline()
         {
-            var timeLine = GetItem<TweenTimeline>();
+            var timeLine = XIVPoolSystem.GetItem<TweenTimeline>();
             timeLine.SetDeltaTimeFunc(TweenTimeline.defaulDeltaTimeFunc);
             return timeLine;
         }
@@ -80,7 +71,7 @@ namespace XIV.Core.TweenSystem
 
         internal static void ReleaseTween(ITween tween)
         {
-            ReleaseItem(tween);
+            XIVPoolSystem.ReleaseItem(tween);
         }
 
         internal static void AddTween(int instanceID, TweenTimeline timeline)
@@ -96,61 +87,57 @@ namespace XIV.Core.TweenSystem
 
         internal static void CancelTween(int instanceID, bool forceComplete = true)
         {
-            if (instanceIDLookup.TryGetValue(instanceID, out int index) == false) return;
+            var index = instanceIDs.IndexOf(instanceID);
+            if (index == -1) return;
 
             var timelines = tweenTimelines[index];
             int timelineCount = timelines.Count;
             for (int i = 0; i < timelineCount; i++)
             {
                 TweenTimeline timeline = timelines[i];
-                if (forceComplete) timeline.ForceComplete();
-                else timeline.Cancel();
-                
-                timeline.Clear();
+                if (forceComplete == false)
+                {
+                    timeline.Cancel();
+                    timeline.Clear();
+                    continue;
+                }
+
+                timeline.ForceComplete();
+                // timeline.Clear();
             }
             
             timelines.Clear();
-            ReleaseItem(timelines);
-            Remove(instanceID, index);
+            XIVPoolSystem.ReleaseItem(timelines);
+            Remove(instanceID);
         }
 
         internal static bool HasTween(int instanceID)
         {
-            return instanceIDLookup.ContainsKey(instanceID);
+            return instanceIDs.IndexOf(instanceID) != -1;
         }
 
         static List<TweenTimeline> GetTweenTimelines(int instanceID)
         {
-            if (instanceIDLookup.TryGetValue(instanceID, out int index))
+            var index = instanceIDs.IndexOf(instanceID);
+            if (index != -1)
             {
                 return tweenTimelines[index];
             }
 
-            var timelines = GetItem<List<TweenTimeline>>();
+            var timelines = XIVPoolSystem.GetItem<List<TweenTimeline>>();
             Add(instanceID, timelines);
             return timelines;
         }
 
-        static T GetItem<T>()
-        {
-            return XIVPoolSystem.GetItem<T>();
-        }
-
-        static void ReleaseItem<T>(T item)
-        {
-            XIVPoolSystem.ReleaseItem(item);
-        }
-
         static void Add(int instanceID, List<TweenTimeline> timelines)
         {
-            instanceIDLookup.Add(instanceID, instanceIDs.Count);
             instanceIDs.Add(instanceID);
             tweenTimelines.Add(timelines);
         }
 
-        static void Remove(int instanceID, int index)
+        static void Remove(int instanceID)
         {
-            instanceIDLookup.Remove(instanceID);
+            var index = instanceIDs.IndexOf(instanceID);
             tweenTimelines.RemoveAt(index);
             instanceIDs.RemoveAt(index);
         }
@@ -158,7 +145,6 @@ namespace XIV.Core.TweenSystem
         static void Clear()
         {
             instanceIDs.Clear();
-            instanceIDLookup.Clear();
             tweenTimelines.Clear();
         }
     }
