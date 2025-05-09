@@ -178,45 +178,45 @@ namespace XIV.Core.TweenSystem
         // Image
         public XIVTweenBuilder ImageFill(float from, float to, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
         {
-            if (TryGetComponent<Image>(out var image) == false) return CastError(typeof(Image));
+            if (TryGetComponent<Image>(out var image) == false) CastError(typeof(Image));
             return AddTween(Get<ImageFillTween>().Set(image, from, to, duration, easingFunc, isPingPong, loopCount));
         }
 
         public XIVTweenBuilder ImageColor(Color from, Color to, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
         {
-            if (TryGetComponent<Image>(out var image) == false) return CastError(typeof(Image));
+            if (TryGetComponent<Image>(out var image) == false) CastError(typeof(Image));
             return AddTween(Get<ImageColorTween>().Set(image, from, to, duration, easingFunc, isPingPong, loopCount));
         }
 
         public XIVTweenBuilder ImageAlpha(float from, float to, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
         {
-            if (TryGetComponent<Image>(out var image) == false) return CastError(typeof(Image));
+            if (TryGetComponent<Image>(out var image) == false) CastError(typeof(Image));
             return AddTween(Get<ImageAlphaTween>().Set(image, from, to, duration, easingFunc, isPingPong, loopCount));
         }
         
         // RectTransform
         public XIVTweenBuilder RectTransformMove(Vector2 from, Vector2 to, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
         {
-            if (TryGetComponent<RectTransform>(out var rectTransform) == false) return CastError(typeof(RectTransform));
+            if (TryGetComponent<RectTransform>(out var rectTransform) == false) CastError(typeof(RectTransform));
             return AddTween(Get<RectTransformMoveTween>().Set(rectTransform, from, to, duration, easingFunc, isPingPong, loopCount));
         }
 
         public XIVTweenBuilder ImageColorCurve(XIVMemory<Color> colors, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
         {
-            if (TryGetComponent<Image>(out var image) == false) return CastError(typeof(Image));
+            if (TryGetComponent<Image>(out var image) == false) CastError(typeof(Image));
             return AddTween(Get<ImageColorCurveTween>().Set(image, colors, duration, easingFunc, isPingPong, loopCount));
         }
         
         // Renderer
         public XIVTweenBuilder RendererColor(Color from, Color to, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
         {
-            if (TryGetComponent<Renderer>(out var renderer) == false) return CastError(typeof(Renderer));
+            if (TryGetComponent<Renderer>(out var renderer) == false) CastError(typeof(Renderer));
             return AddTween(Get<RendererColorTween>().Set(renderer, from, to, duration, easingFunc, isPingPong, loopCount));
         }
         
         public XIVTweenBuilder RendererColorCurve(XIVMemory<Color> colors, float duration, EasingFunction.Function easingFunc, bool isPingPong = false, int loopCount = 0)
         {
-            if (TryGetComponent<Renderer>(out var renderer) == false) return CastError(typeof(Renderer));
+            if (TryGetComponent<Renderer>(out var renderer) == false) CastError(typeof(Renderer));
             return AddTween(Get<RendererColorCurveTween>().Set(renderer, colors, duration, easingFunc, isPingPong, loopCount));
         }
         
@@ -250,15 +250,9 @@ namespace XIV.Core.TweenSystem
             return comp != default;
         }
 
-        XIVTweenBuilder CastError(Type type)
+        void CastError(Type type)
         {
-            return LogError("Cannot cast " + component.GetType() + " to " + type);
-        }
-
-        XIVTweenBuilder LogError(string error)
-        {
-            Debug.LogError(error);
-            return this;
+            throw new InvalidCastException("Cannot cast " + component.GetType() + " to " + type);
         }
     }
 }
