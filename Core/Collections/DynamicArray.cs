@@ -147,13 +147,24 @@ namespace XIV.Core.Collections
 
         public void Insert(int index, ref T item)
         {
-            this.Add();
-            for (int i = Count - 1; i >= index; i--)
+            if (index < 0 || index > Count)
+                throw new ArgumentOutOfRangeException(nameof(index));
+
+            // Ensure capacity
+            if (Count >= values.Length)
             {
-                values[i] = values[i - 1];
+                Array.Resize(ref values, values.Length * 2);
             }
-            
+
+            // Shift elements to the right to make space for the new item
+            if (index < Count)
+            {
+                Array.Copy(values, index, values, index + 1, Count - index);
+            }
+
             values[index] = item;
+            Count++;
+        }
 
         public T[] ToArray()
         {
