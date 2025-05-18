@@ -56,7 +56,7 @@ namespace XIV.Core.Collections
 
         public void RemoveAt(int index)
         {
-            if (index < 0) return;
+            if (index < 0 || index >= Count) throw new IndexOutOfRangeException();
             
             for (int i = index; i < Count - 1; i++)
             {
