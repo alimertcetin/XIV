@@ -154,6 +154,16 @@ namespace XIV.Core.Collections
             }
             
             values[index] = item;
+
+        public T[] ToArray()
+        {
+            if (Count == 0) return Array.Empty<T>();
+            T[] arr = new T[Count];
+            for (int i = 0; i < Count; i++)
+            {
+                arr[i] = values[i];
+            }
+            return arr;
         }
 
         /// <summary>
