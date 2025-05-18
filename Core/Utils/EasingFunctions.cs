@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿using XIV.Core.XIVMath;
 
 namespace XIV.Core.Utils
 {
@@ -298,13 +298,13 @@ namespace XIV.Core.Utils
 
         public static float Linear(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, value);
+            return XIVMathf.Lerp(start, end, value);
         }
 
         public static float Spring(float start, float end, float value)
         {
-            value = Mathf.Clamp01(value);
-            value = (Mathf.Sin(value * Mathf.PI * (0.2f + 2.5f * value * value * value)) * Mathf.Pow(1f - value, 2.2f) + value) * (1f + (1.2f * (1f - value)));
+            value = XIVMathf.Clamp01(value);
+            value = (XIVMathf.Sin(value * XIVMathf.PI * (0.2f + 2.5f * value * value * value)) * XIVMathf.Pow(1f - value, 2.2f) + value) * (1f + (1.2f * (1f - value)));
             return start + (end - start) * value;
         }
 
@@ -398,62 +398,62 @@ namespace XIV.Core.Utils
         public static float EaseInSine(float start, float end, float value)
         {
             end -= start;
-            return -end * Mathf.Cos(value * (Mathf.PI * 0.5f)) + end + start;
+            return -end * XIVMathf.Cos(value * (XIVMathf.PI * 0.5f)) + end + start;
         }
 
         public static float EaseOutSine(float start, float end, float value)
         {
             end -= start;
-            return end * Mathf.Sin(value * (Mathf.PI * 0.5f)) + start;
+            return end * XIVMathf.Sin(value * (XIVMathf.PI * 0.5f)) + start;
         }
 
         public static float EaseInOutSine(float start, float end, float value)
         {
             end -= start;
-            return -end * 0.5f * (Mathf.Cos(Mathf.PI * value) - 1) + start;
+            return -end * 0.5f * (XIVMathf.Cos(XIVMathf.PI * value) - 1) + start;
         }
 
         public static float EaseInExpo(float start, float end, float value)
         {
             end -= start;
-            return end * Mathf.Pow(2, 10 * (value - 1)) + start;
+            return end * XIVMathf.Pow(2, 10 * (value - 1)) + start;
         }
 
         public static float EaseOutExpo(float start, float end, float value)
         {
             end -= start;
-            return end * (-Mathf.Pow(2, -10 * value) + 1) + start;
+            return end * (-XIVMathf.Pow(2, -10 * value) + 1) + start;
         }
 
         public static float EaseInOutExpo(float start, float end, float value)
         {
             value /= .5f;
             end -= start;
-            if (value < 1) return end * 0.5f * Mathf.Pow(2, 10 * (value - 1)) + start;
+            if (value < 1) return end * 0.5f * XIVMathf.Pow(2, 10 * (value - 1)) + start;
             value--;
-            return end * 0.5f * (-Mathf.Pow(2, -10 * value) + 2) + start;
+            return end * 0.5f * (-XIVMathf.Pow(2, -10 * value) + 2) + start;
         }
 
         public static float EaseInCirc(float start, float end, float value)
         {
             end -= start;
-            return -end * (Mathf.Sqrt(1 - value * value) - 1) + start;
+            return -end * (XIVMathf.Sqrt(1 - value * value) - 1) + start;
         }
 
         public static float EaseOutCirc(float start, float end, float value)
         {
             value--;
             end -= start;
-            return end * Mathf.Sqrt(1 - value * value) + start;
+            return end * XIVMathf.Sqrt(1 - value * value) + start;
         }
 
         public static float EaseInOutCirc(float start, float end, float value)
         {
             value /= .5f;
             end -= start;
-            if (value < 1) return -end * 0.5f * (Mathf.Sqrt(1 - value * value) - 1) + start;
+            if (value < 1) return -end * 0.5f * (XIVMathf.Sqrt(1 - value * value) - 1) + start;
             value -= 2;
-            return end * 0.5f * (Mathf.Sqrt(1 - value * value) + 1) + start;
+            return end * 0.5f * (XIVMathf.Sqrt(1 - value * value) + 1) + start;
         }
 
         public static float EaseInBounce(float start, float end, float value)
@@ -540,17 +540,17 @@ namespace XIV.Core.Utils
 
             if ((value /= d) == 1) return start + end;
 
-            if (a == 0f || a < Mathf.Abs(end))
+            if (a == 0f || a < XIVMathf.Abs(end))
             {
                 a = end;
                 s = p / 4;
             }
             else
             {
-                s = p / (2 * Mathf.PI) * Mathf.Asin(end / a);
+                s = p / (2 * XIVMathf.PI) * XIVMathf.Asin(end / a);
             }
 
-            return -(a * Mathf.Pow(2, 10 * (value -= 1)) * Mathf.Sin((value * d - s) * (2 * Mathf.PI) / p)) + start;
+            return -(a * XIVMathf.Pow(2, 10 * (value -= 1)) * XIVMathf.Sin((value * d - s) * (2 * XIVMathf.PI) / p)) + start;
         }
 
         public static float EaseOutElastic(float start, float end, float value)
@@ -566,17 +566,17 @@ namespace XIV.Core.Utils
 
             if ((value /= d) == 1) return start + end;
 
-            if (a == 0f || a < Mathf.Abs(end))
+            if (a == 0f || a < XIVMathf.Abs(end))
             {
                 a = end;
                 s = p * 0.25f;
             }
             else
             {
-                s = p / (2 * Mathf.PI) * Mathf.Asin(end / a);
+                s = p / (2 * XIVMathf.PI) * XIVMathf.Asin(end / a);
             }
 
-            return (a * Mathf.Pow(2, -10 * value) * Mathf.Sin((value * d - s) * (2 * Mathf.PI) / p) + end + start);
+            return (a * XIVMathf.Pow(2, -10 * value) * XIVMathf.Sin((value * d - s) * (2 * XIVMathf.PI) / p) + end + start);
         }
 
         public static float EaseInOutElastic(float start, float end, float value)
@@ -592,120 +592,120 @@ namespace XIV.Core.Utils
 
             if ((value /= d * 0.5f) == 2) return start + end;
 
-            if (a == 0f || a < Mathf.Abs(end))
+            if (a == 0f || a < XIVMathf.Abs(end))
             {
                 a = end;
                 s = p / 4;
             }
             else
             {
-                s = p / (2 * Mathf.PI) * Mathf.Asin(end / a);
+                s = p / (2 * XIVMathf.PI) * XIVMathf.Asin(end / a);
             }
 
-            if (value < 1) return -0.5f * (a * Mathf.Pow(2, 10 * (value -= 1)) * Mathf.Sin((value * d - s) * (2 * Mathf.PI) / p)) + start;
-            return a * Mathf.Pow(2, -10 * (value -= 1)) * Mathf.Sin((value * d - s) * (2 * Mathf.PI) / p) * 0.5f + end + start;
+            if (value < 1) return -0.5f * (a * XIVMathf.Pow(2, 10 * (value -= 1)) * XIVMathf.Sin((value * d - s) * (2 * XIVMathf.PI) / p)) + start;
+            return a * XIVMathf.Pow(2, -10 * (value -= 1)) * XIVMathf.Sin((value * d - s) * (2 * XIVMathf.PI) / p) * 0.5f + end + start;
         }
         
         public static float SmoothStart1(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStart1(value));
+            return XIVMathf.Lerp(start, end, SmoothStart1(value));
         }
 
         public static float SmoothStart2(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStart2(value));
+            return XIVMathf.Lerp(start, end, SmoothStart2(value));
         }
 
         public static float SmoothStart3(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStart3(value));
+            return XIVMathf.Lerp(start, end, SmoothStart3(value));
         }
 
         public static float SmoothStart4(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStart4(value));
+            return XIVMathf.Lerp(start, end, SmoothStart4(value));
         }
 
         public static float SmoothStart5(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStart5(value));
+            return XIVMathf.Lerp(start, end, SmoothStart5(value));
         }
 
         public static float SmoothStart6(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStart6(value));
+            return XIVMathf.Lerp(start, end, SmoothStart6(value));
         }
 
         public static float SmoothStop1(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStop1(value));
+            return XIVMathf.Lerp(start, end, SmoothStop1(value));
         }
 
         public static float SmoothStop2(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStop2(value));
+            return XIVMathf.Lerp(start, end, SmoothStop2(value));
         }
 
         public static float SmoothStop3(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStop3(value));
+            return XIVMathf.Lerp(start, end, SmoothStop3(value));
         }
 
         public static float SmoothStop4(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStop4(value));
+            return XIVMathf.Lerp(start, end, SmoothStop4(value));
         }
 
         public static float SmoothStop5(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStop5(value));
+            return XIVMathf.Lerp(start, end, SmoothStop5(value));
         }
 
         public static float SmoothStop6(float start, float end, float value)
         {
-            return Mathf.Lerp(start, end, SmoothStop6(value));
+            return XIVMathf.Lerp(start, end, SmoothStop6(value));
         }
 
         public static float SmoothStartAndStop1(float start, float end, float value)
         {
             float smoothStart = SmoothStart1(value);
             float smoothStop = SmoothStop1(value);
-            return Mathf.Lerp(start, end, Mathf.Lerp(smoothStart, smoothStop, value));
+            return XIVMathf.Lerp(start, end, XIVMathf.Lerp(smoothStart, smoothStop, value));
         }
 
         public static float SmoothStartAndStop2(float start, float end, float value)
         {
             float smoothStart = SmoothStart2(value);
             float smoothStop = SmoothStop2(value);
-            return Mathf.Lerp(start, end, Mathf.Lerp(smoothStart, smoothStop, value));
+            return XIVMathf.Lerp(start, end, XIVMathf.Lerp(smoothStart, smoothStop, value));
         }
 
         public static float SmoothStartAndStop3(float start, float end, float value)
         {
             float smoothStart = SmoothStart3(value);
             float smoothStop = SmoothStop3(value);
-            return Mathf.Lerp(start, end, Mathf.Lerp(smoothStart, smoothStop, value));
+            return XIVMathf.Lerp(start, end, XIVMathf.Lerp(smoothStart, smoothStop, value));
         }
 
         public static float SmoothStartAndStop4(float start, float end, float value)
         {
             float smoothStart = SmoothStart4(value);
             float smoothStop = SmoothStop4(value);
-            return Mathf.Lerp(start, end, Mathf.Lerp(smoothStart, smoothStop, value));
+            return XIVMathf.Lerp(start, end, XIVMathf.Lerp(smoothStart, smoothStop, value));
         }
 
         public static float SmoothStartAndStop5(float start, float end, float value)
         {
             float smoothStart = SmoothStart5(value);
             float smoothStop = SmoothStop5(value);
-            return Mathf.Lerp(start, end, Mathf.Lerp(smoothStart, smoothStop, value));
+            return XIVMathf.Lerp(start, end, XIVMathf.Lerp(smoothStart, smoothStop, value));
         }
 
         public static float SmoothStartAndStop6(float start, float end, float value)
         {
             float smoothStart = SmoothStart6(value) * SmoothStart6(value);
             float smoothStop = SmoothStop6(value) * SmoothStop6(value);
-            return Mathf.Lerp(start, end, Mathf.Lerp(smoothStart, smoothStop, value));
+            return XIVMathf.Lerp(start, end, XIVMathf.Lerp(smoothStart, smoothStop, value));
         }
 
         //
@@ -831,29 +831,29 @@ namespace XIV.Core.Utils
 
         public static float EaseInSineD(float start, float end, float value)
         {
-            return (end - start) * 0.5f * Mathf.PI * Mathf.Sin(0.5f * Mathf.PI * value);
+            return (end - start) * 0.5f * XIVMathf.PI * XIVMathf.Sin(0.5f * XIVMathf.PI * value);
         }
 
         public static float EaseOutSineD(float start, float end, float value)
         {
             end -= start;
-            return (Mathf.PI * 0.5f) * end * Mathf.Cos(value * (Mathf.PI * 0.5f));
+            return (XIVMathf.PI * 0.5f) * end * XIVMathf.Cos(value * (XIVMathf.PI * 0.5f));
         }
 
         public static float EaseInOutSineD(float start, float end, float value)
         {
             end -= start;
-            return end * 0.5f * Mathf.PI * Mathf.Sin(Mathf.PI * value);
+            return end * 0.5f * XIVMathf.PI * XIVMathf.Sin(XIVMathf.PI * value);
         }
         public static float EaseInExpoD(float start, float end, float value)
         {
-            return (10f * NATURAL_LOG_OF_2 * (end - start) * Mathf.Pow(2f, 10f * (value - 1)));
+            return (10f * NATURAL_LOG_OF_2 * (end - start) * XIVMathf.Pow(2f, 10f * (value - 1)));
         }
 
         public static float EaseOutExpoD(float start, float end, float value)
         {
             end -= start;
-            return 5f * NATURAL_LOG_OF_2 * end * Mathf.Pow(2f, 1f - 10f * value);
+            return 5f * NATURAL_LOG_OF_2 * end * XIVMathf.Pow(2f, 1f - 10f * value);
         }
 
         public static float EaseInOutExpoD(float start, float end, float value)
@@ -863,24 +863,24 @@ namespace XIV.Core.Utils
 
             if (value < 1)
             {
-                return 5f * NATURAL_LOG_OF_2 * end * Mathf.Pow(2f, 10f * (value - 1));
+                return 5f * NATURAL_LOG_OF_2 * end * XIVMathf.Pow(2f, 10f * (value - 1));
             }
 
             value--;
 
-            return (5f * NATURAL_LOG_OF_2 * end) / (Mathf.Pow(2f, 10f * value));
+            return (5f * NATURAL_LOG_OF_2 * end) / (XIVMathf.Pow(2f, 10f * value));
         }
 
         public static float EaseInCircD(float start, float end, float value)
         {
-            return ((end - start) * value) / Mathf.Sqrt(1f - value * value);
+            return ((end - start) * value) / XIVMathf.Sqrt(1f - value * value);
         }
 
         public static float EaseOutCircD(float start, float end, float value)
         {
             value--;
             end -= start;
-            return (-end * value) / Mathf.Sqrt(1f - value * value);
+            return (-end * value) / XIVMathf.Sqrt(1f - value * value);
         }
 
         public static float EaseInOutCircD(float start, float end, float value)
@@ -890,12 +890,12 @@ namespace XIV.Core.Utils
 
             if (value < 1)
             {
-                return (end * value) / (2f * Mathf.Sqrt(1f - value * value));
+                return (end * value) / (2f * XIVMathf.Sqrt(1f - value * value));
             }
 
             value -= 2;
 
-            return (-end * value) / (2f * Mathf.Sqrt(1f - value * value));
+            return (-end * value) / (2f * XIVMathf.Sqrt(1f - value * value));
         }
 
         public static float EaseInBounceD(float start, float end, float value)
@@ -994,19 +994,19 @@ namespace XIV.Core.Utils
             float s;
             float a = 0;
 
-            if (a == 0f || a < Mathf.Abs(end))
+            if (a == 0f || a < XIVMathf.Abs(end))
             {
                 a = end;
                 s = p * 0.25f;
             }
             else
             {
-                s = p / (2 * Mathf.PI) * Mathf.Asin(end / a);
+                s = p / (2 * XIVMathf.PI) * XIVMathf.Asin(end / a);
             }
 
-            return (a * Mathf.PI * d * Mathf.Pow(2f, 1f - 10f * value) *
-                    Mathf.Cos((2f * Mathf.PI * (d * value - s)) / p)) / p - 5f * NATURAL_LOG_OF_2 * a *
-                Mathf.Pow(2f, 1f - 10f * value) * Mathf.Sin((2f * Mathf.PI * (d * value - s)) / p);
+            return (a * XIVMathf.PI * d * XIVMathf.Pow(2f, 1f - 10f * value) *
+                    XIVMathf.Cos((2f * XIVMathf.PI * (d * value - s)) / p)) / p - 5f * NATURAL_LOG_OF_2 * a *
+                XIVMathf.Pow(2f, 1f - 10f * value) * XIVMathf.Sin((2f * XIVMathf.PI * (d * value - s)) / p);
         }
 
         public static float EaseInOutElasticD(float start, float end, float value)
@@ -1018,42 +1018,42 @@ namespace XIV.Core.Utils
             float s;
             float a = 0;
 
-            if (a == 0f || a < Mathf.Abs(end))
+            if (a == 0f || a < XIVMathf.Abs(end))
             {
                 a = end;
                 s = p / 4;
             }
             else
             {
-                s = p / (2 * Mathf.PI) * Mathf.Asin(end / a);
+                s = p / (2 * XIVMathf.PI) * XIVMathf.Asin(end / a);
             }
 
             if (value < 1)
             {
                 value -= 1;
 
-                return -5f * NATURAL_LOG_OF_2 * a * Mathf.Pow(2f, 10f * value) * Mathf.Sin(2 * Mathf.PI * (d * value - 2f) / p) -
-                       a * Mathf.PI * d * Mathf.Pow(2f, 10f * value) * Mathf.Cos(2 * Mathf.PI * (d * value - s) / p) / p;
+                return -5f * NATURAL_LOG_OF_2 * a * XIVMathf.Pow(2f, 10f * value) * XIVMathf.Sin(2 * XIVMathf.PI * (d * value - 2f) / p) -
+                       a * XIVMathf.PI * d * XIVMathf.Pow(2f, 10f * value) * XIVMathf.Cos(2 * XIVMathf.PI * (d * value - s) / p) / p;
             }
 
             value -= 1;
 
-            return a * Mathf.PI * d * Mathf.Cos(2f * Mathf.PI * (d * value - s) / p) / (p * Mathf.Pow(2f, 10f * value)) -
-                   5f * NATURAL_LOG_OF_2 * a * Mathf.Sin(2f * Mathf.PI * (d * value - s) / p) / (Mathf.Pow(2f, 10f * value));
+            return a * XIVMathf.PI * d * XIVMathf.Cos(2f * XIVMathf.PI * (d * value - s) / p) / (p * XIVMathf.Pow(2f, 10f * value)) -
+                   5f * NATURAL_LOG_OF_2 * a * XIVMathf.Sin(2f * XIVMathf.PI * (d * value - s) / p) / (XIVMathf.Pow(2f, 10f * value));
         }
 
         public static float SpringD(float start, float end, float value)
         {
-            value = Mathf.Clamp01(value);
+            value = XIVMathf.Clamp01(value);
             end -= start;
 
             // Damn... Thanks http://www.derivative-calculator.net/
             // TODO: And it's a little bit wrong
-            return end * (6f * (1f - value) / 5f + 1f) * (-2.2f * Mathf.Pow(1f - value, 1.2f) *
-                       Mathf.Sin(Mathf.PI * value * (2.5f * value * value * value + 0.2f)) + Mathf.Pow(1f - value, 2.2f) *
-                       (Mathf.PI * (2.5f * value * value * value + 0.2f) + 7.5f * Mathf.PI * value * value * value) *
-                       Mathf.Cos(Mathf.PI * value * (2.5f * value * value * value + 0.2f)) + 1f) -
-                   6f * end * (Mathf.Pow(1 - value, 2.2f) * Mathf.Sin(Mathf.PI * value * (2.5f * value * value * value + 0.2f)) + value
+            return end * (6f * (1f - value) / 5f + 1f) * (-2.2f * XIVMathf.Pow(1f - value, 1.2f) *
+                       XIVMathf.Sin(XIVMathf.PI * value * (2.5f * value * value * value + 0.2f)) + XIVMathf.Pow(1f - value, 2.2f) *
+                       (XIVMathf.PI * (2.5f * value * value * value + 0.2f) + 7.5f * XIVMathf.PI * value * value * value) *
+                       XIVMathf.Cos(XIVMathf.PI * value * (2.5f * value * value * value + 0.2f)) + 1f) -
+                   6f * end * (XIVMathf.Pow(1 - value, 2.2f) * XIVMathf.Sin(XIVMathf.PI * value * (2.5f * value * value * value + 0.2f)) + value
                        / 5f);
 
         }
@@ -1171,8 +1171,7 @@ namespace XIV.Core.Utils
                 case Ease.EaseSmoothStartAndStop6:
                     return SmoothStartAndStop6;
                 default:
-                    Debug.LogError(easingFunction + " is not implemented");
-                    return Linear;
+                    throw new System.NotImplementedException(easingFunction + " is not implemented");
             }
         }
 

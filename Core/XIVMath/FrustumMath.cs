@@ -1,41 +1,30 @@
-using UnityEngine;
+using XIV.Core.DataStructures;
 
 namespace XIV.Core.XIVMath
 {
     // https://docs.unity3d.com/Manual/FrustumSizeAtDistance.html
     public static class FrustumMath
     {
-        public static Vector3 GetFrustum(float distance, float fieldOfView, float aspect)
+        public static Vec3 GetFrustum(float distance, float fieldOfView, float aspect)
         {
-            var frustumHeight = 2f * distance * Mathf.Tan(fieldOfView * 0.5f * Mathf.Deg2Rad);
+            var frustumHeight = 2f * distance * XIVMathf.Tan(fieldOfView * 0.5f * XIVMathf.Deg2Rad);
             var frustumWidth = frustumHeight * aspect;
-            return new Vector3(frustumWidth, frustumHeight, 1);
-        }
-
-        public static Vector3 GetFrustum(float distance)
-        {
-            var cam = Camera.main;
-            return GetFrustum(distance, cam.fieldOfView, cam.aspect);
-        }
-
-        public static Vector3 GetFrustum(Camera cam, float distance)
-        {
-            return GetFrustum(distance, cam.fieldOfView, cam.aspect);
+            return new Vec3(frustumWidth, frustumHeight, 1);
         }
 
         public static float GetFrustumDistance(float frustumHeight, float fieldOfView)
         {
-            return frustumHeight * 0.5f / Mathf.Tan(fieldOfView * 0.5f * Mathf.Deg2Rad);
+            return frustumHeight * 0.5f / XIVMathf.Tan(fieldOfView * 0.5f * XIVMathf.Deg2Rad);
         }
 
         public static float GetFrustumHeight(float distance, float fieldOfView)
         {
-            return 2f * distance * Mathf.Tan(fieldOfView * 0.5f * Mathf.Deg2Rad);
+            return 2f * distance * XIVMathf.Tan(fieldOfView * 0.5f * XIVMathf.Deg2Rad);
         }
 
         public static float GetFieldOfView(float frustumHeight, float distance)
         {
-            return 2f * Mathf.Atan(frustumHeight * 0.5f / distance) * Mathf.Rad2Deg;
+            return 2f * XIVMathf.Atan(frustumHeight * 0.5f / distance) * XIVMathf.Rad2Deg;
         }
     }
 }

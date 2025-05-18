@@ -1,11 +1,12 @@
-﻿using UnityEngine;
-
-namespace XIV.Core.Utils
+﻿namespace XIV.Core.Utils
 {
     [System.Serializable]
     public struct Timer
     {
-        [SerializeField] float duration;
+#if UNITY_ENGINE
+        [SerializeField]
+#endif
+        float duration;
         float timer;
         public float NormalizedTime => timer / duration;
         public float NormalizedTimePingPong => NormalizedTime > 0.5f ? (NormalizedTime - 0.5f) / 0.5f :

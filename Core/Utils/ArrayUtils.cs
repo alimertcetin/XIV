@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-namespace XIV.Core.Utils
+﻿namespace XIV.Core.Utils
 {
     public static class ArrayUtils
     {
@@ -15,10 +13,15 @@ namespace XIV.Core.Utils
             // return y * height + x; // column major
         }
         
-        public static Vector2Int Get2DIndex(int index, int width)
+        /// <summary>
+        /// Returns a tuple that has x in [0] and y in [1]
+        /// </summary>
+        /// <param name="index"></param>
+        /// <param name="width"></param>
+        /// <returns></returns>
+        public static (int, int) Get2DIndex(int index, int width)
         {
-            return new Vector2Int(index / width, index % width);
-            // return new Vector2Int(index / height, index % height);
+            return (index / width, index % width);
         }
     }
 }

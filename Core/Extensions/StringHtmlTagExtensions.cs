@@ -1,5 +1,5 @@
 ﻿using System.Text;
-using UnityEngine;
+using XIV.Core.DataStructures;
 
 namespace XIV.Core.Extensions
 {
@@ -62,9 +62,9 @@ namespace XIV.Core.Extensions
 			return Format(TAG_COLOR, colorHex, value);
         }
 
-        public static string ToColor(this string value, Color color)
+        public static string ToColor(this string value, XIVColor color)
         {
-	        return ToColor(value, "#" + ColorUtility.ToHtmlStringRGBA(color));
+	        return ToColor(value, "#" + XIVColorUtility.ToHtmlStringRGBA(color));
         }
 	}
 }

@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using UnityEngine;
+using XIV.Core.DataStructures;
 
 namespace XIV.Core.XIVMath
 {
@@ -14,7 +14,7 @@ namespace XIV.Core.XIVMath
 		/// <param name="points">Spline points</param>
 		/// <param name="t">Time between 0 and 1</param>
 		/// <returns>The point at giving <paramref name="t"/> time</returns>
-		public static Vector3 GetPoint(IList<Vector3> points, float t)
+		public static Vec3 GetPoint(IList<Vec3> points, float t)
 		{
 			int curveCount = (points.Count - 1) / 3;
 			int index;
@@ -25,7 +25,7 @@ namespace XIV.Core.XIVMath
 			}
 			else
 			{
-				t = Mathf.Clamp01(t) * curveCount;
+				t = XIVMathf.Clamp01(t) * curveCount;
 				index = (int)t;
 				t -= index;
 				index *= 3;
@@ -34,7 +34,7 @@ namespace XIV.Core.XIVMath
 			return BezierMath.GetPoint(points[index], points[index + 1], points[index + 2], points[index + 3], t);
 		}
 
-		public static float GetTime(Vector3 currentPosition, IList<Vector3> points, float tolarence = 0.01f)
+		public static float GetTime(Vec3 currentPosition, IList<Vec3> points, float tolarence = 0.01f)
 		{
 			int curveCount = (points.Count - 1) / 3;
 			float minDistance = float.MaxValue;
@@ -43,15 +43,15 @@ namespace XIV.Core.XIVMath
 			for (int i = 0; i < curveCount; i++)
 			{
 				int index = i * 3;
-				Vector3 p0 = points[index];
-				Vector3 p1 = points[index + 1];
-				Vector3 p2 = points[index + 2];
-				Vector3 p3 = points[index + 3];
+				Vec3 p0 = points[index];
+				Vec3 p1 = points[index + 1];
+				Vec3 p2 = points[index + 2];
+				Vec3 p3 = points[index + 3];
 
 				for (float j = 0f; j <= 1f; j += tolarence)
 				{
-					Vector3 curvePosition = BezierMath.GetPoint(p0, p1, p2, p3, j);
-					float distance = Vector3.Distance(curvePosition, currentPosition);
+					Vec3 curvePosition = BezierMath.GetPoint(p0, p1, p2, p3, j);
+					float distance = Vec3.Distance(curvePosition, currentPosition);
 					
 					if (distance < minDistance)
 					{
@@ -70,7 +70,7 @@ namespace XIV.Core.XIVMath
 		/// <param name="points">Spline points</param>
 		/// <param name="t">Time between 0 and 1</param>
 		/// <returns>The Velocity of spline at <paramref name="t"/> point</returns>
-		public static Vector3 GetVelocity(IList<Vector3> points, float t)
+		public static Vec3 GetVelocity(IList<Vec3> points, float t)
 		{
 			int curveCount = (points.Count - 1) / 3;
 			int index;
@@ -81,7 +81,7 @@ namespace XIV.Core.XIVMath
 			}
 			else
 			{
-				t = Mathf.Clamp01(t) * curveCount;
+				t = XIVMathf.Clamp01(t) * curveCount;
 				index = (int)t;
 				t -= index;
 				index *= 3;
@@ -114,7 +114,7 @@ namespace XIV.Core.XIVMath
 			return IndexOfControlPoint(index) != index;
 		}
 
-		public static float GetLength(IList<Vector3> points, int stepsPerCurve = 10)
+		public static float GetLength(IList<Vec3> points, int stepsPerCurve = 10)
 		{
 			int steps = stepsPerCurve * ((points.Count - 1) / 3);
 			var p0 = GetPoint(points, 0);

@@ -7,7 +7,9 @@ namespace XIV.PoolSystem
     {
         static Dictionary<Type, IPool> pools = new Dictionary<Type, IPool>();
 
+#if UNITY_EDITOR
         [UnityEngine.RuntimeInitializeOnLoadMethod]
+#endif
         static void Init()
         {
             pools.Clear();

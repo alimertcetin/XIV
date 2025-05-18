@@ -1,78 +1,78 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
+using XIV.Core.DataStructures;
+using XIV.Core.XIVMath;
 
 namespace XIV.Core.Extensions
 {
-    public static class VectorCollectionExtensions
+    public static class Vec3CollectionExtensions
 	{
 		/*
 		 * Created using OpenAI Assistant
 		 */
-		public static Vector2[] ToVector2<T>(this T vector3Collection) where T : IList<Vector3>
+		public static Vec2[] ToVec2<T>(this T Vec3Collection) where T : IList<Vec3>
 		{
-			Vector2[] vector2Array = new Vector2[vector3Collection.Count];
-			for (int i = 0; i < vector3Collection.Count; i++)
+			Vec2[] Vec2Array = new Vec2[Vec3Collection.Count];
+			for (int i = 0; i < Vec3Collection.Count; i++)
 			{
-				vector2Array[i] = new Vector2(vector3Collection[i].x, vector3Collection[i].y);
+				Vec2Array[i] = new Vec2(Vec3Collection[i].x, Vec3Collection[i].y);
 			}
-			return vector2Array;
+			return Vec2Array;
 		}
 		
 		/*
 		 * Created using OpenAI Assistant
 		 */
-		public static void ToVector2NonAlloc<T>(this T vector3Collection, Vector2[] vector2Array) where T : IList<Vector3>
+		public static void ToVec2NonAlloc<T>(this T Vec3Collection, Vec2[] Vec2Array) where T : IList<Vec3>
 		{
-			int count = Math.Min(vector2Array.Length, vector3Collection.Count);
+			int count = XIVMathInt.Min(Vec2Array.Length, Vec3Collection.Count);
 			for (int i = 0; i < count; i++)
 			{
-				vector2Array[i] = vector3Collection[i];
+				Vec2Array[i] = Vec3Collection[i];
 			}
 		}
 
 		/*
 		 * Created using OpenAI Assistant
 		 */
-		public static Vector3[] ToVector3<T>(this T vector2Collection) where T : IList<Vector2>
+		public static Vec3[] ToVec3<T>(this T Vec2Collection) where T : IList<Vec2>
 		{
-			Vector3[] vector3Array = new Vector3[vector2Collection.Count];
-			for (int i = 0; i < vector2Collection.Count; i++)
+			Vec3[] Vec3Array = new Vec3[Vec2Collection.Count];
+			for (int i = 0; i < Vec2Collection.Count; i++)
 			{
-				vector3Array[i] = new Vector3(vector2Collection[i].x, vector2Collection[i].y, 0);
+				Vec3Array[i] = new Vec3(Vec2Collection[i].x, Vec2Collection[i].y, 0);
 			}
-			return vector3Array;
+			return Vec3Array;
 		}
 		
 		/*
 		 * Created using OpenAI Assistant
 		 */
-		public static void ToVector3NonAlloc<T>(this T vector2Collection, Vector3[] vector3Array) where T : IList<Vector2>
+		public static void ToVec3NonAlloc<T>(this T Vec2Collection, Vec3[] Vec3Array) where T : IList<Vec2>
 		{
-			int count = Math.Min(vector3Array.Length, vector2Collection.Count);
+			int count = XIVMathInt.Min(Vec3Array.Length, Vec2Collection.Count);
 			for (int i = 0; i < count; i++)
 			{
-				vector3Array[i] = vector2Collection[i];
+				Vec3Array[i] = Vec2Collection[i];
 			}
 		}
 		
-		public static Vector3[] ToVector3XZPlane<T>(this T vector2Collection) where T : IList<Vector2>
+		public static Vec3[] ToVec3XZPlane<T>(this T Vec2Collection) where T : IList<Vec2>
 		{
-			Vector3[] vector3Array = new Vector3[vector2Collection.Count];
-			for (int i = 0; i < vector2Collection.Count; i++)
+			Vec3[] Vec3Array = new Vec3[Vec2Collection.Count];
+			for (int i = 0; i < Vec2Collection.Count; i++)
 			{
-				vector3Array[i] = new Vector3(vector2Collection[i].x, 0f, vector2Collection[i].y);
+				Vec3Array[i] = new Vec3(Vec2Collection[i].x, 0f, Vec2Collection[i].y);
 			}
-			return vector3Array;
+			return Vec3Array;
 		}
 		
-		public static void ToVector3XZPlaneNonAlloc<T>(this T vector2Collection, Vector3[] vector3Array) where T : IList<Vector2>
+		public static void ToVec3XZPlaneNonAlloc<T>(this T Vec2Collection, Vec3[] Vec3Array) where T : IList<Vec2>
 		{
-			int count = Math.Min(vector3Array.Length, vector2Collection.Count);
+			int count = XIVMathInt.Min(Vec3Array.Length, Vec2Collection.Count);
 			
 			for (int i = 0; i < count; i++)
 			{
-				vector3Array[i] = new Vector3(vector2Collection[i].x, 0f, vector2Collection[i].y);
+				Vec3Array[i] = new Vec3(Vec2Collection[i].x, 0f, Vec2Collection[i].y);
 			}
 		}
 	}
