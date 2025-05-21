@@ -11,6 +11,11 @@
 		{
 			return (a < b) ? a : b;
 		}
+		
+		public static int Max(int a, int b)
+		{
+			return (a > b) ? a : b;
+		}
 
         public static int Clamp(int val, int min, int max)
         {
