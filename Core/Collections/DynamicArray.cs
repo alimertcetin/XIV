@@ -145,7 +145,7 @@ namespace XIV.Core.Collections
             return new ReadOnlySpan<T>(values, 0, Count);
         }
 
-        public void Insert(int index, ref T item)
+        public ref T Insert(int index)
         {
             if (index < 0 || index > Count)
                 throw new ArgumentOutOfRangeException(nameof(index));
@@ -162,8 +162,8 @@ namespace XIV.Core.Collections
                 Array.Copy(values, index, values, index + 1, Count - index);
             }
 
-            values[index] = item;
             Count++;
+            return ref values[index];
         }
 
         public T[] ToArray()
@@ -180,7 +180,7 @@ namespace XIV.Core.Collections
         /// <summary>
         /// Use <see cref="Insert(int, ref T)"/> for performance reasons
         /// </summary>
-        void IList<T>.Insert(int index, T item) => Insert(index, ref item);
+        void IList<T>.Insert(int index, T item) => Insert(index) = item;
 
         public IEnumerator<T> GetEnumerator() => new Enumerator(this);
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
