@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace XIV.Core.Collections
 {
-    public class DynamicArray<T> : IList<T>
+    public class DynamicArray<T> : IList<T>, IList
     {
         T[] values;
         public ref T this[int index] => ref values[index];
@@ -16,6 +16,17 @@ namespace XIV.Core.Collections
             set => values[index] = value;
         }
         bool ICollection<T>.IsReadOnly => values.IsReadOnly;
+
+        bool IList.IsFixedSize => values.IsFixedSize;
+
+        bool IList.IsReadOnly => values.IsReadOnly;
+
+        bool ICollection.IsSynchronized => values.IsSynchronized;
+
+        object ICollection.SyncRoot => values.SyncRoot;
+
+        object IList.this[int index] { get => values[index]; set => values[index] = (T)value; }
+
         const int DEFAULT_SIZE = 8;
 
         public DynamicArray(int size)
@@ -184,6 +195,26 @@ namespace XIV.Core.Collections
 
         public IEnumerator<T> GetEnumerator() => new Enumerator(this);
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+
+        int IList.Add(object value)
+        {
+            this.Add() = (T)value;
+            return Count - 1;
+        }
+
+        bool IList.Contains(object value) => value is T item && Contains(ref item);
+
+        int IList.IndexOf(object value) => value is T item ? IndexOf(ref item) : -1;
+
+        void IList.Insert(int index, object value) => this.Insert(index) = (T)value;
+
+        void IList.Remove(object value)
+        {
+            if (value is T item) Remove(ref item);
+            else throw new ArgumentException("Value is not of type T.", nameof(value));
+        }
+
+        void ICollection.CopyTo(Array array, int index) => this.CopyTo((T[])array, index);
 
         struct Enumerator : IEnumerator<T>
         {
