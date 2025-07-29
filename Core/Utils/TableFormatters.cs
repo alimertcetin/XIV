@@ -2,12 +2,58 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.Json;
 using System.Xml.Linq;
 using XIV.Core.Extensions;
 
 namespace XIV.Core.Utils
 {
+    // TODO : Cleanup
+    public interface IJsonSerializer
+    {
+        string Serialize<T>(T obj, JsonOptions jsonOptions);
+        T Deserialize<T>(string json);
+    }
+
+    public struct JsonOptions
+    {
+        public bool Indented;
+    }
+    
+#if UNITY_5_3_OR_NEWER
+    public class NewtonsoftJsonSerializer : IJsonSerializer
+    {
+        public string Serialize<T>(T obj, JsonOptions jsonOptions)
+        {
+            return Newtonsoft.Json.JsonConvert.SerializeObject(obj, jsonOptions.Indented ? Newtonsoft.Json.Formatting.Indented : Newtonsoft.Json.Formatting.None);
+        }
+
+        public T Deserialize<T>(string json)
+        {
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(json);
+        }
+    }
+#endif
+
+#if !UNITY_5_3_OR_NEWER
+public class SystemTextJsonSerializer : IJsonSerializer
+{
+    public string Serialize<T>(T obj, JsonOptions jsonOptions)
+    {
+        var opt = new System.Text.Json.JsonSerializerOptions
+        {
+            WriteIndented = jsonOptions.Indented
+        };
+        return System.Text.Json.JsonSerializer.Serialize(obj, opt);
+    }
+
+    public T Deserialize<T>(string json)
+    {
+        return System.Text.Json.JsonSerializer.Deserialize<T>(json);
+    }
+}
+#endif
+
+    
     public static class TableFormatters
     {
         private static int[] ComputeColumnWidths(string[] headers, IReadOnlyList<Dictionary<string, string>> rows)
@@ -117,7 +163,7 @@ namespace XIV.Core.Utils
             return sb.ToString();
         }
 
-        public static string JSON(string[] headers, IReadOnlyList<Dictionary<string, string>> rows)
+        public static string JSON(string[] headers, IReadOnlyList<Dictionary<string, string>> rows, IJsonSerializer serializer)
         {
             var jsonObjects = new List<Dictionary<string, string>>();
 
@@ -131,7 +177,7 @@ namespace XIV.Core.Utils
                 jsonObjects.Add(obj);
             }
 
-            return JsonSerializer.Serialize(jsonObjects, new JsonSerializerOptions { WriteIndented = true });
+            return serializer.Serialize(jsonObjects, new JsonOptions { Indented = true });
         }
 
         public static string XML(string[] headers, IReadOnlyList<Dictionary<string, string>> rows)

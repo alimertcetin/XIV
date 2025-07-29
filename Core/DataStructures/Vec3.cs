@@ -35,11 +35,11 @@ namespace XIV.Core.DataStructures
             return new Vec2(v.x, v.y);
         }
 
-#if UNITY_ENGINE
+#if UNITY_ENGINE || UNITY_EDITOR
         // Implicit conversion from Vec3 to UnityEngine.Vector3
         public static implicit operator UnityEngine.Vector3(Vec3 v)
         {
-            return new Vector3(v.x, v.y, v.z);
+            return new UnityEngine.Vector3(v.x, v.y, v.z);
         }
 
         // Implicit conversion from UnityEngine.Vector3 to Vec3
