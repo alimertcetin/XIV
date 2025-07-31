@@ -57,11 +57,12 @@ namespace XIV.Core.DataStructures
 
         XIVMemory(IList<T> array, int start, int length, bool isReversed)
         {
+            if (array == null) throw new ArgumentNullException(nameof(array));
             this.array = array;
             this.start = start;
             this.length = length;
             this.isReversed = isReversed;
-            if (length < 0 || start + length - 1 >= array.Count)
+            if (length < 0 || start < 0 || start + length > array.Count)
             {
                 throw new System.ArgumentOutOfRangeException(nameof(length), length, "Specified argument was out of the range of valid values.");
             }
