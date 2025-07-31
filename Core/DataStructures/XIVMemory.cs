@@ -93,6 +93,28 @@ namespace XIV.Core.DataStructures
         {
             return isReversed ? start + length - 1 - index : start + index;
         }
+        
+        public Span<T> AsSpan()
+        {
+            if (array is T[] arr)
+            {
+                return isReversed
+                    ? throw new InvalidOperationException("Cannot get Span from reversed XIVMemory")
+                    : new Span<T>(arr, start, length);
+            }
+
+            return new Span<T>(ToArray(), start, length);
+        }
+        
+        public T[] ToArray()
+        {
+            T[] result = new T[length];
+            for (int i = 0; i < length; i++)
+            {
+                result[i] = this[i];
+            }
+            return result;
+        }
 
         public bool Equals(XIVMemory<T> other)
         {
