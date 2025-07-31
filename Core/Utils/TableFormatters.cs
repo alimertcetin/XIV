@@ -20,18 +20,18 @@ namespace XIV.Core.Utils
     }
     
 #if UNITY_5_3_OR_NEWER
-    public class NewtonsoftJsonSerializer : IJsonSerializer
-    {
-        public string Serialize<T>(T obj, JsonOptions jsonOptions)
-        {
-            return Newtonsoft.Json.JsonConvert.SerializeObject(obj, jsonOptions.Indented ? Newtonsoft.Json.Formatting.Indented : Newtonsoft.Json.Formatting.None);
-        }
-
-        public T Deserialize<T>(string json)
-        {
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(json);
-        }
-    }
+    // public class NewtonsoftJsonSerializer : IJsonSerializer
+    // {
+    //     public string Serialize<T>(T obj, JsonOptions jsonOptions)
+    //     {
+    //         return Newtonsoft.Json.JsonConvert.SerializeObject(obj, jsonOptions.Indented ? Newtonsoft.Json.Formatting.Indented : Newtonsoft.Json.Formatting.None);
+    //     }
+    //
+    //     public T Deserialize<T>(string json)
+    //     {
+    //         return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(json);
+    //     }
+    // }
 #endif
 
 #if !UNITY_5_3_OR_NEWER
