@@ -80,8 +80,6 @@ namespace XIV.Core.DataStructures
         {
         }
 
-        public void Reverse() => isReversed = !isReversed;
-
         public XIVMemory<T> Slice(int index, int length)
         {
             int arrIndexStart = GetArrayIndex(index);
