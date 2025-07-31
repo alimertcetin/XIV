@@ -1,0 +1,766 @@
+{
+  "source_base_path": "/home/runner/work/XIV/XIV/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Collections.DynamicArray-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Collections.DynamicArray-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Collections.DynamicArray<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Collections.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Collections.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Collections",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.DataStructures.Vec2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.DataStructures.Vec2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.DataStructures.Vec2",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.DataStructures.Vec3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.DataStructures.Vec3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.DataStructures.Vec3",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.DataStructures.Vec4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.DataStructures.Vec4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.DataStructures.Vec4",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.DataStructures.XIVColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.DataStructures.XIVColor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.DataStructures.XIVColor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.DataStructures.XIVMemory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.DataStructures.XIVMemory-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.DataStructures.XIVMemory<T>",
+      "Summary": "<p sourcefile=\"api/XIV.Core.DataStructures.XIVMemory-1.yml\" sourcestartlinenumber=\"1\">Alternative structure to the <xref href=\"System.Memory%601\" data-throw-if-not-resolved=\"false\"></xref>.\nAnd also can be used as replacement of <xref href=\"System.Span%601\" data-throw-if-not-resolved=\"false\"></xref>.\nYou should use Memory and Span whenever it is possible.\nThis struct is useful when you want constraints.\n<example></example></p>\n<pre><code class=\"lang-csharp\">public class MemExampleBase{T} { }\npublic class MemExample{T} : MemExampleBase{XIVMemory{T}}\n    // public class XIVMemExample{T} : MemExampleBase{Span{T}} // not possible\n    // public class XIVMemExample{T} : MemExampleBase{Memory{T}} // possible\n{\n    void Example()\n    {\n        XIVMemory{T} xivMem = new XIVMemory{T}(new T[4], 0, 4);\n        XIVMemory{T} xivSliced = xivMem.Slice(1, 2);\n        XIVMemory{T} xivReversed = xivMem.reversed;\n        xivMem.Reverse();\n        Memory{T} mem = new Memory{T}(new T[4], 0, 4);\n        Memory{T} memSliced = mem.Slice(1, 2);\n        // var memReversed = mem.reversed; // not possible\n        // mem.Reverse(); // not possible\n    }\n}</code></pre>\n\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.DataStructures.XIVMemoryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.DataStructures.XIVMemoryExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.DataStructures.XIVMemoryExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.DataStructures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.DataStructures.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.DataStructures",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Extensions.ArrayExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Extensions.ArrayExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Extensions.ArrayExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Extensions.IListExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Extensions.IListExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Extensions.IListExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Extensions.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Extensions.StringExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Extensions.StringExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Extensions.StringHtmlTagExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Extensions.StringHtmlTagExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Extensions.StringHtmlTagExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Extensions.Vec3CollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Extensions.Vec3CollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Extensions.Vec3CollectionExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Extensions.Vec3Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Extensions.Vec3Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Extensions.Vec3Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Extensions.XIVColorUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Extensions.XIVColorUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Extensions.XIVColorUtility",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.ArithmeticOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.ArithmeticOperation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils.ArithmeticOperation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.ArithmeticOperationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.ArithmeticOperationType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils.ArithmeticOperationType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.ArrayUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.ArrayUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils.ArrayUtils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.ClassGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.ClassGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils.ClassGenerator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.EasingFunction.Ease.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.EasingFunction.Ease.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils.EasingFunction.Ease",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.EasingFunction.Function.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.EasingFunction.Function.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils.EasingFunction.Function",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.EasingFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.EasingFunction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils.EasingFunction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.IJsonSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.IJsonSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils.IJsonSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.JsonOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.JsonOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils.JsonOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.SystemTextJsonSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.SystemTextJsonSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils.SystemTextJsonSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.TableBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.TableBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils.TableBuilder",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.TableFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.TableFormatter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils.TableFormatter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.TableFormatters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.TableFormatters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils.TableFormatters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.Timer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.Timer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils.Timer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.XIVMath.BezierMath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.XIVMath.BezierMath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.XIVMath.BezierMath",
+      "Summary": "<p sourcefile=\"api/XIV.Core.XIVMath.BezierMath.yml\" sourcestartlinenumber=\"1\">Cubic Bezier Math class</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.XIVMath.BezierMath4D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.XIVMath.BezierMath4D.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.XIVMath.BezierMath4D",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.XIVMath.CurveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.XIVMath.CurveData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.XIVMath.CurveData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.XIVMath.FrustumMath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.XIVMath.FrustumMath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.XIVMath.FrustumMath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.XIVMath.LineMath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.XIVMath.LineMath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.XIVMath.LineMath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.XIVMath.SplineMath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.XIVMath.SplineMath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.XIVMath.SplineMath",
+      "Summary": "<p sourcefile=\"api/XIV.Core.XIVMath.SplineMath.yml\" sourcestartlinenumber=\"1\">Spline Math for Cubic Bezier Curves</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.XIVMath.XIVMathInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.XIVMath.XIVMathInt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.XIVMath.XIVMathInt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.XIVMath.XIVMathf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.XIVMath.XIVMathf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.XIVMath.XIVMathf",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.XIVMath.XIVRandom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.XIVMath.XIVRandom.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.XIVMath.XIVRandom",
+      "Summary": "<p sourcefile=\"api/XIV.Core.XIVMath.XIVRandom.yml\" sourcestartlinenumber=\"1\">Random number generator similar to UnityEngine.Random</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.XIVMath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.XIVMath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.XIVMath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": null,
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.PoolSystem.IPool-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.PoolSystem.IPool-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.PoolSystem.IPool<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.PoolSystem.IPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.PoolSystem.IPool.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.PoolSystem.IPool",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.PoolSystem.XIVPool-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.PoolSystem.XIVPool-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.PoolSystem.XIVPool<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.PoolSystem.XIVPoolSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.PoolSystem.XIVPoolSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.PoolSystem.XIVPoolSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.PoolSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.PoolSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.PoolSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": null,
+      "Summary": null
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Redirection",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
