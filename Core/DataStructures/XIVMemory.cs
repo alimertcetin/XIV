@@ -82,12 +82,9 @@ namespace XIV.Core.DataStructures
 
         public XIVMemory<T> Slice(int index, int length)
         {
-            int arrIndexStart = GetArrayIndex(index);
-            int arrIndexEnd = GetArrayIndex(index + length - 1);
-            int diff = arrIndexEnd - arrIndexStart;
-            return diff < 0 ? 
-                new XIVMemory<T>(array, arrIndexEnd, length, isReversed) : 
-                new XIVMemory<T>(array, arrIndexStart, length, isReversed);
+            if (index < 0 || length < 0 || index + length > this.length) throw new ArgumentOutOfRangeException();
+            int newStart = GetArrayIndex(index);
+            return new XIVMemory<T>(array, newStart, length, isReversed);
         }
 
         public IList<T> GetUnderlyingArray() => array;
