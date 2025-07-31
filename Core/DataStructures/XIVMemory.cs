@@ -96,7 +96,7 @@ namespace XIV.Core.DataStructures
 
         public bool Equals(XIVMemory<T> other)
         {
-            return Equals(array, other.array) && start == other.start && length == other.length;
+            return Equals(array, other.array) && start == other.start && length == other.length && isReversed == other.isReversed;
         }
 
         public override bool Equals(object obj)
@@ -111,6 +111,7 @@ namespace XIV.Core.DataStructures
                 int hashCode = (array != null ? array.GetHashCode() : 0);
                 hashCode = (hashCode * 397) ^ start;
                 hashCode = (hashCode * 397) ^ length;
+                hashCode = (hashCode * 397) ^ isReversed.GetHashCode();
                 return hashCode;
             }
         }
