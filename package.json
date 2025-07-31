@@ -1,14 +1,14 @@
 {
-  "name": "xiv.filo.unitypackagetemplate",
+  "name": "xiv.filo.xiv",
   "version": "1.0.0",
-  "displayName": "Package Display Name",
-  "description": "Package Description.",
+  "displayName": "XIV Core",
+  "description": "XIV Core Module.",
   "unity": "",
   "unityRelease": "",
   "documentationUrl": "",
   "changelogUrl": "",
   "licensesUrl": "",
-  "dependencies": {},
+  "dependencies": { },
   "keywords": [
     "XIV",
     "Unity"
