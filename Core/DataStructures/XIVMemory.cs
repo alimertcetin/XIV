@@ -36,9 +36,13 @@ namespace XIV.Core.DataStructures
         {
             get
             {
-                if (index < 0) throw new System.IndexOutOfRangeException();
-                if (index >= Length) throw new System.IndexOutOfRangeException();
+                if (index < 0 || index >= Length) throw new IndexOutOfRangeException($"Index {index} is out of range for XIVMemory of length {Length}");
                 return array[GetArrayIndex(index)];
+            }
+            set
+            {
+                if (index < 0 || index >= Length) throw new IndexOutOfRangeException($"Index {index} is out of range for XIVMemory of length {Length}");
+                array[GetArrayIndex(index)] = value;
             }
         }
         
