@@ -1,6 +1,6 @@
 {
   "name": "xiv.filo.unitypackagetemplate",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "displayName": "Package Display Name",
   "description": "Package Description.",
   "unity": "",
@@ -8,7 +8,7 @@
   "documentationUrl": "",
   "changelogUrl": "",
   "licensesUrl": "",
-  "dependencies": { },
+  "dependencies": {},
   "keywords": [
     "XIV",
     "Unity"
