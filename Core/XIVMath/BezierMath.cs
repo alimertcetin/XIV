@@ -79,7 +79,7 @@ namespace XIV.Core.XIVMath
         /// <summary>
         /// Writes the points to the buffer starting from <paramref name="startIndex"/> and ends in <paramref name="startIndex"/> + 3
         /// </summary>
-        public static void CreateCurveNonAlloc(Vec3 start, Vec3 end, Vec3[] buffer, int startIndex, float midPointDistance = 1f)
+        public static void CreateCurveNonAlloc(Vec3 start, Vec3 end, XIVMemory<Vec3> buffer, int startIndex, float midPointDistance = 1f)
         {
             var mid = (end - start) * 0.5f;
             var dirToStart = start - mid;
