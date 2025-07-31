@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/alimertcetin/XIV/compare/v1.0.0...v1.0.1) (2025-07-31)
+
+
+### Bug Fixes
+
+* **package.json:** Change package name ([b32b85e](https://github.com/alimertcetin/XIV/commit/b32b85e113cb91e94230a982e379705f43ecfde2))
+
 # 1.0.0 (2025-07-31)
 
 
