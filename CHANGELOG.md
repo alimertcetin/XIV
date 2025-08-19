@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/alimertcetin/XIV/compare/v1.1.0...v1.2.0) (2025-08-19)
+
+
+### Features
+
+* ***.asmdef:** Remove *.asmdef files ([808a4a5](https://github.com/alimertcetin/XIV/commit/808a4a576f9d597e8e096b894ca32f9b335736c4))
+
 # [1.1.0](https://github.com/alimertcetin/XIV/compare/v1.0.1...v1.1.0) (2025-08-19)
 
 
