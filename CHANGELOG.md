@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/alimertcetin/XIV/compare/v1.0.1...v1.1.0) (2025-08-19)
+
+
+### Features
+
+* **.gitignore:** Untract .meta and asmdef files ([ccd230c](https://github.com/alimertcetin/XIV/commit/ccd230c11eb7be66379d7062db20f1299a42b98d))
+
 ## [1.0.1](https://github.com/alimertcetin/XIV/compare/v1.0.0...v1.0.1) (2025-07-31)
 
 
