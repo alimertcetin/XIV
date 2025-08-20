@@ -1,0 +1,23 @@
+{
+  "name": "xiv.filo.xiv",
+  "version": "1.2.2",
+  "displayName": "XIV Core",
+  "description": "XIV Core Module.",
+  "unity": "",
+  "unityRelease": "",
+  "documentationUrl": "",
+  "changelogUrl": "",
+  "licensesUrl": "",
+  "dependencies": {},
+  "keywords": [
+    "XIV",
+    "Unity"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Ali Mert Çetin",
+    "url": "https://alimertcetin.github.io/"
+  }
+}
