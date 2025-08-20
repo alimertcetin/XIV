@@ -2884,6 +2884,22 @@ references:
   isSpec: "True"
   fullName: XIV.Core.Utils.ArrayUtils.Get2DIndex
   nameWithType: ArrayUtils.Get2DIndex
+- uid: XIV.Core.Utils.ArrayUtils.Merge*
+  name: Merge
+  href: api/XIV.Core.Utils.ArrayUtils.html#XIV_Core_Utils_ArrayUtils_Merge_
+  commentId: Overload:XIV.Core.Utils.ArrayUtils.Merge
+  isSpec: "True"
+  fullName: XIV.Core.Utils.ArrayUtils.Merge
+  nameWithType: ArrayUtils.Merge
+- uid: XIV.Core.Utils.ArrayUtils.Merge``1(``0[],System.Int32,``0[],System.Int32,``0[])
+  name: Merge<T>(T[], int, T[], int, T[])
+  href: api/XIV.Core.Utils.ArrayUtils.html#XIV_Core_Utils_ArrayUtils_Merge__1___0___System_Int32___0___System_Int32___0___
+  commentId: M:XIV.Core.Utils.ArrayUtils.Merge``1(``0[],System.Int32,``0[],System.Int32,``0[])
+  name.vb: Merge(Of T)(T(), Integer, T(), Integer, T())
+  fullName: XIV.Core.Utils.ArrayUtils.Merge<T>(T[], int, T[], int, T[])
+  fullName.vb: XIV.Core.Utils.ArrayUtils.Merge(Of T)(T(), Integer, T(), Integer, T())
+  nameWithType: ArrayUtils.Merge<T>(T[], int, T[], int, T[])
+  nameWithType.vb: ArrayUtils.Merge(Of T)(T(), Integer, T(), Integer, T())
 - uid: XIV.Core.Utils.ClassGenerator
   name: ClassGenerator
   href: api/XIV.Core.Utils.ClassGenerator.html
