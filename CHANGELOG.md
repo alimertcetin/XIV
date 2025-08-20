@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/alimertcetin/XIV/compare/v1.2.1...v1.2.2) (2025-08-20)
+
+
+### Reverts
+
+* Revert "fix(.gitignore): Add *.asmdef" ([37392ac](https://github.com/alimertcetin/XIV/commit/37392acada3c6bd14723fb2628a01fcbfad8608c))
+
 ## [1.2.1](https://github.com/alimertcetin/XIV/compare/v1.2.0...v1.2.1) (2025-08-20)
 
 
