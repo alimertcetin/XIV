@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/alimertcetin/XIV/compare/v1.2.0...v1.2.1) (2025-08-20)
+
+
+### Bug Fixes
+
+* **.gitignore:** Add *.asmdef ([cf87ce6](https://github.com/alimertcetin/XIV/commit/cf87ce63773c9c9ef4cef3c5f042ae57f65ed732))
+
 # [1.2.0](https://github.com/alimertcetin/XIV/compare/v1.1.0...v1.2.0) (2025-08-19)
 
 
