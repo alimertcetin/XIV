@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/alimertcetin/XIV/compare/v1.2.2...v1.3.0) (2025-08-20)
+
+
+### Features
+
+* **ArrayUtils:** Add Merge ([dd7f656](https://github.com/alimertcetin/XIV/commit/dd7f656ea50aa2b8203573428d324348f0cf3631))
+
 ## [1.2.2](https://github.com/alimertcetin/XIV/compare/v1.2.1...v1.2.2) (2025-08-20)
 
 
