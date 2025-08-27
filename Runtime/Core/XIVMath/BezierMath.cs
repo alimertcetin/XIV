@@ -83,7 +83,7 @@ namespace XIV.Core.XIVMath
         
         public static Vec3[] CreateArc(Vec3 start, Vec3 end, Vec3 up, float midPointDistance = 1f)
         {
-            var mid = (end - start) * 0.5f;
+            var mid = start + (end - start) * 0.5f;
             var dirToStart = start - mid;
             var dirToEnd = end - mid;
             return new Vec3[]
