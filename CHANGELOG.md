@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/alimertcetin/XIV/compare/v1.3.0...v1.3.1) (2025-08-27)
+
+
+### Bug Fixes
+
+* **BezierMath.CreateArc:** Lerp correctly ([476a3c4](https://github.com/alimertcetin/XIV/commit/476a3c4efec410cd1d3a6bfb815df0596093ec69))
+
 # [1.3.0](https://github.com/alimertcetin/XIV/compare/v1.2.2...v1.3.0) (2025-08-20)
 
 
