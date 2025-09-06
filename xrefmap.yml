@@ -6645,15 +6645,6 @@ references:
   isSpec: "True"
   fullName: XIV.Core.XIVMath.XIVMathf.Sin
   nameWithType: XIVMathf.Sin
-- uid: XIV.Core.XIVMath.XIVMathf.Sqrt(System.Double)
-  name: Sqrt(double)
-  href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_Sqrt_System_Double_
-  commentId: M:XIV.Core.XIVMath.XIVMathf.Sqrt(System.Double)
-  name.vb: Sqrt(Double)
-  fullName: XIV.Core.XIVMath.XIVMathf.Sqrt(double)
-  fullName.vb: XIV.Core.XIVMath.XIVMathf.Sqrt(Double)
-  nameWithType: XIVMathf.Sqrt(double)
-  nameWithType.vb: XIVMathf.Sqrt(Double)
 - uid: XIV.Core.XIVMath.XIVMathf.Sqrt(System.Single)
   name: Sqrt(float)
   href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_Sqrt_System_Single_
@@ -6670,22 +6661,6 @@ references:
   isSpec: "True"
   fullName: XIV.Core.XIVMath.XIVMathf.Sqrt
   nameWithType: XIVMathf.Sqrt
-- uid: XIV.Core.XIVMath.XIVMathf.SqrtV2(System.Single)
-  name: SqrtV2(float)
-  href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_SqrtV2_System_Single_
-  commentId: M:XIV.Core.XIVMath.XIVMathf.SqrtV2(System.Single)
-  name.vb: SqrtV2(Single)
-  fullName: XIV.Core.XIVMath.XIVMathf.SqrtV2(float)
-  fullName.vb: XIV.Core.XIVMath.XIVMathf.SqrtV2(Single)
-  nameWithType: XIVMathf.SqrtV2(float)
-  nameWithType.vb: XIVMathf.SqrtV2(Single)
-- uid: XIV.Core.XIVMath.XIVMathf.SqrtV2*
-  name: SqrtV2
-  href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_SqrtV2_
-  commentId: Overload:XIV.Core.XIVMath.XIVMathf.SqrtV2
-  isSpec: "True"
-  fullName: XIV.Core.XIVMath.XIVMathf.SqrtV2
-  nameWithType: XIVMathf.SqrtV2
 - uid: XIV.Core.XIVMath.XIVMathf.TAU
   name: TAU
   href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_TAU
