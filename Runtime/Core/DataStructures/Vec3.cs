@@ -155,6 +155,11 @@ namespace XIV.Core.DataStructures
             }
         }
 
+        public override string ToString()
+        {
+            return $"x : {x}, y : {y}, z : {z}";
+        }
+
         public static float Distance(Vec3 a, Vec3 b)
         {
             float dx = a.x - b.x;
