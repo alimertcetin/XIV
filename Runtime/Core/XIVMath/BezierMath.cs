@@ -112,42 +112,68 @@ namespace XIV.Core.XIVMath
             buffer[startIndex + 3] = end;
         }
         
-        public static CurveData GetCurveData(XIVMemory<Vec3> points, float t)
+        public static CurveData GetCurveData(Vec3 p0, Vec3 p1, Vec3 p2, Vec3 p3, float t)
         {
-            if (points.Length != 4)
-            {
-                throw new System.InvalidOperationException("Bezier curve requires exactly 4 control points.");
-            }
-
             float u = 1 - t;
             float tt = t * t;
             float uu = u * u;
             float uuu = uu * u;
             float ttt = tt * t;
 
-            Vec3 p = uuu * points[0] + 3 * uu * t * points[1] + 3 * u * tt * points[2] + ttt * points[3];
+            // position
+            Vec3 p = uuu * p0 + 3 * uu * t * p1 + 3 * u * tt * p2 + ttt * p3;
 
-            // Calculate derivative for normal, right, and forward vectors
-            Vec3 p1 = 3 * uu * (points[1] - points[0]);
-            Vec3 p2 = 6 * u * t * (points[2] - points[1]);
-            Vec3 p3 = 3 * tt * (points[3] - points[2]);
+            // derivative (tangent)
+            Vec3 d1 = 3 * uu * (p1 - p0);
+            Vec3 d2 = 6 * u * t * (p2 - p1);
+            Vec3 d3 = 3 * tt * (p3 - p2);
+            Vec3 derivative = d1 + d2 + d3;
 
-            Vec3 derivative = p1 + p2 + p3;
+            // guard
+            Vec3 forward;
+            if (derivative.sqrMagnitude <= float.Epsilon)
+            {
+                // fallback forward if derivative is zero: choose direction from P0->P3
+                forward = (p3 - p0).normalized;
+                if (forward.sqrMagnitude <= float.Epsilon) forward = Vec3.forward; // final fallback
+            }
+            else
+            {
+                forward = derivative.normalized;
+            }
 
-            // Calculate normal, right, and forward vectors
-            Vec3 normal = Vec3.Cross(derivative, Vec3.up).normalized;
-            Vec3 right = Vec3.Cross(normal, derivative).normalized;
-            Vec3 forward = Vec3.Cross(right, normal).normalized;
+            // choose a stable up reference that is not parallel to forward
+            Vec3 worldUp = Vec3.up;
+            if (XIVMathf.Abs(Vec3.Dot(forward, worldUp)) > 0.999f)
+            {
+                // forward is nearly parallel to worldUp — pick another up
+                worldUp = Vec3.right;
+            }
 
-            CurveData curveData = new CurveData
+            Vec3 right = Vec3.Cross(worldUp, forward);
+            if (right.sqrMagnitude <= float.Epsilon)
+            {
+                // last-ditch fallback
+                right = Vec3.Cross(forward, Vec3.forward);
+                if (right.sqrMagnitude <= float.Epsilon) right = Vec3.right;
+            }
+            right = right.normalized;
+
+            Vec3 normal = Vec3.Cross(forward, right).normalized;
+
+            return new CurveData
             {
                 point = p,
                 normal = normal,
                 right = right,
                 forward = forward
             };
+        }
 
-            return curveData;
+        public static CurveData GetCurveData(XIVMemory<Vec3> curve, float t)
+        {
+            if (curve.Length != 4) throw new System.InvalidOperationException("Bezier curve requires exactly 4 control points.");
+            return GetCurveData(curve[0], curve[1], curve[2], curve[3], t);
         }
     }
 }
