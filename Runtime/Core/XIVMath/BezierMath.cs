@@ -39,7 +39,7 @@ namespace XIV.Core.XIVMath
             return 3f * oneMinusT * oneMinusT * (p1 - p0) + 6f * oneMinusT * t * (p2 - p1) + 3f * t * t * (p3 - p2);
         }
 
-        public static float GetTime(Vec3 currentPosition, Vec3 p0, Vec3 p1, Vec3 p2, Vec3 p3, float tolarence = TOLERANCE, int iteration = GET_TIME_ITERATION_COUNT)
+        public static float GetTime(Vec3 currentPosition, Vec3 p0, Vec3 p1, Vec3 p2, Vec3 p3, float tolerance = TOLERANCE, int iteration = GET_TIME_ITERATION_COUNT)
         {
             float currentGuess = 0.5f; // initial guess for t
             
@@ -50,7 +50,7 @@ namespace XIV.Core.XIVMath
                 float distanceToTarget = Vec3.Distance(currentPosition, pointOnCurve);
                 float slopeOfDistance = Vec3.Dot(currentPosition - pointOnCurve, tangentAtPoint);
 
-                if (distanceToTarget < tolarence)
+                if (distanceToTarget < tolerance)
                 {
                     break;
                 }
@@ -169,11 +169,12 @@ namespace XIV.Core.XIVMath
                 forward = forward
             };
         }
-
-        public static CurveData GetCurveData(XIVMemory<Vec3> curve, float t)
+        
+        public static CurveData GetCurveData(XIVMemory<Vec3> points, float t)
         {
-            if (curve.Length != 4) throw new System.InvalidOperationException("Bezier curve requires exactly 4 control points.");
-            return GetCurveData(curve[0], curve[1], curve[2], curve[3], t);
+            if (points.Length != 4) throw new System.InvalidOperationException("Bezier curve requires exactly 4 control points.");
+            return GetCurveData(points[0], points[1], points[2], points[3], t);
         }
+
     }
 }
