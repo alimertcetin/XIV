@@ -162,10 +162,10 @@ namespace XIV.Core.DataStructures
 
         public static float Distance(Vec3 a, Vec3 b)
         {
-            float dx = a.x - b.x;
-            float dy = a.y - b.y;
-            float dz = a.z - b.z;
-            return XIVMathf.Sqrt(dx * dx + dy * dy + dz * dz);
+            double dx = a.x - b.x;
+            double dy = a.y - b.y;
+            double dz = a.z - b.z;
+            return (float)Math.Sqrt(dx * dx + dy * dy + dz * dz);
         }
 
         public static bool operator ==(Vec3 left, Vec3 right)
