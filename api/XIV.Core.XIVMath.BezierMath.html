@@ -153,7 +153,7 @@ Class BezierMath  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="XIV_Core_XIVMath_BezierMath_CreateArc_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_System_Single_" data-uid="XIV.Core.XIVMath.BezierMath.CreateArc(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single)">
   CreateArc(Vec3, Vec3, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -193,7 +193,7 @@ Class BezierMath  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="XIV_Core_XIVMath_BezierMath_CreateArc_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_System_Single_" data-uid="XIV.Core.XIVMath.BezierMath.CreateArc(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single)">
   CreateArc(Vec3, Vec3, Vec3, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -231,11 +231,52 @@ Class BezierMath  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <a id="XIV_Core_XIVMath_BezierMath_CreateArcNonAlloc_" data-uid="XIV.Core.XIVMath.BezierMath.CreateArcNonAlloc*"></a>
+
+  <h3 id="XIV_Core_XIVMath_BezierMath_CreateArcNonAlloc_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Int32_System_Single_" data-uid="XIV.Core.XIVMath.BezierMath.CreateArcNonAlloc(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Int32,System.Single)">
+  CreateArcNonAlloc(Vec3, Vec3, Vec3, XIVMemory&lt;Vec3&gt;, int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateArcNonAlloc(Vec3 start, Vec3 end, Vec3 up, XIVMemory&lt;Vec3&gt; buffer, int startIndex, float midPointDistance = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>end</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>up</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>buffer</code> <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;<a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>midPointDistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="XIV_Core_XIVMath_BezierMath_CreateCurve_" data-uid="XIV.Core.XIVMath.BezierMath.CreateCurve*"></a>
 
   <h3 id="XIV_Core_XIVMath_BezierMath_CreateCurve_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_System_Single_" data-uid="XIV.Core.XIVMath.BezierMath.CreateCurve(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single)">
   CreateCurve(Vec3, Vec3, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -275,7 +316,7 @@ Class BezierMath  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="XIV_Core_XIVMath_BezierMath_CreateCurveNonAlloc_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Int32_System_Single_" data-uid="XIV.Core.XIVMath.BezierMath.CreateCurveNonAlloc(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Int32,System.Single)">
   CreateCurveNonAlloc(Vec3, Vec3, XIVMemory&lt;Vec3&gt;, int, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Writes the points to the buffer starting from <code class="paramref">startIndex</code> and ends in <code class="paramref">startIndex</code> + 3</p>
@@ -313,9 +354,53 @@ Class BezierMath  <a class="header-action link-secondary" title="View source" hr
 
   <a id="XIV_Core_XIVMath_BezierMath_GetCurveData_" data-uid="XIV.Core.XIVMath.BezierMath.GetCurveData*"></a>
 
+  <h3 id="XIV_Core_XIVMath_BezierMath_GetCurveData_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_System_Single_" data-uid="XIV.Core.XIVMath.BezierMath.GetCurveData(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single)">
+  GetCurveData(Vec3, Vec3, Vec3, Vec3, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurveData GetCurveData(Vec3 p0, Vec3 p1, Vec3 p2, Vec3 p3, float t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p0</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>p1</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>p2</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>p3</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV.Core.XIVMath.CurveData.html">CurveData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_XIVMath_BezierMath_GetCurveData_" data-uid="XIV.Core.XIVMath.BezierMath.GetCurveData*"></a>
+
   <h3 id="XIV_Core_XIVMath_BezierMath_GetCurveData_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Single_" data-uid="XIV.Core.XIVMath.BezierMath.GetCurveData(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)">
   GetCurveData(XIVMemory&lt;Vec3&gt;, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -353,7 +438,7 @@ Class BezierMath  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="XIV_Core_XIVMath_BezierMath_GetFirstDerivative_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_System_Single_" data-uid="XIV.Core.XIVMath.BezierMath.GetFirstDerivative(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single)">
   GetFirstDerivative(Vec3, Vec3, Vec3, Vec3, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the first derivative of bezier curve</p>
@@ -373,6 +458,46 @@ Class BezierMath  <a class="header-action link-secondary" title="View source" hr
     <dt><code>p2</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
     <dd></dd>
     <dt><code>p3</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Time between 0 and 1</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_XIVMath_BezierMath_GetFirstDerivative_" data-uid="XIV.Core.XIVMath.BezierMath.GetFirstDerivative*"></a>
+
+  <h3 id="XIV_Core_XIVMath_BezierMath_GetFirstDerivative_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Single_" data-uid="XIV.Core.XIVMath.BezierMath.GetFirstDerivative(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)">
+  GetFirstDerivative(XIVMemory&lt;Vec3&gt;, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the first derivative of bezier curve</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vec3 GetFirstDerivative(XIVMemory&lt;Vec3&gt; points, float t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>points</code> <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;<a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a>&gt;</dt>
     <dd></dd>
     <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd><p>Time between 0 and 1</p>
@@ -441,18 +566,56 @@ Class BezierMath  <a class="header-action link-secondary" title="View source" hr
 
 
 
-  <a id="XIV_Core_XIVMath_BezierMath_GetTime_" data-uid="XIV.Core.XIVMath.BezierMath.GetTime*"></a>
+  <a id="XIV_Core_XIVMath_BezierMath_GetPoint_" data-uid="XIV.Core.XIVMath.BezierMath.GetPoint*"></a>
 
-  <h3 id="XIV_Core_XIVMath_BezierMath_GetTime_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_System_Single_System_Int32_" data-uid="XIV.Core.XIVMath.BezierMath.GetTime(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single,System.Int32)">
-  GetTime(Vec3, Vec3, Vec3, Vec3, Vec3, float, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <h3 id="XIV_Core_XIVMath_BezierMath_GetPoint_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Single_" data-uid="XIV.Core.XIVMath.BezierMath.GetPoint(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)">
+  GetPoint(XIVMemory&lt;Vec3&gt;, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float GetTime(Vec3 currentPosition, Vec3 p0, Vec3 p1, Vec3 p2, Vec3 p3, float tolarence = 0.0001, int iteration = 10)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vec3 GetPoint(XIVMemory&lt;Vec3&gt; points, float t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>points</code> <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;<a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_XIVMath_BezierMath_GetTime_" data-uid="XIV.Core.XIVMath.BezierMath.GetTime*"></a>
+
+  <h3 id="XIV_Core_XIVMath_BezierMath_GetTime_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_System_Single_System_Int32_" data-uid="XIV.Core.XIVMath.BezierMath.GetTime(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single,System.Int32)">
+  GetTime(Vec3, Vec3, Vec3, Vec3, Vec3, float, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetTime(Vec3 currentPosition, Vec3 p0, Vec3 p1, Vec3 p2, Vec3 p3, float tolerance = 0.0001, int iteration = 10)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -467,7 +630,49 @@ Class BezierMath  <a class="header-action link-secondary" title="View source" hr
     <dd></dd>
     <dt><code>p3</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
     <dd></dd>
-    <dt><code>tolarence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dt><code>tolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>iteration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_XIVMath_BezierMath_GetTime_" data-uid="XIV.Core.XIVMath.BezierMath.GetTime*"></a>
+
+  <h3 id="XIV_Core_XIVMath_BezierMath_GetTime_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Single_System_Int32_" data-uid="XIV.Core.XIVMath.BezierMath.GetTime(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single,System.Int32)">
+  GetTime(Vec3, XIVMemory&lt;Vec3&gt;, float, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/BezierMath.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetTime(Vec3 currentPosition, XIVMemory&lt;Vec3&gt; points, float tolerance = 0.0001, int iteration = 10)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentPosition</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>points</code> <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;<a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
     <dt><code>iteration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>

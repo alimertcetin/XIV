@@ -153,7 +153,7 @@ Class SplineMath  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="XIV_Core_XIVMath_SplineMath_GetLength_System_Collections_Generic_IList_XIV_Core_DataStructures_Vec3__System_Int32_" data-uid="XIV.Core.XIVMath.SplineMath.GetLength(System.Collections.Generic.IList{XIV.Core.DataStructures.Vec3},System.Int32)">
   GetLength(IList&lt;Vec3&gt;, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/SplineMath.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/SplineMath.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -166,6 +166,44 @@ Class SplineMath  <a class="header-action link-secondary" title="View source" hr
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>points</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>stepsPerCurve</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_XIVMath_SplineMath_GetLength_" data-uid="XIV.Core.XIVMath.SplineMath.GetLength*"></a>
+
+  <h3 id="XIV_Core_XIVMath_SplineMath_GetLength_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Int32_" data-uid="XIV.Core.XIVMath.SplineMath.GetLength(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Int32)">
+  GetLength(XIVMemory&lt;Vec3&gt;, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/SplineMath.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetLength(XIVMemory&lt;Vec3&gt; points, int stepsPerCurve = 10)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>points</code> <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;<a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a>&gt;</dt>
     <dd></dd>
     <dt><code>stepsPerCurve</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
@@ -229,18 +267,60 @@ Class SplineMath  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <a id="XIV_Core_XIVMath_SplineMath_GetPoint_" data-uid="XIV.Core.XIVMath.SplineMath.GetPoint*"></a>
+
+  <h3 id="XIV_Core_XIVMath_SplineMath_GetPoint_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Single_" data-uid="XIV.Core.XIVMath.SplineMath.GetPoint(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)">
+  GetPoint(XIVMemory&lt;Vec3&gt;, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/SplineMath.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the point at giving <code class="paramref">t</code> time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vec3 GetPoint(XIVMemory&lt;Vec3&gt; points, float t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>points</code> <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;<a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a>&gt;</dt>
+    <dd><p>Spline points</p>
+</dd>
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Time between 0 and 1</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd><p>The point at giving <code class="paramref">t</code> time</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="XIV_Core_XIVMath_SplineMath_GetTime_" data-uid="XIV.Core.XIVMath.SplineMath.GetTime*"></a>
 
   <h3 id="XIV_Core_XIVMath_SplineMath_GetTime_XIV_Core_DataStructures_Vec3_System_Collections_Generic_IList_XIV_Core_DataStructures_Vec3__System_Single_" data-uid="XIV.Core.XIVMath.SplineMath.GetTime(XIV.Core.DataStructures.Vec3,System.Collections.Generic.IList{XIV.Core.DataStructures.Vec3},System.Single)">
   GetTime(Vec3, IList&lt;Vec3&gt;, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/SplineMath.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/SplineMath.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float GetTime(Vec3 currentPosition, IList&lt;Vec3&gt; points, float tolarence = 0.01)</code></pre>
+    <pre><code class="lang-csharp hljs">public static float GetTime(Vec3 currentPosition, IList&lt;Vec3&gt; points, float tolerance = 0.01)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -249,7 +329,47 @@ Class SplineMath  <a class="header-action link-secondary" title="View source" hr
     <dd></dd>
     <dt><code>points</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a>&gt;</dt>
     <dd></dd>
-    <dt><code>tolarence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dt><code>tolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_XIVMath_SplineMath_GetTime_" data-uid="XIV.Core.XIVMath.SplineMath.GetTime*"></a>
+
+  <h3 id="XIV_Core_XIVMath_SplineMath_GetTime_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Single_" data-uid="XIV.Core.XIVMath.SplineMath.GetTime(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)">
+  GetTime(Vec3, XIVMemory&lt;Vec3&gt;, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/SplineMath.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetTime(Vec3 currentPosition, XIVMemory&lt;Vec3&gt; points, float tolerance = 0.01)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentPosition</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>points</code> <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;<a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
   </dl>
 
@@ -273,7 +393,7 @@ Class SplineMath  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="XIV_Core_XIVMath_SplineMath_GetVelocity_System_Collections_Generic_IList_XIV_Core_DataStructures_Vec3__System_Single_" data-uid="XIV.Core.XIVMath.SplineMath.GetVelocity(System.Collections.Generic.IList{XIV.Core.DataStructures.Vec3},System.Single)">
   GetVelocity(IList&lt;Vec3&gt;, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/SplineMath.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/SplineMath.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the Velocity of spline at <code class="paramref">t</code> point</p>
@@ -311,11 +431,52 @@ Class SplineMath  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <a id="XIV_Core_XIVMath_SplineMath_GetVelocity_" data-uid="XIV.Core.XIVMath.SplineMath.GetVelocity*"></a>
+
+  <h3 id="XIV_Core_XIVMath_SplineMath_GetVelocity_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Single_" data-uid="XIV.Core.XIVMath.SplineMath.GetVelocity(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)">
+  GetVelocity(XIVMemory&lt;Vec3&gt;, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/SplineMath.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the Velocity of spline at <code class="paramref">t</code> point</p>
+<param name="points">Spline points
+<param name="t">Time between 0 and 1
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vec3 GetVelocity(XIVMemory&lt;Vec3&gt; points, float t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>points</code> <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;<a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="XIV_Core_XIVMath_SplineMath_IndexOfControlPoint_" data-uid="XIV.Core.XIVMath.SplineMath.IndexOfControlPoint*"></a>
 
   <h3 id="XIV_Core_XIVMath_SplineMath_IndexOfControlPoint_System_Int32_" data-uid="XIV.Core.XIVMath.SplineMath.IndexOfControlPoint(System.Int32)">
   IndexOfControlPoint(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/SplineMath.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/SplineMath.cs/#L178"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns control point index of anchor</p>
@@ -354,7 +515,7 @@ Class SplineMath  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="XIV_Core_XIVMath_SplineMath_IsAnchorPoint_System_Int32_" data-uid="XIV.Core.XIVMath.SplineMath.IsAnchorPoint(System.Int32)">
   IsAnchorPoint(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/SplineMath.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/XIVMath/SplineMath.cs/#L192"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns true if index is an anchor point, false otherwise</p>

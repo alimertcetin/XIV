@@ -905,6 +905,19 @@ references:
   isSpec: "True"
   fullName: XIV.Core.DataStructures.Vec3.Normalize
   nameWithType: Vec3.Normalize
+- uid: XIV.Core.DataStructures.Vec3.ToString
+  name: ToString()
+  href: api/XIV.Core.DataStructures.Vec3.html#XIV_Core_DataStructures_Vec3_ToString
+  commentId: M:XIV.Core.DataStructures.Vec3.ToString
+  fullName: XIV.Core.DataStructures.Vec3.ToString()
+  nameWithType: Vec3.ToString()
+- uid: XIV.Core.DataStructures.Vec3.ToString*
+  name: ToString
+  href: api/XIV.Core.DataStructures.Vec3.html#XIV_Core_DataStructures_Vec3_ToString_
+  commentId: Overload:XIV.Core.DataStructures.Vec3.ToString
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.Vec3.ToString
+  nameWithType: Vec3.ToString
 - uid: XIV.Core.DataStructures.Vec3.back
   name: back
   href: api/XIV.Core.DataStructures.Vec3.html#XIV_Core_DataStructures_Vec3_back
@@ -1112,6 +1125,25 @@ references:
   name: operator -
   href: api/XIV.Core.DataStructures.Vec3.html#XIV_Core_DataStructures_Vec3_op_Subtraction_
   commentId: Overload:XIV.Core.DataStructures.Vec3.op_Subtraction
+  isSpec: "True"
+  name.vb: '-'
+  fullName: XIV.Core.DataStructures.Vec3.operator -
+  fullName.vb: XIV.Core.DataStructures.Vec3.-
+  nameWithType: Vec3.operator -
+  nameWithType.vb: Vec3.-
+- uid: XIV.Core.DataStructures.Vec3.op_UnaryNegation(XIV.Core.DataStructures.Vec3)
+  name: operator -(Vec3)
+  href: api/XIV.Core.DataStructures.Vec3.html#XIV_Core_DataStructures_Vec3_op_UnaryNegation_XIV_Core_DataStructures_Vec3_
+  commentId: M:XIV.Core.DataStructures.Vec3.op_UnaryNegation(XIV.Core.DataStructures.Vec3)
+  name.vb: -(Vec3)
+  fullName: XIV.Core.DataStructures.Vec3.operator -(XIV.Core.DataStructures.Vec3)
+  fullName.vb: XIV.Core.DataStructures.Vec3.-(XIV.Core.DataStructures.Vec3)
+  nameWithType: Vec3.operator -(Vec3)
+  nameWithType.vb: Vec3.-(Vec3)
+- uid: XIV.Core.DataStructures.Vec3.op_UnaryNegation*
+  name: operator -
+  href: api/XIV.Core.DataStructures.Vec3.html#XIV_Core_DataStructures_Vec3_op_UnaryNegation_
+  commentId: Overload:XIV.Core.DataStructures.Vec3.op_UnaryNegation
   isSpec: "True"
   name.vb: '-'
   fullName: XIV.Core.DataStructures.Vec3.operator -
@@ -2115,24 +2147,24 @@ references:
   isSpec: "True"
   fullName: XIV.Core.Extensions.ArrayExtensions.Contains
   nameWithType: ArrayExtensions.Contains
-- uid: XIV.Core.Extensions.ArrayExtensions.Contains``1(``0[],``0)
-  name: Contains<T>(T[], T)
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Contains__1___0_____0_
-  commentId: M:XIV.Core.Extensions.ArrayExtensions.Contains``1(``0[],``0)
-  name.vb: Contains(Of T)(T(), T)
-  fullName: XIV.Core.Extensions.ArrayExtensions.Contains<T>(T[], T)
-  fullName.vb: XIV.Core.Extensions.ArrayExtensions.Contains(Of T)(T(), T)
-  nameWithType: ArrayExtensions.Contains<T>(T[], T)
-  nameWithType.vb: ArrayExtensions.Contains(Of T)(T(), T)
-- uid: XIV.Core.Extensions.ArrayExtensions.Contains``1(``0[],``0,System.Int32@)
-  name: Contains<T>(T[], T, out int)
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Contains__1___0_____0_System_Int32__
-  commentId: M:XIV.Core.Extensions.ArrayExtensions.Contains``1(``0[],``0,System.Int32@)
-  name.vb: Contains(Of T)(T(), T, Integer)
-  fullName: XIV.Core.Extensions.ArrayExtensions.Contains<T>(T[], T, out int)
-  fullName.vb: XIV.Core.Extensions.ArrayExtensions.Contains(Of T)(T(), T, Integer)
-  nameWithType: ArrayExtensions.Contains<T>(T[], T, out int)
-  nameWithType.vb: ArrayExtensions.Contains(Of T)(T(), T, Integer)
+- uid: XIV.Core.Extensions.ArrayExtensions.Contains``1(``0[],System.Int32,``0)
+  name: Contains<T>(T[], int, T)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Contains__1___0___System_Int32___0_
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.Contains``1(``0[],System.Int32,``0)
+  name.vb: Contains(Of T)(T(), Integer, T)
+  fullName: XIV.Core.Extensions.ArrayExtensions.Contains<T>(T[], int, T)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.Contains(Of T)(T(), Integer, T)
+  nameWithType: ArrayExtensions.Contains<T>(T[], int, T)
+  nameWithType.vb: ArrayExtensions.Contains(Of T)(T(), Integer, T)
+- uid: XIV.Core.Extensions.ArrayExtensions.Contains``1(``0[],System.Int32,``0,System.Int32@)
+  name: Contains<T>(T[], int, T, out int)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Contains__1___0___System_Int32___0_System_Int32__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.Contains``1(``0[],System.Int32,``0,System.Int32@)
+  name.vb: Contains(Of T)(T(), Integer, T, Integer)
+  fullName: XIV.Core.Extensions.ArrayExtensions.Contains<T>(T[], int, T, out int)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.Contains(Of T)(T(), Integer, T, Integer)
+  nameWithType: ArrayExtensions.Contains<T>(T[], int, T, out int)
+  nameWithType.vb: ArrayExtensions.Contains(Of T)(T(), Integer, T, Integer)
 - uid: XIV.Core.Extensions.ArrayExtensions.Count*
   name: Count
   href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Count_
@@ -2140,15 +2172,31 @@ references:
   isSpec: "True"
   fullName: XIV.Core.Extensions.ArrayExtensions.Count
   nameWithType: ArrayExtensions.Count
-- uid: XIV.Core.Extensions.ArrayExtensions.Count``1(``0[],System.Func{``0,System.Boolean})
-  name: Count<T>(T[], Func<T, bool>)
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Count__1___0___System_Func___0_System_Boolean__
-  commentId: M:XIV.Core.Extensions.ArrayExtensions.Count``1(``0[],System.Func{``0,System.Boolean})
-  name.vb: Count(Of T)(T(), Func(Of T, Boolean))
-  fullName: XIV.Core.Extensions.ArrayExtensions.Count<T>(T[], System.Func<T, bool>)
-  fullName.vb: XIV.Core.Extensions.ArrayExtensions.Count(Of T)(T(), System.Func(Of T, Boolean))
-  nameWithType: ArrayExtensions.Count<T>(T[], Func<T, bool>)
-  nameWithType.vb: ArrayExtensions.Count(Of T)(T(), Func(Of T, Boolean))
+- uid: XIV.Core.Extensions.ArrayExtensions.Count``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name: Count<T>(T[], int, Func<T, bool>)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Count__1___0___System_Int32_System_Func___0_System_Boolean__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.Count``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name.vb: Count(Of T)(T(), Integer, Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.ArrayExtensions.Count<T>(T[], int, System.Func<T, bool>)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.Count(Of T)(T(), Integer, System.Func(Of T, Boolean))
+  nameWithType: ArrayExtensions.Count<T>(T[], int, Func<T, bool>)
+  nameWithType.vb: ArrayExtensions.Count(Of T)(T(), Integer, Func(Of T, Boolean))
+- uid: XIV.Core.Extensions.ArrayExtensions.FilterBy*
+  name: FilterBy
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_FilterBy_
+  commentId: Overload:XIV.Core.Extensions.ArrayExtensions.FilterBy
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.ArrayExtensions.FilterBy
+  nameWithType: ArrayExtensions.FilterBy
+- uid: XIV.Core.Extensions.ArrayExtensions.FilterBy``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name: FilterBy<T>(T[], int, Func<T, bool>)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_FilterBy__1___0___System_Int32_System_Func___0_System_Boolean__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.FilterBy``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name.vb: FilterBy(Of T)(T(), Integer, Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.ArrayExtensions.FilterBy<T>(T[], int, System.Func<T, bool>)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.FilterBy(Of T)(T(), Integer, System.Func(Of T, Boolean))
+  nameWithType: ArrayExtensions.FilterBy<T>(T[], int, Func<T, bool>)
+  nameWithType.vb: ArrayExtensions.FilterBy(Of T)(T(), Integer, Func(Of T, Boolean))
 - uid: XIV.Core.Extensions.ArrayExtensions.RemoveAt*
   name: RemoveAt
   href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_RemoveAt_
@@ -2156,15 +2204,15 @@ references:
   isSpec: "True"
   fullName: XIV.Core.Extensions.ArrayExtensions.RemoveAt
   nameWithType: ArrayExtensions.RemoveAt
-- uid: XIV.Core.Extensions.ArrayExtensions.RemoveAt``1(``0[],System.Int32)
-  name: RemoveAt<T>(T[], int)
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_RemoveAt__1___0___System_Int32_
-  commentId: M:XIV.Core.Extensions.ArrayExtensions.RemoveAt``1(``0[],System.Int32)
-  name.vb: RemoveAt(Of T)(T(), Integer)
-  fullName: XIV.Core.Extensions.ArrayExtensions.RemoveAt<T>(T[], int)
-  fullName.vb: XIV.Core.Extensions.ArrayExtensions.RemoveAt(Of T)(T(), Integer)
-  nameWithType: ArrayExtensions.RemoveAt<T>(T[], int)
-  nameWithType.vb: ArrayExtensions.RemoveAt(Of T)(T(), Integer)
+- uid: XIV.Core.Extensions.ArrayExtensions.RemoveAt``1(``0[],System.Int32,System.Int32)
+  name: RemoveAt<T>(T[], int, int)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_RemoveAt__1___0___System_Int32_System_Int32_
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.RemoveAt``1(``0[],System.Int32,System.Int32)
+  name.vb: RemoveAt(Of T)(T(), Integer, Integer)
+  fullName: XIV.Core.Extensions.ArrayExtensions.RemoveAt<T>(T[], int, int)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.RemoveAt(Of T)(T(), Integer, Integer)
+  nameWithType: ArrayExtensions.RemoveAt<T>(T[], int, int)
+  nameWithType.vb: ArrayExtensions.RemoveAt(Of T)(T(), Integer, Integer)
 - uid: XIV.Core.Extensions.ArrayExtensions.RemoveIf*
   name: RemoveIf
   href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_RemoveIf_
@@ -2181,6 +2229,15 @@ references:
   fullName.vb: XIV.Core.Extensions.ArrayExtensions.RemoveIf(Of T)(T(), System.Func(Of T, Boolean))
   nameWithType: ArrayExtensions.RemoveIf<T>(T[], Func<T, bool>)
   nameWithType.vb: ArrayExtensions.RemoveIf(Of T)(T(), Func(Of T, Boolean))
+- uid: XIV.Core.Extensions.ArrayExtensions.RemoveIf``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name: RemoveIf<T>(T[], int, Func<T, bool>)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_RemoveIf__1___0___System_Int32_System_Func___0_System_Boolean__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.RemoveIf``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name.vb: RemoveIf(Of T)(T(), Integer, Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.ArrayExtensions.RemoveIf<T>(T[], int, System.Func<T, bool>)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.RemoveIf(Of T)(T(), Integer, System.Func(Of T, Boolean))
+  nameWithType: ArrayExtensions.RemoveIf<T>(T[], int, Func<T, bool>)
+  nameWithType.vb: ArrayExtensions.RemoveIf(Of T)(T(), Integer, Func(Of T, Boolean))
 - uid: XIV.Core.Extensions.ArrayExtensions.Split*
   name: Split
   href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Split_
@@ -2188,15 +2245,15 @@ references:
   isSpec: "True"
   fullName: XIV.Core.Extensions.ArrayExtensions.Split
   nameWithType: ArrayExtensions.Split
-- uid: XIV.Core.Extensions.ArrayExtensions.Split``1(``0[],System.Func{``0,System.Boolean})
-  name: Split<T>(T[], Func<T, bool>)
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Split__1___0___System_Func___0_System_Boolean__
-  commentId: M:XIV.Core.Extensions.ArrayExtensions.Split``1(``0[],System.Func{``0,System.Boolean})
-  name.vb: Split(Of T)(T(), Func(Of T, Boolean))
-  fullName: XIV.Core.Extensions.ArrayExtensions.Split<T>(T[], System.Func<T, bool>)
-  fullName.vb: XIV.Core.Extensions.ArrayExtensions.Split(Of T)(T(), System.Func(Of T, Boolean))
-  nameWithType: ArrayExtensions.Split<T>(T[], Func<T, bool>)
-  nameWithType.vb: ArrayExtensions.Split(Of T)(T(), Func(Of T, Boolean))
+- uid: XIV.Core.Extensions.ArrayExtensions.Split``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name: Split<T>(T[], int, Func<T, bool>)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Split__1___0___System_Int32_System_Func___0_System_Boolean__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.Split``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name.vb: Split(Of T)(T(), Integer, Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.ArrayExtensions.Split<T>(T[], int, System.Func<T, bool>)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.Split(Of T)(T(), Integer, System.Func(Of T, Boolean))
+  nameWithType: ArrayExtensions.Split<T>(T[], int, Func<T, bool>)
+  nameWithType.vb: ArrayExtensions.Split(Of T)(T(), Integer, Func(Of T, Boolean))
 - uid: XIV.Core.Extensions.IListExtensions
   name: IListExtensions
   href: api/XIV.Core.Extensions.IListExtensions.html
@@ -5684,6 +5741,22 @@ references:
   isSpec: "True"
   fullName: XIV.Core.XIVMath.BezierMath.CreateArc
   nameWithType: BezierMath.CreateArc
+- uid: XIV.Core.XIVMath.BezierMath.CreateArcNonAlloc(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Int32,System.Single)
+  name: CreateArcNonAlloc(Vec3, Vec3, Vec3, XIVMemory<Vec3>, int, float)
+  href: api/XIV.Core.XIVMath.BezierMath.html#XIV_Core_XIVMath_BezierMath_CreateArcNonAlloc_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Int32_System_Single_
+  commentId: M:XIV.Core.XIVMath.BezierMath.CreateArcNonAlloc(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Int32,System.Single)
+  name.vb: CreateArcNonAlloc(Vec3, Vec3, Vec3, XIVMemory(Of Vec3), Integer, Single)
+  fullName: XIV.Core.XIVMath.BezierMath.CreateArcNonAlloc(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.XIVMemory<XIV.Core.DataStructures.Vec3>, int, float)
+  fullName.vb: XIV.Core.XIVMath.BezierMath.CreateArcNonAlloc(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.XIVMemory(Of XIV.Core.DataStructures.Vec3), Integer, Single)
+  nameWithType: BezierMath.CreateArcNonAlloc(Vec3, Vec3, Vec3, XIVMemory<Vec3>, int, float)
+  nameWithType.vb: BezierMath.CreateArcNonAlloc(Vec3, Vec3, Vec3, XIVMemory(Of Vec3), Integer, Single)
+- uid: XIV.Core.XIVMath.BezierMath.CreateArcNonAlloc*
+  name: CreateArcNonAlloc
+  href: api/XIV.Core.XIVMath.BezierMath.html#XIV_Core_XIVMath_BezierMath_CreateArcNonAlloc_
+  commentId: Overload:XIV.Core.XIVMath.BezierMath.CreateArcNonAlloc
+  isSpec: "True"
+  fullName: XIV.Core.XIVMath.BezierMath.CreateArcNonAlloc
+  nameWithType: BezierMath.CreateArcNonAlloc
 - uid: XIV.Core.XIVMath.BezierMath.CreateCurve(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single)
   name: CreateCurve(Vec3, Vec3, float)
   href: api/XIV.Core.XIVMath.BezierMath.html#XIV_Core_XIVMath_BezierMath_CreateCurve_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_System_Single_
@@ -5716,6 +5789,15 @@ references:
   isSpec: "True"
   fullName: XIV.Core.XIVMath.BezierMath.CreateCurveNonAlloc
   nameWithType: BezierMath.CreateCurveNonAlloc
+- uid: XIV.Core.XIVMath.BezierMath.GetCurveData(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single)
+  name: GetCurveData(Vec3, Vec3, Vec3, Vec3, float)
+  href: api/XIV.Core.XIVMath.BezierMath.html#XIV_Core_XIVMath_BezierMath_GetCurveData_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_System_Single_
+  commentId: M:XIV.Core.XIVMath.BezierMath.GetCurveData(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single)
+  name.vb: GetCurveData(Vec3, Vec3, Vec3, Vec3, Single)
+  fullName: XIV.Core.XIVMath.BezierMath.GetCurveData(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, float)
+  fullName.vb: XIV.Core.XIVMath.BezierMath.GetCurveData(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, Single)
+  nameWithType: BezierMath.GetCurveData(Vec3, Vec3, Vec3, Vec3, float)
+  nameWithType.vb: BezierMath.GetCurveData(Vec3, Vec3, Vec3, Vec3, Single)
 - uid: XIV.Core.XIVMath.BezierMath.GetCurveData(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)
   name: GetCurveData(XIVMemory<Vec3>, float)
   href: api/XIV.Core.XIVMath.BezierMath.html#XIV_Core_XIVMath_BezierMath_GetCurveData_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Single_
@@ -5741,6 +5823,15 @@ references:
   fullName.vb: XIV.Core.XIVMath.BezierMath.GetFirstDerivative(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, Single)
   nameWithType: BezierMath.GetFirstDerivative(Vec3, Vec3, Vec3, Vec3, float)
   nameWithType.vb: BezierMath.GetFirstDerivative(Vec3, Vec3, Vec3, Vec3, Single)
+- uid: XIV.Core.XIVMath.BezierMath.GetFirstDerivative(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)
+  name: GetFirstDerivative(XIVMemory<Vec3>, float)
+  href: api/XIV.Core.XIVMath.BezierMath.html#XIV_Core_XIVMath_BezierMath_GetFirstDerivative_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Single_
+  commentId: M:XIV.Core.XIVMath.BezierMath.GetFirstDerivative(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)
+  name.vb: GetFirstDerivative(XIVMemory(Of Vec3), Single)
+  fullName: XIV.Core.XIVMath.BezierMath.GetFirstDerivative(XIV.Core.DataStructures.XIVMemory<XIV.Core.DataStructures.Vec3>, float)
+  fullName.vb: XIV.Core.XIVMath.BezierMath.GetFirstDerivative(XIV.Core.DataStructures.XIVMemory(Of XIV.Core.DataStructures.Vec3), Single)
+  nameWithType: BezierMath.GetFirstDerivative(XIVMemory<Vec3>, float)
+  nameWithType.vb: BezierMath.GetFirstDerivative(XIVMemory(Of Vec3), Single)
 - uid: XIV.Core.XIVMath.BezierMath.GetFirstDerivative*
   name: GetFirstDerivative
   href: api/XIV.Core.XIVMath.BezierMath.html#XIV_Core_XIVMath_BezierMath_GetFirstDerivative_
@@ -5757,6 +5848,15 @@ references:
   fullName.vb: XIV.Core.XIVMath.BezierMath.GetPoint(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, Single)
   nameWithType: BezierMath.GetPoint(Vec3, Vec3, Vec3, Vec3, float)
   nameWithType.vb: BezierMath.GetPoint(Vec3, Vec3, Vec3, Vec3, Single)
+- uid: XIV.Core.XIVMath.BezierMath.GetPoint(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)
+  name: GetPoint(XIVMemory<Vec3>, float)
+  href: api/XIV.Core.XIVMath.BezierMath.html#XIV_Core_XIVMath_BezierMath_GetPoint_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Single_
+  commentId: M:XIV.Core.XIVMath.BezierMath.GetPoint(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)
+  name.vb: GetPoint(XIVMemory(Of Vec3), Single)
+  fullName: XIV.Core.XIVMath.BezierMath.GetPoint(XIV.Core.DataStructures.XIVMemory<XIV.Core.DataStructures.Vec3>, float)
+  fullName.vb: XIV.Core.XIVMath.BezierMath.GetPoint(XIV.Core.DataStructures.XIVMemory(Of XIV.Core.DataStructures.Vec3), Single)
+  nameWithType: BezierMath.GetPoint(XIVMemory<Vec3>, float)
+  nameWithType.vb: BezierMath.GetPoint(XIVMemory(Of Vec3), Single)
 - uid: XIV.Core.XIVMath.BezierMath.GetPoint*
   name: GetPoint
   href: api/XIV.Core.XIVMath.BezierMath.html#XIV_Core_XIVMath_BezierMath_GetPoint_
@@ -5773,6 +5873,15 @@ references:
   fullName.vb: XIV.Core.XIVMath.BezierMath.GetTime(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, Single, Integer)
   nameWithType: BezierMath.GetTime(Vec3, Vec3, Vec3, Vec3, Vec3, float, int)
   nameWithType.vb: BezierMath.GetTime(Vec3, Vec3, Vec3, Vec3, Vec3, Single, Integer)
+- uid: XIV.Core.XIVMath.BezierMath.GetTime(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single,System.Int32)
+  name: GetTime(Vec3, XIVMemory<Vec3>, float, int)
+  href: api/XIV.Core.XIVMath.BezierMath.html#XIV_Core_XIVMath_BezierMath_GetTime_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Single_System_Int32_
+  commentId: M:XIV.Core.XIVMath.BezierMath.GetTime(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single,System.Int32)
+  name.vb: GetTime(Vec3, XIVMemory(Of Vec3), Single, Integer)
+  fullName: XIV.Core.XIVMath.BezierMath.GetTime(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.XIVMemory<XIV.Core.DataStructures.Vec3>, float, int)
+  fullName.vb: XIV.Core.XIVMath.BezierMath.GetTime(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.XIVMemory(Of XIV.Core.DataStructures.Vec3), Single, Integer)
+  nameWithType: BezierMath.GetTime(Vec3, XIVMemory<Vec3>, float, int)
+  nameWithType.vb: BezierMath.GetTime(Vec3, XIVMemory(Of Vec3), Single, Integer)
 - uid: XIV.Core.XIVMath.BezierMath.GetTime*
   name: GetTime
   href: api/XIV.Core.XIVMath.BezierMath.html#XIV_Core_XIVMath_BezierMath_GetTime_
@@ -6000,6 +6109,15 @@ references:
   fullName.vb: XIV.Core.XIVMath.SplineMath.GetLength(System.Collections.Generic.IList(Of XIV.Core.DataStructures.Vec3), Integer)
   nameWithType: SplineMath.GetLength(IList<Vec3>, int)
   nameWithType.vb: SplineMath.GetLength(IList(Of Vec3), Integer)
+- uid: XIV.Core.XIVMath.SplineMath.GetLength(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Int32)
+  name: GetLength(XIVMemory<Vec3>, int)
+  href: api/XIV.Core.XIVMath.SplineMath.html#XIV_Core_XIVMath_SplineMath_GetLength_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Int32_
+  commentId: M:XIV.Core.XIVMath.SplineMath.GetLength(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Int32)
+  name.vb: GetLength(XIVMemory(Of Vec3), Integer)
+  fullName: XIV.Core.XIVMath.SplineMath.GetLength(XIV.Core.DataStructures.XIVMemory<XIV.Core.DataStructures.Vec3>, int)
+  fullName.vb: XIV.Core.XIVMath.SplineMath.GetLength(XIV.Core.DataStructures.XIVMemory(Of XIV.Core.DataStructures.Vec3), Integer)
+  nameWithType: SplineMath.GetLength(XIVMemory<Vec3>, int)
+  nameWithType.vb: SplineMath.GetLength(XIVMemory(Of Vec3), Integer)
 - uid: XIV.Core.XIVMath.SplineMath.GetLength*
   name: GetLength
   href: api/XIV.Core.XIVMath.SplineMath.html#XIV_Core_XIVMath_SplineMath_GetLength_
@@ -6016,6 +6134,15 @@ references:
   fullName.vb: XIV.Core.XIVMath.SplineMath.GetPoint(System.Collections.Generic.IList(Of XIV.Core.DataStructures.Vec3), Single)
   nameWithType: SplineMath.GetPoint(IList<Vec3>, float)
   nameWithType.vb: SplineMath.GetPoint(IList(Of Vec3), Single)
+- uid: XIV.Core.XIVMath.SplineMath.GetPoint(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)
+  name: GetPoint(XIVMemory<Vec3>, float)
+  href: api/XIV.Core.XIVMath.SplineMath.html#XIV_Core_XIVMath_SplineMath_GetPoint_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Single_
+  commentId: M:XIV.Core.XIVMath.SplineMath.GetPoint(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)
+  name.vb: GetPoint(XIVMemory(Of Vec3), Single)
+  fullName: XIV.Core.XIVMath.SplineMath.GetPoint(XIV.Core.DataStructures.XIVMemory<XIV.Core.DataStructures.Vec3>, float)
+  fullName.vb: XIV.Core.XIVMath.SplineMath.GetPoint(XIV.Core.DataStructures.XIVMemory(Of XIV.Core.DataStructures.Vec3), Single)
+  nameWithType: SplineMath.GetPoint(XIVMemory<Vec3>, float)
+  nameWithType.vb: SplineMath.GetPoint(XIVMemory(Of Vec3), Single)
 - uid: XIV.Core.XIVMath.SplineMath.GetPoint*
   name: GetPoint
   href: api/XIV.Core.XIVMath.SplineMath.html#XIV_Core_XIVMath_SplineMath_GetPoint_
@@ -6032,6 +6159,15 @@ references:
   fullName.vb: XIV.Core.XIVMath.SplineMath.GetTime(XIV.Core.DataStructures.Vec3, System.Collections.Generic.IList(Of XIV.Core.DataStructures.Vec3), Single)
   nameWithType: SplineMath.GetTime(Vec3, IList<Vec3>, float)
   nameWithType.vb: SplineMath.GetTime(Vec3, IList(Of Vec3), Single)
+- uid: XIV.Core.XIVMath.SplineMath.GetTime(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)
+  name: GetTime(Vec3, XIVMemory<Vec3>, float)
+  href: api/XIV.Core.XIVMath.SplineMath.html#XIV_Core_XIVMath_SplineMath_GetTime_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Single_
+  commentId: M:XIV.Core.XIVMath.SplineMath.GetTime(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)
+  name.vb: GetTime(Vec3, XIVMemory(Of Vec3), Single)
+  fullName: XIV.Core.XIVMath.SplineMath.GetTime(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.XIVMemory<XIV.Core.DataStructures.Vec3>, float)
+  fullName.vb: XIV.Core.XIVMath.SplineMath.GetTime(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.XIVMemory(Of XIV.Core.DataStructures.Vec3), Single)
+  nameWithType: SplineMath.GetTime(Vec3, XIVMemory<Vec3>, float)
+  nameWithType.vb: SplineMath.GetTime(Vec3, XIVMemory(Of Vec3), Single)
 - uid: XIV.Core.XIVMath.SplineMath.GetTime*
   name: GetTime
   href: api/XIV.Core.XIVMath.SplineMath.html#XIV_Core_XIVMath_SplineMath_GetTime_
@@ -6048,6 +6184,15 @@ references:
   fullName.vb: XIV.Core.XIVMath.SplineMath.GetVelocity(System.Collections.Generic.IList(Of XIV.Core.DataStructures.Vec3), Single)
   nameWithType: SplineMath.GetVelocity(IList<Vec3>, float)
   nameWithType.vb: SplineMath.GetVelocity(IList(Of Vec3), Single)
+- uid: XIV.Core.XIVMath.SplineMath.GetVelocity(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)
+  name: GetVelocity(XIVMemory<Vec3>, float)
+  href: api/XIV.Core.XIVMath.SplineMath.html#XIV_Core_XIVMath_SplineMath_GetVelocity_XIV_Core_DataStructures_XIVMemory_XIV_Core_DataStructures_Vec3__System_Single_
+  commentId: M:XIV.Core.XIVMath.SplineMath.GetVelocity(XIV.Core.DataStructures.XIVMemory{XIV.Core.DataStructures.Vec3},System.Single)
+  name.vb: GetVelocity(XIVMemory(Of Vec3), Single)
+  fullName: XIV.Core.XIVMath.SplineMath.GetVelocity(XIV.Core.DataStructures.XIVMemory<XIV.Core.DataStructures.Vec3>, float)
+  fullName.vb: XIV.Core.XIVMath.SplineMath.GetVelocity(XIV.Core.DataStructures.XIVMemory(Of XIV.Core.DataStructures.Vec3), Single)
+  nameWithType: SplineMath.GetVelocity(XIVMemory<Vec3>, float)
+  nameWithType.vb: SplineMath.GetVelocity(XIVMemory(Of Vec3), Single)
 - uid: XIV.Core.XIVMath.SplineMath.GetVelocity*
   name: GetVelocity
   href: api/XIV.Core.XIVMath.SplineMath.html#XIV_Core_XIVMath_SplineMath_GetVelocity_

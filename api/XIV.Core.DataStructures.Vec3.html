@@ -97,7 +97,8 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct Vec3 : IEquatable&lt;Vec3&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public struct Vec3 : IEquatable&lt;Vec3&gt;</code></pre>
   </div>
 
 
@@ -115,9 +116,6 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
@@ -170,7 +168,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3__ctor_System_Single_System_Single_System_Single_" data-uid="XIV.Core.DataStructures.Vec3.#ctor(System.Single,System.Single,System.Single)">
   Vec3(float, float, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -208,7 +206,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_back" data-uid="XIV.Core.DataStructures.Vec3.back">
   back
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -238,7 +236,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_down" data-uid="XIV.Core.DataStructures.Vec3.down">
   down
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -268,7 +266,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_forward" data-uid="XIV.Core.DataStructures.Vec3.forward">
   forward
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -298,7 +296,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_left" data-uid="XIV.Core.DataStructures.Vec3.left">
   left
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -328,7 +326,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_negativeInfinity" data-uid="XIV.Core.DataStructures.Vec3.negativeInfinity">
   negativeInfinity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -358,7 +356,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_one" data-uid="XIV.Core.DataStructures.Vec3.one">
   one
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -388,7 +386,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_positiveInfinity" data-uid="XIV.Core.DataStructures.Vec3.positiveInfinity">
   positiveInfinity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -418,7 +416,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_right" data-uid="XIV.Core.DataStructures.Vec3.right">
   right
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -448,7 +446,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_up" data-uid="XIV.Core.DataStructures.Vec3.up">
   up
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -478,7 +476,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_x" data-uid="XIV.Core.DataStructures.Vec3.x">
   x
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -508,7 +506,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_y" data-uid="XIV.Core.DataStructures.Vec3.y">
   y
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -538,7 +536,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_z" data-uid="XIV.Core.DataStructures.Vec3.z">
   z
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -568,7 +566,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_zero" data-uid="XIV.Core.DataStructures.Vec3.zero">
   zero
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -603,7 +601,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_magnitude" data-uid="XIV.Core.DataStructures.Vec3.magnitude">
   magnitude
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -634,7 +632,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_normalized" data-uid="XIV.Core.DataStructures.Vec3.normalized">
   normalized
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -665,7 +663,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_sqrMagnitude" data-uid="XIV.Core.DataStructures.Vec3.sqrMagnitude">
   sqrMagnitude
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -700,7 +698,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_Cross_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.Vec3.Cross(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3)">
   Cross(Vec3, Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -738,7 +736,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_Distance_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.Vec3.Distance(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3)">
   Distance(Vec3, Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -776,7 +774,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_Dot_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.Vec3.Dot(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3)">
   Dot(Vec3, Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -814,7 +812,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_Equals_System_Object_" data-uid="XIV.Core.DataStructures.Vec3.Equals(System.Object)">
   Equals(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
@@ -853,7 +851,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_Equals_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.Vec3.Equals(XIV.Core.DataStructures.Vec3)">
   Equals(Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
@@ -892,7 +890,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_GetHashCode" data-uid="XIV.Core.DataStructures.Vec3.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L147"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
@@ -925,7 +923,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_Lerp_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_System_Single_" data-uid="XIV.Core.DataStructures.Vec3.Lerp(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single)">
   Lerp(Vec3, Vec3, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -965,7 +963,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_LerpUnclamped_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_System_Single_" data-uid="XIV.Core.DataStructures.Vec3.LerpUnclamped(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single)">
   LerpUnclamped(Vec3, Vec3, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1005,7 +1003,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_Magnitude_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.Vec3.Magnitude(XIV.Core.DataStructures.Vec3)">
   Magnitude(Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1041,7 +1039,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_MoveTowards_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_System_Single_" data-uid="XIV.Core.DataStructures.Vec3.MoveTowards(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single)">
   MoveTowards(Vec3, Vec3, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1081,7 +1079,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_Normalize_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.Vec3.Normalize(XIV.Core.DataStructures.Vec3)">
   Normalize(Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1113,6 +1111,39 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
 
 
+  <a id="XIV_Core_DataStructures_Vec3_ToString_" data-uid="XIV.Core.DataStructures.Vec3.ToString*"></a>
+
+  <h3 id="XIV_Core_DataStructures_Vec3_ToString" data-uid="XIV.Core.DataStructures.Vec3.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the fully qualified type name of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The fully qualified type name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="operators">Operators
 </h2>
 
@@ -1121,7 +1152,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_op_Addition_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.Vec3.op_Addition(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3)">
   operator +(Vec3, Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1159,7 +1190,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_op_Division_XIV_Core_DataStructures_Vec3_System_Single_" data-uid="XIV.Core.DataStructures.Vec3.op_Division(XIV.Core.DataStructures.Vec3,System.Single)">
   operator /(Vec3, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1197,7 +1228,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_op_Equality_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.Vec3.op_Equality(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3)">
   operator ==(Vec3, Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L172"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1235,7 +1266,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_op_Implicit_XIV_Core_DataStructures_Vec3__XIV_Core_DataStructures_Vec2" data-uid="XIV.Core.DataStructures.Vec3.op_Implicit(XIV.Core.DataStructures.Vec3)~XIV.Core.DataStructures.Vec2">
   implicit operator Vec2(Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1271,7 +1302,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_op_Inequality_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.Vec3.op_Inequality(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3)">
   operator !=(Vec3, Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L177"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1309,7 +1340,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_op_Multiply_System_Single_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.Vec3.op_Multiply(System.Single,XIV.Core.DataStructures.Vec3)">
   operator *(float, Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1347,7 +1378,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_op_Multiply_XIV_Core_DataStructures_Vec3_System_Single_" data-uid="XIV.Core.DataStructures.Vec3.op_Multiply(XIV.Core.DataStructures.Vec3,System.Single)">
   operator *(Vec3, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1385,7 +1416,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_op_Multiply_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.Vec3.op_Multiply(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3)">
   operator *(Vec3, Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1423,7 +1454,7 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="XIV_Core_DataStructures_Vec3_op_Subtraction_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.Vec3.op_Subtraction(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3)">
   operator -(Vec3, Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1438,6 +1469,42 @@ Struct Vec3  <a class="header-action link-secondary" title="View source" href="h
     <dt><code>a</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
     <dd></dd>
     <dt><code>b</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_DataStructures_Vec3_op_UnaryNegation_" data-uid="XIV.Core.DataStructures.Vec3.op_UnaryNegation*"></a>
+
+  <h3 id="XIV_Core_DataStructures_Vec3_op_UnaryNegation_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.Vec3.op_UnaryNegation(XIV.Core.DataStructures.Vec3)">
+  operator -(Vec3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/Vec3.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vec3 operator -(Vec3 a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
     <dd></dd>
   </dl>
 
