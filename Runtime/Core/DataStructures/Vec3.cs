@@ -3,6 +3,7 @@ using XIV.Core.XIVMath;
 
 namespace XIV.Core.DataStructures
 {
+    [System.Serializable]
     public struct Vec3 : IEquatable<Vec3>
     {
         public float x;
