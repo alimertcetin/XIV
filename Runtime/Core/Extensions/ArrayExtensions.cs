@@ -4,11 +4,11 @@ namespace XIV.Core.Extensions
 {
     public static class ArrayExtensions
     {
-        public static bool Contains<T>(this T[] array, T item, out int index)
+        
+        public static bool Contains<T>(this T[] array, int arrLen, T item, out int index)
         {
             index = -1;
-            var lenght = array.Length;
-            for (int i = 0; i < lenght; i++)
+            for (int i = 0; i < arrLen; i++)
             {
                 if (item.Equals(array[i]))
                 {
@@ -20,17 +20,16 @@ namespace XIV.Core.Extensions
             return false;
         }
 
-        public static bool Contains<T>(this T[] array, T item)
+        public static bool Contains<T>(this T[] array, int arrLen, T item)
         {
-            return Contains(array, item, out _);
+            return Contains(array, arrLen, item, out _);
         }
 
-        public static T[] Split<T>(this T[] array, Func<T, bool> condition)
+        public static T[] Split<T>(this T[] array, int arrLen, Func<T, bool> condition)
         {
-            int length = array.Length;
-            T[] arr = new T[length];
+            T[] arr = new T[arrLen];
 
-            for (int i = 0, j = 0; i < length; i++)
+            for (int i = 0, j = 0; i < arrLen; i++)
             {
                 if (condition.Invoke(array[i]))
                 {
@@ -40,35 +39,37 @@ namespace XIV.Core.Extensions
             return arr;
         }
 
-        public static int Count<T>(this T[] array, Func<T, bool> condition)
+        public static int Count<T>(this T[] array, int arrLen, Func<T, bool> condition)
         {
-            int length = array.Length;
             int count = 0;
-            for (int i = 0; i < length; i++)
+            for (int i = 0; i < arrLen; i++)
             {
                 if (condition.Invoke(array[i])) count++;
             }
             return count;
         }
 
-        public static T[] RemoveAt<T>(this T[] arr, int index)
+        public static T[] RemoveAt<T>(this T[] arr, int arrLen, int index)
         {
-            int length = arr.Length;
-            if (index < 0 || index > length) return arr;
-            for (int i = index; i < length - 1; i++)
+            if (index < 0 || index > arrLen) return arr;
+            for (int i = index; i < arrLen - 1; i++)
             {
                 arr[i] = arr[i + 1];
             }
-            if (length - 1 >= 0) Array.Resize(ref arr, length - 1);
+            if (arrLen - 1 >= 0) Array.Resize(ref arr, arrLen - 1);
             return arr;
         }
 
         public static T[] RemoveIf<T>(this T[] arr, Func<T, bool> condition)
         {
-            int length = arr.Length;
-            for (int i = length - 1; i >= 0; i--)
+            return RemoveIf(arr, arr.Length, condition);
+        }
+        
+        public static T[] RemoveIf<T>(this T[] arr, int arrLen, Func<T, bool> condition)
+        {
+            for (int i = arrLen - 1; i >= 0; i--)
             {
-                if (condition.Invoke(arr[i])) arr = RemoveAt(arr, i);
+                if (condition.Invoke(arr[i])) arr = RemoveAt(arr, arrLen, i);
             }
 
             return arr;
