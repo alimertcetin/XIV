@@ -1,9 +1,41 @@
 using System;
+using XIV.Core.DataStructures;
 
 namespace XIV.Core.Extensions
 {
     public static class ArrayExtensions
     {
+        /// <summary>
+        /// Moves the items to the beginning of the array and creates a new <see cref="XIVMemory{T}"/> that has filtered items
+        /// </summary>
+        /// <returns>A new <see cref="XIVMemory{T}"/> that has filtered items</returns>
+        public static XIVMemory<T> FilterBy<T>(this T[] array, int arrLen, Func<T, bool> func)
+        {
+            int left = 0; // Start of the array
+            int right = arrLen - 1; // End of the array
+            int count = 0;
+
+            while (left <= right)
+            {
+                while (left < arrLen && func(array[left]))
+                {
+                    left++;
+                    count++;
+                }
+
+                while (right >= 0 && func(array[right]) == false)
+                {
+                    right--;
+                }
+
+                // Swap if there are valid positions to swap
+                if (left < right)
+                {
+                    (array[left], array[right]) = (array[right], array[left]);
+                }
+            }
+            return new XIVMemory<T>(array, 0, count);
+        }
         
         public static bool Contains<T>(this T[] array, int arrLen, T item, out int index)
         {
