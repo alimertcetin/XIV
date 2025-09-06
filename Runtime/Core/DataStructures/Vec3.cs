@@ -102,6 +102,11 @@ namespace XIV.Core.DataStructures
             return new Vec3(a.x - b.x, a.y - b.y, a.z - b.z);
         }
 
+        public static Vec3 operator -(Vec3 a)
+        {
+            return new Vec3(-a.x, -a.y, -a.z);
+        }
+
         public static Vec3 operator +(Vec3 a, Vec3 b)
         {
             return new Vec3(a.x + b.x, a.y + b.y, a.z + b.z);
