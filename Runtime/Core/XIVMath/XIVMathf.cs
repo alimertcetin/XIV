@@ -99,55 +99,26 @@ namespace XIV.Core.XIVMath
 
         public static float Sqrt(float number)
         {
-            float precision = 0.0000001f;
-            float low = 0;
-            float high = number;
-            float mid = 0;
-            while ((high - low) > precision)
-            {
-                mid = (low + high) / 2;
-                if ((mid - precision) >= mid * mid && mid * mid <= (precision + mid))
-                {
-                    break;
-                }
-                else if (mid * mid < number)
-                {
-                    low = mid;
-                }
-                else
-                {
-                    high = mid;
-                }
-            }
-
-            return mid;
+            return (float)Math.Sqrt(number);
         }
 
-        public static double Sqrt(double number)
-        {
-            double precision = 0.0000001;
-            double low = 0;
-            double high = number;
-            double mid = 0;
-            while ((high - low) > precision)
-            {
-                mid = (double)((low + high) / 2);
-                if ((mid - precision) >= mid * mid && mid * mid <= (precision + mid))
-                {
-                    break;
-                }
-                else if (mid * mid < number)
-                {
-                    low = mid;
-                }
-                else
-                {
-                    high = mid;
-                }
-            }
-
-            return mid;
-        }
+        // public static float Sqrt(float number)
+        // {
+        //     if (number < 0)
+        //     {
+        //         return float.NaN;
+        //     }
+        //
+        //     float result = number;
+        //     float prevResult;
+        //     do
+        //     {
+        //         prevResult = result;
+        //         result = (result + number / result) * 0.5f;
+        //     } while (Abs(result - prevResult) > 0.00001f);
+        //
+        //     return result;
+        // }
 
         /*
          * Created using OpenAI Assistant
@@ -155,27 +126,6 @@ namespace XIV.Core.XIVMath
         public static float Abs(float x)
         {
             return (x < 0) ? -x : x;
-        }
-
-        /*
-         * Created using OpenAI Assistant - Newton-Raphson method
-         */
-        public static float SqrtV2(float x)
-        {
-            if (x < 0)
-            {
-                return float.NaN;
-            }
-
-            float result = x;
-            float prevResult;
-            do
-            {
-                prevResult = result;
-                result = (result + x / result) * 0.5f;
-            } while (Abs(result - prevResult) > 0.00001f);
-
-            return result;
         }
 
         public static float Repeat(float value, float length)
