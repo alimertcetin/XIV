@@ -28,6 +28,11 @@ namespace XIV.Core.XIVMath
             return oneMinusT * oneMinusT * oneMinusT * p0 + 3f * oneMinusT * oneMinusT * t * p1 + 3f * oneMinusT * t * t * p2 + t * t * t * p3;
         }
 
+        public static Vec3 GetPoint(XIVMemory<Vec3> points, float t)
+        {
+            return GetPoint(points[0], points[1], points[2], points[3], t);
+        }
+
         /// <summary>
         /// Returns the first derivative of bezier curve
         /// </summary>
@@ -37,6 +42,15 @@ namespace XIV.Core.XIVMath
             t = XIVMathf.Clamp01(t);
             float oneMinusT = 1f - t;
             return 3f * oneMinusT * oneMinusT * (p1 - p0) + 6f * oneMinusT * t * (p2 - p1) + 3f * t * t * (p3 - p2);
+        }
+
+        /// <summary>
+        /// Returns the first derivative of bezier curve
+        /// </summary>
+        /// <param name="t">Time between 0 and 1</param>
+        public static Vec3 GetFirstDerivative(XIVMemory<Vec3> points, float t)
+        {
+            return GetFirstDerivative(points[0], points[1], points[2], points[3], t);
         }
 
         public static float GetTime(Vec3 currentPosition, Vec3 p0, Vec3 p1, Vec3 p2, Vec3 p3, float tolerance = TOLERANCE, int iteration = GET_TIME_ITERATION_COUNT)
@@ -62,37 +76,9 @@ namespace XIV.Core.XIVMath
             return currentGuess;
         }
 
-        public static Vec3[] CreateCurve(Vec3 start, Vec3 end, float midPointDistance = 1f)
+        public static float GetTime(Vec3 currentPosition, XIVMemory<Vec3> points, float tolerance = TOLERANCE, int iteration = GET_TIME_ITERATION_COUNT)
         {
-            var mid = (end - start) * 0.5f;
-            var dirToStart = start - mid;
-            var dirToEnd = end - mid;
-            return new Vec3[]
-            {
-                start,
-                mid + (dirToStart * 0.5f) + XIVRandom.insideUnitSphere * midPointDistance,
-                mid + (dirToEnd * 0.5f) + XIVRandom.insideUnitSphere * midPointDistance,
-                end,
-            };
-        }
-
-        public static Vec3[] CreateArc(Vec3 start, Vec3 end, float midPointDistance = 1f)
-        {
-            return CreateArc(start, end, Vec3.up, midPointDistance);
-        }
-        
-        public static Vec3[] CreateArc(Vec3 start, Vec3 end, Vec3 up, float midPointDistance = 1f)
-        {
-            var mid = start + (end - start) * 0.5f;
-            var dirToStart = start - mid;
-            var dirToEnd = end - mid;
-            return new Vec3[]
-            {
-                start,
-                mid + (dirToStart * 0.5f) + up * midPointDistance,
-                mid + (dirToEnd * 0.5f) + up * midPointDistance,
-                end,
-            };
+            return GetTime(currentPosition, points[0], points[1], points[2], points[3], tolerance, iteration);
         }
 
         /// <summary>
@@ -110,6 +96,38 @@ namespace XIV.Core.XIVMath
             buffer[startIndex + 1] = mid1;
             buffer[startIndex + 2] = mid2;
             buffer[startIndex + 3] = end;
+        }
+
+        public static Vec3[] CreateCurve(Vec3 start, Vec3 end, float midPointDistance = 1f)
+        {
+            var arr = new Vec3[4];
+            CreateCurveNonAlloc(start, end, arr, 0, midPointDistance);
+            return arr;
+        }
+        
+        public static void CreateArcNonAlloc(Vec3 start, Vec3 end, Vec3 up, XIVMemory<Vec3> buffer, int startIndex, float midPointDistance = 1f)
+        {
+            var mid = start + (end - start) * 0.5f;
+            var dirToStart = (start - mid).normalized;
+            var dirToEnd = (end - mid).normalized;
+            buffer[startIndex + 0] = start;
+            buffer[startIndex + 1] = mid + (dirToStart * 0.5f) + up * midPointDistance;
+            buffer[startIndex + 2] = mid + (dirToEnd * 0.5f) + up * midPointDistance;
+            buffer[startIndex + 3] = end;
+        }
+        
+        public static Vec3[] CreateArc(Vec3 start, Vec3 end, Vec3 up, float midPointDistance = 1f)
+        {
+            var arr = new Vec3[4];
+            CreateArcNonAlloc(start, end, up, arr, 0, midPointDistance);
+            return arr;
+        }
+
+        public static Vec3[] CreateArc(Vec3 start, Vec3 end, float midPointDistance = 1f)
+        {
+            var arr = new Vec3[4];
+            CreateArcNonAlloc(start, end, Vec3.up, arr, 0, midPointDistance);
+            return arr;
         }
         
         public static CurveData GetCurveData(Vec3 p0, Vec3 p1, Vec3 p2, Vec3 p3, float t)
