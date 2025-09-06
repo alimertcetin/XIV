@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/alimertcetin/XIV/compare/v1.3.1...v1.4.0) (2025-09-06)
+
+
+### Features
+
+* **Vec3:** Add -(Vec3) operator to reverse Vec3 ([9c6c6f5](https://github.com/alimertcetin/XIV/commit/9c6c6f525b0c551af726c1747b25aca36853c0c5))
+
 ## [1.3.1](https://github.com/alimertcetin/XIV/compare/v1.3.0...v1.3.1) (2025-08-27)
 
 
