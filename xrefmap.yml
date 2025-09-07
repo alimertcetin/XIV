@@ -3095,6 +3095,22 @@ references:
   isSpec: "True"
   fullName: XIV.Core.Utils.ClassGenerator.AddInnerClass
   nameWithType: ClassGenerator.AddInnerClass
+- uid: XIV.Core.Utils.ClassGenerator.AddMemberArray(System.String,System.String[],System.String,System.String,System.String)
+  name: AddMemberArray(string, string[], string, string, string)
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddMemberArray_System_String_System_String___System_String_System_String_System_String_
+  commentId: M:XIV.Core.Utils.ClassGenerator.AddMemberArray(System.String,System.String[],System.String,System.String,System.String)
+  name.vb: AddMemberArray(String, String(), String, String, String)
+  fullName: XIV.Core.Utils.ClassGenerator.AddMemberArray(string, string[], string, string, string)
+  fullName.vb: XIV.Core.Utils.ClassGenerator.AddMemberArray(String, String(), String, String, String)
+  nameWithType: ClassGenerator.AddMemberArray(string, string[], string, string, string)
+  nameWithType.vb: ClassGenerator.AddMemberArray(String, String(), String, String, String)
+- uid: XIV.Core.Utils.ClassGenerator.AddMemberArray*
+  name: AddMemberArray
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddMemberArray_
+  commentId: Overload:XIV.Core.Utils.ClassGenerator.AddMemberArray
+  isSpec: "True"
+  fullName: XIV.Core.Utils.ClassGenerator.AddMemberArray
+  nameWithType: ClassGenerator.AddMemberArray
 - uid: XIV.Core.Utils.ClassGenerator.AddUsing(System.String)
   name: AddUsing(string)
   href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddUsing_System_String_

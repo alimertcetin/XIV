@@ -452,7 +452,7 @@ Class ClassGenerator  <a class="header-action link-secondary" title="View source
 
   <h3 id="XIV_Core_Utils_ClassGenerator_AddGetOnlyProperty_System_String_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty(System.String,System.String)">
   AddGetOnlyProperty(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -485,7 +485,7 @@ Class ClassGenerator  <a class="header-action link-secondary" title="View source
 
   <h3 id="XIV_Core_Utils_ClassGenerator_AddGetOnlyProperty_System_String_System_String_System_String_System_String_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty(System.String,System.String,System.String,System.String,System.String)">
   AddGetOnlyProperty(string, string, string, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -524,7 +524,7 @@ Class ClassGenerator  <a class="header-action link-secondary" title="View source
 
   <h3 id="XIV_Core_Utils_ClassGenerator_AddGetSetProperty_System_String_System_String_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.AddGetSetProperty(System.String,System.String,System.String)">
   AddGetSetProperty(string, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -559,7 +559,7 @@ Class ClassGenerator  <a class="header-action link-secondary" title="View source
 
   <h3 id="XIV_Core_Utils_ClassGenerator_AddGetSetProperty_System_String_System_String_System_String_System_String_System_String_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.AddGetSetProperty(System.String,System.String,System.String,System.String,System.String,System.String)">
   AddGetSetProperty(string, string, string, string, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -627,6 +627,45 @@ Class ClassGenerator  <a class="header-action link-secondary" title="View source
 
 
 
+  <a id="XIV_Core_Utils_ClassGenerator_AddMemberArray_" data-uid="XIV.Core.Utils.ClassGenerator.AddMemberArray*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_AddMemberArray_System_String_System_String___System_String_System_String_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.AddMemberArray(System.String,System.String[],System.String,System.String,System.String)">
+  AddMemberArray(string, string[], string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMemberArray(string fieldName, string[] fieldValues, string returnType, string modifier = &quot;&quot;, string accessModifier = &quot;public&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>fieldValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+    <dt><code>returnType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>modifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>accessModifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="XIV_Core_Utils_ClassGenerator_AddUsing_" data-uid="XIV.Core.Utils.ClassGenerator.AddUsing*"></a>
 
   <h3 id="XIV_Core_Utils_ClassGenerator_AddUsing_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.AddUsing(System.String)">
@@ -662,7 +701,7 @@ Class ClassGenerator  <a class="header-action link-secondary" title="View source
 
   <h3 id="XIV_Core_Utils_ClassGenerator_EndClass" data-uid="XIV.Core.Utils.ClassGenerator.EndClass">
   EndClass()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L165"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -693,7 +732,7 @@ Class ClassGenerator  <a class="header-action link-secondary" title="View source
 
   <h3 id="XIV_Core_Utils_ClassGenerator_EndMethod" data-uid="XIV.Core.Utils.ClassGenerator.EndMethod">
   EndMethod()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -750,7 +789,7 @@ Class ClassGenerator  <a class="header-action link-secondary" title="View source
 
   <h3 id="XIV_Core_Utils_ClassGenerator_StartMethod_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.StartMethod(System.String)">
   StartMethod(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L144"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -781,7 +820,7 @@ Class ClassGenerator  <a class="header-action link-secondary" title="View source
 
   <h3 id="XIV_Core_Utils_ClassGenerator_ToString" data-uid="XIV.Core.Utils.ClassGenerator.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L334"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
@@ -814,7 +853,7 @@ Class ClassGenerator  <a class="header-action link-secondary" title="View source
 
   <h3 id="XIV_Core_Utils_ClassGenerator_WriteCommentInsideMethod_System_String_System_Boolean_" data-uid="XIV.Core.Utils.ClassGenerator.WriteCommentInsideMethod(System.String,System.Boolean)">
   WriteCommentInsideMethod(string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -847,7 +886,7 @@ Class ClassGenerator  <a class="header-action link-secondary" title="View source
 
   <h3 id="XIV_Core_Utils_ClassGenerator_WriteMethodLine_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.WriteMethodLine(System.String)">
   WriteMethodLine(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Utils/ClassGenerator.cs/#L150"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
