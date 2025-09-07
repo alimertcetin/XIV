@@ -94,6 +94,20 @@ namespace XIV.Core.Utils
         {
             WriteLine(memberBuilder, line.TrimEnd(';') + ";");
         }
+
+        public void AddMemberArray(string fieldName, string[] fieldValues, string returnType, string modifier = "", string accessModifier = "public")
+        {
+            int len = fieldValues.Length;
+            var line = Space(accessModifier) + Space(modifier) + Space(returnType) + Space(fieldName) + "= new" + Space(returnType, false);
+            WriteLine(memberBuilder, line);
+            OpenBracket(memberBuilder);
+            for (int i = 0; i < len; i++)
+            {
+                var val = fieldValues[i] + ",";
+                WriteLine(memberBuilder, val);
+            }
+            CloseBracket(memberBuilder, ";");
+        }
         
         public void AddGetOnlyProperty(string propertyName, string returnType, string getBlockContent, string modifier = "", string accessModifier = "public")
         {
