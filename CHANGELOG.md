@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/alimertcetin/XIV/compare/v1.4.0...v1.4.1) (2025-09-07)
+
+
+### Bug Fixes
+
+* **ClassGenerator:** OpenBracket and CloseBracket Update ([f5b487d](https://github.com/alimertcetin/XIV/commit/f5b487d65b5688b787676739d173de6fc8c84bae))
+
 # [1.4.0](https://github.com/alimertcetin/XIV/compare/v1.3.1...v1.4.0) (2025-09-06)
 
 
