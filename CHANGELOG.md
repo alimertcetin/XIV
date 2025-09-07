@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/alimertcetin/XIV/compare/v1.4.1...v1.5.0) (2025-09-07)
+
+
+### Features
+
+* **ClassGenerator:** Add AddMemberArray function ([fa0c75a](https://github.com/alimertcetin/XIV/commit/fa0c75a8b86056725939c9b39d6b085ea82c73bd))
+
 ## [1.4.1](https://github.com/alimertcetin/XIV/compare/v1.4.0...v1.4.1) (2025-09-07)
 
 
