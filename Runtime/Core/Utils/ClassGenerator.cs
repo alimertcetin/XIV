@@ -111,9 +111,9 @@ namespace XIV.Core.Utils
         {
             if (memberBuilder.builder.Length > 0) WriteLine(memberBuilder);
             WriteLine(memberBuilder, line);
-            OpenBrackets(memberBuilder);
+            OpenBracket(memberBuilder);
             WritePropertyBlock("get", getBlockContent);
-            CloseBrackets(memberBuilder);
+            CloseBracket(memberBuilder);
         }
         
         public void AddGetSetProperty(string propertyDefinition, string getBlockContent, string setBlockContent)
@@ -121,16 +121,16 @@ namespace XIV.Core.Utils
             if (memberBuilder.builder.Length > 0) WriteLine(memberBuilder);
             WriteLine(memberBuilder, propertyDefinition);
 
-            OpenBrackets(memberBuilder);
+            OpenBracket(memberBuilder);
             WritePropertyBlock("get", getBlockContent);
             WritePropertyBlock("set", setBlockContent);
-            CloseBrackets(memberBuilder);
+            CloseBracket(memberBuilder);
         }
 
         public void StartMethod(string line)
         {
             WriteLine(methodBuilder, line);
-            OpenBrackets(methodBuilder);
+            OpenBracket(methodBuilder);
         }
 
         public void WriteMethodLine(string line)
@@ -145,7 +145,7 @@ namespace XIV.Core.Utils
 
         public void EndMethod()
         {
-            CloseBrackets(methodBuilder);
+            CloseBracket(methodBuilder);
         }
 
         public string EndClass()
@@ -189,9 +189,9 @@ namespace XIV.Core.Utils
         void WritePropertyBlock(string blockType, string blockContent)
         {
             WriteLine(memberBuilder, blockType);
-            OpenBrackets(memberBuilder);
+            OpenBracket(memberBuilder);
             WriteLine(memberBuilder, blockContent);
-            CloseBrackets(memberBuilder);
+            CloseBracket(memberBuilder);
         }
 
         void FillClassBody()
@@ -202,11 +202,11 @@ namespace XIV.Core.Utils
                 AddComment(comment, classBuilder, true);
                 WriteLineByLine(classBuilder, builder.builder.ToString());
             }
-            OpenBrackets(classBuilder);
+            OpenBracket(classBuilder);
             WriteInsideClass(innerClassBuilder, "Inner Classes");
             WriteInsideClass(memberBuilder, "Members");
             WriteInsideClass(methodBuilder, "Functions");
-            CloseBrackets(classBuilder, "class " + className);
+            CloseBracket(classBuilder, " // class " + className);
         }
 
         string PutInsideNamespace()
@@ -218,14 +218,14 @@ namespace XIV.Core.Utils
             for (var i = 0; i < count; i++)
             {
                 WriteLine(builder, "namespace " + namespaces[i]);
-                OpenBrackets(builder);
+                OpenBracket(builder);
             }
             
             WriteLineByLine(builder, classBuilder.builder.ToString());
             
             for (int i = count - 1; i >= 0; i--)
             {
-                CloseBrackets(builder, namespaces[i]);
+                CloseBracket(builder, " // " + namespaces[i]);
             }
 
             return builder.builder.ToString();
@@ -263,24 +263,24 @@ namespace XIV.Core.Utils
             builder.builder.AppendLine(intend + line);
         }
 
-        void OpenBrackets(Builder builder, string bracesLineComment = "")
+        void OpenBracket(Builder builder, string endOfBracket = "")
         {
             var braceLine = "{";
-            if (IsNull(bracesLineComment) == false)
+            if (IsNull(endOfBracket) == false)
             {
-                braceLine += "// " + bracesLineComment;
+                braceLine += endOfBracket;
             }
             WriteLine(builder, braceLine);
             builder.intendNumber++;
         }
 
-        void CloseBrackets(Builder builder, string bracesLineComment = "")
+        void CloseBracket(Builder builder, string endOfBracket = "")
         {
             builder.intendNumber--;
             var braceLine = "}";
-            if (IsNull(bracesLineComment) == false)
+            if (IsNull(endOfBracket) == false)
             {
-                braceLine += " // " + bracesLineComment;
+                braceLine += endOfBracket;
             }
             WriteLine(builder, braceLine);
         }
