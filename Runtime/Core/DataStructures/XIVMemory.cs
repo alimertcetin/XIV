@@ -20,11 +20,9 @@ namespace XIV.Core.DataStructures
     ///         XIVMemory{T} xivMem = new XIVMemory{T}(new T[4], 0, 4);
     ///         XIVMemory{T} xivSliced = xivMem.Slice(1, 2);
     ///         XIVMemory{T} xivReversed = xivMem.reversed;
-    ///         xivMem.Reverse();
     ///         Memory{T} mem = new Memory{T}(new T[4], 0, 4);
     ///         Memory{T} memSliced = mem.Slice(1, 2);
     ///         // var memReversed = mem.reversed; // not possible
-    ///         // mem.Reverse(); // not possible
     ///     }
     /// }
     /// </code>
@@ -76,7 +74,19 @@ namespace XIV.Core.DataStructures
         {
         }
 
+        public XIVMemory(T[] array) : this(array, 0, array.Length, false)
+        {
+        }
+
+        public XIVMemory(T[] array, int start, int length) : this(array, start, length, false)
+        {
+        }
+
         public XIVMemory(XIVMemory<T> xivMemory) : this(xivMemory.array, xivMemory.start, xivMemory.length, xivMemory.isReversed)
+        {
+        }
+
+        public XIVMemory(XIVMemory<T> xivMemory, int start, int length) : this(xivMemory.array, xivMemory.start + start, length, xivMemory.isReversed)
         {
         }
 
