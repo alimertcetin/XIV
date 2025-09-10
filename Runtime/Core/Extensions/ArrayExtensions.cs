@@ -38,6 +38,42 @@ namespace XIV.Core.Extensions
             return new XIVMemory<T>(array, 0, count);
         }
         
+        /// <summary>
+        /// Finds the closest item to the given position based on a custom position retrieval function, and returns it.
+        /// <typeparam name="T">Type of item</typeparam>
+        /// <param name="arr">The array to look</param>
+        /// <param name="arrLen">The length of the <paramref name="arr"/></param>
+        /// <param name="currPos">Current position to compare distances</param>
+        /// <param name="closestPoint">Closest point that is returned from <paramref name="getTPosFunc"/></param>
+        /// <param name="getTPosFunc">Position retrieval function</param>
+        /// </summary>
+        public static T GetClosest<T>(this T[] arr, int arrLen, Vec3 currPos, out float distance, out Vec3 closestPoint, Func<T, Vec3> getTPosFunc)
+        {
+            var closest = default(T);
+            closestPoint = default(Vec3);
+            distance = float.MaxValue;
+            for (int i = 0; i < arrLen; i++)
+            {
+                var pos = getTPosFunc(arr[i]);
+                var dist = (currPos - pos).sqrMagnitude;
+                if (dist < distance)
+                {
+                    closest = arr[i];
+                    closestPoint = pos;
+                    distance = dist;
+                }
+            }
+            return closest;
+        }
+        
+        /// <summary>
+        /// <inheritdoc cref="GetClosest{T}(T[], int, Vec3, out float, out Vec3, Func{T, Vec3})"/>
+        /// </summary>
+        public static T GetClosest<T>(this T[] arr, int arrLen, Vec3 currPos, Func<T, Vec3> getTPosFunc)
+        {
+            return GetClosest(arr, arrLen, currPos, out _, out _, getTPosFunc);
+        }
+        
         public static bool Contains<T>(this T[] array, int arrLen, T item, out int index)
         {
             index = -1;
