@@ -6,7 +6,8 @@ namespace XIV.Core.Extensions
     public static class ArrayExtensions
     {
         /// <summary>
-        /// Moves the items to the beginning of the array and creates a new <see cref="XIVMemory{T}"/> that has filtered items
+        /// Moves the items to the beginning of the array and creates a new <see cref="XIVMemory{T}"/> that has filtered items.
+        /// This modifies the original array. You can use this if order doesn't matter.
         /// </summary>
         /// <returns>A new <see cref="XIVMemory{T}"/> that has filtered items</returns>
         public static XIVMemory<T> FilterBy<T>(this T[] array, int arrLen, Func<T, bool> func)
