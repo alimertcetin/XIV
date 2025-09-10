@@ -1820,28 +1820,6 @@ references:
   isSpec: "True"
   fullName: XIV.Core.DataStructures.XIVColor.yellow
   nameWithType: XIVColor.yellow
-- uid: XIV.Core.DataStructures.XIVMemoryExtensions
-  name: XIVMemoryExtensions
-  href: api/XIV.Core.DataStructures.XIVMemoryExtensions.html
-  commentId: T:XIV.Core.DataStructures.XIVMemoryExtensions
-  fullName: XIV.Core.DataStructures.XIVMemoryExtensions
-  nameWithType: XIVMemoryExtensions
-- uid: XIV.Core.DataStructures.XIVMemoryExtensions.AsXIVMemory*
-  name: AsXIVMemory
-  href: api/XIV.Core.DataStructures.XIVMemoryExtensions.html#XIV_Core_DataStructures_XIVMemoryExtensions_AsXIVMemory_
-  commentId: Overload:XIV.Core.DataStructures.XIVMemoryExtensions.AsXIVMemory
-  isSpec: "True"
-  fullName: XIV.Core.DataStructures.XIVMemoryExtensions.AsXIVMemory
-  nameWithType: XIVMemoryExtensions.AsXIVMemory
-- uid: XIV.Core.DataStructures.XIVMemoryExtensions.AsXIVMemory``1(System.Collections.Generic.IList{``0})
-  name: AsXIVMemory<T>(IList<T>)
-  href: api/XIV.Core.DataStructures.XIVMemoryExtensions.html#XIV_Core_DataStructures_XIVMemoryExtensions_AsXIVMemory__1_System_Collections_Generic_IList___0__
-  commentId: M:XIV.Core.DataStructures.XIVMemoryExtensions.AsXIVMemory``1(System.Collections.Generic.IList{``0})
-  name.vb: AsXIVMemory(Of T)(IList(Of T))
-  fullName: XIV.Core.DataStructures.XIVMemoryExtensions.AsXIVMemory<T>(System.Collections.Generic.IList<T>)
-  fullName.vb: XIV.Core.DataStructures.XIVMemoryExtensions.AsXIVMemory(Of T)(System.Collections.Generic.IList(Of T))
-  nameWithType: XIVMemoryExtensions.AsXIVMemory<T>(IList<T>)
-  nameWithType.vb: XIVMemoryExtensions.AsXIVMemory(Of T)(IList(Of T))
 - uid: XIV.Core.DataStructures.XIVMemory`1
   name: XIVMemory<T>
   href: api/XIV.Core.DataStructures.XIVMemory-1.html
@@ -1878,6 +1856,33 @@ references:
   fullName.vb: XIV.Core.DataStructures.XIVMemory(Of T).New(XIV.Core.DataStructures.XIVMemory(Of T))
   nameWithType: XIVMemory<T>.XIVMemory(XIVMemory<T>)
   nameWithType.vb: XIVMemory(Of T).New(XIVMemory(Of T))
+- uid: XIV.Core.DataStructures.XIVMemory`1.#ctor(XIV.Core.DataStructures.XIVMemory{`0},System.Int32,System.Int32)
+  name: XIVMemory(XIVMemory<T>, int, int)
+  href: api/XIV.Core.DataStructures.XIVMemory-1.html#XIV_Core_DataStructures_XIVMemory_1__ctor_XIV_Core_DataStructures_XIVMemory__0__System_Int32_System_Int32_
+  commentId: M:XIV.Core.DataStructures.XIVMemory`1.#ctor(XIV.Core.DataStructures.XIVMemory{`0},System.Int32,System.Int32)
+  name.vb: New(XIVMemory(Of T), Integer, Integer)
+  fullName: XIV.Core.DataStructures.XIVMemory<T>.XIVMemory(XIV.Core.DataStructures.XIVMemory<T>, int, int)
+  fullName.vb: XIV.Core.DataStructures.XIVMemory(Of T).New(XIV.Core.DataStructures.XIVMemory(Of T), Integer, Integer)
+  nameWithType: XIVMemory<T>.XIVMemory(XIVMemory<T>, int, int)
+  nameWithType.vb: XIVMemory(Of T).New(XIVMemory(Of T), Integer, Integer)
+- uid: XIV.Core.DataStructures.XIVMemory`1.#ctor(`0[])
+  name: XIVMemory(T[])
+  href: api/XIV.Core.DataStructures.XIVMemory-1.html#XIV_Core_DataStructures_XIVMemory_1__ctor__0___
+  commentId: M:XIV.Core.DataStructures.XIVMemory`1.#ctor(`0[])
+  name.vb: New(T())
+  fullName: XIV.Core.DataStructures.XIVMemory<T>.XIVMemory(T[])
+  fullName.vb: XIV.Core.DataStructures.XIVMemory(Of T).New(T())
+  nameWithType: XIVMemory<T>.XIVMemory(T[])
+  nameWithType.vb: XIVMemory(Of T).New(T())
+- uid: XIV.Core.DataStructures.XIVMemory`1.#ctor(`0[],System.Int32,System.Int32)
+  name: XIVMemory(T[], int, int)
+  href: api/XIV.Core.DataStructures.XIVMemory-1.html#XIV_Core_DataStructures_XIVMemory_1__ctor__0___System_Int32_System_Int32_
+  commentId: M:XIV.Core.DataStructures.XIVMemory`1.#ctor(`0[],System.Int32,System.Int32)
+  name.vb: New(T(), Integer, Integer)
+  fullName: XIV.Core.DataStructures.XIVMemory<T>.XIVMemory(T[], int, int)
+  fullName.vb: XIV.Core.DataStructures.XIVMemory(Of T).New(T(), Integer, Integer)
+  nameWithType: XIVMemory<T>.XIVMemory(T[], int, int)
+  nameWithType.vb: XIVMemory(Of T).New(T(), Integer, Integer)
 - uid: XIV.Core.DataStructures.XIVMemory`1.#ctor*
   name: XIVMemory
   href: api/XIV.Core.DataStructures.XIVMemory-1.html#XIV_Core_DataStructures_XIVMemory_1__ctor_
@@ -2260,12 +2265,22 @@ references:
   commentId: T:XIV.Core.Extensions.IListExtensions
   fullName: XIV.Core.Extensions.IListExtensions
   nameWithType: IListExtensions
-- uid: XIV.Core.Extensions.IListExtensions.PickRandom(System.Collections.IList)
-  name: PickRandom(IList)
-  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_PickRandom_System_Collections_IList_
-  commentId: M:XIV.Core.Extensions.IListExtensions.PickRandom(System.Collections.IList)
-  fullName: XIV.Core.Extensions.IListExtensions.PickRandom(System.Collections.IList)
-  nameWithType: IListExtensions.PickRandom(IList)
+- uid: XIV.Core.Extensions.IListExtensions.GetTotalWeight*
+  name: GetTotalWeight
+  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_GetTotalWeight_
+  commentId: Overload:XIV.Core.Extensions.IListExtensions.GetTotalWeight
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.IListExtensions.GetTotalWeight
+  nameWithType: IListExtensions.GetTotalWeight
+- uid: XIV.Core.Extensions.IListExtensions.GetTotalWeight``1(System.Collections.Generic.IList{``0},System.Func{``0,System.Int32})
+  name: GetTotalWeight<T>(IList<T>, Func<T, int>)
+  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_GetTotalWeight__1_System_Collections_Generic_IList___0__System_Func___0_System_Int32__
+  commentId: M:XIV.Core.Extensions.IListExtensions.GetTotalWeight``1(System.Collections.Generic.IList{``0},System.Func{``0,System.Int32})
+  name.vb: GetTotalWeight(Of T)(IList(Of T), Func(Of T, Integer))
+  fullName: XIV.Core.Extensions.IListExtensions.GetTotalWeight<T>(System.Collections.Generic.IList<T>, System.Func<T, int>)
+  fullName.vb: XIV.Core.Extensions.IListExtensions.GetTotalWeight(Of T)(System.Collections.Generic.IList(Of T), System.Func(Of T, Integer))
+  nameWithType: IListExtensions.GetTotalWeight<T>(IList<T>, Func<T, int>)
+  nameWithType.vb: IListExtensions.GetTotalWeight(Of T)(IList(Of T), Func(Of T, Integer))
 - uid: XIV.Core.Extensions.IListExtensions.PickRandom*
   name: PickRandom
   href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_PickRandom_
@@ -2282,15 +2297,31 @@ references:
   fullName.vb: XIV.Core.Extensions.IListExtensions.PickRandom(Of T)(System.Collections.Generic.IList(Of T))
   nameWithType: IListExtensions.PickRandom<T>(IList<T>)
   nameWithType.vb: IListExtensions.PickRandom(Of T)(IList(Of T))
-- uid: XIV.Core.Extensions.IListExtensions.PickRandom``1(System.Collections.IList)
-  name: PickRandom<T>(IList)
-  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_PickRandom__1_System_Collections_IList_
-  commentId: M:XIV.Core.Extensions.IListExtensions.PickRandom``1(System.Collections.IList)
-  name.vb: PickRandom(Of T)(IList)
-  fullName: XIV.Core.Extensions.IListExtensions.PickRandom<T>(System.Collections.IList)
-  fullName.vb: XIV.Core.Extensions.IListExtensions.PickRandom(Of T)(System.Collections.IList)
-  nameWithType: IListExtensions.PickRandom<T>(IList)
-  nameWithType.vb: IListExtensions.PickRandom(Of T)(IList)
+- uid: XIV.Core.Extensions.IListExtensions.PickWeighted*
+  name: PickWeighted
+  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_PickWeighted_
+  commentId: Overload:XIV.Core.Extensions.IListExtensions.PickWeighted
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.IListExtensions.PickWeighted
+  nameWithType: IListExtensions.PickWeighted
+- uid: XIV.Core.Extensions.IListExtensions.PickWeighted``1(System.Collections.Generic.IList{``0},System.Func{``0,System.Int32})
+  name: PickWeighted<T>(IList<T>, Func<T, int>)
+  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_PickWeighted__1_System_Collections_Generic_IList___0__System_Func___0_System_Int32__
+  commentId: M:XIV.Core.Extensions.IListExtensions.PickWeighted``1(System.Collections.Generic.IList{``0},System.Func{``0,System.Int32})
+  name.vb: PickWeighted(Of T)(IList(Of T), Func(Of T, Integer))
+  fullName: XIV.Core.Extensions.IListExtensions.PickWeighted<T>(System.Collections.Generic.IList<T>, System.Func<T, int>)
+  fullName.vb: XIV.Core.Extensions.IListExtensions.PickWeighted(Of T)(System.Collections.Generic.IList(Of T), System.Func(Of T, Integer))
+  nameWithType: IListExtensions.PickWeighted<T>(IList<T>, Func<T, int>)
+  nameWithType.vb: IListExtensions.PickWeighted(Of T)(IList(Of T), Func(Of T, Integer))
+- uid: XIV.Core.Extensions.IListExtensions.PickWeighted``1(System.Collections.Generic.IList{``0},System.Int32,System.Func{``0,System.Int32})
+  name: PickWeighted<T>(IList<T>, int, Func<T, int>)
+  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_PickWeighted__1_System_Collections_Generic_IList___0__System_Int32_System_Func___0_System_Int32__
+  commentId: M:XIV.Core.Extensions.IListExtensions.PickWeighted``1(System.Collections.Generic.IList{``0},System.Int32,System.Func{``0,System.Int32})
+  name.vb: PickWeighted(Of T)(IList(Of T), Integer, Func(Of T, Integer))
+  fullName: XIV.Core.Extensions.IListExtensions.PickWeighted<T>(System.Collections.Generic.IList<T>, int, System.Func<T, int>)
+  fullName.vb: XIV.Core.Extensions.IListExtensions.PickWeighted(Of T)(System.Collections.Generic.IList(Of T), Integer, System.Func(Of T, Integer))
+  nameWithType: IListExtensions.PickWeighted<T>(IList<T>, int, Func<T, int>)
+  nameWithType.vb: IListExtensions.PickWeighted(Of T)(IList(Of T), Integer, Func(Of T, Integer))
 - uid: XIV.Core.Extensions.StringExtensions
   name: StringExtensions
   href: api/XIV.Core.Extensions.StringExtensions.html
@@ -2718,6 +2749,85 @@ references:
   isSpec: "True"
   fullName: XIV.Core.Extensions.XIVColorUtility.ToHtmlStringRGBA
   nameWithType: XIVColorUtility.ToHtmlStringRGBA
+- uid: XIV.Core.Extensions.XIVMemoryExtensions
+  name: XIVMemoryExtensions
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html
+  commentId: T:XIV.Core.Extensions.XIVMemoryExtensions
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions
+  nameWithType: XIVMemoryExtensions
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory*
+  name: AsXIVMemory
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_AsXIVMemory_
+  commentId: Overload:XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory
+  nameWithType: XIVMemoryExtensions.AsXIVMemory
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory``1(System.Collections.Generic.IList{``0})
+  name: AsXIVMemory<T>(IList<T>)
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_AsXIVMemory__1_System_Collections_Generic_IList___0__
+  commentId: M:XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory``1(System.Collections.Generic.IList{``0})
+  name.vb: AsXIVMemory(Of T)(IList(Of T))
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory<T>(System.Collections.Generic.IList<T>)
+  fullName.vb: XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory(Of T)(System.Collections.Generic.IList(Of T))
+  nameWithType: XIVMemoryExtensions.AsXIVMemory<T>(IList<T>)
+  nameWithType.vb: XIVMemoryExtensions.AsXIVMemory(Of T)(IList(Of T))
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.FilterBy*
+  name: FilterBy
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_FilterBy_
+  commentId: Overload:XIV.Core.Extensions.XIVMemoryExtensions.FilterBy
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.FilterBy
+  nameWithType: XIVMemoryExtensions.FilterBy
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.FilterBy``1(XIV.Core.DataStructures.XIVMemory{``0},System.Int32,System.Func{``0,System.Boolean})
+  name: FilterBy<T>(XIVMemory<T>, int, Func<T, bool>)
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_FilterBy__1_XIV_Core_DataStructures_XIVMemory___0__System_Int32_System_Func___0_System_Boolean__
+  commentId: M:XIV.Core.Extensions.XIVMemoryExtensions.FilterBy``1(XIV.Core.DataStructures.XIVMemory{``0},System.Int32,System.Func{``0,System.Boolean})
+  name.vb: FilterBy(Of T)(XIVMemory(Of T), Integer, Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.FilterBy<T>(XIV.Core.DataStructures.XIVMemory<T>, int, System.Func<T, bool>)
+  fullName.vb: XIV.Core.Extensions.XIVMemoryExtensions.FilterBy(Of T)(XIV.Core.DataStructures.XIVMemory(Of T), Integer, System.Func(Of T, Boolean))
+  nameWithType: XIVMemoryExtensions.FilterBy<T>(XIVMemory<T>, int, Func<T, bool>)
+  nameWithType.vb: XIVMemoryExtensions.FilterBy(Of T)(XIVMemory(Of T), Integer, Func(Of T, Boolean))
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.GetTotalWeight*
+  name: GetTotalWeight
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_GetTotalWeight_
+  commentId: Overload:XIV.Core.Extensions.XIVMemoryExtensions.GetTotalWeight
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.GetTotalWeight
+  nameWithType: XIVMemoryExtensions.GetTotalWeight
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.GetTotalWeight``1(XIV.Core.DataStructures.XIVMemory{``0},System.Func{``0,System.Int32})
+  name: GetTotalWeight<T>(XIVMemory<T>, Func<T, int>)
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_GetTotalWeight__1_XIV_Core_DataStructures_XIVMemory___0__System_Func___0_System_Int32__
+  commentId: M:XIV.Core.Extensions.XIVMemoryExtensions.GetTotalWeight``1(XIV.Core.DataStructures.XIVMemory{``0},System.Func{``0,System.Int32})
+  name.vb: GetTotalWeight(Of T)(XIVMemory(Of T), Func(Of T, Integer))
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.GetTotalWeight<T>(XIV.Core.DataStructures.XIVMemory<T>, System.Func<T, int>)
+  fullName.vb: XIV.Core.Extensions.XIVMemoryExtensions.GetTotalWeight(Of T)(XIV.Core.DataStructures.XIVMemory(Of T), System.Func(Of T, Integer))
+  nameWithType: XIVMemoryExtensions.GetTotalWeight<T>(XIVMemory<T>, Func<T, int>)
+  nameWithType.vb: XIVMemoryExtensions.GetTotalWeight(Of T)(XIVMemory(Of T), Func(Of T, Integer))
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.PickWeighted*
+  name: PickWeighted
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_PickWeighted_
+  commentId: Overload:XIV.Core.Extensions.XIVMemoryExtensions.PickWeighted
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.PickWeighted
+  nameWithType: XIVMemoryExtensions.PickWeighted
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.PickWeighted``1(XIV.Core.DataStructures.XIVMemory{``0},System.Func{``0,System.Int32})
+  name: PickWeighted<T>(XIVMemory<T>, Func<T, int>)
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_PickWeighted__1_XIV_Core_DataStructures_XIVMemory___0__System_Func___0_System_Int32__
+  commentId: M:XIV.Core.Extensions.XIVMemoryExtensions.PickWeighted``1(XIV.Core.DataStructures.XIVMemory{``0},System.Func{``0,System.Int32})
+  name.vb: PickWeighted(Of T)(XIVMemory(Of T), Func(Of T, Integer))
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.PickWeighted<T>(XIV.Core.DataStructures.XIVMemory<T>, System.Func<T, int>)
+  fullName.vb: XIV.Core.Extensions.XIVMemoryExtensions.PickWeighted(Of T)(XIV.Core.DataStructures.XIVMemory(Of T), System.Func(Of T, Integer))
+  nameWithType: XIVMemoryExtensions.PickWeighted<T>(XIVMemory<T>, Func<T, int>)
+  nameWithType.vb: XIVMemoryExtensions.PickWeighted(Of T)(XIVMemory(Of T), Func(Of T, Integer))
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.PickWeighted``1(XIV.Core.DataStructures.XIVMemory{``0},System.Int32,System.Func{``0,System.Int32})
+  name: PickWeighted<T>(XIVMemory<T>, int, Func<T, int>)
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_PickWeighted__1_XIV_Core_DataStructures_XIVMemory___0__System_Int32_System_Func___0_System_Int32__
+  commentId: M:XIV.Core.Extensions.XIVMemoryExtensions.PickWeighted``1(XIV.Core.DataStructures.XIVMemory{``0},System.Int32,System.Func{``0,System.Int32})
+  name.vb: PickWeighted(Of T)(XIVMemory(Of T), Integer, Func(Of T, Integer))
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.PickWeighted<T>(XIV.Core.DataStructures.XIVMemory<T>, int, System.Func<T, int>)
+  fullName.vb: XIV.Core.Extensions.XIVMemoryExtensions.PickWeighted(Of T)(XIV.Core.DataStructures.XIVMemory(Of T), Integer, System.Func(Of T, Integer))
+  nameWithType: XIVMemoryExtensions.PickWeighted<T>(XIVMemory<T>, int, Func<T, int>)
+  nameWithType.vb: XIVMemoryExtensions.PickWeighted(Of T)(XIVMemory(Of T), Integer, Func(Of T, Integer))
 - uid: XIV.Core.Utils
   name: XIV.Core.Utils
   href: api/XIV.Core.Utils.html

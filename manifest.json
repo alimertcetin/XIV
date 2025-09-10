@@ -98,21 +98,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "XIV.Core.DataStructures.XIVMemory<T>",
-      "Summary": "<p sourcefile=\"api/XIV.Core.DataStructures.XIVMemory-1.yml\" sourcestartlinenumber=\"1\">Alternative structure to the <xref href=\"System.Memory%601\" data-throw-if-not-resolved=\"false\"></xref>.\nAnd also can be used as replacement of <xref href=\"System.Span%601\" data-throw-if-not-resolved=\"false\"></xref>.\nYou should use Memory and Span whenever it is possible.\nThis struct is useful when you want constraints.\n<example></example></p>\n<pre><code class=\"lang-csharp\">public class MemExampleBase{T} { }\npublic class MemExample{T} : MemExampleBase{XIVMemory{T}}\n    // public class XIVMemExample{T} : MemExampleBase{Span{T}} // not possible\n    // public class XIVMemExample{T} : MemExampleBase{Memory{T}} // possible\n{\n    void Example()\n    {\n        XIVMemory{T} xivMem = new XIVMemory{T}(new T[4], 0, 4);\n        XIVMemory{T} xivSliced = xivMem.Slice(1, 2);\n        XIVMemory{T} xivReversed = xivMem.reversed;\n        xivMem.Reverse();\n        Memory{T} mem = new Memory{T}(new T[4], 0, 4);\n        Memory{T} memSliced = mem.Slice(1, 2);\n        // var memReversed = mem.reversed; // not possible\n        // mem.Reverse(); // not possible\n    }\n}</code></pre>\n\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/XIV.Core.DataStructures.XIVMemoryExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/XIV.Core.DataStructures.XIVMemoryExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "XIV.Core.DataStructures.XIVMemoryExtensions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/XIV.Core.DataStructures.XIVMemory-1.yml\" sourcestartlinenumber=\"1\">Alternative structure to the <xref href=\"System.Memory%601\" data-throw-if-not-resolved=\"false\"></xref>.\nAnd also can be used as replacement of <xref href=\"System.Span%601\" data-throw-if-not-resolved=\"false\"></xref>.\nYou should use Memory and Span whenever it is possible.\nThis struct is useful when you want constraints.\n<example></example></p>\n<pre><code class=\"lang-csharp\">public class MemExampleBase{T} { }\npublic class MemExample{T} : MemExampleBase{XIVMemory{T}}\n    // public class XIVMemExample{T} : MemExampleBase{Span{T}} // not possible\n    // public class XIVMemExample{T} : MemExampleBase{Memory{T}} // possible\n{\n    void Example()\n    {\n        XIVMemory{T} xivMem = new XIVMemory{T}(new T[4], 0, 4);\n        XIVMemory{T} xivSliced = xivMem.Slice(1, 2);\n        XIVMemory{T} xivReversed = xivMem.reversed;\n        Memory{T} mem = new Memory{T}(new T[4], 0, 4);\n        Memory{T} memSliced = mem.Slice(1, 2);\n        // var memReversed = mem.reversed; // not possible\n    }\n}</code></pre>\n\n"
     },
     {
       "type": "ManagedReference",
@@ -224,6 +210,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "XIV.Core.Extensions.XIVColorUtility",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Extensions.XIVMemoryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Extensions.XIVMemoryExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Extensions.XIVMemoryExtensions",
       "Summary": null
     },
     {

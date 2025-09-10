@@ -87,13 +87,6 @@
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
 
-    <h3 id="classes">
-Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="XIV.Core.DataStructures.XIVMemoryExtensions.html">XIVMemoryExtensions</a></dt>
-      <dd></dd>
-    </dl>
     <h3 id="structs">
 Structs
 </h3>
@@ -130,11 +123,9 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
         XIVMemory{T} xivMem = new XIVMemory{T}(new T[4], 0, 4);
         XIVMemory{T} xivSliced = xivMem.Slice(1, 2);
         XIVMemory{T} xivReversed = xivMem.reversed;
-        xivMem.Reverse();
         Memory{T} mem = new Memory{T}(new T[4], 0, 4);
         Memory{T} memSliced = mem.Slice(1, 2);
         // var memReversed = mem.reversed; // not possible
-        // mem.Reverse(); // not possible
     }
 }</code></pre>
 

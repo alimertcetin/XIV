@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct XIVMemory&lt;T&gt; ">
       
-      <meta name="description" content="Alternative structure to the . And also can be used as replacement of . You should use Memory and Span whenever it is possible. This struct is useful when you want constraints.  public class MemExampleBase{T} { } public class MemExample{T} : MemExampleBase{XIVMemory{T}}     // public class XIVMemExample{T} : MemExampleBase{Span{T}} // not possible     // public class XIVMemExample{T} : MemExampleBase{Memory{T}} // possible {     void Example()     {         XIVMemory{T} xivMem = new XIVMemory{T}(new T[4], 0, 4);         XIVMemory{T} xivSliced = xivMem.Slice(1, 2);         XIVMemory{T} xivReversed = xivMem.reversed;         xivMem.Reverse();         Memory{T} mem = new Memory{T}(new T[4], 0, 4);         Memory{T} memSliced = mem.Slice(1, 2);         // var memReversed = mem.reversed; // not possible         // mem.Reverse(); // not possible     } }">
+      <meta name="description" content="Alternative structure to the . And also can be used as replacement of . You should use Memory and Span whenever it is possible. This struct is useful when you want constraints.  public class MemExampleBase{T} { } public class MemExample{T} : MemExampleBase{XIVMemory{T}}     // public class XIVMemExample{T} : MemExampleBase{Span{T}} // not possible     // public class XIVMemExample{T} : MemExampleBase{Memory{T}} // possible {     void Example()     {         XIVMemory{T} xivMem = new XIVMemory{T}(new T[4], 0, 4);         XIVMemory{T} xivSliced = xivMem.Slice(1, 2);         XIVMemory{T} xivReversed = xivMem.reversed;         Memory{T} mem = new Memory{T}(new T[4], 0, 4);         Memory{T} memSliced = mem.Slice(1, 2);         // var memReversed = mem.reversed; // not possible     } }">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="XIV_Core_DataStructures_XIVMemory_1" data-uid="XIV.Core.DataStructures.XIVMemory`1" class="text-break">
-Struct XIVMemory&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L33"><i class="bi bi-code-slash"></i></a>
+Struct XIVMemory&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -108,11 +108,9 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
         XIVMemory{T} xivMem = new XIVMemory{T}(new T[4], 0, 4);
         XIVMemory{T} xivSliced = xivMem.Slice(1, 2);
         XIVMemory{T} xivReversed = xivMem.reversed;
-        xivMem.Reverse();
         Memory{T} mem = new Memory{T}(new T[4], 0, 4);
         Memory{T} memSliced = mem.Slice(1, 2);
         // var memReversed = mem.reversed; // not possible
-        // mem.Reverse(); // not possible
     }
 }</code></pre>
 
@@ -157,6 +155,22 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
     </div>
   </dd></dl>
 
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_FilterBy__1_XIV_Core_DataStructures_XIVMemory___0__System_Int32_System_Func___0_System_Boolean__">XIVMemoryExtensions.FilterBy&lt;T&gt;(XIVMemory&lt;T&gt;, int, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_GetTotalWeight__1_XIV_Core_DataStructures_XIVMemory___0__System_Func___0_System_Int32__">XIVMemoryExtensions.GetTotalWeight&lt;T&gt;(XIVMemory&lt;T&gt;, Func&lt;T, int&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_PickWeighted__1_XIV_Core_DataStructures_XIVMemory___0__System_Func___0_System_Int32__">XIVMemoryExtensions.PickWeighted&lt;T&gt;(XIVMemory&lt;T&gt;, Func&lt;T, int&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_PickWeighted__1_XIV_Core_DataStructures_XIVMemory___0__System_Int32_System_Func___0_System_Int32__">XIVMemoryExtensions.PickWeighted&lt;T&gt;(XIVMemory&lt;T&gt;, int, Func&lt;T, int&gt;)</a>
+  </div>
+  </dd></dl>
 
 
 
@@ -170,7 +184,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1__ctor_System_Collections_Generic_IList__0__" data-uid="XIV.Core.DataStructures.XIVMemory`1.#ctor(System.Collections.Generic.IList{`0})">
   XIVMemory(IList&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -201,7 +215,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1__ctor_System_Collections_Generic_IList__0__System_Int32_System_Int32_" data-uid="XIV.Core.DataStructures.XIVMemory`1.#ctor(System.Collections.Generic.IList{`0},System.Int32,System.Int32)">
   XIVMemory(IList&lt;T&gt;, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -236,7 +250,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1__ctor_XIV_Core_DataStructures_XIVMemory__0__" data-uid="XIV.Core.DataStructures.XIVMemory`1.#ctor(XIV.Core.DataStructures.XIVMemory{`0})">
   XIVMemory(XIVMemory&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -263,6 +277,107 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
 
 
+  <a id="XIV_Core_DataStructures_XIVMemory_1__ctor_" data-uid="XIV.Core.DataStructures.XIVMemory`1.#ctor*"></a>
+
+  <h3 id="XIV_Core_DataStructures_XIVMemory_1__ctor_XIV_Core_DataStructures_XIVMemory__0__System_Int32_System_Int32_" data-uid="XIV.Core.DataStructures.XIVMemory`1.#ctor(XIV.Core.DataStructures.XIVMemory{`0},System.Int32,System.Int32)">
+  XIVMemory(XIVMemory&lt;T&gt;, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XIVMemory(XIVMemory&lt;T&gt; xivMemory, int start, int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xivMemory</code> <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_DataStructures_XIVMemory_1__ctor_" data-uid="XIV.Core.DataStructures.XIVMemory`1.#ctor*"></a>
+
+  <h3 id="XIV_Core_DataStructures_XIVMemory_1__ctor__0___" data-uid="XIV.Core.DataStructures.XIVMemory`1.#ctor(`0[])">
+  XIVMemory(T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XIVMemory(T[] array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_DataStructures_XIVMemory_1__ctor_" data-uid="XIV.Core.DataStructures.XIVMemory`1.#ctor*"></a>
+
+  <h3 id="XIV_Core_DataStructures_XIVMemory_1__ctor__0___System_Int32_System_Int32_" data-uid="XIV.Core.DataStructures.XIVMemory`1.#ctor(`0[],System.Int32,System.Int32)">
+  XIVMemory(T[], int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XIVMemory(T[] array, int start, int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
+    <dd></dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -271,7 +386,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1_IsReversed" data-uid="XIV.Core.DataStructures.XIVMemory`1.IsReversed">
   IsReversed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -302,7 +417,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1_Item_System_Int32_" data-uid="XIV.Core.DataStructures.XIVMemory`1.Item(System.Int32)">
   this[int]
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -338,7 +453,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1_Length" data-uid="XIV.Core.DataStructures.XIVMemory`1.Length">
   Length
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -369,7 +484,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1_reversed" data-uid="XIV.Core.DataStructures.XIVMemory`1.reversed">
   reversed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -404,7 +519,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1_AsSpan" data-uid="XIV.Core.DataStructures.XIVMemory`1.AsSpan">
   AsSpan()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -435,7 +550,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1_Equals_System_Object_" data-uid="XIV.Core.DataStructures.XIVMemory`1.Equals(System.Object)">
   Equals(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
@@ -474,7 +589,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1_Equals_XIV_Core_DataStructures_XIVMemory__0__" data-uid="XIV.Core.DataStructures.XIVMemory`1.Equals(XIV.Core.DataStructures.XIVMemory{`0})">
   Equals(XIVMemory&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
@@ -513,7 +628,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1_GetHashCode" data-uid="XIV.Core.DataStructures.XIVMemory`1.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
@@ -546,7 +661,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1_GetUnderlyingArray" data-uid="XIV.Core.DataStructures.XIVMemory`1.GetUnderlyingArray">
   GetUnderlyingArray()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -577,7 +692,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1_Slice_System_Int32_System_Int32_" data-uid="XIV.Core.DataStructures.XIVMemory`1.Slice(System.Int32,System.Int32)">
   Slice(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -615,7 +730,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1_ToArray" data-uid="XIV.Core.DataStructures.XIVMemory`1.ToArray">
   ToArray()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -650,7 +765,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1_op_Equality_XIV_Core_DataStructures_XIVMemory__0__XIV_Core_DataStructures_XIVMemory__0__" data-uid="XIV.Core.DataStructures.XIVMemory`1.op_Equality(XIV.Core.DataStructures.XIVMemory{`0},XIV.Core.DataStructures.XIVMemory{`0})">
   operator ==(XIVMemory&lt;T&gt;, XIVMemory&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L156"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -688,7 +803,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1_op_Implicit__0____XIV_Core_DataStructures_XIVMemory__0_" data-uid="XIV.Core.DataStructures.XIVMemory`1.op_Implicit(`0[])~XIV.Core.DataStructures.XIVMemory{`0}">
   implicit operator XIVMemory&lt;T&gt;(T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -724,7 +839,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 
   <h3 id="XIV_Core_DataStructures_XIVMemory_1_op_Inequality_XIV_Core_DataStructures_XIVMemory__0__XIV_Core_DataStructures_XIVMemory__0__" data-uid="XIV.Core.DataStructures.XIVMemory`1.op_Inequality(XIV.Core.DataStructures.XIVMemory{`0},XIV.Core.DataStructures.XIVMemory{`0})">
   operator !=(XIVMemory&lt;T&gt;, XIVMemory&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -762,7 +877,7 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L33" class="edit-link">Edit this page</a>
+          <a href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVMemory.cs/#L31" class="edit-link">Edit this page</a>
         </div>
 
 
