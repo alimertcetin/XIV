@@ -19,6 +19,42 @@ namespace XIV.Core.Extensions
         }
         
         /// <summary>
+        /// Finds the closest item to the given position based on a custom position retrieval function, and returns it.
+        /// <typeparam name="T">Type of item</typeparam>
+        /// <param name="arr">The <seealso cref="XIVMemory{T}"/> to look</param>
+        /// <param name="arrLen">The length of the <paramref name="arr"/></param>
+        /// <param name="currPos">Current position to compare distances</param>
+        /// <param name="closestPoint">Closest point that is returned from <paramref name="getTPosFunc"/></param>
+        /// <param name="getTPosFunc">Position retrieval function</param>
+        /// </summary>
+        public static T GetClosest<T>(this XIVMemory<T> arr, int arrLen, Vec3 currPos, out float distance, out Vec3 closestPoint, Func<T, Vec3> getTPosFunc)
+        {
+            var closest = default(T);
+            closestPoint = default(Vec3);
+            distance = float.MaxValue;
+            for (int i = 0; i < arrLen; i++)
+            {
+                var pos = getTPosFunc(arr[i]);
+                var dist = (currPos - pos).sqrMagnitude;
+                if (dist < distance)
+                {
+                    closest = arr[i];
+                    closestPoint = pos;
+                    distance = dist;
+                }
+            }
+            return closest;
+        }
+
+        /// <summary>
+        /// <inheritdoc cref="GetClosest{T}(XIVMemory{T}, int, Vec3, out float, out Vec3, Func{T, Vec3})"/>
+        /// </summary>
+        public static T GetClosest<T>(this XIVMemory<T> arr, int arrLen, Vec3 currPos, Func<T, Vec3> getTPosFunc)
+        {
+            return GetClosest(arr, arrLen, currPos, out _, out _, getTPosFunc);
+        }
+        
+        /// <summary>
         /// Moves the items to the beginning of the array and creates a new <see cref="XIVMemory{T}"/> that has filtered items.
         /// This modifies the original array. You can use this if order doesn't matter.
         /// </summary>
