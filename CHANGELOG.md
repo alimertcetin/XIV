@@ -1,3 +1,12 @@
+# [1.6.0](https://github.com/alimertcetin/XIV/compare/v1.5.0...v1.6.0) (2025-09-10)
+
+
+### Features
+
+* **IListExtensions:** Remove non-generic functions ([e5fd4b2](https://github.com/alimertcetin/XIV/commit/e5fd4b2cc322218897588d30b5fff591c4d57d1c))
+* **XIVMemory:** Add new constructors and fix documentation ([409261d](https://github.com/alimertcetin/XIV/commit/409261d02db7861f2907ae6892e8634518339b32))
+* **XIVMemoryExntesions:** FilterBy, PickWeighted, GetTotalWeight ([258e308](https://github.com/alimertcetin/XIV/commit/258e3082316d0c99e0554d4b969c6c90ce1fc1c2))
+
 # [1.5.0](https://github.com/alimertcetin/XIV/compare/v1.4.1...v1.5.0) (2025-09-07)
 
 
