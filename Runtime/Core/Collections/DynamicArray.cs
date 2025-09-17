@@ -6,6 +6,9 @@ namespace XIV.Core.Collections
 {
     public class DynamicArray<T> : IList<T>, IList
     {
+        public delegate void ForEachDelegate(ref T item);
+        public delegate bool RemoveDelegate(ref T item);
+        
         T[] values;
         public ref T this[int index] => ref values[index];
         public int Count { get; private set; }
@@ -146,10 +149,31 @@ namespace XIV.Core.Collections
             return removed;
         }
 
+        public int RemoveAll(RemoveDelegate match)
+        {
+            int removed = 0;
+            for (int i = Count - 1; i >= 0; i--)
+            {
+                if (match.Invoke(ref values[i]) == false) continue;
+                RemoveAt(i);
+                removed++;
+            }
+
+            return removed;
+        }
+
         /// <summary>
         /// Use <see cref="Remove(ref T)"/> for performance reasons
         /// </summary>
         bool ICollection<T>.Remove(T item) => Remove(ref item);
+
+        public void ForEach(ForEachDelegate action)
+        {
+            for (int i = 0; i < Count; i++)
+            {
+                action.Invoke(ref values[i]);
+            }
+        }
 
         public ReadOnlySpan<T> AsReadOnlySpan()
         {
