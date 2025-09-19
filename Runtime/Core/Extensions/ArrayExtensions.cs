@@ -39,6 +39,13 @@ namespace XIV.Core.Extensions
         }
         
         /// <summary>
+        /// <inheritdoc cref="FilterBy{T}(T[], int, Func{T, bool})"/>
+        /// </summary>
+        /// <returns>A new <see cref="XIVMemory{T}"/> that has filtered items</returns>
+        public static XIVMemory<T> FilterBy<T>(this T[] array, Func<T, bool> func) => FilterBy(array, array.Length, func);
+
+
+        /// <summary>
         /// Finds the closest item to the given position based on a custom position retrieval function, and returns it.
         /// <typeparam name="T">Type of item</typeparam>
         /// <param name="arr">The array to look</param>
