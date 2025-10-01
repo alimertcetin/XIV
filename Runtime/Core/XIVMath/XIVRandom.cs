@@ -8,7 +8,7 @@ namespace XIV.Core.XIVMath
     /// </summary>
     public static class XIVRandom
     {
-        static readonly Random random = new Random();
+        static Random random = new Random();
 
         /// <summary>
         /// Returns a random float number between 0.0 [inclusive] and 1.0 [inclusive].
@@ -79,18 +79,7 @@ namespace XIV.Core.XIVMath
         /// </summary>
         public static void InitState(int seed)
         {
-            typeof(Random)
-                .GetField("_seedArray", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
-                ?.SetValue(random, null);
-            typeof(Random)
-                .GetField("_inext", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
-                ?.SetValue(random, 0);
-            typeof(Random)
-                .GetField("_inextp", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
-                ?.SetValue(random, 21);
-            // Reinitialize the Random instance
-            // Note: System.Random does not support reseeding, so this is a workaround.
-            // For thread safety and true reseeding, consider using a new Random instance per seed.
+            random = new Random(seed);
         }
 
         /// <summary>
