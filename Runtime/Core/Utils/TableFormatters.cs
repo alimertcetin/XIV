@@ -100,7 +100,7 @@ public class SystemTextJsonSerializer : IJsonSerializer
                 for (int i = 0; i < headers.Length; i++)
                 {
                     string val = row.TryGetValue(headers[i], out var v) ? v ?? "" : "";
-                    sb.Append(val.TruncateWithDots(widths[i]).PadRight(widths[i]));
+                    sb.Append(val.XIVTruncateWithDots(widths[i]).PadRight(widths[i]));
                     if (i < headers.Length - 1) sb.Append(" | ");
                 }
                 sb.AppendLine();
@@ -118,7 +118,7 @@ public class SystemTextJsonSerializer : IJsonSerializer
             sb.Append("|");
             for (int i = 0; i < headers.Length; i++)
             {
-                sb.Append(" " + headers[i].PadCenter(widths[i]) + " |");
+                sb.Append(" " + headers[i].XIVPadCenter(widths[i]) + " |");
             }
             sb.AppendLine();
 
@@ -137,7 +137,7 @@ public class SystemTextJsonSerializer : IJsonSerializer
                 for (int i = 0; i < headers.Length; i++)
                 {
                     string val = row.TryGetValue(headers[i], out var v) ? v ?? "" : "";
-                    sb.Append(" " + val.TruncateWithDots(widths[i]).PadCenter(widths[i]) + " |");
+                    sb.Append(" " + val.XIVTruncateWithDots(widths[i]).XIVPadCenter(widths[i]) + " |");
                 }
                 sb.AppendLine();
             }

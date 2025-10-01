@@ -2,12 +2,12 @@
 {
     public static class StringExtensions
     {
-        public static string Space(this string value)
+        public static string XIVSpace(this string value)
         {
             return value + " ";
         }
 
-        public static string PadCenter(this string str, int width)
+        public static string XIVPadCenter(this string str, int width)
         {
             if (string.IsNullOrEmpty(str)) str = "";
             int padding = width - str.Length;
@@ -15,12 +15,12 @@
             return str.PadLeft(padLeft).PadRight(width);
         }
 
-        public static string TruncateWithDots(this string str, int maxLength)
+        public static string XIVTruncateWithDots(this string str, int maxLength)
         {
-            return TruncateWithChar(str, maxLength, '.');
+            return XIVTruncateWithChar(str, maxLength, '.');
         }
 
-        public static string TruncateWithChar(this string str, int maxLength, char c)
+        public static string XIVTruncateWithChar(this string str, int maxLength, char c)
         {
             if (string.IsNullOrEmpty(str) || maxLength < 4)
                 return (str ?? "").PadRight(maxLength); // fallback

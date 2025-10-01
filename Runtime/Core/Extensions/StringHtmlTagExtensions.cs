@@ -57,14 +57,14 @@ namespace XIV.Core.Extensions
 			return Format(TAG_COLOR, "yellow", value);
         }
 
-        public static string ToColor(this string value, string colorHex)
+        public static string XIVToColor(this string value, string colorHex)
 		{
 			return Format(TAG_COLOR, colorHex, value);
         }
 
-        public static string ToColor(this string value, XIVColor color)
+        public static string XIVToColor(this string value, XIVColor color)
         {
-	        return ToColor(value, "#" + XIVColorUtility.ToHtmlStringRGBA(color));
+	        return XIVToColor(value, "#" + XIVColorUtility.ToHtmlStringRGBA(color));
         }
 	}
 }

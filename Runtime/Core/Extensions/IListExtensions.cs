@@ -12,7 +12,7 @@ namespace XIV.Core.Extensions
         /// <typeparam name="T">The type of elements in the list.</typeparam>
         /// <param name="list">The list to pick an item from.</param>
         /// <returns>A randomly selected element from the list.</returns>
-        public static T PickRandom<T>(this IList<T> list)
+        public static T XIVPickRandom<T>(this IList<T> list)
         {
             return list[XIVRandom.Range(0, list.Count)];
         }
@@ -24,9 +24,9 @@ namespace XIV.Core.Extensions
         /// <param name="array">The list to pick an item from.</param>
         /// <param name="getWeightFunc">A function that returns the weight of each item in the array.</param>
         /// <returns>An item selected based on its weighted probability.</returns>
-        public static T PickWeighted<T>(this IList<T> array, Func<T, int> getWeightFunc)
+        public static T XIVPickWeighted<T>(this IList<T> array, Func<T, int> getWeightFunc)
         {
-            return PickWeighted(array, GetTotalWeight(array, getWeightFunc), getWeightFunc);
+            return XIVPickWeighted(array, XIVGetTotalWeight(array, getWeightFunc), getWeightFunc);
         }
 
         /// <summary>
@@ -34,10 +34,10 @@ namespace XIV.Core.Extensions
         /// </summary>
         /// <typeparam name="T">The type of elements in the list.</typeparam>
         /// <param name="array">The list to pick an item from.</param>
-        /// <param name="totalWeight">The total weight of all items in the array, calculated by GetTotalWeight.</param>
+        /// <param name="totalWeight">The total weight of all items in the array, calculated by XIVGetTotalWeight.</param>
         /// <param name="getWeightFunc">A function that returns the weight of each item in the array.</param>
         /// <returns>An item selected based on its weighted probability.</returns>
-        public static T PickWeighted<T>(this IList<T> array, int totalWeight, Func<T, int> getWeightFunc)
+        public static T XIVPickWeighted<T>(this IList<T> array, int totalWeight, Func<T, int> getWeightFunc)
         {
             int roll = XIVRandom.Range(1, totalWeight + 1);
             int cumulative = 0;
@@ -58,7 +58,7 @@ namespace XIV.Core.Extensions
         /// <param name="array">The list to calculate the total weight for.</param>
         /// <param name="getWeightFunc">A function that returns the weight of each item in the array.</param>
         /// <returns>The sum of weights of all items in the list.</returns>
-        public static int GetTotalWeight<T>(this IList<T> array, Func<T, int> getWeightFunc)
+        public static int XIVGetTotalWeight<T>(this IList<T> array, Func<T, int> getWeightFunc)
         {
             int len = array.Count;
             int totalWeight = 0;

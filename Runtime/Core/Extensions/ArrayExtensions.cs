@@ -10,7 +10,7 @@ namespace XIV.Core.Extensions
         /// This modifies the original array. You can use this if order doesn't matter.
         /// </summary>
         /// <returns>A new <see cref="XIVMemory{T}"/> that has filtered items</returns>
-        public static XIVMemory<T> FilterBy<T>(this T[] array, int arrLen, Func<T, bool> func)
+        public static XIVMemory<T> XIVFilterBy<T>(this T[] array, int arrLen, Func<T, bool> func)
         {
             int left = 0; // Start of the array
             int right = arrLen - 1; // End of the array
@@ -39,11 +39,26 @@ namespace XIV.Core.Extensions
         }
         
         /// <summary>
-        /// <inheritdoc cref="FilterBy{T}(T[], int, Func{T, bool})"/>
+        /// <inheritdoc cref="XIVFilterBy{T}(T[], int, Func{T, bool})"/>
         /// </summary>
         /// <returns>A new <see cref="XIVMemory{T}"/> that has filtered items</returns>
-        public static XIVMemory<T> FilterBy<T>(this T[] array, Func<T, bool> func) => FilterBy(array, array.Length, func);
+        public static XIVMemory<T> XIVFilterBy<T>(this T[] array, Func<T, bool> func) => XIVFilterBy(array, array.Length, func);
 
+        public static ref T XIVFirstOrDefault<T>(this T[] array, int arrLen, Func<T, bool> func)
+        {
+            for (int i = 0; i < arrLen; i++)
+            {
+                ref var item = ref array[i];
+                if (func(item)) return ref array[i];
+            }
+            
+            throw new System.Collections.Generic.KeyNotFoundException();
+        }
+
+        public static ref T XIVFirstOrDefault<T>(this T[] array, Func<T, bool> func)
+        {
+            return ref XIVFirstOrDefault(array, array.Length, func);
+        }
 
         /// <summary>
         /// Finds the closest item to the given position based on a custom position retrieval function, and returns it.
@@ -54,7 +69,7 @@ namespace XIV.Core.Extensions
         /// <param name="closestPoint">Closest point that is returned from <paramref name="getTPosFunc"/></param>
         /// <param name="getTPosFunc">Position retrieval function</param>
         /// </summary>
-        public static T GetClosest<T>(this T[] arr, int arrLen, Vec3 currPos, out float distance, out Vec3 closestPoint, Func<T, Vec3> getTPosFunc)
+        public static T XIVGetClosest<T>(this T[] arr, int arrLen, Vec3 currPos, out float distance, out Vec3 closestPoint, Func<T, Vec3> getTPosFunc)
         {
             var closest = default(T);
             closestPoint = default(Vec3);
@@ -74,14 +89,14 @@ namespace XIV.Core.Extensions
         }
         
         /// <summary>
-        /// <inheritdoc cref="GetClosest{T}(T[], int, Vec3, out float, out Vec3, Func{T, Vec3})"/>
+        /// <inheritdoc cref="XIVGetClosest{T}(T[], int, Vec3, out float, out Vec3, Func{T, Vec3})"/>
         /// </summary>
-        public static T GetClosest<T>(this T[] arr, int arrLen, Vec3 currPos, Func<T, Vec3> getTPosFunc)
+        public static T XIVGetClosest<T>(this T[] arr, int arrLen, Vec3 currPos, Func<T, Vec3> getTPosFunc)
         {
-            return GetClosest(arr, arrLen, currPos, out _, out _, getTPosFunc);
+            return XIVGetClosest(arr, arrLen, currPos, out _, out _, getTPosFunc);
         }
         
-        public static bool Contains<T>(this T[] array, int arrLen, T item, out int index)
+        public static bool XIVContains<T>(this T[] array, int arrLen, T item, out int index)
         {
             index = -1;
             for (int i = 0; i < arrLen; i++)
@@ -96,12 +111,12 @@ namespace XIV.Core.Extensions
             return false;
         }
 
-        public static bool Contains<T>(this T[] array, int arrLen, T item)
+        public static bool XIVContains<T>(this T[] array, int arrLen, T item)
         {
-            return Contains(array, arrLen, item, out _);
+            return XIVContains(array, arrLen, item, out _);
         }
 
-        public static T[] Split<T>(this T[] array, int arrLen, Func<T, bool> condition)
+        public static T[] XIVSplit<T>(this T[] array, int arrLen, Func<T, bool> condition)
         {
             T[] arr = new T[arrLen];
 
@@ -115,7 +130,7 @@ namespace XIV.Core.Extensions
             return arr;
         }
 
-        public static int Count<T>(this T[] array, int arrLen, Func<T, bool> condition)
+        public static int XIVCount<T>(this T[] array, int arrLen, Func<T, bool> condition)
         {
             int count = 0;
             for (int i = 0; i < arrLen; i++)
@@ -125,7 +140,7 @@ namespace XIV.Core.Extensions
             return count;
         }
 
-        public static T[] RemoveAt<T>(this T[] arr, int arrLen, int index)
+        public static T[] XIVRemoveAt<T>(this T[] arr, int arrLen, int index)
         {
             if (index < 0 || index > arrLen) return arr;
             for (int i = index; i < arrLen - 1; i++)
@@ -136,16 +151,16 @@ namespace XIV.Core.Extensions
             return arr;
         }
 
-        public static T[] RemoveIf<T>(this T[] arr, Func<T, bool> condition)
+        public static T[] XIVRemoveIf<T>(this T[] arr, Func<T, bool> condition)
         {
-            return RemoveIf(arr, arr.Length, condition);
+            return XIVRemoveIf(arr, arr.Length, condition);
         }
         
-        public static T[] RemoveIf<T>(this T[] arr, int arrLen, Func<T, bool> condition)
+        public static T[] XIVRemoveIf<T>(this T[] arr, int arrLen, Func<T, bool> condition)
         {
             for (int i = arrLen - 1; i >= 0; i--)
             {
-                if (condition.Invoke(arr[i])) arr = RemoveAt(arr, arrLen, i);
+                if (condition.Invoke(arr[i])) arr = XIVRemoveAt(arr, arrLen, i);
             }
 
             return arr;
