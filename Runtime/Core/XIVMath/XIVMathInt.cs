@@ -1,22 +1,28 @@
-﻿namespace XIV.Core.XIVMath
+﻿using System.Runtime.CompilerServices;
+
+namespace XIV.Core.XIVMath
 {
 	public static class XIVMathInt
 	{
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static int Repeat(int value, int length)
 		{
 			return value < 0 ? (value % length) + length : value % length;
 		}
 		
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static int Min(int a, int b)
 		{
 			return (a < b) ? a : b;
 		}
 		
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static int Max(int a, int b)
 		{
 			return (a > b) ? a : b;
 		}
 
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static int Clamp(int val, int min, int max)
         {
 			return val > max ? max : val < min ? min : val;
