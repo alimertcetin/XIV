@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using XIV.Core.XIVMath;
 
 namespace XIV.Core.Collections
 {
@@ -58,6 +59,18 @@ namespace XIV.Core.Collections
             }
         }
 
+        public void IncreaseCapacity(int amount)
+        {
+            if (amount <= 0) throw new ArgumentOutOfRangeException(nameof(amount));
+            var currLen = values.Length;
+            var requiredCapacity = currLen + amount;
+
+            if (requiredCapacity <= currLen) return;
+            
+            int newCapacity = XIVMathInt.NextPowerOfTwo(requiredCapacity);
+            Array.Resize(ref values, newCapacity);
+        }
+
         public ref T Add()
         {
             if (Count >= values.Length)
@@ -77,6 +90,12 @@ namespace XIV.Core.Collections
                 values[i] = values[i + 1];
             }
             Count--;
+        }
+
+        public T RemoveLast()
+        {
+            if (Count == 0) throw new InvalidOperationException("There is no more elements to remove.");
+            return values[--Count];
         }
 
         public int IndexOf(ref T item)
