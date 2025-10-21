@@ -17,16 +17,16 @@ namespace XIV.Core.DataStructures
             this.a = a;
         }
 
-        public static XIVColor red => new XIVColor(1f, 0f, 0f, 1f);
-        public static XIVColor green => new XIVColor(0f, 1f, 0f, 1f);
-        public static XIVColor blue => new XIVColor(0f, 0f, 1f, 1f);
-        public static XIVColor white => new XIVColor(1f, 1f, 1f, 1f);
-        public static XIVColor black => new XIVColor(0f, 0f, 0f, 1f);
-        public static XIVColor yellow => new XIVColor(1f, 0.9215686f, 0.01568628f, 1f);
-        public static XIVColor magenta => new XIVColor(1f, 0f, 1f, 1f);
-        public static XIVColor gray => new XIVColor(0.5f, 0.5f, 0.5f, 1f);
-        public static XIVColor cyan => new XIVColor(0.0f, 1f, 1f, 1f);
-        public static XIVColor clear => new XIVColor(0f, 0f, 0f, 0f);
+        public static readonly XIVColor red = new XIVColor(1f, 0f, 0f, 1f);
+        public static readonly XIVColor green = new XIVColor(0f, 1f, 0f, 1f);
+        public static readonly XIVColor blue = new XIVColor(0f, 0f, 1f, 1f);
+        public static readonly XIVColor white = new XIVColor(1f, 1f, 1f, 1f);
+        public static readonly XIVColor black = new XIVColor(0f, 0f, 0f, 1f);
+        public static readonly XIVColor yellow = new XIVColor(1f, 0.9215686f, 0.01568628f, 1f);
+        public static readonly XIVColor magenta = new XIVColor(1f, 0f, 1f, 1f);
+        public static readonly XIVColor gray = new XIVColor(0.5f, 0.5f, 0.5f, 1f);
+        public static readonly XIVColor cyan = new XIVColor(0.0f, 1f, 1f, 1f);
+        public static readonly XIVColor clear = new XIVColor(0f, 0f, 0f, 0f);
 
 #if UNITY_ENGINE || UNITY_EDITOR
         public static implicit operator UnityEngine.Color(XIVColor c)
