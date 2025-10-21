@@ -1,11 +1,7 @@
 ﻿namespace XIV.Core.Utils
 {
-    [System.Serializable]
     public struct Timer
     {
-#if UNITY_ENGINE
-        [SerializeField]
-#endif
         float duration;
         float timer;
         public float NormalizedTime => timer / duration;
