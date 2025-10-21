@@ -44,6 +44,15 @@ namespace XIV.Core.Extensions
         /// <returns>A new <see cref="XIVMemory{T}"/> that has filtered items</returns>
         public static XIVMemory<T> XIVFilterBy<T>(this T[] array, Func<T, bool> func) => XIVFilterBy(array, array.Length, func);
 
+        /// <summary>
+        /// Returns the first occurrence of T or default
+        /// </summary>
+        /// <param name="array"></param>
+        /// <param name="arrLen"></param>
+        /// <param name="func"></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        /// <exception cref="KeyNotFoundException"></exception>
         public static ref T XIVFirstOrDefault<T>(this T[] array, int arrLen, Func<T, bool> func)
         {
             for (int i = 0; i < arrLen; i++)
@@ -55,6 +64,9 @@ namespace XIV.Core.Extensions
             throw new System.Collections.Generic.KeyNotFoundException();
         }
 
+        /// <summary>
+        /// <inheritdoc cref="XIVFirstOrDefault{T}(T[], int, Func{T, bool})"/>
+        /// </summary>
         public static ref T XIVFirstOrDefault<T>(this T[] array, Func<T, bool> func)
         {
             return ref XIVFirstOrDefault(array, array.Length, func);
@@ -170,7 +182,7 @@ namespace XIV.Core.Extensions
 
             return false;
         }
-
+        
         public static bool XIVContains<T>(this T[] array, int arrLen, T item)
         {
             return XIVContains(array, arrLen, item, out _);
