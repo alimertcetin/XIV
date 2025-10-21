@@ -31,6 +31,8 @@ namespace XIV.Core.DataStructures
 #if UNITY_ENGINE || UNITY_EDITOR
         public static implicit operator UnityEngine.Color(XIVColor c)
         {
+            // TODO : XIVColor -> Remove Unity related code
+            // UnityEngine.Color XIVColorExtensions.AsColor(this XIVColor)
             return new UnityEngine.Color(c.r, c.g, c.b, c.a);
         }
 #endif
