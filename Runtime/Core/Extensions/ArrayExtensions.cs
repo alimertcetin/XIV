@@ -176,6 +176,11 @@ namespace XIV.Core.Extensions
             return XIVContains(array, arrLen, item, out _);
         }
 
+        public static bool XIVContains<T>(this T[] array, T item)
+        {
+            return XIVContains(array, array.Length, item);
+        }
+
         public static T[] XIVSplit<T>(this T[] array, int arrLen, Func<T, bool> condition)
         {
             T[] arr = new T[arrLen];
