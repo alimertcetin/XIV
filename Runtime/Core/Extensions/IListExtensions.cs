@@ -18,6 +18,19 @@ namespace XIV.Core.Extensions
         }
         
         /// <summary>
+        /// <inheritdoc cref="XIVPickRandom{T}(IList{T})"/>
+        /// </summary>
+        /// <param name="list"></param>
+        /// <param name="index"></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        public static T XIVPickRandom<T>(this IList<T> list, out int index)
+        {
+            index = XIVRandom.Range(0, list.Count);
+            return list[index];
+        }
+        
+        /// <summary>
         /// Picks an item from the array based on a weighted distribution defined by getWeightFunc.
         /// </summary>
         /// <typeparam name="T">The type of elements in the list.</typeparam>
