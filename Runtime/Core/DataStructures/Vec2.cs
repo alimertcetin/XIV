@@ -152,5 +152,10 @@ namespace XIV.Core.DataStructures
         {
             return !left.Equals(right);
         }
+
+        public override string ToString()
+        {
+            return $"x : {x}, y : {y}";
+        }
     }
 }
