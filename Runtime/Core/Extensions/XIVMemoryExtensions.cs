@@ -17,6 +17,16 @@ namespace XIV.Core.Extensions
         {
             return new XIVMemory<T>(array);
         }
+        /// <summary>
+        /// <inheritdoc cref="AsXIVMemory{T}(IList{T})"/>
+        /// </summary>
+        /// <typeparam name="T">The type of elements in the list.</typeparam>
+        /// <param name="array">The input list to be converted.</param>
+        /// <returns>A new instance of XIVMemory{T} containing the same elements as the input list.</returns>
+        public static XIVMemory<T> AsXIVMemory<T>(this IList<T> array, int length)
+        {
+            return new XIVMemory<T>(array, 0, length);
+        }
         
         /// <summary>
         /// Finds the closest item to the given position based on a custom position retrieval function, and returns it.
@@ -85,6 +95,15 @@ namespace XIV.Core.Extensions
                 }
             }
             return new XIVMemory<T>(array, 0, count);
+        }
+        
+        /// <summary>
+        /// <inheritdoc cref="FilterBy{T}(XIVMemory{T}, int, Func{T, bool})"/>
+        /// </summary>
+        /// <returns>A new <see cref="XIVMemory{T}"/> that has filtered items</returns>
+        public static XIVMemory<T> FilterBy<T>(this XIVMemory<T> array, Func<T, bool> func)
+        {
+            return FilterBy(array, array.Length, func);
         }
         
         /// <summary>
