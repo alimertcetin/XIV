@@ -66,5 +66,14 @@ namespace XIV.Core.DataStructures
         {
             return !lhs.Equals(rhs);
         }
+
+        public static XIVColor Lerp(XIVColor a, XIVColor b, float t)
+        {
+            a.r = a.r + (b.r - a.r) * t;
+            a.g = a.g + (b.g - a.g) * t;
+            a.b = a.b + (b.b - a.b) * t;
+            a.a = a.a + (b.a - a.a) * t;
+            return a;
+        }
     }
 }
