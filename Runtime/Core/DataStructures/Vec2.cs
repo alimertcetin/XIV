@@ -84,6 +84,13 @@ namespace XIV.Core.DataStructures
             return XIVMathf.Sqrt(vec.x * vec.x + vec.y * vec.y);
         }
 
+        public static float Distance(Vec2 a, Vec2 b)
+        {
+            double dx = a.x - b.x;
+            double dy = a.y - b.y;
+            return (float)Math.Sqrt(dx * dx + dy * dy);
+        }
+
         public static Vec2 operator -(Vec2 a, Vec2 b)
         {
             return new Vec2(a.x - b.x, a.y - b.y);
