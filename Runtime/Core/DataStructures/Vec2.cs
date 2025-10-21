@@ -7,7 +7,7 @@ namespace XIV.Core.DataStructures
     {
         public float x;
         public float y;
-
+        public Vec2 normalized => Vec2.Normalize(this);
         public static readonly Vec2 zero = new Vec2(0.0f, 0.0f);
         public static readonly Vec2 one = new Vec2(1f, 1f);
         public static readonly Vec2 up = new Vec2(0.0f, 1f);
