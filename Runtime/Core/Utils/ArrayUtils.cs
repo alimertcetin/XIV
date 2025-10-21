@@ -1,4 +1,7 @@
-﻿namespace XIV.Core.Utils
+﻿using System;
+using XIV.Core.DataStructures;
+
+namespace XIV.Core.Utils
 {
     public static class ArrayUtils
     {
@@ -42,6 +45,11 @@
         public static (int, int) Get2DIndex(int index, int width)
         {
             return (index / width, index % width);
+        }
+
+        public static XIVBuffer<T> GetBuffer<T>(out T[] buffer, int minLength = 8)
+        {
+            return XIVBuffer<T>.Get(minLength, out buffer);
         }
     }
 }
