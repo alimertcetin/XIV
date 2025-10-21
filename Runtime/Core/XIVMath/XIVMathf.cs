@@ -43,6 +43,34 @@ namespace XIV.Core.XIVMath
             }
         }
 
+        public static int CeilToInt(float f)
+        {
+            int truncated = (int)f;
+            float fraction = f - truncated;
+
+            // If the f is positive and has a fractional part, add 1
+            if (f > 0 && fraction != 0f)
+            {
+                return truncated + 1;
+            }
+
+            return truncated;
+        }
+
+        public static int FloorToInt(float f)
+        {
+            int truncated = (int)f;
+            float fraction = f - truncated;
+
+            // If the value is negative and has a fractional part, subtract 1
+            if (f < 0 && fraction != 0f)
+            {
+                return truncated - 1;
+            }
+
+            return truncated;
+        }
+
         public static float Lerp(float a, float b, float t)
         {
             t = Clamp01(t);
