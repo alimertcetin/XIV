@@ -39,7 +39,11 @@ namespace XIV.Core.Extensions
                 return fieldInfo.GetValue(instance);
             }
             PropertyInfo propertyInfo = type.GetProperty(memberName, bindingFlags);
-            return propertyInfo.GetValue(instance);
+            if (propertyInfo != null)
+            {
+                return propertyInfo.GetValue(instance);
+            }
+            return null;
         }
 
         public static T XIVGetFieldOrPropertyValue<T>(this Type type, string memberName, object instance)
