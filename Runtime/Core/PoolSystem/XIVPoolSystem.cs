@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace XIV.PoolSystem
 {
@@ -8,7 +9,8 @@ namespace XIV.PoolSystem
         static Dictionary<Type, IPool> pools = new Dictionary<Type, IPool>();
 
 #if UNITY_EDITOR
-        [UnityEngine.RuntimeInitializeOnLoadMethod]
+        // TODO : XIVPoolSystem -> Remove unity dependencies
+        [UnityEngine.RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
 #endif
         static void Init()
         {
