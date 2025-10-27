@@ -181,6 +181,11 @@ namespace XIV.Core.Collections
             return removed;
         }
 
+        public override string ToString()
+        {
+            return $"Count: {Count}";
+        }
+
         /// <summary>
         /// Use <see cref="Remove(ref T)"/> for performance reasons
         /// </summary>
