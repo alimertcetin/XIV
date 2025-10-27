@@ -121,14 +121,24 @@ namespace XIV.Core.Extensions
             return type.GetMethods(DefaultBindingFlags).XIVFirstOrDefault(p => p.Name == methodName);
         }
 
-        public static XIVMemory<MemberInfo> XIVGetMembersHasAttribute<TAttribute>(this Type type, BindingFlags bindingFlags) where TAttribute : Attribute
+        public static XIVMemory<MemberInfo> XIVGetMembers(this Type type, BindingFlags bindingFlags)
         {
-            return type.GetMembers(bindingFlags).XIVFilterBy(p => p.GetCustomAttribute<TAttribute>() != null);
+            return type.GetMembers(bindingFlags);
         }
 
-        public static XIVMemory<MemberInfo> XIVGetMembersHasAttribute<TAttribute>(this Type type) where TAttribute : Attribute
+        public static XIVMemory<MemberInfo> XIVGetMembers(this Type type)
         {
-            return XIVGetMembersHasAttribute<TAttribute>(type, DefaultBindingFlags);
+            return XIVGetMembers(type, DefaultBindingFlags);
+        }
+
+        public static XIVMemory<MemberInfo> XIVGetMembersHasAttribute<TAttribute>(this Type type, BindingFlags bindingFlags, bool inherit) where TAttribute : Attribute
+        {
+            return type.GetMembers(bindingFlags).XIVFilterBy(p => p.GetCustomAttribute<TAttribute>(inherit) != null);
+        }
+
+        public static XIVMemory<MemberInfo> XIVGetMembersHasAttribute<TAttribute>(this Type type, bool inherit = true) where TAttribute : Attribute
+        {
+            return XIVGetMembersHasAttribute<TAttribute>(type, DefaultBindingFlags, inherit);
         }
 
         public static void XIVInvokeMethodsHasAttribute<TAttribute>(this Type type, object instance, object[] parameters, BindingFlags bindingFlags) where TAttribute : Attribute
