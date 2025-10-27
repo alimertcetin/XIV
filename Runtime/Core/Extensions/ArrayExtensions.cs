@@ -44,6 +44,7 @@ namespace XIV.Core.Extensions
         /// <returns>A new <see cref="XIVMemory{T}"/> that has filtered items</returns>
         public static XIVMemory<T> XIVFilterBy<T>(this T[] array, Func<T, bool> func) => XIVFilterBy(array, array.Length, func);
 
+        // TODO : ArrayExtensions -> FirstOrDefault should not throw exceptions. It should not return by ref also.
         /// <summary>
         /// Returns the first occurrence of T or default
         /// </summary>
