@@ -8,7 +8,8 @@ namespace XIV.Core.XIVMath
     /// </summary>
     public static class XIVRandom
     {
-        static Random random = new Random();
+        public static int seed { get; private set; } = Environment.TickCount;
+        static Random random = new Random(seed);
 
         /// <summary>
         /// Returns a random float number between 0.0 [inclusive] and 1.0 [inclusive].
@@ -75,11 +76,12 @@ namespace XIV.Core.XIVMath
         }
 
         /// <summary>
-        /// Sets the seed for the random number generator.
+        /// Sets the seed for the random number generator. Allocates memory on every call.
         /// </summary>
         public static void InitState(int seed)
         {
             random = new Random(seed);
+            XIVRandom.seed = seed;
         }
 
         /// <summary>
