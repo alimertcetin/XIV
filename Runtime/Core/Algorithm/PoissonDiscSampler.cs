@@ -17,10 +17,12 @@ namespace XIV.Core.Algorithm
             var cellSize = radius / XIVMathf.Sqrt(2);
             var gridWidth = XIVMathf.CeilToInt(regionSize.x / cellSize);
             var gridHeight = XIVMathf.CeilToInt(regionSize.y / cellSize);
-            
             activeList.Clear();
             points.Clear();
-            using var temp = ArrayUtils.GetBuffer(out int[] gridIndices, gridWidth * gridHeight);
+            var minLength = gridWidth * gridHeight;
+            if (minLength <= 0) return points.AsXIVMemory();
+            
+            using var temp = ArrayUtils.GetBuffer(out int[] gridIndices, minLength);
             Array.Fill(gridIndices, -1); // Mark all cells as empty
 
             Vec2 firstPoint = new Vec2(XIVRandom.value * regionSize.x, XIVRandom.value * regionSize.y);
