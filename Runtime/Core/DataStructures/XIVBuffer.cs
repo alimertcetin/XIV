@@ -5,23 +5,36 @@ namespace XIV.Core.DataStructures
 {
     public struct XIVBuffer<T> : IDisposable
     {
-        readonly T[] buffer;
+        T[] pooledBuffer;
+        public ref T this[int index] => ref pooledBuffer[index];
+        public int Length => pooledBuffer.Length;
+        
+        bool isDisposed;
 
-        XIVBuffer(T[] buffer)
+        public XIVBuffer(T[] pooledBuffer)
         {
-            this.buffer = buffer;
+            this.pooledBuffer = pooledBuffer;
+            isDisposed = false;
         }
         
-        internal static XIVBuffer<T> Get(int minLength, out T[] buffer)
+        internal static XIVBuffer<T> Get(int minLength)
         {
-            buffer = ArrayPool<T>.Shared.Rent(minLength);
+            var buffer = ArrayPool<T>.Shared.Rent(minLength);
             var xivBuffer = new XIVBuffer<T>(buffer);
             return xivBuffer;
+        }
+        
+        public static implicit operator T[](XIVBuffer<T> xivBuffer)
+        {
+            return xivBuffer.pooledBuffer;
         }
 
         void IDisposable.Dispose()
         {
-            ArrayPool<T>.Shared.Return(buffer);
+            if (isDisposed) return;
+            isDisposed = true;
+            ArrayPool<T>.Shared.Return(pooledBuffer);
+            pooledBuffer = null;
         }
     }
 }
