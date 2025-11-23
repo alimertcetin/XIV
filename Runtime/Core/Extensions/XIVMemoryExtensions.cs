@@ -17,6 +17,7 @@ namespace XIV.Core.Extensions
         {
             return new XIVMemory<T>(array);
         }
+        
         /// <summary>
         /// <inheritdoc cref="AsXIVMemory{T}(IList{T})"/>
         /// </summary>
@@ -26,6 +27,16 @@ namespace XIV.Core.Extensions
         public static XIVMemory<T> AsXIVMemory<T>(this IList<T> array, int length)
         {
             return new XIVMemory<T>(array, 0, length);
+        }
+
+        public static XIVMemory<T> AsXIVMemory<T>(this XIVBuffer<T> buffer)
+        {
+            return new XIVMemory<T>(buffer);
+        }
+
+        public static XIVMemory<T> AsXIVMemory<T>(this XIVBuffer<T> buffer, int length)
+        {
+            return new XIVMemory<T>(buffer, 0, length);
         }
         
         /// <summary>
