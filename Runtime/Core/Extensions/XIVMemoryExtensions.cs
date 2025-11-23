@@ -116,6 +116,19 @@ namespace XIV.Core.Extensions
         {
             return FilterBy(array, array.Length, func);
         }
+
+        public static int Fill<T>(this XIVMemory<T> array, params T[] values)
+        {
+            int arrLen = values.Length;
+            int bufferLen = array.Length;
+            int count = 0;
+            for (int i = 0; i < arrLen && i < bufferLen; i++)
+            {
+                array[i] = values[i];
+                count++;
+            }
+            return count;
+        }
         
         /// <summary>
         /// Picks an item from a weighted collection using the provided weight function.
