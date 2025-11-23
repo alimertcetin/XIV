@@ -1,4 +1,5 @@
 ﻿using System;
+using XIV.Core.DataStructures;
 
 namespace XIV.Core.XIVMath
 {
@@ -91,6 +92,27 @@ namespace XIV.Core.XIVMath
         {
             var normalized = val / max;
             return Clamp01(normalized);
+        }
+
+        // Normalize values based on max value
+        public static void Normalize(XIVMemory<float> values)
+        {
+            var max = Max(values);
+            int len = values.Length;
+            if (max < Epsilon)
+            {
+                for (int i = 0; i < len; i++)
+                {
+                    values[i] = 0;
+                }
+
+                return;
+            }
+
+            for (int i = 0; i < len; i++)
+            {
+                values[i] = Normalize(values[i], 0f, max);
+            }
         }
 
         public static float Remap(float val, float min, float max, float newMin, float newMax)
