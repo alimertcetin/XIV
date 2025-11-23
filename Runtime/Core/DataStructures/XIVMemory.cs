@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace XIV.Core.DataStructures
@@ -28,65 +29,77 @@ namespace XIV.Core.DataStructures
     /// </code>
     /// </example>
     /// </summary>
-    public struct XIVMemory<T> : IEquatable<XIVMemory<T>>
+    public struct XIVMemory<T> : IEquatable<XIVMemory<T>>, IEnumerable<T>
     {
         public T this[int index]
         {
             get
             {
                 if (index < 0 || index >= Length) throw new IndexOutOfRangeException($"Index {index} is out of range for XIVMemory of length {Length}");
-                return array[GetArrayIndex(index)];
+                return list[GetArrayIndex(index)];
             }
             set
             {
                 if (index < 0 || index >= Length) throw new IndexOutOfRangeException($"Index {index} is out of range for XIVMemory of length {Length}");
-                array[GetArrayIndex(index)] = value;
+                list[GetArrayIndex(index)] = value;
             }
         }
-        
-        public XIVMemory<T> reversed => new XIVMemory<T>(array, start, length, !isReversed);
+
+        public ref T GetRef(int index)
+        {
+            if (index < 0 || index >= Length) throw new IndexOutOfRangeException($"Index {index} is out of range for XIVMemory of length {Length}");
+            if (isArray == false) throw new InvalidOperationException($"Reference type is not an {typeof(T[])}, reference type: {typeof(IList<T>)}");
+            return ref array[GetArrayIndex(index)];
+        }
+
+        public XIVMemory<T> reversed => new XIVMemory<T>(list, start, length, !isReversed);
         public int Length => length;
         public bool IsReversed => isReversed;
 
-        IList<T> array;
+        IList<T> list;
+        T[] array;
         int start;
         int length;
         bool isReversed;
+        bool isArray;
 
-        XIVMemory(IList<T> array, int start, int length, bool isReversed)
+        XIVMemory(IList<T> list, int start, int length, bool isReversed)
         {
-            if (array == null) throw new ArgumentNullException(nameof(array));
-            this.array = array;
+            if (list == null) throw new ArgumentNullException(nameof(list));
+            this.list = list;
             this.start = start;
             this.length = length;
             this.isReversed = isReversed;
-            if (length < 0 || start < 0 || start + length > array.Count)
+            if (length < 0 || start < 0 || start + length > list.Count)
             {
                 throw new System.ArgumentOutOfRangeException(nameof(length), length, "Specified argument was out of the range of valid values.");
             }
+
+            array = list as T[];
+            isArray = array != null;
         }
 
-        public XIVMemory(IList<T> array, int start, int length) : this(array, start, length, false)
+        public XIVMemory(IList<T> list, int start, int length) : this(list, start, length, false)
         {
         }
 
-        public XIVMemory(IList<T> array) : this(array, 0, array.Count, false)
+        public XIVMemory(IList<T> list) : this(list, 0, list.Count, false)
         {
         }
 
-        public XIVMemory(T[] array) : this(array, 0, array.Length, false)
+        public XIVMemory(T[] list) : this(list, 0, list.Length, false)
         {
         }
 
-        public XIVMemory(T[] array, int start, int length) : this(array, start, length, false)
+        public XIVMemory(T[] list, int start, int length) : this(list, start, length, false)
         {
         }
 
-        public XIVMemory(XIVMemory<T> xivMemory) : this(xivMemory.array, xivMemory.start, xivMemory.length, xivMemory.isReversed)
+        public XIVMemory(XIVMemory<T> xivMemory) : this(xivMemory.list, xivMemory.start, xivMemory.length, xivMemory.isReversed)
         {
         }
 
-        public XIVMemory(XIVMemory<T> xivMemory, int start, int length) : this(xivMemory.array, xivMemory.start + start, length, xivMemory.isReversed)
+        public XIVMemory(XIVMemory<T> xivMemory, int start, int length) : this(xivMemory.list, xivMemory.start + start, length, xivMemory.isReversed)
         {
         }
 
@@ -94,10 +107,10 @@ namespace XIV.Core.DataStructures
         {
             if (index < 0 || length < 0 || index + length > this.length) throw new ArgumentOutOfRangeException();
             int newStart = GetArrayIndex(index);
-            return new XIVMemory<T>(array, newStart, length, isReversed);
+            return new XIVMemory<T>(list, newStart, length, isReversed);
         }
 
-        public IList<T> GetUnderlyingArray() => array;
+        public IList<T> GetUnderlyingArray() => list;
 
         int GetArrayIndex(int index)
         {
@@ -106,7 +119,7 @@ namespace XIV.Core.DataStructures
         
         public Span<T> AsSpan()
         {
-            if (array is T[] arr)
+            if (list is T[] arr)
             {
                 return isReversed
                     ? throw new InvalidOperationException("Cannot get Span from reversed XIVMemory")
@@ -128,7 +141,15 @@ namespace XIV.Core.DataStructures
 
         public bool Equals(XIVMemory<T> other)
         {
-            return Equals(array, other.array) && start == other.start && length == other.length && isReversed == other.isReversed;
+            return Equals(list, other.list) && start == other.start && length == other.length && isReversed == other.isReversed;
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            for (int i = 0; i < length; i++)
+            {
+                yield return list[GetArrayIndex(i)];
+            }
         }
 
         public override bool Equals(object obj)
@@ -140,14 +161,19 @@ namespace XIV.Core.DataStructures
         {
             unchecked
             {
-                int hashCode = (array != null ? array.GetHashCode() : 0);
+                int hashCode = (list != null ? list.GetHashCode() : 0);
                 hashCode = (hashCode * 397) ^ start;
                 hashCode = (hashCode * 397) ^ length;
                 hashCode = (hashCode * 397) ^ isReversed.GetHashCode();
                 return hashCode;
             }
         }
-        
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+
         public static implicit operator XIVMemory<T>(T[] array)
         {
             return new XIVMemory<T>(array, 0, array.Length);
