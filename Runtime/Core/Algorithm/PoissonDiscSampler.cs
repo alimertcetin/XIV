@@ -22,8 +22,8 @@ namespace XIV.Core.Algorithm
             var minLength = gridWidth * gridHeight;
             if (minLength <= 0) return points.AsXIVMemory();
             
-            using var temp = ArrayUtils.GetBuffer(out int[] gridIndices, minLength);
-            Array.Fill(gridIndices, -1); // Mark all cells as empty
+            using var gridIndices = ArrayUtils.GetBuffer<int>(minLength);
+            Array.Fill(gridIndices, -1, 0, minLength);
 
             Vec2 firstPoint = new Vec2(XIVRandom.value * regionSize.x, XIVRandom.value * regionSize.y);
             AddPoint(firstPoint, gridIndices, cellSize, gridWidth);
