@@ -135,7 +135,7 @@ namespace XIV.Core.XIVMath
             return a < b ? a : b;
         }
 
-        public static float Max(params float[] values)
+        public static float Max(XIVMemory<float> values)
         {
             var max = float.MinValue;
             int length = values.Length;
