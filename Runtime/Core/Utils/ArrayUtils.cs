@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Buffers;
 using XIV.Core.DataStructures;
 
 namespace XIV.Core.Utils
@@ -47,9 +48,9 @@ namespace XIV.Core.Utils
             return (index / width, index % width);
         }
 
-        public static XIVBuffer<T> GetBuffer<T>(out T[] buffer, int minLength = 8)
+        public static XIVBuffer<T> GetBuffer<T>(int minLength = 8)
         {
-            return XIVBuffer<T>.Get(minLength, out buffer);
+            return XIVBuffer<T>.Get(minLength);
         }
     }
 }
