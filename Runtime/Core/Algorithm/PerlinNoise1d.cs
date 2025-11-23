@@ -14,7 +14,7 @@ namespace XIV.Core.Algorithm
             permutations = new int[PERMUTATION_ARRAY_LENGTH * 2];
 
             // Create base permutation (0–255)
-            using var temp = ArrayUtils.GetBuffer(out int[] basePermutations, PERMUTATION_ARRAY_LENGTH);
+            using var basePermutations = ArrayUtils.GetBuffer<int>(PERMUTATION_ARRAY_LENGTH);
             for (int i = 0; i < PERMUTATION_ARRAY_LENGTH; i++)
             {
                 basePermutations[i] = i;
