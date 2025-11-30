@@ -115,12 +115,28 @@ namespace XIV.Core.Extensions
         /// </summary>
         public static T XIVGetClosest<T>(this T[] arr, int arrLen, Vec3 currPos, out float distance, out Vec3 closestPoint, Func<T, Vec3> getTPosFunc, T[] excludeArr)
         {
+            return XIVGetClosest(arr, arrLen, currPos, out distance, out closestPoint, getTPosFunc, excludeArr, excludeArr.Length);
+        }
+
+        /// <summary>
+        /// Finds the closest item to the given position based on a custom position retrieval function, and returns it.
+        /// <typeparam name="T">Type of item</typeparam>
+        /// <param name="arr">The array to look</param>
+        /// <param name="arrLen">The length of the <paramref name="arr"/></param>
+        /// <param name="currPos">Current position to compare distances</param>
+        /// <param name="closestPoint">Closest point that is returned from <paramref name="getTPosFunc"/></param>
+        /// <param name="getTPosFunc">Position retrieval function</param>
+        /// <param name="excludeArr">Excluded item array</param>
+        /// <param name="excludeArrLen">Length of excluded item array</param>
+        /// </summary>
+        public static T XIVGetClosest<T>(this T[] arr, int arrLen, Vec3 currPos, out float distance, out Vec3 closestPoint, Func<T, Vec3> getTPosFunc, T[] excludeArr, int excludeArrLen)
+        {
             var closest = default(T);
             closestPoint = default(Vec3);
             distance = float.MaxValue;
             for (int i = 0; i < arrLen; i++)
             {
-                if (excludeArr.XIVContains(arr[i])) continue;
+                if (excludeArr.XIVContains(excludeArrLen, arr[i])) continue;
                 var pos = getTPosFunc(arr[i]);
                 var dist = (currPos - pos).sqrMagnitude;
                 if (dist < distance)
