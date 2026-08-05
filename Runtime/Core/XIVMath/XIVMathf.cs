@@ -199,6 +199,11 @@ namespace XIV.Core.XIVMath
             return (float)Math.Cos(f);
         }
 
+        public static float Acos(float f)
+        {
+            return (float)Math.Acos(f);
+        }
+
         public static float Tan(float f)
         {
             return (float)Math.Tan(f);
@@ -217,6 +222,16 @@ namespace XIV.Core.XIVMath
         public static float Atan(float f)
         {
             return (float)Math.Atan(f);
+        }
+
+        public static float Atan2(float y, float x)
+        {
+            return (float)Math.Atan2(y, x);
+        }
+
+        public static float CopySign(float value, float sign)
+        {
+            return sign >= 0f ? Abs(value) : -Abs(value);
         }
     }
 }
