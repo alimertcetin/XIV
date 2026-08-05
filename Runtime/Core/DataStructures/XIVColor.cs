@@ -28,15 +28,6 @@ namespace XIV.Core.DataStructures
         public static readonly XIVColor cyan = new XIVColor(0.0f, 1f, 1f, 1f);
         public static readonly XIVColor clear = new XIVColor(0f, 0f, 0f, 0f);
 
-#if UNITY_ENGINE || UNITY_EDITOR
-        public static implicit operator UnityEngine.Color(XIVColor c)
-        {
-            // TODO : XIVColor -> Remove Unity related code
-            // UnityEngine.Color XIVColorExtensions.AsColor(this XIVColor)
-            return new UnityEngine.Color(c.r, c.g, c.b, c.a);
-        }
-#endif
-
         public static implicit operator XIVColor(System.Drawing.Color c)
         {
             return new XIVColor(

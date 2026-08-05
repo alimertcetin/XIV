@@ -36,20 +36,6 @@ namespace XIV.Core.DataStructures
             return new Vec2(v.x, v.y);
         }
 
-#if UNITY_ENGINE || UNITY_EDITOR
-        // Implicit conversion from Vec3 to UnityEngine.Vector3
-        public static implicit operator UnityEngine.Vector3(Vec3 v)
-        {
-            return new UnityEngine.Vector3(v.x, v.y, v.z);
-        }
-
-        // Implicit conversion from UnityEngine.Vector3 to Vec3
-        public static implicit operator Vec3(UnityEngine.Vector3 v)
-        {
-            return new Vec3(v.x, v.y, v.z);
-        }
-#endif
-
         public static Vec3 MoveTowards(Vec3 current, Vec3 target, float movement)
         {
             float xDiff = target.x - current.x;
