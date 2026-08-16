@@ -95,6 +95,11 @@ namespace XIV.Core.DataStructures
         {
             return new Vec2(a.x - b.x, a.y - b.y);
         }
+        
+        public static Vec2 operator -(Vec2 a)
+        {
+            return new Vec2(-a.x, -a.y);
+        }
 
         public static Vec2 operator +(Vec2 a, Vec2 b)
         {
