@@ -7,6 +7,148 @@ references:
 - uid: XIV.Core
   name: XIV.Core
   href: api/XIV.Core.html
+- uid: XIV.Core.Algorithm
+  name: XIV.Core.Algorithm
+  href: api/XIV.Core.Algorithm.html
+  commentId: N:XIV.Core.Algorithm
+  fullName: XIV.Core.Algorithm
+  nameWithType: XIV.Core.Algorithm
+- uid: XIV.Core.Algorithm.PerlinNoise1d
+  name: PerlinNoise1d
+  href: api/XIV.Core.Algorithm.PerlinNoise1d.html
+  commentId: T:XIV.Core.Algorithm.PerlinNoise1d
+  fullName: XIV.Core.Algorithm.PerlinNoise1d
+  nameWithType: PerlinNoise1d
+- uid: XIV.Core.Algorithm.PerlinNoise1d.#ctor(System.Int32)
+  name: PerlinNoise1d(int)
+  href: api/XIV.Core.Algorithm.PerlinNoise1d.html#XIV_Core_Algorithm_PerlinNoise1d__ctor_System_Int32_
+  commentId: M:XIV.Core.Algorithm.PerlinNoise1d.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: XIV.Core.Algorithm.PerlinNoise1d.PerlinNoise1d(int)
+  fullName.vb: XIV.Core.Algorithm.PerlinNoise1d.New(Integer)
+  nameWithType: PerlinNoise1d.PerlinNoise1d(int)
+  nameWithType.vb: PerlinNoise1d.New(Integer)
+- uid: XIV.Core.Algorithm.PerlinNoise1d.#ctor*
+  name: PerlinNoise1d
+  href: api/XIV.Core.Algorithm.PerlinNoise1d.html#XIV_Core_Algorithm_PerlinNoise1d__ctor_
+  commentId: Overload:XIV.Core.Algorithm.PerlinNoise1d.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: XIV.Core.Algorithm.PerlinNoise1d.PerlinNoise1d
+  fullName.vb: XIV.Core.Algorithm.PerlinNoise1d.New
+  nameWithType: PerlinNoise1d.PerlinNoise1d
+  nameWithType.vb: PerlinNoise1d.New
+- uid: XIV.Core.Algorithm.PerlinNoise1d.Noise(System.Double)
+  name: Noise(double)
+  href: api/XIV.Core.Algorithm.PerlinNoise1d.html#XIV_Core_Algorithm_PerlinNoise1d_Noise_System_Double_
+  commentId: M:XIV.Core.Algorithm.PerlinNoise1d.Noise(System.Double)
+  name.vb: Noise(Double)
+  fullName: XIV.Core.Algorithm.PerlinNoise1d.Noise(double)
+  fullName.vb: XIV.Core.Algorithm.PerlinNoise1d.Noise(Double)
+  nameWithType: PerlinNoise1d.Noise(double)
+  nameWithType.vb: PerlinNoise1d.Noise(Double)
+- uid: XIV.Core.Algorithm.PerlinNoise1d.Noise*
+  name: Noise
+  href: api/XIV.Core.Algorithm.PerlinNoise1d.html#XIV_Core_Algorithm_PerlinNoise1d_Noise_
+  commentId: Overload:XIV.Core.Algorithm.PerlinNoise1d.Noise
+  isSpec: "True"
+  fullName: XIV.Core.Algorithm.PerlinNoise1d.Noise
+  nameWithType: PerlinNoise1d.Noise
+- uid: XIV.Core.Algorithm.PerlinNoise1d.OctaveNoise(System.Double,System.Double,System.Int32,System.Double,System.Double)
+  name: OctaveNoise(double, double, int, double, double)
+  href: api/XIV.Core.Algorithm.PerlinNoise1d.html#XIV_Core_Algorithm_PerlinNoise1d_OctaveNoise_System_Double_System_Double_System_Int32_System_Double_System_Double_
+  commentId: M:XIV.Core.Algorithm.PerlinNoise1d.OctaveNoise(System.Double,System.Double,System.Int32,System.Double,System.Double)
+  name.vb: OctaveNoise(Double, Double, Integer, Double, Double)
+  fullName: XIV.Core.Algorithm.PerlinNoise1d.OctaveNoise(double, double, int, double, double)
+  fullName.vb: XIV.Core.Algorithm.PerlinNoise1d.OctaveNoise(Double, Double, Integer, Double, Double)
+  nameWithType: PerlinNoise1d.OctaveNoise(double, double, int, double, double)
+  nameWithType.vb: PerlinNoise1d.OctaveNoise(Double, Double, Integer, Double, Double)
+- uid: XIV.Core.Algorithm.PerlinNoise1d.OctaveNoise*
+  name: OctaveNoise
+  href: api/XIV.Core.Algorithm.PerlinNoise1d.html#XIV_Core_Algorithm_PerlinNoise1d_OctaveNoise_
+  commentId: Overload:XIV.Core.Algorithm.PerlinNoise1d.OctaveNoise
+  isSpec: "True"
+  fullName: XIV.Core.Algorithm.PerlinNoise1d.OctaveNoise
+  nameWithType: PerlinNoise1d.OctaveNoise
+- uid: XIV.Core.Algorithm.PerlinNoise2d
+  name: PerlinNoise2d
+  href: api/XIV.Core.Algorithm.PerlinNoise2d.html
+  commentId: T:XIV.Core.Algorithm.PerlinNoise2d
+  fullName: XIV.Core.Algorithm.PerlinNoise2d
+  nameWithType: PerlinNoise2d
+- uid: XIV.Core.Algorithm.PerlinNoise2d.#ctor(System.Int32)
+  name: PerlinNoise2d(int)
+  href: api/XIV.Core.Algorithm.PerlinNoise2d.html#XIV_Core_Algorithm_PerlinNoise2d__ctor_System_Int32_
+  commentId: M:XIV.Core.Algorithm.PerlinNoise2d.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: XIV.Core.Algorithm.PerlinNoise2d.PerlinNoise2d(int)
+  fullName.vb: XIV.Core.Algorithm.PerlinNoise2d.New(Integer)
+  nameWithType: PerlinNoise2d.PerlinNoise2d(int)
+  nameWithType.vb: PerlinNoise2d.New(Integer)
+- uid: XIV.Core.Algorithm.PerlinNoise2d.#ctor*
+  name: PerlinNoise2d
+  href: api/XIV.Core.Algorithm.PerlinNoise2d.html#XIV_Core_Algorithm_PerlinNoise2d__ctor_
+  commentId: Overload:XIV.Core.Algorithm.PerlinNoise2d.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: XIV.Core.Algorithm.PerlinNoise2d.PerlinNoise2d
+  fullName.vb: XIV.Core.Algorithm.PerlinNoise2d.New
+  nameWithType: PerlinNoise2d.PerlinNoise2d
+  nameWithType.vb: PerlinNoise2d.New
+- uid: XIV.Core.Algorithm.PerlinNoise2d.Noise(System.Double,System.Double)
+  name: Noise(double, double)
+  href: api/XIV.Core.Algorithm.PerlinNoise2d.html#XIV_Core_Algorithm_PerlinNoise2d_Noise_System_Double_System_Double_
+  commentId: M:XIV.Core.Algorithm.PerlinNoise2d.Noise(System.Double,System.Double)
+  name.vb: Noise(Double, Double)
+  fullName: XIV.Core.Algorithm.PerlinNoise2d.Noise(double, double)
+  fullName.vb: XIV.Core.Algorithm.PerlinNoise2d.Noise(Double, Double)
+  nameWithType: PerlinNoise2d.Noise(double, double)
+  nameWithType.vb: PerlinNoise2d.Noise(Double, Double)
+- uid: XIV.Core.Algorithm.PerlinNoise2d.Noise*
+  name: Noise
+  href: api/XIV.Core.Algorithm.PerlinNoise2d.html#XIV_Core_Algorithm_PerlinNoise2d_Noise_
+  commentId: Overload:XIV.Core.Algorithm.PerlinNoise2d.Noise
+  isSpec: "True"
+  fullName: XIV.Core.Algorithm.PerlinNoise2d.Noise
+  nameWithType: PerlinNoise2d.Noise
+- uid: XIV.Core.Algorithm.PerlinNoise2d.OctaveNoise(System.Double,System.Double,System.Double,System.Int32,System.Double,System.Double)
+  name: OctaveNoise(double, double, double, int, double, double)
+  href: api/XIV.Core.Algorithm.PerlinNoise2d.html#XIV_Core_Algorithm_PerlinNoise2d_OctaveNoise_System_Double_System_Double_System_Double_System_Int32_System_Double_System_Double_
+  commentId: M:XIV.Core.Algorithm.PerlinNoise2d.OctaveNoise(System.Double,System.Double,System.Double,System.Int32,System.Double,System.Double)
+  name.vb: OctaveNoise(Double, Double, Double, Integer, Double, Double)
+  fullName: XIV.Core.Algorithm.PerlinNoise2d.OctaveNoise(double, double, double, int, double, double)
+  fullName.vb: XIV.Core.Algorithm.PerlinNoise2d.OctaveNoise(Double, Double, Double, Integer, Double, Double)
+  nameWithType: PerlinNoise2d.OctaveNoise(double, double, double, int, double, double)
+  nameWithType.vb: PerlinNoise2d.OctaveNoise(Double, Double, Double, Integer, Double, Double)
+- uid: XIV.Core.Algorithm.PerlinNoise2d.OctaveNoise*
+  name: OctaveNoise
+  href: api/XIV.Core.Algorithm.PerlinNoise2d.html#XIV_Core_Algorithm_PerlinNoise2d_OctaveNoise_
+  commentId: Overload:XIV.Core.Algorithm.PerlinNoise2d.OctaveNoise
+  isSpec: "True"
+  fullName: XIV.Core.Algorithm.PerlinNoise2d.OctaveNoise
+  nameWithType: PerlinNoise2d.OctaveNoise
+- uid: XIV.Core.Algorithm.PoissonDiscSampler
+  name: PoissonDiscSampler
+  href: api/XIV.Core.Algorithm.PoissonDiscSampler.html
+  commentId: T:XIV.Core.Algorithm.PoissonDiscSampler
+  fullName: XIV.Core.Algorithm.PoissonDiscSampler
+  nameWithType: PoissonDiscSampler
+- uid: XIV.Core.Algorithm.PoissonDiscSampler.GeneratePoints(System.Single,System.Int32,XIV.Core.DataStructures.Vec2)
+  name: GeneratePoints(float, int, Vec2)
+  href: api/XIV.Core.Algorithm.PoissonDiscSampler.html#XIV_Core_Algorithm_PoissonDiscSampler_GeneratePoints_System_Single_System_Int32_XIV_Core_DataStructures_Vec2_
+  commentId: M:XIV.Core.Algorithm.PoissonDiscSampler.GeneratePoints(System.Single,System.Int32,XIV.Core.DataStructures.Vec2)
+  name.vb: GeneratePoints(Single, Integer, Vec2)
+  fullName: XIV.Core.Algorithm.PoissonDiscSampler.GeneratePoints(float, int, XIV.Core.DataStructures.Vec2)
+  fullName.vb: XIV.Core.Algorithm.PoissonDiscSampler.GeneratePoints(Single, Integer, XIV.Core.DataStructures.Vec2)
+  nameWithType: PoissonDiscSampler.GeneratePoints(float, int, Vec2)
+  nameWithType.vb: PoissonDiscSampler.GeneratePoints(Single, Integer, Vec2)
+- uid: XIV.Core.Algorithm.PoissonDiscSampler.GeneratePoints*
+  name: GeneratePoints
+  href: api/XIV.Core.Algorithm.PoissonDiscSampler.html#XIV_Core_Algorithm_PoissonDiscSampler_GeneratePoints_
+  commentId: Overload:XIV.Core.Algorithm.PoissonDiscSampler.GeneratePoints
+  isSpec: "True"
+  fullName: XIV.Core.Algorithm.PoissonDiscSampler.GeneratePoints
+  nameWithType: PoissonDiscSampler.GeneratePoints
 - uid: XIV.Core.Collections
   name: XIV.Core.Collections
   href: api/XIV.Core.Collections.html
@@ -199,6 +341,32 @@ references:
   fullName.vb: XIV.Core.Collections.DynamicArray(Of T).Exists
   nameWithType: DynamicArray<T>.Exists
   nameWithType.vb: DynamicArray(Of T).Exists
+- uid: XIV.Core.Collections.DynamicArray`1.ForEach(XIV.Core.Collections.DynamicArray{`0}.ForEachDelegate)
+  name: ForEach(ForEachDelegate)
+  href: api/XIV.Core.Collections.DynamicArray-1.html#XIV_Core_Collections_DynamicArray_1_ForEach_XIV_Core_Collections_DynamicArray__0__ForEachDelegate_
+  commentId: M:XIV.Core.Collections.DynamicArray`1.ForEach(XIV.Core.Collections.DynamicArray{`0}.ForEachDelegate)
+  fullName: XIV.Core.Collections.DynamicArray<T>.ForEach(XIV.Core.Collections.DynamicArray<T>.ForEachDelegate)
+  fullName.vb: XIV.Core.Collections.DynamicArray(Of T).ForEach(XIV.Core.Collections.DynamicArray(Of T).ForEachDelegate)
+  nameWithType: DynamicArray<T>.ForEach(DynamicArray<T>.ForEachDelegate)
+  nameWithType.vb: DynamicArray(Of T).ForEach(DynamicArray(Of T).ForEachDelegate)
+- uid: XIV.Core.Collections.DynamicArray`1.ForEach*
+  name: ForEach
+  href: api/XIV.Core.Collections.DynamicArray-1.html#XIV_Core_Collections_DynamicArray_1_ForEach_
+  commentId: Overload:XIV.Core.Collections.DynamicArray`1.ForEach
+  isSpec: "True"
+  fullName: XIV.Core.Collections.DynamicArray<T>.ForEach
+  fullName.vb: XIV.Core.Collections.DynamicArray(Of T).ForEach
+  nameWithType: DynamicArray<T>.ForEach
+  nameWithType.vb: DynamicArray(Of T).ForEach
+- uid: XIV.Core.Collections.DynamicArray`1.ForEachDelegate
+  name: DynamicArray<T>.ForEachDelegate
+  href: api/XIV.Core.Collections.DynamicArray-1.ForEachDelegate.html
+  commentId: T:XIV.Core.Collections.DynamicArray`1.ForEachDelegate
+  name.vb: DynamicArray(Of T).ForEachDelegate
+  fullName: XIV.Core.Collections.DynamicArray<T>.ForEachDelegate
+  fullName.vb: XIV.Core.Collections.DynamicArray(Of T).ForEachDelegate
+  nameWithType: DynamicArray<T>.ForEachDelegate
+  nameWithType.vb: DynamicArray(Of T).ForEachDelegate
 - uid: XIV.Core.Collections.DynamicArray`1.GetEnumerator
   name: GetEnumerator()
   href: api/XIV.Core.Collections.DynamicArray-1.html#XIV_Core_Collections_DynamicArray_1_GetEnumerator
@@ -216,6 +384,24 @@ references:
   fullName.vb: XIV.Core.Collections.DynamicArray(Of T).GetEnumerator
   nameWithType: DynamicArray<T>.GetEnumerator
   nameWithType.vb: DynamicArray(Of T).GetEnumerator
+- uid: XIV.Core.Collections.DynamicArray`1.IncreaseCapacity(System.Int32)
+  name: IncreaseCapacity(int)
+  href: api/XIV.Core.Collections.DynamicArray-1.html#XIV_Core_Collections_DynamicArray_1_IncreaseCapacity_System_Int32_
+  commentId: M:XIV.Core.Collections.DynamicArray`1.IncreaseCapacity(System.Int32)
+  name.vb: IncreaseCapacity(Integer)
+  fullName: XIV.Core.Collections.DynamicArray<T>.IncreaseCapacity(int)
+  fullName.vb: XIV.Core.Collections.DynamicArray(Of T).IncreaseCapacity(Integer)
+  nameWithType: DynamicArray<T>.IncreaseCapacity(int)
+  nameWithType.vb: DynamicArray(Of T).IncreaseCapacity(Integer)
+- uid: XIV.Core.Collections.DynamicArray`1.IncreaseCapacity*
+  name: IncreaseCapacity
+  href: api/XIV.Core.Collections.DynamicArray-1.html#XIV_Core_Collections_DynamicArray_1_IncreaseCapacity_
+  commentId: Overload:XIV.Core.Collections.DynamicArray`1.IncreaseCapacity
+  isSpec: "True"
+  fullName: XIV.Core.Collections.DynamicArray<T>.IncreaseCapacity
+  fullName.vb: XIV.Core.Collections.DynamicArray(Of T).IncreaseCapacity
+  nameWithType: DynamicArray<T>.IncreaseCapacity
+  nameWithType.vb: DynamicArray(Of T).IncreaseCapacity
 - uid: XIV.Core.Collections.DynamicArray`1.IndexOf(`0@)
   name: IndexOf(ref T)
   href: api/XIV.Core.Collections.DynamicArray-1.html#XIV_Core_Collections_DynamicArray_1_IndexOf__0__
@@ -298,6 +484,14 @@ references:
   fullName.vb: XIV.Core.Collections.DynamicArray(Of T).RemoveAll(System.Predicate(Of T))
   nameWithType: DynamicArray<T>.RemoveAll(Predicate<T>)
   nameWithType.vb: DynamicArray(Of T).RemoveAll(Predicate(Of T))
+- uid: XIV.Core.Collections.DynamicArray`1.RemoveAll(XIV.Core.Collections.DynamicArray{`0}.RemoveDelegate)
+  name: RemoveAll(RemoveDelegate)
+  href: api/XIV.Core.Collections.DynamicArray-1.html#XIV_Core_Collections_DynamicArray_1_RemoveAll_XIV_Core_Collections_DynamicArray__0__RemoveDelegate_
+  commentId: M:XIV.Core.Collections.DynamicArray`1.RemoveAll(XIV.Core.Collections.DynamicArray{`0}.RemoveDelegate)
+  fullName: XIV.Core.Collections.DynamicArray<T>.RemoveAll(XIV.Core.Collections.DynamicArray<T>.RemoveDelegate)
+  fullName.vb: XIV.Core.Collections.DynamicArray(Of T).RemoveAll(XIV.Core.Collections.DynamicArray(Of T).RemoveDelegate)
+  nameWithType: DynamicArray<T>.RemoveAll(DynamicArray<T>.RemoveDelegate)
+  nameWithType.vb: DynamicArray(Of T).RemoveAll(DynamicArray(Of T).RemoveDelegate)
 - uid: XIV.Core.Collections.DynamicArray`1.RemoveAll*
   name: RemoveAll
   href: api/XIV.Core.Collections.DynamicArray-1.html#XIV_Core_Collections_DynamicArray_1_RemoveAll_
@@ -325,6 +519,32 @@ references:
   fullName.vb: XIV.Core.Collections.DynamicArray(Of T).RemoveAt
   nameWithType: DynamicArray<T>.RemoveAt
   nameWithType.vb: DynamicArray(Of T).RemoveAt
+- uid: XIV.Core.Collections.DynamicArray`1.RemoveDelegate
+  name: DynamicArray<T>.RemoveDelegate
+  href: api/XIV.Core.Collections.DynamicArray-1.RemoveDelegate.html
+  commentId: T:XIV.Core.Collections.DynamicArray`1.RemoveDelegate
+  name.vb: DynamicArray(Of T).RemoveDelegate
+  fullName: XIV.Core.Collections.DynamicArray<T>.RemoveDelegate
+  fullName.vb: XIV.Core.Collections.DynamicArray(Of T).RemoveDelegate
+  nameWithType: DynamicArray<T>.RemoveDelegate
+  nameWithType.vb: DynamicArray(Of T).RemoveDelegate
+- uid: XIV.Core.Collections.DynamicArray`1.RemoveLast
+  name: RemoveLast()
+  href: api/XIV.Core.Collections.DynamicArray-1.html#XIV_Core_Collections_DynamicArray_1_RemoveLast
+  commentId: M:XIV.Core.Collections.DynamicArray`1.RemoveLast
+  fullName: XIV.Core.Collections.DynamicArray<T>.RemoveLast()
+  fullName.vb: XIV.Core.Collections.DynamicArray(Of T).RemoveLast()
+  nameWithType: DynamicArray<T>.RemoveLast()
+  nameWithType.vb: DynamicArray(Of T).RemoveLast()
+- uid: XIV.Core.Collections.DynamicArray`1.RemoveLast*
+  name: RemoveLast
+  href: api/XIV.Core.Collections.DynamicArray-1.html#XIV_Core_Collections_DynamicArray_1_RemoveLast_
+  commentId: Overload:XIV.Core.Collections.DynamicArray`1.RemoveLast
+  isSpec: "True"
+  fullName: XIV.Core.Collections.DynamicArray<T>.RemoveLast
+  fullName.vb: XIV.Core.Collections.DynamicArray(Of T).RemoveLast
+  nameWithType: DynamicArray<T>.RemoveLast
+  nameWithType.vb: DynamicArray(Of T).RemoveLast
 - uid: XIV.Core.Collections.DynamicArray`1.ToArray
   name: ToArray()
   href: api/XIV.Core.Collections.DynamicArray-1.html#XIV_Core_Collections_DynamicArray_1_ToArray
@@ -342,6 +562,23 @@ references:
   fullName.vb: XIV.Core.Collections.DynamicArray(Of T).ToArray
   nameWithType: DynamicArray<T>.ToArray
   nameWithType.vb: DynamicArray(Of T).ToArray
+- uid: XIV.Core.Collections.DynamicArray`1.ToString
+  name: ToString()
+  href: api/XIV.Core.Collections.DynamicArray-1.html#XIV_Core_Collections_DynamicArray_1_ToString
+  commentId: M:XIV.Core.Collections.DynamicArray`1.ToString
+  fullName: XIV.Core.Collections.DynamicArray<T>.ToString()
+  fullName.vb: XIV.Core.Collections.DynamicArray(Of T).ToString()
+  nameWithType: DynamicArray<T>.ToString()
+  nameWithType.vb: DynamicArray(Of T).ToString()
+- uid: XIV.Core.Collections.DynamicArray`1.ToString*
+  name: ToString
+  href: api/XIV.Core.Collections.DynamicArray-1.html#XIV_Core_Collections_DynamicArray_1_ToString_
+  commentId: Overload:XIV.Core.Collections.DynamicArray`1.ToString
+  isSpec: "True"
+  fullName: XIV.Core.Collections.DynamicArray<T>.ToString
+  fullName.vb: XIV.Core.Collections.DynamicArray(Of T).ToString
+  nameWithType: DynamicArray<T>.ToString
+  nameWithType.vb: DynamicArray(Of T).ToString
 - uid: XIV.Core.DataStructures
   name: XIV.Core.DataStructures
   href: api/XIV.Core.DataStructures.html
@@ -373,6 +610,19 @@ references:
   fullName.vb: XIV.Core.DataStructures.Vec2.New
   nameWithType: Vec2.Vec2
   nameWithType.vb: Vec2.New
+- uid: XIV.Core.DataStructures.Vec2.Distance(XIV.Core.DataStructures.Vec2,XIV.Core.DataStructures.Vec2)
+  name: Distance(Vec2, Vec2)
+  href: api/XIV.Core.DataStructures.Vec2.html#XIV_Core_DataStructures_Vec2_Distance_XIV_Core_DataStructures_Vec2_XIV_Core_DataStructures_Vec2_
+  commentId: M:XIV.Core.DataStructures.Vec2.Distance(XIV.Core.DataStructures.Vec2,XIV.Core.DataStructures.Vec2)
+  fullName: XIV.Core.DataStructures.Vec2.Distance(XIV.Core.DataStructures.Vec2, XIV.Core.DataStructures.Vec2)
+  nameWithType: Vec2.Distance(Vec2, Vec2)
+- uid: XIV.Core.DataStructures.Vec2.Distance*
+  name: Distance
+  href: api/XIV.Core.DataStructures.Vec2.html#XIV_Core_DataStructures_Vec2_Distance_
+  commentId: Overload:XIV.Core.DataStructures.Vec2.Distance
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.Vec2.Distance
+  nameWithType: Vec2.Distance
 - uid: XIV.Core.DataStructures.Vec2.Dot(XIV.Core.DataStructures.Vec2,XIV.Core.DataStructures.Vec2)
   name: Dot(Vec2, Vec2)
   href: api/XIV.Core.DataStructures.Vec2.html#XIV_Core_DataStructures_Vec2_Dot_XIV_Core_DataStructures_Vec2_XIV_Core_DataStructures_Vec2_
@@ -495,6 +745,19 @@ references:
   isSpec: "True"
   fullName: XIV.Core.DataStructures.Vec2.Normalize
   nameWithType: Vec2.Normalize
+- uid: XIV.Core.DataStructures.Vec2.ToString
+  name: ToString()
+  href: api/XIV.Core.DataStructures.Vec2.html#XIV_Core_DataStructures_Vec2_ToString
+  commentId: M:XIV.Core.DataStructures.Vec2.ToString
+  fullName: XIV.Core.DataStructures.Vec2.ToString()
+  nameWithType: Vec2.ToString()
+- uid: XIV.Core.DataStructures.Vec2.ToString*
+  name: ToString
+  href: api/XIV.Core.DataStructures.Vec2.html#XIV_Core_DataStructures_Vec2_ToString_
+  commentId: Overload:XIV.Core.DataStructures.Vec2.ToString
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.Vec2.ToString
+  nameWithType: Vec2.ToString
 - uid: XIV.Core.DataStructures.Vec2.down
   name: down
   href: api/XIV.Core.DataStructures.Vec2.html#XIV_Core_DataStructures_Vec2_down
@@ -526,6 +789,19 @@ references:
   commentId: F:XIV.Core.DataStructures.Vec2.negativeInfinity
   fullName: XIV.Core.DataStructures.Vec2.negativeInfinity
   nameWithType: Vec2.negativeInfinity
+- uid: XIV.Core.DataStructures.Vec2.normalized
+  name: normalized
+  href: api/XIV.Core.DataStructures.Vec2.html#XIV_Core_DataStructures_Vec2_normalized
+  commentId: P:XIV.Core.DataStructures.Vec2.normalized
+  fullName: XIV.Core.DataStructures.Vec2.normalized
+  nameWithType: Vec2.normalized
+- uid: XIV.Core.DataStructures.Vec2.normalized*
+  name: normalized
+  href: api/XIV.Core.DataStructures.Vec2.html#XIV_Core_DataStructures_Vec2_normalized_
+  commentId: Overload:XIV.Core.DataStructures.Vec2.normalized
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.Vec2.normalized
+  nameWithType: Vec2.normalized
 - uid: XIV.Core.DataStructures.Vec2.one
   name: one
   href: api/XIV.Core.DataStructures.Vec2.html#XIV_Core_DataStructures_Vec2_one
@@ -677,6 +953,25 @@ references:
   name: operator -
   href: api/XIV.Core.DataStructures.Vec2.html#XIV_Core_DataStructures_Vec2_op_Subtraction_
   commentId: Overload:XIV.Core.DataStructures.Vec2.op_Subtraction
+  isSpec: "True"
+  name.vb: '-'
+  fullName: XIV.Core.DataStructures.Vec2.operator -
+  fullName.vb: XIV.Core.DataStructures.Vec2.-
+  nameWithType: Vec2.operator -
+  nameWithType.vb: Vec2.-
+- uid: XIV.Core.DataStructures.Vec2.op_UnaryNegation(XIV.Core.DataStructures.Vec2)
+  name: operator -(Vec2)
+  href: api/XIV.Core.DataStructures.Vec2.html#XIV_Core_DataStructures_Vec2_op_UnaryNegation_XIV_Core_DataStructures_Vec2_
+  commentId: M:XIV.Core.DataStructures.Vec2.op_UnaryNegation(XIV.Core.DataStructures.Vec2)
+  name.vb: -(Vec2)
+  fullName: XIV.Core.DataStructures.Vec2.operator -(XIV.Core.DataStructures.Vec2)
+  fullName.vb: XIV.Core.DataStructures.Vec2.-(XIV.Core.DataStructures.Vec2)
+  nameWithType: Vec2.operator -(Vec2)
+  nameWithType.vb: Vec2.-(Vec2)
+- uid: XIV.Core.DataStructures.Vec2.op_UnaryNegation*
+  name: operator -
+  href: api/XIV.Core.DataStructures.Vec2.html#XIV_Core_DataStructures_Vec2_op_UnaryNegation_
+  commentId: Overload:XIV.Core.DataStructures.Vec2.op_UnaryNegation
   isSpec: "True"
   name.vb: '-'
   fullName: XIV.Core.DataStructures.Vec2.operator -
@@ -1555,6 +1850,89 @@ references:
   commentId: F:XIV.Core.DataStructures.Vec4.zero
   fullName: XIV.Core.DataStructures.Vec4.zero
   nameWithType: Vec4.zero
+- uid: XIV.Core.DataStructures.XIVBuffer`1
+  name: XIVBuffer<T>
+  href: api/XIV.Core.DataStructures.XIVBuffer-1.html
+  commentId: T:XIV.Core.DataStructures.XIVBuffer`1
+  name.vb: XIVBuffer(Of T)
+  fullName: XIV.Core.DataStructures.XIVBuffer<T>
+  fullName.vb: XIV.Core.DataStructures.XIVBuffer(Of T)
+  nameWithType: XIVBuffer<T>
+  nameWithType.vb: XIVBuffer(Of T)
+- uid: XIV.Core.DataStructures.XIVBuffer`1.#ctor(`0[])
+  name: XIVBuffer(T[])
+  href: api/XIV.Core.DataStructures.XIVBuffer-1.html#XIV_Core_DataStructures_XIVBuffer_1__ctor__0___
+  commentId: M:XIV.Core.DataStructures.XIVBuffer`1.#ctor(`0[])
+  name.vb: New(T())
+  fullName: XIV.Core.DataStructures.XIVBuffer<T>.XIVBuffer(T[])
+  fullName.vb: XIV.Core.DataStructures.XIVBuffer(Of T).New(T())
+  nameWithType: XIVBuffer<T>.XIVBuffer(T[])
+  nameWithType.vb: XIVBuffer(Of T).New(T())
+- uid: XIV.Core.DataStructures.XIVBuffer`1.#ctor*
+  name: XIVBuffer
+  href: api/XIV.Core.DataStructures.XIVBuffer-1.html#XIV_Core_DataStructures_XIVBuffer_1__ctor_
+  commentId: Overload:XIV.Core.DataStructures.XIVBuffer`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: XIV.Core.DataStructures.XIVBuffer<T>.XIVBuffer
+  fullName.vb: XIV.Core.DataStructures.XIVBuffer(Of T).New
+  nameWithType: XIVBuffer<T>.XIVBuffer
+  nameWithType.vb: XIVBuffer(Of T).New
+- uid: XIV.Core.DataStructures.XIVBuffer`1.Item(System.Int32)
+  name: this[int]
+  href: api/XIV.Core.DataStructures.XIVBuffer-1.html#XIV_Core_DataStructures_XIVBuffer_1_Item_System_Int32_
+  commentId: P:XIV.Core.DataStructures.XIVBuffer`1.Item(System.Int32)
+  name.vb: this[](Integer)
+  fullName: XIV.Core.DataStructures.XIVBuffer<T>.this[int]
+  fullName.vb: XIV.Core.DataStructures.XIVBuffer(Of T).this[](Integer)
+  nameWithType: XIVBuffer<T>.this[int]
+  nameWithType.vb: XIVBuffer(Of T).this[](Integer)
+- uid: XIV.Core.DataStructures.XIVBuffer`1.Item*
+  name: this
+  href: api/XIV.Core.DataStructures.XIVBuffer-1.html#XIV_Core_DataStructures_XIVBuffer_1_Item_
+  commentId: Overload:XIV.Core.DataStructures.XIVBuffer`1.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: XIV.Core.DataStructures.XIVBuffer<T>.this
+  fullName.vb: XIV.Core.DataStructures.XIVBuffer(Of T).this[]
+  nameWithType: XIVBuffer<T>.this
+  nameWithType.vb: XIVBuffer(Of T).this[]
+- uid: XIV.Core.DataStructures.XIVBuffer`1.Length
+  name: Length
+  href: api/XIV.Core.DataStructures.XIVBuffer-1.html#XIV_Core_DataStructures_XIVBuffer_1_Length
+  commentId: P:XIV.Core.DataStructures.XIVBuffer`1.Length
+  fullName: XIV.Core.DataStructures.XIVBuffer<T>.Length
+  fullName.vb: XIV.Core.DataStructures.XIVBuffer(Of T).Length
+  nameWithType: XIVBuffer<T>.Length
+  nameWithType.vb: XIVBuffer(Of T).Length
+- uid: XIV.Core.DataStructures.XIVBuffer`1.Length*
+  name: Length
+  href: api/XIV.Core.DataStructures.XIVBuffer-1.html#XIV_Core_DataStructures_XIVBuffer_1_Length_
+  commentId: Overload:XIV.Core.DataStructures.XIVBuffer`1.Length
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVBuffer<T>.Length
+  fullName.vb: XIV.Core.DataStructures.XIVBuffer(Of T).Length
+  nameWithType: XIVBuffer<T>.Length
+  nameWithType.vb: XIVBuffer(Of T).Length
+- uid: XIV.Core.DataStructures.XIVBuffer`1.op_Implicit(XIV.Core.DataStructures.XIVBuffer{`0})~`0[]
+  name: implicit operator T[](XIVBuffer<T>)
+  href: api/XIV.Core.DataStructures.XIVBuffer-1.html#XIV_Core_DataStructures_XIVBuffer_1_op_Implicit_XIV_Core_DataStructures_XIVBuffer__0____0__
+  commentId: M:XIV.Core.DataStructures.XIVBuffer`1.op_Implicit(XIV.Core.DataStructures.XIVBuffer{`0})~`0[]
+  name.vb: CType(XIVBuffer(Of T))
+  fullName: XIV.Core.DataStructures.XIVBuffer<T>.implicit operator T[](XIV.Core.DataStructures.XIVBuffer<T>)
+  fullName.vb: XIV.Core.DataStructures.XIVBuffer(Of T).CType(XIV.Core.DataStructures.XIVBuffer(Of T))
+  nameWithType: XIVBuffer<T>.implicit operator T[](XIVBuffer<T>)
+  nameWithType.vb: XIVBuffer(Of T).CType(XIVBuffer(Of T))
+- uid: XIV.Core.DataStructures.XIVBuffer`1.op_Implicit*
+  name: implicit operator
+  href: api/XIV.Core.DataStructures.XIVBuffer-1.html#XIV_Core_DataStructures_XIVBuffer_1_op_Implicit_
+  commentId: Overload:XIV.Core.DataStructures.XIVBuffer`1.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: XIV.Core.DataStructures.XIVBuffer<T>.implicit operator
+  fullName.vb: XIV.Core.DataStructures.XIVBuffer(Of T).CType
+  nameWithType: XIVBuffer<T>.implicit operator
+  nameWithType.vb: XIVBuffer(Of T).CType
 - uid: XIV.Core.DataStructures.XIVColor
   name: XIVColor
   href: api/XIV.Core.DataStructures.XIVColor.html
@@ -1609,6 +1987,22 @@ references:
   isSpec: "True"
   fullName: XIV.Core.DataStructures.XIVColor.GetHashCode
   nameWithType: XIVColor.GetHashCode
+- uid: XIV.Core.DataStructures.XIVColor.Lerp(XIV.Core.DataStructures.XIVColor,XIV.Core.DataStructures.XIVColor,System.Single)
+  name: Lerp(XIVColor, XIVColor, float)
+  href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_Lerp_XIV_Core_DataStructures_XIVColor_XIV_Core_DataStructures_XIVColor_System_Single_
+  commentId: M:XIV.Core.DataStructures.XIVColor.Lerp(XIV.Core.DataStructures.XIVColor,XIV.Core.DataStructures.XIVColor,System.Single)
+  name.vb: Lerp(XIVColor, XIVColor, Single)
+  fullName: XIV.Core.DataStructures.XIVColor.Lerp(XIV.Core.DataStructures.XIVColor, XIV.Core.DataStructures.XIVColor, float)
+  fullName.vb: XIV.Core.DataStructures.XIVColor.Lerp(XIV.Core.DataStructures.XIVColor, XIV.Core.DataStructures.XIVColor, Single)
+  nameWithType: XIVColor.Lerp(XIVColor, XIVColor, float)
+  nameWithType.vb: XIVColor.Lerp(XIVColor, XIVColor, Single)
+- uid: XIV.Core.DataStructures.XIVColor.Lerp*
+  name: Lerp
+  href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_Lerp_
+  commentId: Overload:XIV.Core.DataStructures.XIVColor.Lerp
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVColor.Lerp
+  nameWithType: XIVColor.Lerp
 - uid: XIV.Core.DataStructures.XIVColor.a
   name: a
   href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_a
@@ -1624,53 +2018,25 @@ references:
 - uid: XIV.Core.DataStructures.XIVColor.black
   name: black
   href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_black
-  commentId: P:XIV.Core.DataStructures.XIVColor.black
-  fullName: XIV.Core.DataStructures.XIVColor.black
-  nameWithType: XIVColor.black
-- uid: XIV.Core.DataStructures.XIVColor.black*
-  name: black
-  href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_black_
-  commentId: Overload:XIV.Core.DataStructures.XIVColor.black
-  isSpec: "True"
+  commentId: F:XIV.Core.DataStructures.XIVColor.black
   fullName: XIV.Core.DataStructures.XIVColor.black
   nameWithType: XIVColor.black
 - uid: XIV.Core.DataStructures.XIVColor.blue
   name: blue
   href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_blue
-  commentId: P:XIV.Core.DataStructures.XIVColor.blue
-  fullName: XIV.Core.DataStructures.XIVColor.blue
-  nameWithType: XIVColor.blue
-- uid: XIV.Core.DataStructures.XIVColor.blue*
-  name: blue
-  href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_blue_
-  commentId: Overload:XIV.Core.DataStructures.XIVColor.blue
-  isSpec: "True"
+  commentId: F:XIV.Core.DataStructures.XIVColor.blue
   fullName: XIV.Core.DataStructures.XIVColor.blue
   nameWithType: XIVColor.blue
 - uid: XIV.Core.DataStructures.XIVColor.clear
   name: clear
   href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_clear
-  commentId: P:XIV.Core.DataStructures.XIVColor.clear
-  fullName: XIV.Core.DataStructures.XIVColor.clear
-  nameWithType: XIVColor.clear
-- uid: XIV.Core.DataStructures.XIVColor.clear*
-  name: clear
-  href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_clear_
-  commentId: Overload:XIV.Core.DataStructures.XIVColor.clear
-  isSpec: "True"
+  commentId: F:XIV.Core.DataStructures.XIVColor.clear
   fullName: XIV.Core.DataStructures.XIVColor.clear
   nameWithType: XIVColor.clear
 - uid: XIV.Core.DataStructures.XIVColor.cyan
   name: cyan
   href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_cyan
-  commentId: P:XIV.Core.DataStructures.XIVColor.cyan
-  fullName: XIV.Core.DataStructures.XIVColor.cyan
-  nameWithType: XIVColor.cyan
-- uid: XIV.Core.DataStructures.XIVColor.cyan*
-  name: cyan
-  href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_cyan_
-  commentId: Overload:XIV.Core.DataStructures.XIVColor.cyan
-  isSpec: "True"
+  commentId: F:XIV.Core.DataStructures.XIVColor.cyan
   fullName: XIV.Core.DataStructures.XIVColor.cyan
   nameWithType: XIVColor.cyan
 - uid: XIV.Core.DataStructures.XIVColor.g
@@ -1682,40 +2048,19 @@ references:
 - uid: XIV.Core.DataStructures.XIVColor.gray
   name: gray
   href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_gray
-  commentId: P:XIV.Core.DataStructures.XIVColor.gray
-  fullName: XIV.Core.DataStructures.XIVColor.gray
-  nameWithType: XIVColor.gray
-- uid: XIV.Core.DataStructures.XIVColor.gray*
-  name: gray
-  href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_gray_
-  commentId: Overload:XIV.Core.DataStructures.XIVColor.gray
-  isSpec: "True"
+  commentId: F:XIV.Core.DataStructures.XIVColor.gray
   fullName: XIV.Core.DataStructures.XIVColor.gray
   nameWithType: XIVColor.gray
 - uid: XIV.Core.DataStructures.XIVColor.green
   name: green
   href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_green
-  commentId: P:XIV.Core.DataStructures.XIVColor.green
-  fullName: XIV.Core.DataStructures.XIVColor.green
-  nameWithType: XIVColor.green
-- uid: XIV.Core.DataStructures.XIVColor.green*
-  name: green
-  href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_green_
-  commentId: Overload:XIV.Core.DataStructures.XIVColor.green
-  isSpec: "True"
+  commentId: F:XIV.Core.DataStructures.XIVColor.green
   fullName: XIV.Core.DataStructures.XIVColor.green
   nameWithType: XIVColor.green
 - uid: XIV.Core.DataStructures.XIVColor.magenta
   name: magenta
   href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_magenta
-  commentId: P:XIV.Core.DataStructures.XIVColor.magenta
-  fullName: XIV.Core.DataStructures.XIVColor.magenta
-  nameWithType: XIVColor.magenta
-- uid: XIV.Core.DataStructures.XIVColor.magenta*
-  name: magenta
-  href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_magenta_
-  commentId: Overload:XIV.Core.DataStructures.XIVColor.magenta
-  isSpec: "True"
+  commentId: F:XIV.Core.DataStructures.XIVColor.magenta
   fullName: XIV.Core.DataStructures.XIVColor.magenta
   nameWithType: XIVColor.magenta
 - uid: XIV.Core.DataStructures.XIVColor.op_Equality(XIV.Core.DataStructures.XIVColor,XIV.Core.DataStructures.XIVColor)
@@ -1784,40 +2129,19 @@ references:
 - uid: XIV.Core.DataStructures.XIVColor.red
   name: red
   href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_red
-  commentId: P:XIV.Core.DataStructures.XIVColor.red
-  fullName: XIV.Core.DataStructures.XIVColor.red
-  nameWithType: XIVColor.red
-- uid: XIV.Core.DataStructures.XIVColor.red*
-  name: red
-  href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_red_
-  commentId: Overload:XIV.Core.DataStructures.XIVColor.red
-  isSpec: "True"
+  commentId: F:XIV.Core.DataStructures.XIVColor.red
   fullName: XIV.Core.DataStructures.XIVColor.red
   nameWithType: XIVColor.red
 - uid: XIV.Core.DataStructures.XIVColor.white
   name: white
   href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_white
-  commentId: P:XIV.Core.DataStructures.XIVColor.white
-  fullName: XIV.Core.DataStructures.XIVColor.white
-  nameWithType: XIVColor.white
-- uid: XIV.Core.DataStructures.XIVColor.white*
-  name: white
-  href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_white_
-  commentId: Overload:XIV.Core.DataStructures.XIVColor.white
-  isSpec: "True"
+  commentId: F:XIV.Core.DataStructures.XIVColor.white
   fullName: XIV.Core.DataStructures.XIVColor.white
   nameWithType: XIVColor.white
 - uid: XIV.Core.DataStructures.XIVColor.yellow
   name: yellow
   href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_yellow
-  commentId: P:XIV.Core.DataStructures.XIVColor.yellow
-  fullName: XIV.Core.DataStructures.XIVColor.yellow
-  nameWithType: XIVColor.yellow
-- uid: XIV.Core.DataStructures.XIVColor.yellow*
-  name: yellow
-  href: api/XIV.Core.DataStructures.XIVColor.html#XIV_Core_DataStructures_XIVColor_yellow_
-  commentId: Overload:XIV.Core.DataStructures.XIVColor.yellow
-  isSpec: "True"
+  commentId: F:XIV.Core.DataStructures.XIVColor.yellow
   fullName: XIV.Core.DataStructures.XIVColor.yellow
   nameWithType: XIVColor.yellow
 - uid: XIV.Core.DataStructures.XIVMemory`1
@@ -1937,6 +2261,23 @@ references:
   fullName.vb: XIV.Core.DataStructures.XIVMemory(Of T).Equals
   nameWithType: XIVMemory<T>.Equals
   nameWithType.vb: XIVMemory(Of T).Equals
+- uid: XIV.Core.DataStructures.XIVMemory`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/XIV.Core.DataStructures.XIVMemory-1.html#XIV_Core_DataStructures_XIVMemory_1_GetEnumerator
+  commentId: M:XIV.Core.DataStructures.XIVMemory`1.GetEnumerator
+  fullName: XIV.Core.DataStructures.XIVMemory<T>.GetEnumerator()
+  fullName.vb: XIV.Core.DataStructures.XIVMemory(Of T).GetEnumerator()
+  nameWithType: XIVMemory<T>.GetEnumerator()
+  nameWithType.vb: XIVMemory(Of T).GetEnumerator()
+- uid: XIV.Core.DataStructures.XIVMemory`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/XIV.Core.DataStructures.XIVMemory-1.html#XIV_Core_DataStructures_XIVMemory_1_GetEnumerator_
+  commentId: Overload:XIV.Core.DataStructures.XIVMemory`1.GetEnumerator
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVMemory<T>.GetEnumerator
+  fullName.vb: XIV.Core.DataStructures.XIVMemory(Of T).GetEnumerator
+  nameWithType: XIVMemory<T>.GetEnumerator
+  nameWithType.vb: XIVMemory(Of T).GetEnumerator
 - uid: XIV.Core.DataStructures.XIVMemory`1.GetHashCode
   name: GetHashCode()
   href: api/XIV.Core.DataStructures.XIVMemory-1.html#XIV_Core_DataStructures_XIVMemory_1_GetHashCode
@@ -1954,6 +2295,24 @@ references:
   fullName.vb: XIV.Core.DataStructures.XIVMemory(Of T).GetHashCode
   nameWithType: XIVMemory<T>.GetHashCode
   nameWithType.vb: XIVMemory(Of T).GetHashCode
+- uid: XIV.Core.DataStructures.XIVMemory`1.GetRef(System.Int32)
+  name: GetRef(int)
+  href: api/XIV.Core.DataStructures.XIVMemory-1.html#XIV_Core_DataStructures_XIVMemory_1_GetRef_System_Int32_
+  commentId: M:XIV.Core.DataStructures.XIVMemory`1.GetRef(System.Int32)
+  name.vb: GetRef(Integer)
+  fullName: XIV.Core.DataStructures.XIVMemory<T>.GetRef(int)
+  fullName.vb: XIV.Core.DataStructures.XIVMemory(Of T).GetRef(Integer)
+  nameWithType: XIVMemory<T>.GetRef(int)
+  nameWithType.vb: XIVMemory(Of T).GetRef(Integer)
+- uid: XIV.Core.DataStructures.XIVMemory`1.GetRef*
+  name: GetRef
+  href: api/XIV.Core.DataStructures.XIVMemory-1.html#XIV_Core_DataStructures_XIVMemory_1_GetRef_
+  commentId: Overload:XIV.Core.DataStructures.XIVMemory`1.GetRef
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVMemory<T>.GetRef
+  fullName.vb: XIV.Core.DataStructures.XIVMemory(Of T).GetRef
+  nameWithType: XIVMemory<T>.GetRef
+  nameWithType.vb: XIVMemory(Of T).GetRef
 - uid: XIV.Core.DataStructures.XIVMemory`1.GetUnderlyingArray
   name: GetUnderlyingArray()
   href: api/XIV.Core.DataStructures.XIVMemory-1.html#XIV_Core_DataStructures_XIVMemory_1_GetUnderlyingArray
@@ -2133,6 +2492,503 @@ references:
   fullName.vb: XIV.Core.DataStructures.XIVMemory(Of T).reversed
   nameWithType: XIVMemory<T>.reversed
   nameWithType.vb: XIVMemory(Of T).reversed
+- uid: XIV.Core.DataStructures.XIVQuaternion
+  name: XIVQuaternion
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html
+  commentId: T:XIV.Core.DataStructures.XIVQuaternion
+  fullName: XIV.Core.DataStructures.XIVQuaternion
+  nameWithType: XIVQuaternion
+- uid: XIV.Core.DataStructures.XIVQuaternion.#ctor(System.Single,System.Single,System.Single,System.Single)
+  name: XIVQuaternion(float, float, float, float)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion__ctor_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.#ctor(System.Single,System.Single,System.Single,System.Single)
+  name.vb: New(Single, Single, Single, Single)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.XIVQuaternion(float, float, float, float)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.New(Single, Single, Single, Single)
+  nameWithType: XIVQuaternion.XIVQuaternion(float, float, float, float)
+  nameWithType.vb: XIVQuaternion.New(Single, Single, Single, Single)
+- uid: XIV.Core.DataStructures.XIVQuaternion.#ctor*
+  name: XIVQuaternion
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion__ctor_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: XIV.Core.DataStructures.XIVQuaternion.XIVQuaternion
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.New
+  nameWithType: XIVQuaternion.XIVQuaternion
+  nameWithType.vb: XIVQuaternion.New
+- uid: XIV.Core.DataStructures.XIVQuaternion.Angle(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)
+  name: Angle(XIVQuaternion, XIVQuaternion)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Angle_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_XIVQuaternion_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.Angle(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Angle(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion)
+  nameWithType: XIVQuaternion.Angle(XIVQuaternion, XIVQuaternion)
+- uid: XIV.Core.DataStructures.XIVQuaternion.Angle*
+  name: Angle
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Angle_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.Angle
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Angle
+  nameWithType: XIVQuaternion.Angle
+- uid: XIV.Core.DataStructures.XIVQuaternion.AngleAxis(System.Single,XIV.Core.DataStructures.Vec3)
+  name: AngleAxis(float, Vec3)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_AngleAxis_System_Single_XIV_Core_DataStructures_Vec3_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.AngleAxis(System.Single,XIV.Core.DataStructures.Vec3)
+  name.vb: AngleAxis(Single, Vec3)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.AngleAxis(float, XIV.Core.DataStructures.Vec3)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.AngleAxis(Single, XIV.Core.DataStructures.Vec3)
+  nameWithType: XIVQuaternion.AngleAxis(float, Vec3)
+  nameWithType.vb: XIVQuaternion.AngleAxis(Single, Vec3)
+- uid: XIV.Core.DataStructures.XIVQuaternion.AngleAxis*
+  name: AngleAxis
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_AngleAxis_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.AngleAxis
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.AngleAxis
+  nameWithType: XIVQuaternion.AngleAxis
+- uid: XIV.Core.DataStructures.XIVQuaternion.Dot(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)
+  name: Dot(XIVQuaternion, XIVQuaternion)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Dot_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_XIVQuaternion_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.Dot(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Dot(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion)
+  nameWithType: XIVQuaternion.Dot(XIVQuaternion, XIVQuaternion)
+- uid: XIV.Core.DataStructures.XIVQuaternion.Dot*
+  name: Dot
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Dot_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.Dot
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Dot
+  nameWithType: XIVQuaternion.Dot
+- uid: XIV.Core.DataStructures.XIVQuaternion.Equals(System.Object)
+  name: Equals(object)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Equals_System_Object_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Equals(object)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.Equals(Object)
+  nameWithType: XIVQuaternion.Equals(object)
+  nameWithType.vb: XIVQuaternion.Equals(Object)
+- uid: XIV.Core.DataStructures.XIVQuaternion.Equals*
+  name: Equals
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Equals_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.Equals
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Equals
+  nameWithType: XIVQuaternion.Equals
+- uid: XIV.Core.DataStructures.XIVQuaternion.Euler(System.Single,System.Single,System.Single)
+  name: Euler(float, float, float)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Euler_System_Single_System_Single_System_Single_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.Euler(System.Single,System.Single,System.Single)
+  name.vb: Euler(Single, Single, Single)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Euler(float, float, float)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.Euler(Single, Single, Single)
+  nameWithType: XIVQuaternion.Euler(float, float, float)
+  nameWithType.vb: XIVQuaternion.Euler(Single, Single, Single)
+- uid: XIV.Core.DataStructures.XIVQuaternion.Euler*
+  name: Euler
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Euler_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.Euler
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Euler
+  nameWithType: XIVQuaternion.Euler
+- uid: XIV.Core.DataStructures.XIVQuaternion.FromToRotation(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3)
+  name: FromToRotation(Vec3, Vec3)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_FromToRotation_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.FromToRotation(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.FromToRotation(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3)
+  nameWithType: XIVQuaternion.FromToRotation(Vec3, Vec3)
+- uid: XIV.Core.DataStructures.XIVQuaternion.FromToRotation*
+  name: FromToRotation
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_FromToRotation_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.FromToRotation
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.FromToRotation
+  nameWithType: XIVQuaternion.FromToRotation
+- uid: XIV.Core.DataStructures.XIVQuaternion.GetHashCode
+  name: GetHashCode()
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_GetHashCode
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.GetHashCode
+  fullName: XIV.Core.DataStructures.XIVQuaternion.GetHashCode()
+  nameWithType: XIVQuaternion.GetHashCode()
+- uid: XIV.Core.DataStructures.XIVQuaternion.GetHashCode*
+  name: GetHashCode
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_GetHashCode_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.GetHashCode
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.GetHashCode
+  nameWithType: XIVQuaternion.GetHashCode
+- uid: XIV.Core.DataStructures.XIVQuaternion.Inverse(XIV.Core.DataStructures.XIVQuaternion)
+  name: Inverse(XIVQuaternion)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Inverse_XIV_Core_DataStructures_XIVQuaternion_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.Inverse(XIV.Core.DataStructures.XIVQuaternion)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Inverse(XIV.Core.DataStructures.XIVQuaternion)
+  nameWithType: XIVQuaternion.Inverse(XIVQuaternion)
+- uid: XIV.Core.DataStructures.XIVQuaternion.Inverse*
+  name: Inverse
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Inverse_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.Inverse
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Inverse
+  nameWithType: XIVQuaternion.Inverse
+- uid: XIV.Core.DataStructures.XIVQuaternion.Lerp(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion,System.Single)
+  name: Lerp(XIVQuaternion, XIVQuaternion, float)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Lerp_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_XIVQuaternion_System_Single_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.Lerp(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion,System.Single)
+  name.vb: Lerp(XIVQuaternion, XIVQuaternion, Single)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Lerp(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion, float)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.Lerp(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion, Single)
+  nameWithType: XIVQuaternion.Lerp(XIVQuaternion, XIVQuaternion, float)
+  nameWithType.vb: XIVQuaternion.Lerp(XIVQuaternion, XIVQuaternion, Single)
+- uid: XIV.Core.DataStructures.XIVQuaternion.Lerp*
+  name: Lerp
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Lerp_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.Lerp
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Lerp
+  nameWithType: XIVQuaternion.Lerp
+- uid: XIV.Core.DataStructures.XIVQuaternion.LerpFast(XIV.Core.DataStructures.XIVQuaternion@,XIV.Core.DataStructures.XIVQuaternion@,System.Single)
+  name: LerpFast(in XIVQuaternion, in XIVQuaternion, float)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_LerpFast_XIV_Core_DataStructures_XIVQuaternion__XIV_Core_DataStructures_XIVQuaternion__System_Single_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.LerpFast(XIV.Core.DataStructures.XIVQuaternion@,XIV.Core.DataStructures.XIVQuaternion@,System.Single)
+  name.vb: LerpFast(XIVQuaternion, XIVQuaternion, Single)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.LerpFast(in XIV.Core.DataStructures.XIVQuaternion, in XIV.Core.DataStructures.XIVQuaternion, float)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.LerpFast(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion, Single)
+  nameWithType: XIVQuaternion.LerpFast(in XIVQuaternion, in XIVQuaternion, float)
+  nameWithType.vb: XIVQuaternion.LerpFast(XIVQuaternion, XIVQuaternion, Single)
+- uid: XIV.Core.DataStructures.XIVQuaternion.LerpFast*
+  name: LerpFast
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_LerpFast_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.LerpFast
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.LerpFast
+  nameWithType: XIVQuaternion.LerpFast
+- uid: XIV.Core.DataStructures.XIVQuaternion.LookRotation(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3)
+  name: LookRotation(Vec3, Vec3)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_LookRotation_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.LookRotation(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.LookRotation(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3)
+  nameWithType: XIVQuaternion.LookRotation(Vec3, Vec3)
+- uid: XIV.Core.DataStructures.XIVQuaternion.LookRotation*
+  name: LookRotation
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_LookRotation_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.LookRotation
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.LookRotation
+  nameWithType: XIVQuaternion.LookRotation
+- uid: XIV.Core.DataStructures.XIVQuaternion.Normalize
+  name: Normalize()
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Normalize
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.Normalize
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Normalize()
+  nameWithType: XIVQuaternion.Normalize()
+- uid: XIV.Core.DataStructures.XIVQuaternion.Normalize*
+  name: Normalize
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Normalize_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.Normalize
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Normalize
+  nameWithType: XIVQuaternion.Normalize
+- uid: XIV.Core.DataStructures.XIVQuaternion.RotateTowards(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion,System.Single)
+  name: RotateTowards(XIVQuaternion, XIVQuaternion, float)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_RotateTowards_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_XIVQuaternion_System_Single_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.RotateTowards(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion,System.Single)
+  name.vb: RotateTowards(XIVQuaternion, XIVQuaternion, Single)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.RotateTowards(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion, float)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.RotateTowards(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion, Single)
+  nameWithType: XIVQuaternion.RotateTowards(XIVQuaternion, XIVQuaternion, float)
+  nameWithType.vb: XIVQuaternion.RotateTowards(XIVQuaternion, XIVQuaternion, Single)
+- uid: XIV.Core.DataStructures.XIVQuaternion.RotateTowards*
+  name: RotateTowards
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_RotateTowards_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.RotateTowards
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.RotateTowards
+  nameWithType: XIVQuaternion.RotateTowards
+- uid: XIV.Core.DataStructures.XIVQuaternion.RotateTowardsFast(XIV.Core.DataStructures.XIVQuaternion@,XIV.Core.DataStructures.XIVQuaternion@,System.Single)
+  name: RotateTowardsFast(in XIVQuaternion, in XIVQuaternion, float)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_RotateTowardsFast_XIV_Core_DataStructures_XIVQuaternion__XIV_Core_DataStructures_XIVQuaternion__System_Single_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.RotateTowardsFast(XIV.Core.DataStructures.XIVQuaternion@,XIV.Core.DataStructures.XIVQuaternion@,System.Single)
+  name.vb: RotateTowardsFast(XIVQuaternion, XIVQuaternion, Single)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.RotateTowardsFast(in XIV.Core.DataStructures.XIVQuaternion, in XIV.Core.DataStructures.XIVQuaternion, float)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.RotateTowardsFast(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion, Single)
+  nameWithType: XIVQuaternion.RotateTowardsFast(in XIVQuaternion, in XIVQuaternion, float)
+  nameWithType.vb: XIVQuaternion.RotateTowardsFast(XIVQuaternion, XIVQuaternion, Single)
+- uid: XIV.Core.DataStructures.XIVQuaternion.RotateTowardsFast*
+  name: RotateTowardsFast
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_RotateTowardsFast_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.RotateTowardsFast
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.RotateTowardsFast
+  nameWithType: XIVQuaternion.RotateTowardsFast
+- uid: XIV.Core.DataStructures.XIVQuaternion.Slerp(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion,System.Single)
+  name: Slerp(XIVQuaternion, XIVQuaternion, float)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Slerp_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_XIVQuaternion_System_Single_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.Slerp(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion,System.Single)
+  name.vb: Slerp(XIVQuaternion, XIVQuaternion, Single)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Slerp(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion, float)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.Slerp(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion, Single)
+  nameWithType: XIVQuaternion.Slerp(XIVQuaternion, XIVQuaternion, float)
+  nameWithType.vb: XIVQuaternion.Slerp(XIVQuaternion, XIVQuaternion, Single)
+- uid: XIV.Core.DataStructures.XIVQuaternion.Slerp*
+  name: Slerp
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Slerp_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.Slerp
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Slerp
+  nameWithType: XIVQuaternion.Slerp
+- uid: XIV.Core.DataStructures.XIVQuaternion.SlerpFast(XIV.Core.DataStructures.XIVQuaternion@,XIV.Core.DataStructures.XIVQuaternion@,System.Single)
+  name: SlerpFast(in XIVQuaternion, in XIVQuaternion, float)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_SlerpFast_XIV_Core_DataStructures_XIVQuaternion__XIV_Core_DataStructures_XIVQuaternion__System_Single_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.SlerpFast(XIV.Core.DataStructures.XIVQuaternion@,XIV.Core.DataStructures.XIVQuaternion@,System.Single)
+  name.vb: SlerpFast(XIVQuaternion, XIVQuaternion, Single)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.SlerpFast(in XIV.Core.DataStructures.XIVQuaternion, in XIV.Core.DataStructures.XIVQuaternion, float)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.SlerpFast(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion, Single)
+  nameWithType: XIVQuaternion.SlerpFast(in XIVQuaternion, in XIVQuaternion, float)
+  nameWithType.vb: XIVQuaternion.SlerpFast(XIVQuaternion, XIVQuaternion, Single)
+- uid: XIV.Core.DataStructures.XIVQuaternion.SlerpFast*
+  name: SlerpFast
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_SlerpFast_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.SlerpFast
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.SlerpFast
+  nameWithType: XIVQuaternion.SlerpFast
+- uid: XIV.Core.DataStructures.XIVQuaternion.ToAngleAxis(System.Single@,XIV.Core.DataStructures.Vec3@)
+  name: ToAngleAxis(out float, out Vec3)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_ToAngleAxis_System_Single__XIV_Core_DataStructures_Vec3__
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.ToAngleAxis(System.Single@,XIV.Core.DataStructures.Vec3@)
+  name.vb: ToAngleAxis(Single, Vec3)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.ToAngleAxis(out float, out XIV.Core.DataStructures.Vec3)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.ToAngleAxis(Single, XIV.Core.DataStructures.Vec3)
+  nameWithType: XIVQuaternion.ToAngleAxis(out float, out Vec3)
+  nameWithType.vb: XIVQuaternion.ToAngleAxis(Single, Vec3)
+- uid: XIV.Core.DataStructures.XIVQuaternion.ToAngleAxis*
+  name: ToAngleAxis
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_ToAngleAxis_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.ToAngleAxis
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.ToAngleAxis
+  nameWithType: XIVQuaternion.ToAngleAxis
+- uid: XIV.Core.DataStructures.XIVQuaternion.ToString
+  name: ToString()
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_ToString
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.ToString
+  fullName: XIV.Core.DataStructures.XIVQuaternion.ToString()
+  nameWithType: XIVQuaternion.ToString()
+- uid: XIV.Core.DataStructures.XIVQuaternion.ToString*
+  name: ToString
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_ToString_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.ToString
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.ToString
+  nameWithType: XIVQuaternion.ToString
+- uid: XIV.Core.DataStructures.XIVQuaternion.eulerAngles
+  name: eulerAngles
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_eulerAngles
+  commentId: P:XIV.Core.DataStructures.XIVQuaternion.eulerAngles
+  fullName: XIV.Core.DataStructures.XIVQuaternion.eulerAngles
+  nameWithType: XIVQuaternion.eulerAngles
+- uid: XIV.Core.DataStructures.XIVQuaternion.eulerAngles*
+  name: eulerAngles
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_eulerAngles_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.eulerAngles
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.eulerAngles
+  nameWithType: XIVQuaternion.eulerAngles
+- uid: XIV.Core.DataStructures.XIVQuaternion.identity
+  name: identity
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_identity
+  commentId: P:XIV.Core.DataStructures.XIVQuaternion.identity
+  fullName: XIV.Core.DataStructures.XIVQuaternion.identity
+  nameWithType: XIVQuaternion.identity
+- uid: XIV.Core.DataStructures.XIVQuaternion.identity*
+  name: identity
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_identity_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.identity
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.identity
+  nameWithType: XIVQuaternion.identity
+- uid: XIV.Core.DataStructures.XIVQuaternion.magnitude
+  name: magnitude
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_magnitude
+  commentId: P:XIV.Core.DataStructures.XIVQuaternion.magnitude
+  fullName: XIV.Core.DataStructures.XIVQuaternion.magnitude
+  nameWithType: XIVQuaternion.magnitude
+- uid: XIV.Core.DataStructures.XIVQuaternion.magnitude*
+  name: magnitude
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_magnitude_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.magnitude
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.magnitude
+  nameWithType: XIVQuaternion.magnitude
+- uid: XIV.Core.DataStructures.XIVQuaternion.normalized
+  name: normalized
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_normalized
+  commentId: P:XIV.Core.DataStructures.XIVQuaternion.normalized
+  fullName: XIV.Core.DataStructures.XIVQuaternion.normalized
+  nameWithType: XIVQuaternion.normalized
+- uid: XIV.Core.DataStructures.XIVQuaternion.normalized*
+  name: normalized
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_normalized_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.normalized
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.XIVQuaternion.normalized
+  nameWithType: XIVQuaternion.normalized
+- uid: XIV.Core.DataStructures.XIVQuaternion.op_Addition(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)
+  name: operator +(XIVQuaternion, XIVQuaternion)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_op_Addition_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_XIVQuaternion_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.op_Addition(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)
+  name.vb: +(XIVQuaternion, XIVQuaternion)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.operator +(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.+(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion)
+  nameWithType: XIVQuaternion.operator +(XIVQuaternion, XIVQuaternion)
+  nameWithType.vb: XIVQuaternion.+(XIVQuaternion, XIVQuaternion)
+- uid: XIV.Core.DataStructures.XIVQuaternion.op_Addition*
+  name: operator +
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_op_Addition_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.op_Addition
+  isSpec: "True"
+  name.vb: +
+  fullName: XIV.Core.DataStructures.XIVQuaternion.operator +
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.+
+  nameWithType: XIVQuaternion.operator +
+  nameWithType.vb: XIVQuaternion.+
+- uid: XIV.Core.DataStructures.XIVQuaternion.op_Division(XIV.Core.DataStructures.XIVQuaternion,System.Single)
+  name: operator /(XIVQuaternion, float)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_op_Division_XIV_Core_DataStructures_XIVQuaternion_System_Single_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.op_Division(XIV.Core.DataStructures.XIVQuaternion,System.Single)
+  name.vb: /(XIVQuaternion, Single)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.operator /(XIV.Core.DataStructures.XIVQuaternion, float)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion./(XIV.Core.DataStructures.XIVQuaternion, Single)
+  nameWithType: XIVQuaternion.operator /(XIVQuaternion, float)
+  nameWithType.vb: XIVQuaternion./(XIVQuaternion, Single)
+- uid: XIV.Core.DataStructures.XIVQuaternion.op_Division*
+  name: operator /
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_op_Division_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.op_Division
+  isSpec: "True"
+  name.vb: /
+  fullName: XIV.Core.DataStructures.XIVQuaternion.operator /
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion./
+  nameWithType: XIVQuaternion.operator /
+  nameWithType.vb: XIVQuaternion./
+- uid: XIV.Core.DataStructures.XIVQuaternion.op_Equality(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)
+  name: operator ==(XIVQuaternion, XIVQuaternion)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_op_Equality_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_XIVQuaternion_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.op_Equality(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)
+  name.vb: =(XIVQuaternion, XIVQuaternion)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.operator ==(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.=(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion)
+  nameWithType: XIVQuaternion.operator ==(XIVQuaternion, XIVQuaternion)
+  nameWithType.vb: XIVQuaternion.=(XIVQuaternion, XIVQuaternion)
+- uid: XIV.Core.DataStructures.XIVQuaternion.op_Equality*
+  name: operator ==
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_op_Equality_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: XIV.Core.DataStructures.XIVQuaternion.operator ==
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.=
+  nameWithType: XIVQuaternion.operator ==
+  nameWithType.vb: XIVQuaternion.=
+- uid: XIV.Core.DataStructures.XIVQuaternion.op_Inequality(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)
+  name: operator !=(XIVQuaternion, XIVQuaternion)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_op_Inequality_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_XIVQuaternion_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.op_Inequality(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)
+  name.vb: <>(XIVQuaternion, XIVQuaternion)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.operator !=(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.<>(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion)
+  nameWithType: XIVQuaternion.operator !=(XIVQuaternion, XIVQuaternion)
+  nameWithType.vb: XIVQuaternion.<>(XIVQuaternion, XIVQuaternion)
+- uid: XIV.Core.DataStructures.XIVQuaternion.op_Inequality*
+  name: operator !=
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_op_Inequality_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: XIV.Core.DataStructures.XIVQuaternion.operator !=
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.<>
+  nameWithType: XIVQuaternion.operator !=
+  nameWithType.vb: XIVQuaternion.<>
+- uid: XIV.Core.DataStructures.XIVQuaternion.op_Multiply(XIV.Core.DataStructures.XIVQuaternion,System.Single)
+  name: operator *(XIVQuaternion, float)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_op_Multiply_XIV_Core_DataStructures_XIVQuaternion_System_Single_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.op_Multiply(XIV.Core.DataStructures.XIVQuaternion,System.Single)
+  name.vb: '*(XIVQuaternion, Single)'
+  fullName: XIV.Core.DataStructures.XIVQuaternion.operator *(XIV.Core.DataStructures.XIVQuaternion, float)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.*(XIV.Core.DataStructures.XIVQuaternion, Single)
+  nameWithType: XIVQuaternion.operator *(XIVQuaternion, float)
+  nameWithType.vb: XIVQuaternion.*(XIVQuaternion, Single)
+- uid: XIV.Core.DataStructures.XIVQuaternion.op_Multiply(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.Vec3)
+  name: operator *(XIVQuaternion, Vec3)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_op_Multiply_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_Vec3_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.op_Multiply(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.Vec3)
+  name.vb: '*(XIVQuaternion, Vec3)'
+  fullName: XIV.Core.DataStructures.XIVQuaternion.operator *(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.Vec3)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.*(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.Vec3)
+  nameWithType: XIVQuaternion.operator *(XIVQuaternion, Vec3)
+  nameWithType.vb: XIVQuaternion.*(XIVQuaternion, Vec3)
+- uid: XIV.Core.DataStructures.XIVQuaternion.op_Multiply(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)
+  name: operator *(XIVQuaternion, XIVQuaternion)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_op_Multiply_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_XIVQuaternion_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.op_Multiply(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)
+  name.vb: '*(XIVQuaternion, XIVQuaternion)'
+  fullName: XIV.Core.DataStructures.XIVQuaternion.operator *(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.*(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion)
+  nameWithType: XIVQuaternion.operator *(XIVQuaternion, XIVQuaternion)
+  nameWithType.vb: XIVQuaternion.*(XIVQuaternion, XIVQuaternion)
+- uid: XIV.Core.DataStructures.XIVQuaternion.op_Multiply*
+  name: operator *
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_op_Multiply_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.op_Multiply
+  isSpec: "True"
+  name.vb: '*'
+  fullName: XIV.Core.DataStructures.XIVQuaternion.operator *
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.*
+  nameWithType: XIVQuaternion.operator *
+  nameWithType.vb: XIVQuaternion.*
+- uid: XIV.Core.DataStructures.XIVQuaternion.op_Subtraction(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)
+  name: operator -(XIVQuaternion, XIVQuaternion)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_op_Subtraction_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_XIVQuaternion_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.op_Subtraction(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)
+  name.vb: -(XIVQuaternion, XIVQuaternion)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.operator -(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion)
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.-(XIV.Core.DataStructures.XIVQuaternion, XIV.Core.DataStructures.XIVQuaternion)
+  nameWithType: XIVQuaternion.operator -(XIVQuaternion, XIVQuaternion)
+  nameWithType.vb: XIVQuaternion.-(XIVQuaternion, XIVQuaternion)
+- uid: XIV.Core.DataStructures.XIVQuaternion.op_Subtraction*
+  name: operator -
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_op_Subtraction_
+  commentId: Overload:XIV.Core.DataStructures.XIVQuaternion.op_Subtraction
+  isSpec: "True"
+  name.vb: '-'
+  fullName: XIV.Core.DataStructures.XIVQuaternion.operator -
+  fullName.vb: XIV.Core.DataStructures.XIVQuaternion.-
+  nameWithType: XIVQuaternion.operator -
+  nameWithType.vb: XIVQuaternion.-
+- uid: XIV.Core.DataStructures.XIVQuaternion.w
+  name: w
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_w
+  commentId: F:XIV.Core.DataStructures.XIVQuaternion.w
+  fullName: XIV.Core.DataStructures.XIVQuaternion.w
+  nameWithType: XIVQuaternion.w
+- uid: XIV.Core.DataStructures.XIVQuaternion.x
+  name: x
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_x
+  commentId: F:XIV.Core.DataStructures.XIVQuaternion.x
+  fullName: XIV.Core.DataStructures.XIVQuaternion.x
+  nameWithType: XIVQuaternion.x
+- uid: XIV.Core.DataStructures.XIVQuaternion.y
+  name: y
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_y
+  commentId: F:XIV.Core.DataStructures.XIVQuaternion.y
+  fullName: XIV.Core.DataStructures.XIVQuaternion.y
+  nameWithType: XIVQuaternion.y
+- uid: XIV.Core.DataStructures.XIVQuaternion.z
+  name: z
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_z
+  commentId: F:XIV.Core.DataStructures.XIVQuaternion.z
+  fullName: XIV.Core.DataStructures.XIVQuaternion.z
+  nameWithType: XIVQuaternion.z
 - uid: XIV.Core.Extensions
   name: XIV.Core.Extensions
   href: api/XIV.Core.Extensions.html
@@ -2145,253 +3001,373 @@ references:
   commentId: T:XIV.Core.Extensions.ArrayExtensions
   fullName: XIV.Core.Extensions.ArrayExtensions
   nameWithType: ArrayExtensions
-- uid: XIV.Core.Extensions.ArrayExtensions.Contains*
-  name: Contains
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Contains_
-  commentId: Overload:XIV.Core.Extensions.ArrayExtensions.Contains
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVContains*
+  name: XIVContains
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVContains_
+  commentId: Overload:XIV.Core.Extensions.ArrayExtensions.XIVContains
   isSpec: "True"
-  fullName: XIV.Core.Extensions.ArrayExtensions.Contains
-  nameWithType: ArrayExtensions.Contains
-- uid: XIV.Core.Extensions.ArrayExtensions.Contains``1(``0[],System.Int32,``0)
-  name: Contains<T>(T[], int, T)
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Contains__1___0___System_Int32___0_
-  commentId: M:XIV.Core.Extensions.ArrayExtensions.Contains``1(``0[],System.Int32,``0)
-  name.vb: Contains(Of T)(T(), Integer, T)
-  fullName: XIV.Core.Extensions.ArrayExtensions.Contains<T>(T[], int, T)
-  fullName.vb: XIV.Core.Extensions.ArrayExtensions.Contains(Of T)(T(), Integer, T)
-  nameWithType: ArrayExtensions.Contains<T>(T[], int, T)
-  nameWithType.vb: ArrayExtensions.Contains(Of T)(T(), Integer, T)
-- uid: XIV.Core.Extensions.ArrayExtensions.Contains``1(``0[],System.Int32,``0,System.Int32@)
-  name: Contains<T>(T[], int, T, out int)
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Contains__1___0___System_Int32___0_System_Int32__
-  commentId: M:XIV.Core.Extensions.ArrayExtensions.Contains``1(``0[],System.Int32,``0,System.Int32@)
-  name.vb: Contains(Of T)(T(), Integer, T, Integer)
-  fullName: XIV.Core.Extensions.ArrayExtensions.Contains<T>(T[], int, T, out int)
-  fullName.vb: XIV.Core.Extensions.ArrayExtensions.Contains(Of T)(T(), Integer, T, Integer)
-  nameWithType: ArrayExtensions.Contains<T>(T[], int, T, out int)
-  nameWithType.vb: ArrayExtensions.Contains(Of T)(T(), Integer, T, Integer)
-- uid: XIV.Core.Extensions.ArrayExtensions.Count*
-  name: Count
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Count_
-  commentId: Overload:XIV.Core.Extensions.ArrayExtensions.Count
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVContains
+  nameWithType: ArrayExtensions.XIVContains
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVContains``1(``0[],System.Int32,``0)
+  name: XIVContains<T>(T[], int, T)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVContains__1___0___System_Int32___0_
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVContains``1(``0[],System.Int32,``0)
+  name.vb: XIVContains(Of T)(T(), Integer, T)
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVContains<T>(T[], int, T)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVContains(Of T)(T(), Integer, T)
+  nameWithType: ArrayExtensions.XIVContains<T>(T[], int, T)
+  nameWithType.vb: ArrayExtensions.XIVContains(Of T)(T(), Integer, T)
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVContains``1(``0[],System.Int32,``0,System.Int32@)
+  name: XIVContains<T>(T[], int, T, out int)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVContains__1___0___System_Int32___0_System_Int32__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVContains``1(``0[],System.Int32,``0,System.Int32@)
+  name.vb: XIVContains(Of T)(T(), Integer, T, Integer)
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVContains<T>(T[], int, T, out int)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVContains(Of T)(T(), Integer, T, Integer)
+  nameWithType: ArrayExtensions.XIVContains<T>(T[], int, T, out int)
+  nameWithType.vb: ArrayExtensions.XIVContains(Of T)(T(), Integer, T, Integer)
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVContains``1(``0[],``0)
+  name: XIVContains<T>(T[], T)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVContains__1___0_____0_
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVContains``1(``0[],``0)
+  name.vb: XIVContains(Of T)(T(), T)
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVContains<T>(T[], T)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVContains(Of T)(T(), T)
+  nameWithType: ArrayExtensions.XIVContains<T>(T[], T)
+  nameWithType.vb: ArrayExtensions.XIVContains(Of T)(T(), T)
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVCount*
+  name: XIVCount
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVCount_
+  commentId: Overload:XIV.Core.Extensions.ArrayExtensions.XIVCount
   isSpec: "True"
-  fullName: XIV.Core.Extensions.ArrayExtensions.Count
-  nameWithType: ArrayExtensions.Count
-- uid: XIV.Core.Extensions.ArrayExtensions.Count``1(``0[],System.Int32,System.Func{``0,System.Boolean})
-  name: Count<T>(T[], int, Func<T, bool>)
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Count__1___0___System_Int32_System_Func___0_System_Boolean__
-  commentId: M:XIV.Core.Extensions.ArrayExtensions.Count``1(``0[],System.Int32,System.Func{``0,System.Boolean})
-  name.vb: Count(Of T)(T(), Integer, Func(Of T, Boolean))
-  fullName: XIV.Core.Extensions.ArrayExtensions.Count<T>(T[], int, System.Func<T, bool>)
-  fullName.vb: XIV.Core.Extensions.ArrayExtensions.Count(Of T)(T(), Integer, System.Func(Of T, Boolean))
-  nameWithType: ArrayExtensions.Count<T>(T[], int, Func<T, bool>)
-  nameWithType.vb: ArrayExtensions.Count(Of T)(T(), Integer, Func(Of T, Boolean))
-- uid: XIV.Core.Extensions.ArrayExtensions.FilterBy*
-  name: FilterBy
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_FilterBy_
-  commentId: Overload:XIV.Core.Extensions.ArrayExtensions.FilterBy
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVCount
+  nameWithType: ArrayExtensions.XIVCount
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVCount``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name: XIVCount<T>(T[], int, Func<T, bool>)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVCount__1___0___System_Int32_System_Func___0_System_Boolean__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVCount``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name.vb: XIVCount(Of T)(T(), Integer, Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVCount<T>(T[], int, System.Func<T, bool>)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVCount(Of T)(T(), Integer, System.Func(Of T, Boolean))
+  nameWithType: ArrayExtensions.XIVCount<T>(T[], int, Func<T, bool>)
+  nameWithType.vb: ArrayExtensions.XIVCount(Of T)(T(), Integer, Func(Of T, Boolean))
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVFilterBy*
+  name: XIVFilterBy
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVFilterBy_
+  commentId: Overload:XIV.Core.Extensions.ArrayExtensions.XIVFilterBy
   isSpec: "True"
-  fullName: XIV.Core.Extensions.ArrayExtensions.FilterBy
-  nameWithType: ArrayExtensions.FilterBy
-- uid: XIV.Core.Extensions.ArrayExtensions.FilterBy``1(``0[],System.Int32,System.Func{``0,System.Boolean})
-  name: FilterBy<T>(T[], int, Func<T, bool>)
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_FilterBy__1___0___System_Int32_System_Func___0_System_Boolean__
-  commentId: M:XIV.Core.Extensions.ArrayExtensions.FilterBy``1(``0[],System.Int32,System.Func{``0,System.Boolean})
-  name.vb: FilterBy(Of T)(T(), Integer, Func(Of T, Boolean))
-  fullName: XIV.Core.Extensions.ArrayExtensions.FilterBy<T>(T[], int, System.Func<T, bool>)
-  fullName.vb: XIV.Core.Extensions.ArrayExtensions.FilterBy(Of T)(T(), Integer, System.Func(Of T, Boolean))
-  nameWithType: ArrayExtensions.FilterBy<T>(T[], int, Func<T, bool>)
-  nameWithType.vb: ArrayExtensions.FilterBy(Of T)(T(), Integer, Func(Of T, Boolean))
-- uid: XIV.Core.Extensions.ArrayExtensions.RemoveAt*
-  name: RemoveAt
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_RemoveAt_
-  commentId: Overload:XIV.Core.Extensions.ArrayExtensions.RemoveAt
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVFilterBy
+  nameWithType: ArrayExtensions.XIVFilterBy
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVFilterBy``1(``0[],System.Func{``0,System.Boolean})
+  name: XIVFilterBy<T>(T[], Func<T, bool>)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVFilterBy__1___0___System_Func___0_System_Boolean__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVFilterBy``1(``0[],System.Func{``0,System.Boolean})
+  name.vb: XIVFilterBy(Of T)(T(), Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVFilterBy<T>(T[], System.Func<T, bool>)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVFilterBy(Of T)(T(), System.Func(Of T, Boolean))
+  nameWithType: ArrayExtensions.XIVFilterBy<T>(T[], Func<T, bool>)
+  nameWithType.vb: ArrayExtensions.XIVFilterBy(Of T)(T(), Func(Of T, Boolean))
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVFilterBy``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name: XIVFilterBy<T>(T[], int, Func<T, bool>)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVFilterBy__1___0___System_Int32_System_Func___0_System_Boolean__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVFilterBy``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name.vb: XIVFilterBy(Of T)(T(), Integer, Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVFilterBy<T>(T[], int, System.Func<T, bool>)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVFilterBy(Of T)(T(), Integer, System.Func(Of T, Boolean))
+  nameWithType: ArrayExtensions.XIVFilterBy<T>(T[], int, Func<T, bool>)
+  nameWithType.vb: ArrayExtensions.XIVFilterBy(Of T)(T(), Integer, Func(Of T, Boolean))
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVFirstOrDefault*
+  name: XIVFirstOrDefault
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVFirstOrDefault_
+  commentId: Overload:XIV.Core.Extensions.ArrayExtensions.XIVFirstOrDefault
   isSpec: "True"
-  fullName: XIV.Core.Extensions.ArrayExtensions.RemoveAt
-  nameWithType: ArrayExtensions.RemoveAt
-- uid: XIV.Core.Extensions.ArrayExtensions.RemoveAt``1(``0[],System.Int32,System.Int32)
-  name: RemoveAt<T>(T[], int, int)
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_RemoveAt__1___0___System_Int32_System_Int32_
-  commentId: M:XIV.Core.Extensions.ArrayExtensions.RemoveAt``1(``0[],System.Int32,System.Int32)
-  name.vb: RemoveAt(Of T)(T(), Integer, Integer)
-  fullName: XIV.Core.Extensions.ArrayExtensions.RemoveAt<T>(T[], int, int)
-  fullName.vb: XIV.Core.Extensions.ArrayExtensions.RemoveAt(Of T)(T(), Integer, Integer)
-  nameWithType: ArrayExtensions.RemoveAt<T>(T[], int, int)
-  nameWithType.vb: ArrayExtensions.RemoveAt(Of T)(T(), Integer, Integer)
-- uid: XIV.Core.Extensions.ArrayExtensions.RemoveIf*
-  name: RemoveIf
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_RemoveIf_
-  commentId: Overload:XIV.Core.Extensions.ArrayExtensions.RemoveIf
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVFirstOrDefault
+  nameWithType: ArrayExtensions.XIVFirstOrDefault
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVFirstOrDefault``1(``0[],System.Func{``0,System.Boolean})
+  name: XIVFirstOrDefault<T>(T[], Func<T, bool>)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVFirstOrDefault__1___0___System_Func___0_System_Boolean__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVFirstOrDefault``1(``0[],System.Func{``0,System.Boolean})
+  name.vb: XIVFirstOrDefault(Of T)(T(), Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVFirstOrDefault<T>(T[], System.Func<T, bool>)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVFirstOrDefault(Of T)(T(), System.Func(Of T, Boolean))
+  nameWithType: ArrayExtensions.XIVFirstOrDefault<T>(T[], Func<T, bool>)
+  nameWithType.vb: ArrayExtensions.XIVFirstOrDefault(Of T)(T(), Func(Of T, Boolean))
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVFirstOrDefault``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name: XIVFirstOrDefault<T>(T[], int, Func<T, bool>)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVFirstOrDefault__1___0___System_Int32_System_Func___0_System_Boolean__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVFirstOrDefault``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name.vb: XIVFirstOrDefault(Of T)(T(), Integer, Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVFirstOrDefault<T>(T[], int, System.Func<T, bool>)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVFirstOrDefault(Of T)(T(), Integer, System.Func(Of T, Boolean))
+  nameWithType: ArrayExtensions.XIVFirstOrDefault<T>(T[], int, Func<T, bool>)
+  nameWithType.vb: ArrayExtensions.XIVFirstOrDefault(Of T)(T(), Integer, Func(Of T, Boolean))
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVGetClosest*
+  name: XIVGetClosest
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVGetClosest_
+  commentId: Overload:XIV.Core.Extensions.ArrayExtensions.XIVGetClosest
   isSpec: "True"
-  fullName: XIV.Core.Extensions.ArrayExtensions.RemoveIf
-  nameWithType: ArrayExtensions.RemoveIf
-- uid: XIV.Core.Extensions.ArrayExtensions.RemoveIf``1(``0[],System.Func{``0,System.Boolean})
-  name: RemoveIf<T>(T[], Func<T, bool>)
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_RemoveIf__1___0___System_Func___0_System_Boolean__
-  commentId: M:XIV.Core.Extensions.ArrayExtensions.RemoveIf``1(``0[],System.Func{``0,System.Boolean})
-  name.vb: RemoveIf(Of T)(T(), Func(Of T, Boolean))
-  fullName: XIV.Core.Extensions.ArrayExtensions.RemoveIf<T>(T[], System.Func<T, bool>)
-  fullName.vb: XIV.Core.Extensions.ArrayExtensions.RemoveIf(Of T)(T(), System.Func(Of T, Boolean))
-  nameWithType: ArrayExtensions.RemoveIf<T>(T[], Func<T, bool>)
-  nameWithType.vb: ArrayExtensions.RemoveIf(Of T)(T(), Func(Of T, Boolean))
-- uid: XIV.Core.Extensions.ArrayExtensions.RemoveIf``1(``0[],System.Int32,System.Func{``0,System.Boolean})
-  name: RemoveIf<T>(T[], int, Func<T, bool>)
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_RemoveIf__1___0___System_Int32_System_Func___0_System_Boolean__
-  commentId: M:XIV.Core.Extensions.ArrayExtensions.RemoveIf``1(``0[],System.Int32,System.Func{``0,System.Boolean})
-  name.vb: RemoveIf(Of T)(T(), Integer, Func(Of T, Boolean))
-  fullName: XIV.Core.Extensions.ArrayExtensions.RemoveIf<T>(T[], int, System.Func<T, bool>)
-  fullName.vb: XIV.Core.Extensions.ArrayExtensions.RemoveIf(Of T)(T(), Integer, System.Func(Of T, Boolean))
-  nameWithType: ArrayExtensions.RemoveIf<T>(T[], int, Func<T, bool>)
-  nameWithType.vb: ArrayExtensions.RemoveIf(Of T)(T(), Integer, Func(Of T, Boolean))
-- uid: XIV.Core.Extensions.ArrayExtensions.Split*
-  name: Split
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Split_
-  commentId: Overload:XIV.Core.Extensions.ArrayExtensions.Split
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVGetClosest
+  nameWithType: ArrayExtensions.XIVGetClosest
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVGetClosest``1(``0[],System.Int32,XIV.Core.DataStructures.Vec3,System.Func{``0,XIV.Core.DataStructures.Vec3})
+  name: XIVGetClosest<T>(T[], int, Vec3, Func<T, Vec3>)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVGetClosest__1___0___System_Int32_XIV_Core_DataStructures_Vec3_System_Func___0_XIV_Core_DataStructures_Vec3__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVGetClosest``1(``0[],System.Int32,XIV.Core.DataStructures.Vec3,System.Func{``0,XIV.Core.DataStructures.Vec3})
+  name.vb: XIVGetClosest(Of T)(T(), Integer, Vec3, Func(Of T, Vec3))
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVGetClosest<T>(T[], int, XIV.Core.DataStructures.Vec3, System.Func<T, XIV.Core.DataStructures.Vec3>)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVGetClosest(Of T)(T(), Integer, XIV.Core.DataStructures.Vec3, System.Func(Of T, XIV.Core.DataStructures.Vec3))
+  nameWithType: ArrayExtensions.XIVGetClosest<T>(T[], int, Vec3, Func<T, Vec3>)
+  nameWithType.vb: ArrayExtensions.XIVGetClosest(Of T)(T(), Integer, Vec3, Func(Of T, Vec3))
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVGetClosest``1(``0[],System.Int32,XIV.Core.DataStructures.Vec3,System.Single@,XIV.Core.DataStructures.Vec3@,System.Func{``0,XIV.Core.DataStructures.Vec3})
+  name: XIVGetClosest<T>(T[], int, Vec3, out float, out Vec3, Func<T, Vec3>)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVGetClosest__1___0___System_Int32_XIV_Core_DataStructures_Vec3_System_Single__XIV_Core_DataStructures_Vec3__System_Func___0_XIV_Core_DataStructures_Vec3__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVGetClosest``1(``0[],System.Int32,XIV.Core.DataStructures.Vec3,System.Single@,XIV.Core.DataStructures.Vec3@,System.Func{``0,XIV.Core.DataStructures.Vec3})
+  name.vb: XIVGetClosest(Of T)(T(), Integer, Vec3, Single, Vec3, Func(Of T, Vec3))
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVGetClosest<T>(T[], int, XIV.Core.DataStructures.Vec3, out float, out XIV.Core.DataStructures.Vec3, System.Func<T, XIV.Core.DataStructures.Vec3>)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVGetClosest(Of T)(T(), Integer, XIV.Core.DataStructures.Vec3, Single, XIV.Core.DataStructures.Vec3, System.Func(Of T, XIV.Core.DataStructures.Vec3))
+  nameWithType: ArrayExtensions.XIVGetClosest<T>(T[], int, Vec3, out float, out Vec3, Func<T, Vec3>)
+  nameWithType.vb: ArrayExtensions.XIVGetClosest(Of T)(T(), Integer, Vec3, Single, Vec3, Func(Of T, Vec3))
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVGetClosest``1(``0[],System.Int32,XIV.Core.DataStructures.Vec3,System.Single@,XIV.Core.DataStructures.Vec3@,System.Func{``0,XIV.Core.DataStructures.Vec3},``0[])
+  name: XIVGetClosest<T>(T[], int, Vec3, out float, out Vec3, Func<T, Vec3>, T[])
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVGetClosest__1___0___System_Int32_XIV_Core_DataStructures_Vec3_System_Single__XIV_Core_DataStructures_Vec3__System_Func___0_XIV_Core_DataStructures_Vec3____0___
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVGetClosest``1(``0[],System.Int32,XIV.Core.DataStructures.Vec3,System.Single@,XIV.Core.DataStructures.Vec3@,System.Func{``0,XIV.Core.DataStructures.Vec3},``0[])
+  name.vb: XIVGetClosest(Of T)(T(), Integer, Vec3, Single, Vec3, Func(Of T, Vec3), T())
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVGetClosest<T>(T[], int, XIV.Core.DataStructures.Vec3, out float, out XIV.Core.DataStructures.Vec3, System.Func<T, XIV.Core.DataStructures.Vec3>, T[])
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVGetClosest(Of T)(T(), Integer, XIV.Core.DataStructures.Vec3, Single, XIV.Core.DataStructures.Vec3, System.Func(Of T, XIV.Core.DataStructures.Vec3), T())
+  nameWithType: ArrayExtensions.XIVGetClosest<T>(T[], int, Vec3, out float, out Vec3, Func<T, Vec3>, T[])
+  nameWithType.vb: ArrayExtensions.XIVGetClosest(Of T)(T(), Integer, Vec3, Single, Vec3, Func(Of T, Vec3), T())
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVGetClosest``1(``0[],System.Int32,XIV.Core.DataStructures.Vec3,System.Single@,XIV.Core.DataStructures.Vec3@,System.Func{``0,XIV.Core.DataStructures.Vec3},``0[],System.Int32)
+  name: XIVGetClosest<T>(T[], int, Vec3, out float, out Vec3, Func<T, Vec3>, T[], int)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVGetClosest__1___0___System_Int32_XIV_Core_DataStructures_Vec3_System_Single__XIV_Core_DataStructures_Vec3__System_Func___0_XIV_Core_DataStructures_Vec3____0___System_Int32_
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVGetClosest``1(``0[],System.Int32,XIV.Core.DataStructures.Vec3,System.Single@,XIV.Core.DataStructures.Vec3@,System.Func{``0,XIV.Core.DataStructures.Vec3},``0[],System.Int32)
+  name.vb: XIVGetClosest(Of T)(T(), Integer, Vec3, Single, Vec3, Func(Of T, Vec3), T(), Integer)
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVGetClosest<T>(T[], int, XIV.Core.DataStructures.Vec3, out float, out XIV.Core.DataStructures.Vec3, System.Func<T, XIV.Core.DataStructures.Vec3>, T[], int)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVGetClosest(Of T)(T(), Integer, XIV.Core.DataStructures.Vec3, Single, XIV.Core.DataStructures.Vec3, System.Func(Of T, XIV.Core.DataStructures.Vec3), T(), Integer)
+  nameWithType: ArrayExtensions.XIVGetClosest<T>(T[], int, Vec3, out float, out Vec3, Func<T, Vec3>, T[], int)
+  nameWithType.vb: ArrayExtensions.XIVGetClosest(Of T)(T(), Integer, Vec3, Single, Vec3, Func(Of T, Vec3), T(), Integer)
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVIndexOf*
+  name: XIVIndexOf
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVIndexOf_
+  commentId: Overload:XIV.Core.Extensions.ArrayExtensions.XIVIndexOf
   isSpec: "True"
-  fullName: XIV.Core.Extensions.ArrayExtensions.Split
-  nameWithType: ArrayExtensions.Split
-- uid: XIV.Core.Extensions.ArrayExtensions.Split``1(``0[],System.Int32,System.Func{``0,System.Boolean})
-  name: Split<T>(T[], int, Func<T, bool>)
-  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_Split__1___0___System_Int32_System_Func___0_System_Boolean__
-  commentId: M:XIV.Core.Extensions.ArrayExtensions.Split``1(``0[],System.Int32,System.Func{``0,System.Boolean})
-  name.vb: Split(Of T)(T(), Integer, Func(Of T, Boolean))
-  fullName: XIV.Core.Extensions.ArrayExtensions.Split<T>(T[], int, System.Func<T, bool>)
-  fullName.vb: XIV.Core.Extensions.ArrayExtensions.Split(Of T)(T(), Integer, System.Func(Of T, Boolean))
-  nameWithType: ArrayExtensions.Split<T>(T[], int, Func<T, bool>)
-  nameWithType.vb: ArrayExtensions.Split(Of T)(T(), Integer, Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVIndexOf
+  nameWithType: ArrayExtensions.XIVIndexOf
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVIndexOf``1(``0[],System.Func{``0,System.Boolean})
+  name: XIVIndexOf<T>(T[], Func<T, bool>)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVIndexOf__1___0___System_Func___0_System_Boolean__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVIndexOf``1(``0[],System.Func{``0,System.Boolean})
+  name.vb: XIVIndexOf(Of T)(T(), Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVIndexOf<T>(T[], System.Func<T, bool>)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVIndexOf(Of T)(T(), System.Func(Of T, Boolean))
+  nameWithType: ArrayExtensions.XIVIndexOf<T>(T[], Func<T, bool>)
+  nameWithType.vb: ArrayExtensions.XIVIndexOf(Of T)(T(), Func(Of T, Boolean))
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVIndexOf``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name: XIVIndexOf<T>(T[], int, Func<T, bool>)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVIndexOf__1___0___System_Int32_System_Func___0_System_Boolean__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVIndexOf``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name.vb: XIVIndexOf(Of T)(T(), Integer, Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVIndexOf<T>(T[], int, System.Func<T, bool>)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVIndexOf(Of T)(T(), Integer, System.Func(Of T, Boolean))
+  nameWithType: ArrayExtensions.XIVIndexOf<T>(T[], int, Func<T, bool>)
+  nameWithType.vb: ArrayExtensions.XIVIndexOf(Of T)(T(), Integer, Func(Of T, Boolean))
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVRemoveAt*
+  name: XIVRemoveAt
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVRemoveAt_
+  commentId: Overload:XIV.Core.Extensions.ArrayExtensions.XIVRemoveAt
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVRemoveAt
+  nameWithType: ArrayExtensions.XIVRemoveAt
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVRemoveAt``1(``0[],System.Int32,System.Int32)
+  name: XIVRemoveAt<T>(T[], int, int)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVRemoveAt__1___0___System_Int32_System_Int32_
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVRemoveAt``1(``0[],System.Int32,System.Int32)
+  name.vb: XIVRemoveAt(Of T)(T(), Integer, Integer)
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVRemoveAt<T>(T[], int, int)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVRemoveAt(Of T)(T(), Integer, Integer)
+  nameWithType: ArrayExtensions.XIVRemoveAt<T>(T[], int, int)
+  nameWithType.vb: ArrayExtensions.XIVRemoveAt(Of T)(T(), Integer, Integer)
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVRemoveIf*
+  name: XIVRemoveIf
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVRemoveIf_
+  commentId: Overload:XIV.Core.Extensions.ArrayExtensions.XIVRemoveIf
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVRemoveIf
+  nameWithType: ArrayExtensions.XIVRemoveIf
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVRemoveIf``1(``0[],System.Func{``0,System.Boolean})
+  name: XIVRemoveIf<T>(T[], Func<T, bool>)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVRemoveIf__1___0___System_Func___0_System_Boolean__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVRemoveIf``1(``0[],System.Func{``0,System.Boolean})
+  name.vb: XIVRemoveIf(Of T)(T(), Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVRemoveIf<T>(T[], System.Func<T, bool>)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVRemoveIf(Of T)(T(), System.Func(Of T, Boolean))
+  nameWithType: ArrayExtensions.XIVRemoveIf<T>(T[], Func<T, bool>)
+  nameWithType.vb: ArrayExtensions.XIVRemoveIf(Of T)(T(), Func(Of T, Boolean))
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVRemoveIf``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name: XIVRemoveIf<T>(T[], int, Func<T, bool>)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVRemoveIf__1___0___System_Int32_System_Func___0_System_Boolean__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVRemoveIf``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name.vb: XIVRemoveIf(Of T)(T(), Integer, Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVRemoveIf<T>(T[], int, System.Func<T, bool>)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVRemoveIf(Of T)(T(), Integer, System.Func(Of T, Boolean))
+  nameWithType: ArrayExtensions.XIVRemoveIf<T>(T[], int, Func<T, bool>)
+  nameWithType.vb: ArrayExtensions.XIVRemoveIf(Of T)(T(), Integer, Func(Of T, Boolean))
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVSplit*
+  name: XIVSplit
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVSplit_
+  commentId: Overload:XIV.Core.Extensions.ArrayExtensions.XIVSplit
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVSplit
+  nameWithType: ArrayExtensions.XIVSplit
+- uid: XIV.Core.Extensions.ArrayExtensions.XIVSplit``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name: XIVSplit<T>(T[], int, Func<T, bool>)
+  href: api/XIV.Core.Extensions.ArrayExtensions.html#XIV_Core_Extensions_ArrayExtensions_XIVSplit__1___0___System_Int32_System_Func___0_System_Boolean__
+  commentId: M:XIV.Core.Extensions.ArrayExtensions.XIVSplit``1(``0[],System.Int32,System.Func{``0,System.Boolean})
+  name.vb: XIVSplit(Of T)(T(), Integer, Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.ArrayExtensions.XIVSplit<T>(T[], int, System.Func<T, bool>)
+  fullName.vb: XIV.Core.Extensions.ArrayExtensions.XIVSplit(Of T)(T(), Integer, System.Func(Of T, Boolean))
+  nameWithType: ArrayExtensions.XIVSplit<T>(T[], int, Func<T, bool>)
+  nameWithType.vb: ArrayExtensions.XIVSplit(Of T)(T(), Integer, Func(Of T, Boolean))
 - uid: XIV.Core.Extensions.IListExtensions
   name: IListExtensions
   href: api/XIV.Core.Extensions.IListExtensions.html
   commentId: T:XIV.Core.Extensions.IListExtensions
   fullName: XIV.Core.Extensions.IListExtensions
   nameWithType: IListExtensions
-- uid: XIV.Core.Extensions.IListExtensions.GetTotalWeight*
-  name: GetTotalWeight
-  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_GetTotalWeight_
-  commentId: Overload:XIV.Core.Extensions.IListExtensions.GetTotalWeight
+- uid: XIV.Core.Extensions.IListExtensions.XIVGetTotalWeight*
+  name: XIVGetTotalWeight
+  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_XIVGetTotalWeight_
+  commentId: Overload:XIV.Core.Extensions.IListExtensions.XIVGetTotalWeight
   isSpec: "True"
-  fullName: XIV.Core.Extensions.IListExtensions.GetTotalWeight
-  nameWithType: IListExtensions.GetTotalWeight
-- uid: XIV.Core.Extensions.IListExtensions.GetTotalWeight``1(System.Collections.Generic.IList{``0},System.Func{``0,System.Int32})
-  name: GetTotalWeight<T>(IList<T>, Func<T, int>)
-  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_GetTotalWeight__1_System_Collections_Generic_IList___0__System_Func___0_System_Int32__
-  commentId: M:XIV.Core.Extensions.IListExtensions.GetTotalWeight``1(System.Collections.Generic.IList{``0},System.Func{``0,System.Int32})
-  name.vb: GetTotalWeight(Of T)(IList(Of T), Func(Of T, Integer))
-  fullName: XIV.Core.Extensions.IListExtensions.GetTotalWeight<T>(System.Collections.Generic.IList<T>, System.Func<T, int>)
-  fullName.vb: XIV.Core.Extensions.IListExtensions.GetTotalWeight(Of T)(System.Collections.Generic.IList(Of T), System.Func(Of T, Integer))
-  nameWithType: IListExtensions.GetTotalWeight<T>(IList<T>, Func<T, int>)
-  nameWithType.vb: IListExtensions.GetTotalWeight(Of T)(IList(Of T), Func(Of T, Integer))
-- uid: XIV.Core.Extensions.IListExtensions.PickRandom*
-  name: PickRandom
-  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_PickRandom_
-  commentId: Overload:XIV.Core.Extensions.IListExtensions.PickRandom
+  fullName: XIV.Core.Extensions.IListExtensions.XIVGetTotalWeight
+  nameWithType: IListExtensions.XIVGetTotalWeight
+- uid: XIV.Core.Extensions.IListExtensions.XIVGetTotalWeight``1(System.Collections.Generic.IList{``0},System.Func{``0,System.Int32})
+  name: XIVGetTotalWeight<T>(IList<T>, Func<T, int>)
+  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_XIVGetTotalWeight__1_System_Collections_Generic_IList___0__System_Func___0_System_Int32__
+  commentId: M:XIV.Core.Extensions.IListExtensions.XIVGetTotalWeight``1(System.Collections.Generic.IList{``0},System.Func{``0,System.Int32})
+  name.vb: XIVGetTotalWeight(Of T)(IList(Of T), Func(Of T, Integer))
+  fullName: XIV.Core.Extensions.IListExtensions.XIVGetTotalWeight<T>(System.Collections.Generic.IList<T>, System.Func<T, int>)
+  fullName.vb: XIV.Core.Extensions.IListExtensions.XIVGetTotalWeight(Of T)(System.Collections.Generic.IList(Of T), System.Func(Of T, Integer))
+  nameWithType: IListExtensions.XIVGetTotalWeight<T>(IList<T>, Func<T, int>)
+  nameWithType.vb: IListExtensions.XIVGetTotalWeight(Of T)(IList(Of T), Func(Of T, Integer))
+- uid: XIV.Core.Extensions.IListExtensions.XIVPickRandom*
+  name: XIVPickRandom
+  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_XIVPickRandom_
+  commentId: Overload:XIV.Core.Extensions.IListExtensions.XIVPickRandom
   isSpec: "True"
-  fullName: XIV.Core.Extensions.IListExtensions.PickRandom
-  nameWithType: IListExtensions.PickRandom
-- uid: XIV.Core.Extensions.IListExtensions.PickRandom``1(System.Collections.Generic.IList{``0})
-  name: PickRandom<T>(IList<T>)
-  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_PickRandom__1_System_Collections_Generic_IList___0__
-  commentId: M:XIV.Core.Extensions.IListExtensions.PickRandom``1(System.Collections.Generic.IList{``0})
-  name.vb: PickRandom(Of T)(IList(Of T))
-  fullName: XIV.Core.Extensions.IListExtensions.PickRandom<T>(System.Collections.Generic.IList<T>)
-  fullName.vb: XIV.Core.Extensions.IListExtensions.PickRandom(Of T)(System.Collections.Generic.IList(Of T))
-  nameWithType: IListExtensions.PickRandom<T>(IList<T>)
-  nameWithType.vb: IListExtensions.PickRandom(Of T)(IList(Of T))
-- uid: XIV.Core.Extensions.IListExtensions.PickWeighted*
-  name: PickWeighted
-  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_PickWeighted_
-  commentId: Overload:XIV.Core.Extensions.IListExtensions.PickWeighted
+  fullName: XIV.Core.Extensions.IListExtensions.XIVPickRandom
+  nameWithType: IListExtensions.XIVPickRandom
+- uid: XIV.Core.Extensions.IListExtensions.XIVPickRandom``1(System.Collections.Generic.IList{``0})
+  name: XIVPickRandom<T>(IList<T>)
+  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_XIVPickRandom__1_System_Collections_Generic_IList___0__
+  commentId: M:XIV.Core.Extensions.IListExtensions.XIVPickRandom``1(System.Collections.Generic.IList{``0})
+  name.vb: XIVPickRandom(Of T)(IList(Of T))
+  fullName: XIV.Core.Extensions.IListExtensions.XIVPickRandom<T>(System.Collections.Generic.IList<T>)
+  fullName.vb: XIV.Core.Extensions.IListExtensions.XIVPickRandom(Of T)(System.Collections.Generic.IList(Of T))
+  nameWithType: IListExtensions.XIVPickRandom<T>(IList<T>)
+  nameWithType.vb: IListExtensions.XIVPickRandom(Of T)(IList(Of T))
+- uid: XIV.Core.Extensions.IListExtensions.XIVPickRandom``1(System.Collections.Generic.IList{``0},System.Int32@)
+  name: XIVPickRandom<T>(IList<T>, out int)
+  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_XIVPickRandom__1_System_Collections_Generic_IList___0__System_Int32__
+  commentId: M:XIV.Core.Extensions.IListExtensions.XIVPickRandom``1(System.Collections.Generic.IList{``0},System.Int32@)
+  name.vb: XIVPickRandom(Of T)(IList(Of T), Integer)
+  fullName: XIV.Core.Extensions.IListExtensions.XIVPickRandom<T>(System.Collections.Generic.IList<T>, out int)
+  fullName.vb: XIV.Core.Extensions.IListExtensions.XIVPickRandom(Of T)(System.Collections.Generic.IList(Of T), Integer)
+  nameWithType: IListExtensions.XIVPickRandom<T>(IList<T>, out int)
+  nameWithType.vb: IListExtensions.XIVPickRandom(Of T)(IList(Of T), Integer)
+- uid: XIV.Core.Extensions.IListExtensions.XIVPickWeighted*
+  name: XIVPickWeighted
+  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_XIVPickWeighted_
+  commentId: Overload:XIV.Core.Extensions.IListExtensions.XIVPickWeighted
   isSpec: "True"
-  fullName: XIV.Core.Extensions.IListExtensions.PickWeighted
-  nameWithType: IListExtensions.PickWeighted
-- uid: XIV.Core.Extensions.IListExtensions.PickWeighted``1(System.Collections.Generic.IList{``0},System.Func{``0,System.Int32})
-  name: PickWeighted<T>(IList<T>, Func<T, int>)
-  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_PickWeighted__1_System_Collections_Generic_IList___0__System_Func___0_System_Int32__
-  commentId: M:XIV.Core.Extensions.IListExtensions.PickWeighted``1(System.Collections.Generic.IList{``0},System.Func{``0,System.Int32})
-  name.vb: PickWeighted(Of T)(IList(Of T), Func(Of T, Integer))
-  fullName: XIV.Core.Extensions.IListExtensions.PickWeighted<T>(System.Collections.Generic.IList<T>, System.Func<T, int>)
-  fullName.vb: XIV.Core.Extensions.IListExtensions.PickWeighted(Of T)(System.Collections.Generic.IList(Of T), System.Func(Of T, Integer))
-  nameWithType: IListExtensions.PickWeighted<T>(IList<T>, Func<T, int>)
-  nameWithType.vb: IListExtensions.PickWeighted(Of T)(IList(Of T), Func(Of T, Integer))
-- uid: XIV.Core.Extensions.IListExtensions.PickWeighted``1(System.Collections.Generic.IList{``0},System.Int32,System.Func{``0,System.Int32})
-  name: PickWeighted<T>(IList<T>, int, Func<T, int>)
-  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_PickWeighted__1_System_Collections_Generic_IList___0__System_Int32_System_Func___0_System_Int32__
-  commentId: M:XIV.Core.Extensions.IListExtensions.PickWeighted``1(System.Collections.Generic.IList{``0},System.Int32,System.Func{``0,System.Int32})
-  name.vb: PickWeighted(Of T)(IList(Of T), Integer, Func(Of T, Integer))
-  fullName: XIV.Core.Extensions.IListExtensions.PickWeighted<T>(System.Collections.Generic.IList<T>, int, System.Func<T, int>)
-  fullName.vb: XIV.Core.Extensions.IListExtensions.PickWeighted(Of T)(System.Collections.Generic.IList(Of T), Integer, System.Func(Of T, Integer))
-  nameWithType: IListExtensions.PickWeighted<T>(IList<T>, int, Func<T, int>)
-  nameWithType.vb: IListExtensions.PickWeighted(Of T)(IList(Of T), Integer, Func(Of T, Integer))
+  fullName: XIV.Core.Extensions.IListExtensions.XIVPickWeighted
+  nameWithType: IListExtensions.XIVPickWeighted
+- uid: XIV.Core.Extensions.IListExtensions.XIVPickWeighted``1(System.Collections.Generic.IList{``0},System.Func{``0,System.Int32})
+  name: XIVPickWeighted<T>(IList<T>, Func<T, int>)
+  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_XIVPickWeighted__1_System_Collections_Generic_IList___0__System_Func___0_System_Int32__
+  commentId: M:XIV.Core.Extensions.IListExtensions.XIVPickWeighted``1(System.Collections.Generic.IList{``0},System.Func{``0,System.Int32})
+  name.vb: XIVPickWeighted(Of T)(IList(Of T), Func(Of T, Integer))
+  fullName: XIV.Core.Extensions.IListExtensions.XIVPickWeighted<T>(System.Collections.Generic.IList<T>, System.Func<T, int>)
+  fullName.vb: XIV.Core.Extensions.IListExtensions.XIVPickWeighted(Of T)(System.Collections.Generic.IList(Of T), System.Func(Of T, Integer))
+  nameWithType: IListExtensions.XIVPickWeighted<T>(IList<T>, Func<T, int>)
+  nameWithType.vb: IListExtensions.XIVPickWeighted(Of T)(IList(Of T), Func(Of T, Integer))
+- uid: XIV.Core.Extensions.IListExtensions.XIVPickWeighted``1(System.Collections.Generic.IList{``0},System.Int32,System.Func{``0,System.Int32})
+  name: XIVPickWeighted<T>(IList<T>, int, Func<T, int>)
+  href: api/XIV.Core.Extensions.IListExtensions.html#XIV_Core_Extensions_IListExtensions_XIVPickWeighted__1_System_Collections_Generic_IList___0__System_Int32_System_Func___0_System_Int32__
+  commentId: M:XIV.Core.Extensions.IListExtensions.XIVPickWeighted``1(System.Collections.Generic.IList{``0},System.Int32,System.Func{``0,System.Int32})
+  name.vb: XIVPickWeighted(Of T)(IList(Of T), Integer, Func(Of T, Integer))
+  fullName: XIV.Core.Extensions.IListExtensions.XIVPickWeighted<T>(System.Collections.Generic.IList<T>, int, System.Func<T, int>)
+  fullName.vb: XIV.Core.Extensions.IListExtensions.XIVPickWeighted(Of T)(System.Collections.Generic.IList(Of T), Integer, System.Func(Of T, Integer))
+  nameWithType: IListExtensions.XIVPickWeighted<T>(IList<T>, int, Func<T, int>)
+  nameWithType.vb: IListExtensions.XIVPickWeighted(Of T)(IList(Of T), Integer, Func(Of T, Integer))
 - uid: XIV.Core.Extensions.StringExtensions
   name: StringExtensions
   href: api/XIV.Core.Extensions.StringExtensions.html
   commentId: T:XIV.Core.Extensions.StringExtensions
   fullName: XIV.Core.Extensions.StringExtensions
   nameWithType: StringExtensions
-- uid: XIV.Core.Extensions.StringExtensions.PadCenter(System.String,System.Int32)
-  name: PadCenter(string, int)
-  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_PadCenter_System_String_System_Int32_
-  commentId: M:XIV.Core.Extensions.StringExtensions.PadCenter(System.String,System.Int32)
-  name.vb: PadCenter(String, Integer)
-  fullName: XIV.Core.Extensions.StringExtensions.PadCenter(string, int)
-  fullName.vb: XIV.Core.Extensions.StringExtensions.PadCenter(String, Integer)
-  nameWithType: StringExtensions.PadCenter(string, int)
-  nameWithType.vb: StringExtensions.PadCenter(String, Integer)
-- uid: XIV.Core.Extensions.StringExtensions.PadCenter*
-  name: PadCenter
-  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_PadCenter_
-  commentId: Overload:XIV.Core.Extensions.StringExtensions.PadCenter
+- uid: XIV.Core.Extensions.StringExtensions.XIVPadCenter(System.String,System.Int32)
+  name: XIVPadCenter(string, int)
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVPadCenter_System_String_System_Int32_
+  commentId: M:XIV.Core.Extensions.StringExtensions.XIVPadCenter(System.String,System.Int32)
+  name.vb: XIVPadCenter(String, Integer)
+  fullName: XIV.Core.Extensions.StringExtensions.XIVPadCenter(string, int)
+  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVPadCenter(String, Integer)
+  nameWithType: StringExtensions.XIVPadCenter(string, int)
+  nameWithType.vb: StringExtensions.XIVPadCenter(String, Integer)
+- uid: XIV.Core.Extensions.StringExtensions.XIVPadCenter*
+  name: XIVPadCenter
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVPadCenter_
+  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVPadCenter
   isSpec: "True"
-  fullName: XIV.Core.Extensions.StringExtensions.PadCenter
-  nameWithType: StringExtensions.PadCenter
-- uid: XIV.Core.Extensions.StringExtensions.Space(System.String)
-  name: Space(string)
-  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_Space_System_String_
-  commentId: M:XIV.Core.Extensions.StringExtensions.Space(System.String)
-  name.vb: Space(String)
-  fullName: XIV.Core.Extensions.StringExtensions.Space(string)
-  fullName.vb: XIV.Core.Extensions.StringExtensions.Space(String)
-  nameWithType: StringExtensions.Space(string)
-  nameWithType.vb: StringExtensions.Space(String)
-- uid: XIV.Core.Extensions.StringExtensions.Space*
-  name: Space
-  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_Space_
-  commentId: Overload:XIV.Core.Extensions.StringExtensions.Space
+  fullName: XIV.Core.Extensions.StringExtensions.XIVPadCenter
+  nameWithType: StringExtensions.XIVPadCenter
+- uid: XIV.Core.Extensions.StringExtensions.XIVSpace(System.String)
+  name: XIVSpace(string)
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVSpace_System_String_
+  commentId: M:XIV.Core.Extensions.StringExtensions.XIVSpace(System.String)
+  name.vb: XIVSpace(String)
+  fullName: XIV.Core.Extensions.StringExtensions.XIVSpace(string)
+  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVSpace(String)
+  nameWithType: StringExtensions.XIVSpace(string)
+  nameWithType.vb: StringExtensions.XIVSpace(String)
+- uid: XIV.Core.Extensions.StringExtensions.XIVSpace*
+  name: XIVSpace
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVSpace_
+  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVSpace
   isSpec: "True"
-  fullName: XIV.Core.Extensions.StringExtensions.Space
-  nameWithType: StringExtensions.Space
-- uid: XIV.Core.Extensions.StringExtensions.TruncateWithChar(System.String,System.Int32,System.Char)
-  name: TruncateWithChar(string, int, char)
-  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_TruncateWithChar_System_String_System_Int32_System_Char_
-  commentId: M:XIV.Core.Extensions.StringExtensions.TruncateWithChar(System.String,System.Int32,System.Char)
-  name.vb: TruncateWithChar(String, Integer, Char)
-  fullName: XIV.Core.Extensions.StringExtensions.TruncateWithChar(string, int, char)
-  fullName.vb: XIV.Core.Extensions.StringExtensions.TruncateWithChar(String, Integer, Char)
-  nameWithType: StringExtensions.TruncateWithChar(string, int, char)
-  nameWithType.vb: StringExtensions.TruncateWithChar(String, Integer, Char)
-- uid: XIV.Core.Extensions.StringExtensions.TruncateWithChar*
-  name: TruncateWithChar
-  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_TruncateWithChar_
-  commentId: Overload:XIV.Core.Extensions.StringExtensions.TruncateWithChar
+  fullName: XIV.Core.Extensions.StringExtensions.XIVSpace
+  nameWithType: StringExtensions.XIVSpace
+- uid: XIV.Core.Extensions.StringExtensions.XIVTruncateWithChar(System.String,System.Int32,System.Char)
+  name: XIVTruncateWithChar(string, int, char)
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVTruncateWithChar_System_String_System_Int32_System_Char_
+  commentId: M:XIV.Core.Extensions.StringExtensions.XIVTruncateWithChar(System.String,System.Int32,System.Char)
+  name.vb: XIVTruncateWithChar(String, Integer, Char)
+  fullName: XIV.Core.Extensions.StringExtensions.XIVTruncateWithChar(string, int, char)
+  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVTruncateWithChar(String, Integer, Char)
+  nameWithType: StringExtensions.XIVTruncateWithChar(string, int, char)
+  nameWithType.vb: StringExtensions.XIVTruncateWithChar(String, Integer, Char)
+- uid: XIV.Core.Extensions.StringExtensions.XIVTruncateWithChar*
+  name: XIVTruncateWithChar
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVTruncateWithChar_
+  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVTruncateWithChar
   isSpec: "True"
-  fullName: XIV.Core.Extensions.StringExtensions.TruncateWithChar
-  nameWithType: StringExtensions.TruncateWithChar
-- uid: XIV.Core.Extensions.StringExtensions.TruncateWithDots(System.String,System.Int32)
-  name: TruncateWithDots(string, int)
-  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_TruncateWithDots_System_String_System_Int32_
-  commentId: M:XIV.Core.Extensions.StringExtensions.TruncateWithDots(System.String,System.Int32)
-  name.vb: TruncateWithDots(String, Integer)
-  fullName: XIV.Core.Extensions.StringExtensions.TruncateWithDots(string, int)
-  fullName.vb: XIV.Core.Extensions.StringExtensions.TruncateWithDots(String, Integer)
-  nameWithType: StringExtensions.TruncateWithDots(string, int)
-  nameWithType.vb: StringExtensions.TruncateWithDots(String, Integer)
-- uid: XIV.Core.Extensions.StringExtensions.TruncateWithDots*
-  name: TruncateWithDots
-  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_TruncateWithDots_
-  commentId: Overload:XIV.Core.Extensions.StringExtensions.TruncateWithDots
+  fullName: XIV.Core.Extensions.StringExtensions.XIVTruncateWithChar
+  nameWithType: StringExtensions.XIVTruncateWithChar
+- uid: XIV.Core.Extensions.StringExtensions.XIVTruncateWithDots(System.String,System.Int32)
+  name: XIVTruncateWithDots(string, int)
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVTruncateWithDots_System_String_System_Int32_
+  commentId: M:XIV.Core.Extensions.StringExtensions.XIVTruncateWithDots(System.String,System.Int32)
+  name.vb: XIVTruncateWithDots(String, Integer)
+  fullName: XIV.Core.Extensions.StringExtensions.XIVTruncateWithDots(string, int)
+  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVTruncateWithDots(String, Integer)
+  nameWithType: StringExtensions.XIVTruncateWithDots(string, int)
+  nameWithType.vb: StringExtensions.XIVTruncateWithDots(String, Integer)
+- uid: XIV.Core.Extensions.StringExtensions.XIVTruncateWithDots*
+  name: XIVTruncateWithDots
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVTruncateWithDots_
+  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVTruncateWithDots
   isSpec: "True"
-  fullName: XIV.Core.Extensions.StringExtensions.TruncateWithDots
-  nameWithType: StringExtensions.TruncateWithDots
+  fullName: XIV.Core.Extensions.StringExtensions.XIVTruncateWithDots
+  nameWithType: StringExtensions.XIVTruncateWithDots
 - uid: XIV.Core.Extensions.StringHtmlTagExtensions
   name: StringHtmlTagExtensions
   href: api/XIV.Core.Extensions.StringHtmlTagExtensions.html
@@ -2414,31 +3390,6 @@ references:
   isSpec: "True"
   fullName: XIV.Core.Extensions.StringHtmlTagExtensions.ToBold
   nameWithType: StringHtmlTagExtensions.ToBold
-- uid: XIV.Core.Extensions.StringHtmlTagExtensions.ToColor(System.String,System.String)
-  name: ToColor(string, string)
-  href: api/XIV.Core.Extensions.StringHtmlTagExtensions.html#XIV_Core_Extensions_StringHtmlTagExtensions_ToColor_System_String_System_String_
-  commentId: M:XIV.Core.Extensions.StringHtmlTagExtensions.ToColor(System.String,System.String)
-  name.vb: ToColor(String, String)
-  fullName: XIV.Core.Extensions.StringHtmlTagExtensions.ToColor(string, string)
-  fullName.vb: XIV.Core.Extensions.StringHtmlTagExtensions.ToColor(String, String)
-  nameWithType: StringHtmlTagExtensions.ToColor(string, string)
-  nameWithType.vb: StringHtmlTagExtensions.ToColor(String, String)
-- uid: XIV.Core.Extensions.StringHtmlTagExtensions.ToColor(System.String,XIV.Core.DataStructures.XIVColor)
-  name: ToColor(string, XIVColor)
-  href: api/XIV.Core.Extensions.StringHtmlTagExtensions.html#XIV_Core_Extensions_StringHtmlTagExtensions_ToColor_System_String_XIV_Core_DataStructures_XIVColor_
-  commentId: M:XIV.Core.Extensions.StringHtmlTagExtensions.ToColor(System.String,XIV.Core.DataStructures.XIVColor)
-  name.vb: ToColor(String, XIVColor)
-  fullName: XIV.Core.Extensions.StringHtmlTagExtensions.ToColor(string, XIV.Core.DataStructures.XIVColor)
-  fullName.vb: XIV.Core.Extensions.StringHtmlTagExtensions.ToColor(String, XIV.Core.DataStructures.XIVColor)
-  nameWithType: StringHtmlTagExtensions.ToColor(string, XIVColor)
-  nameWithType.vb: StringHtmlTagExtensions.ToColor(String, XIVColor)
-- uid: XIV.Core.Extensions.StringHtmlTagExtensions.ToColor*
-  name: ToColor
-  href: api/XIV.Core.Extensions.StringHtmlTagExtensions.html#XIV_Core_Extensions_StringHtmlTagExtensions_ToColor_
-  commentId: Overload:XIV.Core.Extensions.StringHtmlTagExtensions.ToColor
-  isSpec: "True"
-  fullName: XIV.Core.Extensions.StringHtmlTagExtensions.ToColor
-  nameWithType: StringHtmlTagExtensions.ToColor
 - uid: XIV.Core.Extensions.StringHtmlTagExtensions.ToColorBlue(System.String)
   name: ToColorBlue(string)
   href: api/XIV.Core.Extensions.StringHtmlTagExtensions.html#XIV_Core_Extensions_StringHtmlTagExtensions_ToColorBlue_System_String_
@@ -2503,6 +3454,424 @@ references:
   isSpec: "True"
   fullName: XIV.Core.Extensions.StringHtmlTagExtensions.ToColorYellow
   nameWithType: StringHtmlTagExtensions.ToColorYellow
+- uid: XIV.Core.Extensions.StringHtmlTagExtensions.XIVToColor(System.String,System.String)
+  name: XIVToColor(string, string)
+  href: api/XIV.Core.Extensions.StringHtmlTagExtensions.html#XIV_Core_Extensions_StringHtmlTagExtensions_XIVToColor_System_String_System_String_
+  commentId: M:XIV.Core.Extensions.StringHtmlTagExtensions.XIVToColor(System.String,System.String)
+  name.vb: XIVToColor(String, String)
+  fullName: XIV.Core.Extensions.StringHtmlTagExtensions.XIVToColor(string, string)
+  fullName.vb: XIV.Core.Extensions.StringHtmlTagExtensions.XIVToColor(String, String)
+  nameWithType: StringHtmlTagExtensions.XIVToColor(string, string)
+  nameWithType.vb: StringHtmlTagExtensions.XIVToColor(String, String)
+- uid: XIV.Core.Extensions.StringHtmlTagExtensions.XIVToColor(System.String,XIV.Core.DataStructures.XIVColor)
+  name: XIVToColor(string, XIVColor)
+  href: api/XIV.Core.Extensions.StringHtmlTagExtensions.html#XIV_Core_Extensions_StringHtmlTagExtensions_XIVToColor_System_String_XIV_Core_DataStructures_XIVColor_
+  commentId: M:XIV.Core.Extensions.StringHtmlTagExtensions.XIVToColor(System.String,XIV.Core.DataStructures.XIVColor)
+  name.vb: XIVToColor(String, XIVColor)
+  fullName: XIV.Core.Extensions.StringHtmlTagExtensions.XIVToColor(string, XIV.Core.DataStructures.XIVColor)
+  fullName.vb: XIV.Core.Extensions.StringHtmlTagExtensions.XIVToColor(String, XIV.Core.DataStructures.XIVColor)
+  nameWithType: StringHtmlTagExtensions.XIVToColor(string, XIVColor)
+  nameWithType.vb: StringHtmlTagExtensions.XIVToColor(String, XIVColor)
+- uid: XIV.Core.Extensions.StringHtmlTagExtensions.XIVToColor*
+  name: XIVToColor
+  href: api/XIV.Core.Extensions.StringHtmlTagExtensions.html#XIV_Core_Extensions_StringHtmlTagExtensions_XIVToColor_
+  commentId: Overload:XIV.Core.Extensions.StringHtmlTagExtensions.XIVToColor
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.StringHtmlTagExtensions.XIVToColor
+  nameWithType: StringHtmlTagExtensions.XIVToColor
+- uid: XIV.Core.Extensions.TypeExtensions
+  name: TypeExtensions
+  href: api/XIV.Core.Extensions.TypeExtensions.html
+  commentId: T:XIV.Core.Extensions.TypeExtensions
+  fullName: XIV.Core.Extensions.TypeExtensions
+  nameWithType: TypeExtensions
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetFieldOrPropertyValue(System.Type,System.String,System.Object)
+  name: XIVGetFieldOrPropertyValue(Type, string, object)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetFieldOrPropertyValue_System_Type_System_String_System_Object_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVGetFieldOrPropertyValue(System.Type,System.String,System.Object)
+  name.vb: XIVGetFieldOrPropertyValue(Type, String, Object)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetFieldOrPropertyValue(System.Type, string, object)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVGetFieldOrPropertyValue(System.Type, String, Object)
+  nameWithType: TypeExtensions.XIVGetFieldOrPropertyValue(Type, string, object)
+  nameWithType.vb: TypeExtensions.XIVGetFieldOrPropertyValue(Type, String, Object)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetFieldOrPropertyValue(System.Type,System.String,System.Object,System.Reflection.BindingFlags)
+  name: XIVGetFieldOrPropertyValue(Type, string, object, BindingFlags)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetFieldOrPropertyValue_System_Type_System_String_System_Object_System_Reflection_BindingFlags_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVGetFieldOrPropertyValue(System.Type,System.String,System.Object,System.Reflection.BindingFlags)
+  name.vb: XIVGetFieldOrPropertyValue(Type, String, Object, BindingFlags)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetFieldOrPropertyValue(System.Type, string, object, System.Reflection.BindingFlags)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVGetFieldOrPropertyValue(System.Type, String, Object, System.Reflection.BindingFlags)
+  nameWithType: TypeExtensions.XIVGetFieldOrPropertyValue(Type, string, object, BindingFlags)
+  nameWithType.vb: TypeExtensions.XIVGetFieldOrPropertyValue(Type, String, Object, BindingFlags)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetFieldOrPropertyValue*
+  name: XIVGetFieldOrPropertyValue
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetFieldOrPropertyValue_
+  commentId: Overload:XIV.Core.Extensions.TypeExtensions.XIVGetFieldOrPropertyValue
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetFieldOrPropertyValue
+  nameWithType: TypeExtensions.XIVGetFieldOrPropertyValue
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetFieldOrPropertyValue``1(System.Type,System.String,System.Object)
+  name: XIVGetFieldOrPropertyValue<T>(Type, string, object)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetFieldOrPropertyValue__1_System_Type_System_String_System_Object_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVGetFieldOrPropertyValue``1(System.Type,System.String,System.Object)
+  name.vb: XIVGetFieldOrPropertyValue(Of T)(Type, String, Object)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetFieldOrPropertyValue<T>(System.Type, string, object)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVGetFieldOrPropertyValue(Of T)(System.Type, String, Object)
+  nameWithType: TypeExtensions.XIVGetFieldOrPropertyValue<T>(Type, string, object)
+  nameWithType.vb: TypeExtensions.XIVGetFieldOrPropertyValue(Of T)(Type, String, Object)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetFieldValue(System.Type,System.String,System.Object)
+  name: XIVGetFieldValue(Type, string, object)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetFieldValue_System_Type_System_String_System_Object_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVGetFieldValue(System.Type,System.String,System.Object)
+  name.vb: XIVGetFieldValue(Type, String, Object)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetFieldValue(System.Type, string, object)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVGetFieldValue(System.Type, String, Object)
+  nameWithType: TypeExtensions.XIVGetFieldValue(Type, string, object)
+  nameWithType.vb: TypeExtensions.XIVGetFieldValue(Type, String, Object)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetFieldValue*
+  name: XIVGetFieldValue
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetFieldValue_
+  commentId: Overload:XIV.Core.Extensions.TypeExtensions.XIVGetFieldValue
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetFieldValue
+  nameWithType: TypeExtensions.XIVGetFieldValue
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetFieldValue``1(System.Type,System.String,System.Object)
+  name: XIVGetFieldValue<T>(Type, string, object)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetFieldValue__1_System_Type_System_String_System_Object_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVGetFieldValue``1(System.Type,System.String,System.Object)
+  name.vb: XIVGetFieldValue(Of T)(Type, String, Object)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetFieldValue<T>(System.Type, string, object)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVGetFieldValue(Of T)(System.Type, String, Object)
+  nameWithType: TypeExtensions.XIVGetFieldValue<T>(Type, string, object)
+  nameWithType.vb: TypeExtensions.XIVGetFieldValue(Of T)(Type, String, Object)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetMembers(System.Type)
+  name: XIVGetMembers(Type)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetMembers_System_Type_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVGetMembers(System.Type)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetMembers(System.Type)
+  nameWithType: TypeExtensions.XIVGetMembers(Type)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetMembers(System.Type,System.Reflection.BindingFlags)
+  name: XIVGetMembers(Type, BindingFlags)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetMembers_System_Type_System_Reflection_BindingFlags_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVGetMembers(System.Type,System.Reflection.BindingFlags)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetMembers(System.Type, System.Reflection.BindingFlags)
+  nameWithType: TypeExtensions.XIVGetMembers(Type, BindingFlags)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetMembers*
+  name: XIVGetMembers
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetMembers_
+  commentId: Overload:XIV.Core.Extensions.TypeExtensions.XIVGetMembers
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetMembers
+  nameWithType: TypeExtensions.XIVGetMembers
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetMembersHasAttribute*
+  name: XIVGetMembersHasAttribute
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetMembersHasAttribute_
+  commentId: Overload:XIV.Core.Extensions.TypeExtensions.XIVGetMembersHasAttribute
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetMembersHasAttribute
+  nameWithType: TypeExtensions.XIVGetMembersHasAttribute
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetMembersHasAttribute``1(System.Type,System.Boolean)
+  name: XIVGetMembersHasAttribute<TAttribute>(Type, bool)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetMembersHasAttribute__1_System_Type_System_Boolean_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVGetMembersHasAttribute``1(System.Type,System.Boolean)
+  name.vb: XIVGetMembersHasAttribute(Of TAttribute)(Type, Boolean)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetMembersHasAttribute<TAttribute>(System.Type, bool)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVGetMembersHasAttribute(Of TAttribute)(System.Type, Boolean)
+  nameWithType: TypeExtensions.XIVGetMembersHasAttribute<TAttribute>(Type, bool)
+  nameWithType.vb: TypeExtensions.XIVGetMembersHasAttribute(Of TAttribute)(Type, Boolean)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetMembersHasAttribute``1(System.Type,System.Reflection.BindingFlags,System.Boolean)
+  name: XIVGetMembersHasAttribute<TAttribute>(Type, BindingFlags, bool)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetMembersHasAttribute__1_System_Type_System_Reflection_BindingFlags_System_Boolean_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVGetMembersHasAttribute``1(System.Type,System.Reflection.BindingFlags,System.Boolean)
+  name.vb: XIVGetMembersHasAttribute(Of TAttribute)(Type, BindingFlags, Boolean)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetMembersHasAttribute<TAttribute>(System.Type, System.Reflection.BindingFlags, bool)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVGetMembersHasAttribute(Of TAttribute)(System.Type, System.Reflection.BindingFlags, Boolean)
+  nameWithType: TypeExtensions.XIVGetMembersHasAttribute<TAttribute>(Type, BindingFlags, bool)
+  nameWithType.vb: TypeExtensions.XIVGetMembersHasAttribute(Of TAttribute)(Type, BindingFlags, Boolean)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetMethodByName(System.Type,System.String)
+  name: XIVGetMethodByName(Type, string)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetMethodByName_System_Type_System_String_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVGetMethodByName(System.Type,System.String)
+  name.vb: XIVGetMethodByName(Type, String)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetMethodByName(System.Type, string)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVGetMethodByName(System.Type, String)
+  nameWithType: TypeExtensions.XIVGetMethodByName(Type, string)
+  nameWithType.vb: TypeExtensions.XIVGetMethodByName(Type, String)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetMethodByName*
+  name: XIVGetMethodByName
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetMethodByName_
+  commentId: Overload:XIV.Core.Extensions.TypeExtensions.XIVGetMethodByName
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetMethodByName
+  nameWithType: TypeExtensions.XIVGetMethodByName
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetMethods(System.Type)
+  name: XIVGetMethods(Type)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetMethods_System_Type_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVGetMethods(System.Type)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetMethods(System.Type)
+  nameWithType: TypeExtensions.XIVGetMethods(Type)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetMethods*
+  name: XIVGetMethods
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetMethods_
+  commentId: Overload:XIV.Core.Extensions.TypeExtensions.XIVGetMethods
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetMethods
+  nameWithType: TypeExtensions.XIVGetMethods
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetMethodsHasAttribute*
+  name: XIVGetMethodsHasAttribute
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetMethodsHasAttribute_
+  commentId: Overload:XIV.Core.Extensions.TypeExtensions.XIVGetMethodsHasAttribute
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetMethodsHasAttribute
+  nameWithType: TypeExtensions.XIVGetMethodsHasAttribute
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetMethodsHasAttribute``1(System.Type)
+  name: XIVGetMethodsHasAttribute<TAttribute>(Type)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetMethodsHasAttribute__1_System_Type_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVGetMethodsHasAttribute``1(System.Type)
+  name.vb: XIVGetMethodsHasAttribute(Of TAttribute)(Type)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetMethodsHasAttribute<TAttribute>(System.Type)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVGetMethodsHasAttribute(Of TAttribute)(System.Type)
+  nameWithType: TypeExtensions.XIVGetMethodsHasAttribute<TAttribute>(Type)
+  nameWithType.vb: TypeExtensions.XIVGetMethodsHasAttribute(Of TAttribute)(Type)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetMethodsHasAttribute``1(System.Type,System.Reflection.BindingFlags)
+  name: XIVGetMethodsHasAttribute<TAttribute>(Type, BindingFlags)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetMethodsHasAttribute__1_System_Type_System_Reflection_BindingFlags_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVGetMethodsHasAttribute``1(System.Type,System.Reflection.BindingFlags)
+  name.vb: XIVGetMethodsHasAttribute(Of TAttribute)(Type, BindingFlags)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetMethodsHasAttribute<TAttribute>(System.Type, System.Reflection.BindingFlags)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVGetMethodsHasAttribute(Of TAttribute)(System.Type, System.Reflection.BindingFlags)
+  nameWithType: TypeExtensions.XIVGetMethodsHasAttribute<TAttribute>(Type, BindingFlags)
+  nameWithType.vb: TypeExtensions.XIVGetMethodsHasAttribute(Of TAttribute)(Type, BindingFlags)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetPropertyValue(System.Type,System.String,System.Object)
+  name: XIVGetPropertyValue(Type, string, object)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetPropertyValue_System_Type_System_String_System_Object_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVGetPropertyValue(System.Type,System.String,System.Object)
+  name.vb: XIVGetPropertyValue(Type, String, Object)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetPropertyValue(System.Type, string, object)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVGetPropertyValue(System.Type, String, Object)
+  nameWithType: TypeExtensions.XIVGetPropertyValue(Type, string, object)
+  nameWithType.vb: TypeExtensions.XIVGetPropertyValue(Type, String, Object)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetPropertyValue*
+  name: XIVGetPropertyValue
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetPropertyValue_
+  commentId: Overload:XIV.Core.Extensions.TypeExtensions.XIVGetPropertyValue
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetPropertyValue
+  nameWithType: TypeExtensions.XIVGetPropertyValue
+- uid: XIV.Core.Extensions.TypeExtensions.XIVGetPropertyValue``1(System.Type,System.String,System.Object)
+  name: XIVGetPropertyValue<T>(Type, string, object)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVGetPropertyValue__1_System_Type_System_String_System_Object_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVGetPropertyValue``1(System.Type,System.String,System.Object)
+  name.vb: XIVGetPropertyValue(Of T)(Type, String, Object)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVGetPropertyValue<T>(System.Type, string, object)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVGetPropertyValue(Of T)(System.Type, String, Object)
+  nameWithType: TypeExtensions.XIVGetPropertyValue<T>(Type, string, object)
+  nameWithType.vb: TypeExtensions.XIVGetPropertyValue(Of T)(Type, String, Object)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVInvokeMethodsHasAttribute*
+  name: XIVInvokeMethodsHasAttribute
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVInvokeMethodsHasAttribute_
+  commentId: Overload:XIV.Core.Extensions.TypeExtensions.XIVInvokeMethodsHasAttribute
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVInvokeMethodsHasAttribute
+  nameWithType: TypeExtensions.XIVInvokeMethodsHasAttribute
+- uid: XIV.Core.Extensions.TypeExtensions.XIVInvokeMethodsHasAttribute``1(System.Type,System.Object)
+  name: XIVInvokeMethodsHasAttribute<TAttribute>(Type, object)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVInvokeMethodsHasAttribute__1_System_Type_System_Object_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVInvokeMethodsHasAttribute``1(System.Type,System.Object)
+  name.vb: XIVInvokeMethodsHasAttribute(Of TAttribute)(Type, Object)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVInvokeMethodsHasAttribute<TAttribute>(System.Type, object)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVInvokeMethodsHasAttribute(Of TAttribute)(System.Type, Object)
+  nameWithType: TypeExtensions.XIVInvokeMethodsHasAttribute<TAttribute>(Type, object)
+  nameWithType.vb: TypeExtensions.XIVInvokeMethodsHasAttribute(Of TAttribute)(Type, Object)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVInvokeMethodsHasAttribute``1(System.Type,System.Object,System.Object[])
+  name: XIVInvokeMethodsHasAttribute<TAttribute>(Type, object, object[])
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVInvokeMethodsHasAttribute__1_System_Type_System_Object_System_Object___
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVInvokeMethodsHasAttribute``1(System.Type,System.Object,System.Object[])
+  name.vb: XIVInvokeMethodsHasAttribute(Of TAttribute)(Type, Object, Object())
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVInvokeMethodsHasAttribute<TAttribute>(System.Type, object, object[])
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVInvokeMethodsHasAttribute(Of TAttribute)(System.Type, Object, Object())
+  nameWithType: TypeExtensions.XIVInvokeMethodsHasAttribute<TAttribute>(Type, object, object[])
+  nameWithType.vb: TypeExtensions.XIVInvokeMethodsHasAttribute(Of TAttribute)(Type, Object, Object())
+- uid: XIV.Core.Extensions.TypeExtensions.XIVInvokeMethodsHasAttribute``1(System.Type,System.Object,System.Object[],System.Reflection.BindingFlags)
+  name: XIVInvokeMethodsHasAttribute<TAttribute>(Type, object, object[], BindingFlags)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVInvokeMethodsHasAttribute__1_System_Type_System_Object_System_Object___System_Reflection_BindingFlags_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVInvokeMethodsHasAttribute``1(System.Type,System.Object,System.Object[],System.Reflection.BindingFlags)
+  name.vb: XIVInvokeMethodsHasAttribute(Of TAttribute)(Type, Object, Object(), BindingFlags)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVInvokeMethodsHasAttribute<TAttribute>(System.Type, object, object[], System.Reflection.BindingFlags)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVInvokeMethodsHasAttribute(Of TAttribute)(System.Type, Object, Object(), System.Reflection.BindingFlags)
+  nameWithType: TypeExtensions.XIVInvokeMethodsHasAttribute<TAttribute>(Type, object, object[], BindingFlags)
+  nameWithType.vb: TypeExtensions.XIVInvokeMethodsHasAttribute(Of TAttribute)(Type, Object, Object(), BindingFlags)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVSetField(System.Type,System.String,System.Object,System.Object)
+  name: XIVSetField(Type, string, object, object)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVSetField_System_Type_System_String_System_Object_System_Object_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVSetField(System.Type,System.String,System.Object,System.Object)
+  name.vb: XIVSetField(Type, String, Object, Object)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVSetField(System.Type, string, object, object)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVSetField(System.Type, String, Object, Object)
+  nameWithType: TypeExtensions.XIVSetField(Type, string, object, object)
+  nameWithType.vb: TypeExtensions.XIVSetField(Type, String, Object, Object)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVSetField(System.Type,System.String,System.Object,System.Object,System.Reflection.BindingFlags)
+  name: XIVSetField(Type, string, object, object, BindingFlags)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVSetField_System_Type_System_String_System_Object_System_Object_System_Reflection_BindingFlags_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVSetField(System.Type,System.String,System.Object,System.Object,System.Reflection.BindingFlags)
+  name.vb: XIVSetField(Type, String, Object, Object, BindingFlags)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVSetField(System.Type, string, object, object, System.Reflection.BindingFlags)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVSetField(System.Type, String, Object, Object, System.Reflection.BindingFlags)
+  nameWithType: TypeExtensions.XIVSetField(Type, string, object, object, BindingFlags)
+  nameWithType.vb: TypeExtensions.XIVSetField(Type, String, Object, Object, BindingFlags)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVSetField*
+  name: XIVSetField
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVSetField_
+  commentId: Overload:XIV.Core.Extensions.TypeExtensions.XIVSetField
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVSetField
+  nameWithType: TypeExtensions.XIVSetField
+- uid: XIV.Core.Extensions.TypeExtensions.XIVSetFieldOrProperty(System.Type,System.String,System.Object,System.Object)
+  name: XIVSetFieldOrProperty(Type, string, object, object)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVSetFieldOrProperty_System_Type_System_String_System_Object_System_Object_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVSetFieldOrProperty(System.Type,System.String,System.Object,System.Object)
+  name.vb: XIVSetFieldOrProperty(Type, String, Object, Object)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVSetFieldOrProperty(System.Type, string, object, object)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVSetFieldOrProperty(System.Type, String, Object, Object)
+  nameWithType: TypeExtensions.XIVSetFieldOrProperty(Type, string, object, object)
+  nameWithType.vb: TypeExtensions.XIVSetFieldOrProperty(Type, String, Object, Object)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVSetFieldOrProperty(System.Type,System.String,System.Object,System.Object,System.Reflection.BindingFlags)
+  name: XIVSetFieldOrProperty(Type, string, object, object, BindingFlags)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVSetFieldOrProperty_System_Type_System_String_System_Object_System_Object_System_Reflection_BindingFlags_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVSetFieldOrProperty(System.Type,System.String,System.Object,System.Object,System.Reflection.BindingFlags)
+  name.vb: XIVSetFieldOrProperty(Type, String, Object, Object, BindingFlags)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVSetFieldOrProperty(System.Type, string, object, object, System.Reflection.BindingFlags)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVSetFieldOrProperty(System.Type, String, Object, Object, System.Reflection.BindingFlags)
+  nameWithType: TypeExtensions.XIVSetFieldOrProperty(Type, string, object, object, BindingFlags)
+  nameWithType.vb: TypeExtensions.XIVSetFieldOrProperty(Type, String, Object, Object, BindingFlags)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVSetFieldOrProperty*
+  name: XIVSetFieldOrProperty
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVSetFieldOrProperty_
+  commentId: Overload:XIV.Core.Extensions.TypeExtensions.XIVSetFieldOrProperty
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVSetFieldOrProperty
+  nameWithType: TypeExtensions.XIVSetFieldOrProperty
+- uid: XIV.Core.Extensions.TypeExtensions.XIVSetProperty(System.Type,System.String,System.Object,System.Object)
+  name: XIVSetProperty(Type, string, object, object)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVSetProperty_System_Type_System_String_System_Object_System_Object_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVSetProperty(System.Type,System.String,System.Object,System.Object)
+  name.vb: XIVSetProperty(Type, String, Object, Object)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVSetProperty(System.Type, string, object, object)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVSetProperty(System.Type, String, Object, Object)
+  nameWithType: TypeExtensions.XIVSetProperty(Type, string, object, object)
+  nameWithType.vb: TypeExtensions.XIVSetProperty(Type, String, Object, Object)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVSetProperty(System.Type,System.String,System.Object,System.Object,System.Reflection.BindingFlags)
+  name: XIVSetProperty(Type, string, object, object, BindingFlags)
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVSetProperty_System_Type_System_String_System_Object_System_Object_System_Reflection_BindingFlags_
+  commentId: M:XIV.Core.Extensions.TypeExtensions.XIVSetProperty(System.Type,System.String,System.Object,System.Object,System.Reflection.BindingFlags)
+  name.vb: XIVSetProperty(Type, String, Object, Object, BindingFlags)
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVSetProperty(System.Type, string, object, object, System.Reflection.BindingFlags)
+  fullName.vb: XIV.Core.Extensions.TypeExtensions.XIVSetProperty(System.Type, String, Object, Object, System.Reflection.BindingFlags)
+  nameWithType: TypeExtensions.XIVSetProperty(Type, string, object, object, BindingFlags)
+  nameWithType.vb: TypeExtensions.XIVSetProperty(Type, String, Object, Object, BindingFlags)
+- uid: XIV.Core.Extensions.TypeExtensions.XIVSetProperty*
+  name: XIVSetProperty
+  href: api/XIV.Core.Extensions.TypeExtensions.html#XIV_Core_Extensions_TypeExtensions_XIVSetProperty_
+  commentId: Overload:XIV.Core.Extensions.TypeExtensions.XIVSetProperty
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.TypeExtensions.XIVSetProperty
+  nameWithType: TypeExtensions.XIVSetProperty
+- uid: XIV.Core.Extensions.Vec2Extensions
+  name: Vec2Extensions
+  href: api/XIV.Core.Extensions.Vec2Extensions.html
+  commentId: T:XIV.Core.Extensions.Vec2Extensions
+  fullName: XIV.Core.Extensions.Vec2Extensions
+  nameWithType: Vec2Extensions
+- uid: XIV.Core.Extensions.Vec2Extensions.Abs(XIV.Core.DataStructures.Vec2)
+  name: Abs(Vec2)
+  href: api/XIV.Core.Extensions.Vec2Extensions.html#XIV_Core_Extensions_Vec2Extensions_Abs_XIV_Core_DataStructures_Vec2_
+  commentId: M:XIV.Core.Extensions.Vec2Extensions.Abs(XIV.Core.DataStructures.Vec2)
+  fullName: XIV.Core.Extensions.Vec2Extensions.Abs(XIV.Core.DataStructures.Vec2)
+  nameWithType: Vec2Extensions.Abs(Vec2)
+- uid: XIV.Core.Extensions.Vec2Extensions.Abs*
+  name: Abs
+  href: api/XIV.Core.Extensions.Vec2Extensions.html#XIV_Core_Extensions_Vec2Extensions_Abs_
+  commentId: Overload:XIV.Core.Extensions.Vec2Extensions.Abs
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.Vec2Extensions.Abs
+  nameWithType: Vec2Extensions.Abs
+- uid: XIV.Core.Extensions.Vec2Extensions.ClampMagnitude(XIV.Core.DataStructures.Vec2,System.Single,System.Single)
+  name: ClampMagnitude(Vec2, float, float)
+  href: api/XIV.Core.Extensions.Vec2Extensions.html#XIV_Core_Extensions_Vec2Extensions_ClampMagnitude_XIV_Core_DataStructures_Vec2_System_Single_System_Single_
+  commentId: M:XIV.Core.Extensions.Vec2Extensions.ClampMagnitude(XIV.Core.DataStructures.Vec2,System.Single,System.Single)
+  name.vb: ClampMagnitude(Vec2, Single, Single)
+  fullName: XIV.Core.Extensions.Vec2Extensions.ClampMagnitude(XIV.Core.DataStructures.Vec2, float, float)
+  fullName.vb: XIV.Core.Extensions.Vec2Extensions.ClampMagnitude(XIV.Core.DataStructures.Vec2, Single, Single)
+  nameWithType: Vec2Extensions.ClampMagnitude(Vec2, float, float)
+  nameWithType.vb: Vec2Extensions.ClampMagnitude(Vec2, Single, Single)
+- uid: XIV.Core.Extensions.Vec2Extensions.ClampMagnitude*
+  name: ClampMagnitude
+  href: api/XIV.Core.Extensions.Vec2Extensions.html#XIV_Core_Extensions_Vec2Extensions_ClampMagnitude_
+  commentId: Overload:XIV.Core.Extensions.Vec2Extensions.ClampMagnitude
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.Vec2Extensions.ClampMagnitude
+  nameWithType: Vec2Extensions.ClampMagnitude
+- uid: XIV.Core.Extensions.Vec2Extensions.IsNaN(XIV.Core.DataStructures.Vec2)
+  name: IsNaN(Vec2)
+  href: api/XIV.Core.Extensions.Vec2Extensions.html#XIV_Core_Extensions_Vec2Extensions_IsNaN_XIV_Core_DataStructures_Vec2_
+  commentId: M:XIV.Core.Extensions.Vec2Extensions.IsNaN(XIV.Core.DataStructures.Vec2)
+  fullName: XIV.Core.Extensions.Vec2Extensions.IsNaN(XIV.Core.DataStructures.Vec2)
+  nameWithType: Vec2Extensions.IsNaN(Vec2)
+- uid: XIV.Core.Extensions.Vec2Extensions.IsNaN*
+  name: IsNaN
+  href: api/XIV.Core.Extensions.Vec2Extensions.html#XIV_Core_Extensions_Vec2Extensions_IsNaN_
+  commentId: Overload:XIV.Core.Extensions.Vec2Extensions.IsNaN
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.Vec2Extensions.IsNaN
+  nameWithType: Vec2Extensions.IsNaN
+- uid: XIV.Core.Extensions.Vec2Extensions.IsSameDirection(XIV.Core.DataStructures.Vec2,XIV.Core.DataStructures.Vec2,System.Single)
+  name: IsSameDirection(Vec2, Vec2, float)
+  href: api/XIV.Core.Extensions.Vec2Extensions.html#XIV_Core_Extensions_Vec2Extensions_IsSameDirection_XIV_Core_DataStructures_Vec2_XIV_Core_DataStructures_Vec2_System_Single_
+  commentId: M:XIV.Core.Extensions.Vec2Extensions.IsSameDirection(XIV.Core.DataStructures.Vec2,XIV.Core.DataStructures.Vec2,System.Single)
+  name.vb: IsSameDirection(Vec2, Vec2, Single)
+  fullName: XIV.Core.Extensions.Vec2Extensions.IsSameDirection(XIV.Core.DataStructures.Vec2, XIV.Core.DataStructures.Vec2, float)
+  fullName.vb: XIV.Core.Extensions.Vec2Extensions.IsSameDirection(XIV.Core.DataStructures.Vec2, XIV.Core.DataStructures.Vec2, Single)
+  nameWithType: Vec2Extensions.IsSameDirection(Vec2, Vec2, float)
+  nameWithType.vb: Vec2Extensions.IsSameDirection(Vec2, Vec2, Single)
+- uid: XIV.Core.Extensions.Vec2Extensions.IsSameDirection*
+  name: IsSameDirection
+  href: api/XIV.Core.Extensions.Vec2Extensions.html#XIV_Core_Extensions_Vec2Extensions_IsSameDirection_
+  commentId: Overload:XIV.Core.Extensions.Vec2Extensions.IsSameDirection
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.Vec2Extensions.IsSameDirection
+  nameWithType: Vec2Extensions.IsSameDirection
+- uid: XIV.Core.Extensions.Vec2Extensions.SetX(XIV.Core.DataStructures.Vec2,System.Single)
+  name: SetX(Vec2, float)
+  href: api/XIV.Core.Extensions.Vec2Extensions.html#XIV_Core_Extensions_Vec2Extensions_SetX_XIV_Core_DataStructures_Vec2_System_Single_
+  commentId: M:XIV.Core.Extensions.Vec2Extensions.SetX(XIV.Core.DataStructures.Vec2,System.Single)
+  name.vb: SetX(Vec2, Single)
+  fullName: XIV.Core.Extensions.Vec2Extensions.SetX(XIV.Core.DataStructures.Vec2, float)
+  fullName.vb: XIV.Core.Extensions.Vec2Extensions.SetX(XIV.Core.DataStructures.Vec2, Single)
+  nameWithType: Vec2Extensions.SetX(Vec2, float)
+  nameWithType.vb: Vec2Extensions.SetX(Vec2, Single)
+- uid: XIV.Core.Extensions.Vec2Extensions.SetX*
+  name: SetX
+  href: api/XIV.Core.Extensions.Vec2Extensions.html#XIV_Core_Extensions_Vec2Extensions_SetX_
+  commentId: Overload:XIV.Core.Extensions.Vec2Extensions.SetX
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.Vec2Extensions.SetX
+  nameWithType: Vec2Extensions.SetX
+- uid: XIV.Core.Extensions.Vec2Extensions.SetY(XIV.Core.DataStructures.Vec2,System.Single)
+  name: SetY(Vec2, float)
+  href: api/XIV.Core.Extensions.Vec2Extensions.html#XIV_Core_Extensions_Vec2Extensions_SetY_XIV_Core_DataStructures_Vec2_System_Single_
+  commentId: M:XIV.Core.Extensions.Vec2Extensions.SetY(XIV.Core.DataStructures.Vec2,System.Single)
+  name.vb: SetY(Vec2, Single)
+  fullName: XIV.Core.Extensions.Vec2Extensions.SetY(XIV.Core.DataStructures.Vec2, float)
+  fullName.vb: XIV.Core.Extensions.Vec2Extensions.SetY(XIV.Core.DataStructures.Vec2, Single)
+  nameWithType: Vec2Extensions.SetY(Vec2, float)
+  nameWithType.vb: Vec2Extensions.SetY(Vec2, Single)
+- uid: XIV.Core.Extensions.Vec2Extensions.SetY*
+  name: SetY
+  href: api/XIV.Core.Extensions.Vec2Extensions.html#XIV_Core_Extensions_Vec2Extensions_SetY_
+  commentId: Overload:XIV.Core.Extensions.Vec2Extensions.SetY
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.Vec2Extensions.SetY
+  nameWithType: Vec2Extensions.SetY
 - uid: XIV.Core.Extensions.Vec3CollectionExtensions
   name: Vec3CollectionExtensions
   href: api/XIV.Core.Extensions.Vec3CollectionExtensions.html
@@ -2771,6 +4140,58 @@ references:
   fullName.vb: XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory(Of T)(System.Collections.Generic.IList(Of T))
   nameWithType: XIVMemoryExtensions.AsXIVMemory<T>(IList<T>)
   nameWithType.vb: XIVMemoryExtensions.AsXIVMemory(Of T)(IList(Of T))
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory``1(System.Collections.Generic.IList{``0},System.Int32)
+  name: AsXIVMemory<T>(IList<T>, int)
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_AsXIVMemory__1_System_Collections_Generic_IList___0__System_Int32_
+  commentId: M:XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory``1(System.Collections.Generic.IList{``0},System.Int32)
+  name.vb: AsXIVMemory(Of T)(IList(Of T), Integer)
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory<T>(System.Collections.Generic.IList<T>, int)
+  fullName.vb: XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory(Of T)(System.Collections.Generic.IList(Of T), Integer)
+  nameWithType: XIVMemoryExtensions.AsXIVMemory<T>(IList<T>, int)
+  nameWithType.vb: XIVMemoryExtensions.AsXIVMemory(Of T)(IList(Of T), Integer)
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory``1(XIV.Core.DataStructures.XIVBuffer{``0})
+  name: AsXIVMemory<T>(XIVBuffer<T>)
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_AsXIVMemory__1_XIV_Core_DataStructures_XIVBuffer___0__
+  commentId: M:XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory``1(XIV.Core.DataStructures.XIVBuffer{``0})
+  name.vb: AsXIVMemory(Of T)(XIVBuffer(Of T))
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory<T>(XIV.Core.DataStructures.XIVBuffer<T>)
+  fullName.vb: XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory(Of T)(XIV.Core.DataStructures.XIVBuffer(Of T))
+  nameWithType: XIVMemoryExtensions.AsXIVMemory<T>(XIVBuffer<T>)
+  nameWithType.vb: XIVMemoryExtensions.AsXIVMemory(Of T)(XIVBuffer(Of T))
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory``1(XIV.Core.DataStructures.XIVBuffer{``0},System.Int32)
+  name: AsXIVMemory<T>(XIVBuffer<T>, int)
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_AsXIVMemory__1_XIV_Core_DataStructures_XIVBuffer___0__System_Int32_
+  commentId: M:XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory``1(XIV.Core.DataStructures.XIVBuffer{``0},System.Int32)
+  name.vb: AsXIVMemory(Of T)(XIVBuffer(Of T), Integer)
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory<T>(XIV.Core.DataStructures.XIVBuffer<T>, int)
+  fullName.vb: XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory(Of T)(XIV.Core.DataStructures.XIVBuffer(Of T), Integer)
+  nameWithType: XIVMemoryExtensions.AsXIVMemory<T>(XIVBuffer<T>, int)
+  nameWithType.vb: XIVMemoryExtensions.AsXIVMemory(Of T)(XIVBuffer(Of T), Integer)
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.Fill*
+  name: Fill
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_Fill_
+  commentId: Overload:XIV.Core.Extensions.XIVMemoryExtensions.Fill
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.Fill
+  nameWithType: XIVMemoryExtensions.Fill
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.Fill``1(XIV.Core.DataStructures.XIVMemory{``0},XIV.Core.DataStructures.XIVMemory{``0})
+  name: Fill<T>(XIVMemory<T>, XIVMemory<T>)
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_Fill__1_XIV_Core_DataStructures_XIVMemory___0__XIV_Core_DataStructures_XIVMemory___0__
+  commentId: M:XIV.Core.Extensions.XIVMemoryExtensions.Fill``1(XIV.Core.DataStructures.XIVMemory{``0},XIV.Core.DataStructures.XIVMemory{``0})
+  name.vb: Fill(Of T)(XIVMemory(Of T), XIVMemory(Of T))
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.Fill<T>(XIV.Core.DataStructures.XIVMemory<T>, XIV.Core.DataStructures.XIVMemory<T>)
+  fullName.vb: XIV.Core.Extensions.XIVMemoryExtensions.Fill(Of T)(XIV.Core.DataStructures.XIVMemory(Of T), XIV.Core.DataStructures.XIVMemory(Of T))
+  nameWithType: XIVMemoryExtensions.Fill<T>(XIVMemory<T>, XIVMemory<T>)
+  nameWithType.vb: XIVMemoryExtensions.Fill(Of T)(XIVMemory(Of T), XIVMemory(Of T))
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.Fill``1(XIV.Core.DataStructures.XIVMemory{``0},``0[])
+  name: Fill<T>(XIVMemory<T>, params T[])
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_Fill__1_XIV_Core_DataStructures_XIVMemory___0____0___
+  commentId: M:XIV.Core.Extensions.XIVMemoryExtensions.Fill``1(XIV.Core.DataStructures.XIVMemory{``0},``0[])
+  name.vb: Fill(Of T)(XIVMemory(Of T), ParamArray T())
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.Fill<T>(XIV.Core.DataStructures.XIVMemory<T>, params T[])
+  fullName.vb: XIV.Core.Extensions.XIVMemoryExtensions.Fill(Of T)(XIV.Core.DataStructures.XIVMemory(Of T), ParamArray T())
+  nameWithType: XIVMemoryExtensions.Fill<T>(XIVMemory<T>, params T[])
+  nameWithType.vb: XIVMemoryExtensions.Fill(Of T)(XIVMemory(Of T), ParamArray T())
 - uid: XIV.Core.Extensions.XIVMemoryExtensions.FilterBy*
   name: FilterBy
   href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_FilterBy_
@@ -2778,6 +4199,15 @@ references:
   isSpec: "True"
   fullName: XIV.Core.Extensions.XIVMemoryExtensions.FilterBy
   nameWithType: XIVMemoryExtensions.FilterBy
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.FilterBy``1(XIV.Core.DataStructures.XIVMemory{``0},System.Func{``0,System.Boolean})
+  name: FilterBy<T>(XIVMemory<T>, Func<T, bool>)
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_FilterBy__1_XIV_Core_DataStructures_XIVMemory___0__System_Func___0_System_Boolean__
+  commentId: M:XIV.Core.Extensions.XIVMemoryExtensions.FilterBy``1(XIV.Core.DataStructures.XIVMemory{``0},System.Func{``0,System.Boolean})
+  name.vb: FilterBy(Of T)(XIVMemory(Of T), Func(Of T, Boolean))
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.FilterBy<T>(XIV.Core.DataStructures.XIVMemory<T>, System.Func<T, bool>)
+  fullName.vb: XIV.Core.Extensions.XIVMemoryExtensions.FilterBy(Of T)(XIV.Core.DataStructures.XIVMemory(Of T), System.Func(Of T, Boolean))
+  nameWithType: XIVMemoryExtensions.FilterBy<T>(XIVMemory<T>, Func<T, bool>)
+  nameWithType.vb: XIVMemoryExtensions.FilterBy(Of T)(XIVMemory(Of T), Func(Of T, Boolean))
 - uid: XIV.Core.Extensions.XIVMemoryExtensions.FilterBy``1(XIV.Core.DataStructures.XIVMemory{``0},System.Int32,System.Func{``0,System.Boolean})
   name: FilterBy<T>(XIVMemory<T>, int, Func<T, bool>)
   href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_FilterBy__1_XIV_Core_DataStructures_XIVMemory___0__System_Int32_System_Func___0_System_Boolean__
@@ -2787,6 +4217,31 @@ references:
   fullName.vb: XIV.Core.Extensions.XIVMemoryExtensions.FilterBy(Of T)(XIV.Core.DataStructures.XIVMemory(Of T), Integer, System.Func(Of T, Boolean))
   nameWithType: XIVMemoryExtensions.FilterBy<T>(XIVMemory<T>, int, Func<T, bool>)
   nameWithType.vb: XIVMemoryExtensions.FilterBy(Of T)(XIVMemory(Of T), Integer, Func(Of T, Boolean))
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.GetClosest*
+  name: GetClosest
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_GetClosest_
+  commentId: Overload:XIV.Core.Extensions.XIVMemoryExtensions.GetClosest
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.GetClosest
+  nameWithType: XIVMemoryExtensions.GetClosest
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.GetClosest``1(XIV.Core.DataStructures.XIVMemory{``0},System.Int32,XIV.Core.DataStructures.Vec3,System.Func{``0,XIV.Core.DataStructures.Vec3})
+  name: GetClosest<T>(XIVMemory<T>, int, Vec3, Func<T, Vec3>)
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_GetClosest__1_XIV_Core_DataStructures_XIVMemory___0__System_Int32_XIV_Core_DataStructures_Vec3_System_Func___0_XIV_Core_DataStructures_Vec3__
+  commentId: M:XIV.Core.Extensions.XIVMemoryExtensions.GetClosest``1(XIV.Core.DataStructures.XIVMemory{``0},System.Int32,XIV.Core.DataStructures.Vec3,System.Func{``0,XIV.Core.DataStructures.Vec3})
+  name.vb: GetClosest(Of T)(XIVMemory(Of T), Integer, Vec3, Func(Of T, Vec3))
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.GetClosest<T>(XIV.Core.DataStructures.XIVMemory<T>, int, XIV.Core.DataStructures.Vec3, System.Func<T, XIV.Core.DataStructures.Vec3>)
+  fullName.vb: XIV.Core.Extensions.XIVMemoryExtensions.GetClosest(Of T)(XIV.Core.DataStructures.XIVMemory(Of T), Integer, XIV.Core.DataStructures.Vec3, System.Func(Of T, XIV.Core.DataStructures.Vec3))
+  nameWithType: XIVMemoryExtensions.GetClosest<T>(XIVMemory<T>, int, Vec3, Func<T, Vec3>)
+  nameWithType.vb: XIVMemoryExtensions.GetClosest(Of T)(XIVMemory(Of T), Integer, Vec3, Func(Of T, Vec3))
+- uid: XIV.Core.Extensions.XIVMemoryExtensions.GetClosest``1(XIV.Core.DataStructures.XIVMemory{``0},System.Int32,XIV.Core.DataStructures.Vec3,System.Single@,XIV.Core.DataStructures.Vec3@,System.Func{``0,XIV.Core.DataStructures.Vec3})
+  name: GetClosest<T>(XIVMemory<T>, int, Vec3, out float, out Vec3, Func<T, Vec3>)
+  href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_GetClosest__1_XIV_Core_DataStructures_XIVMemory___0__System_Int32_XIV_Core_DataStructures_Vec3_System_Single__XIV_Core_DataStructures_Vec3__System_Func___0_XIV_Core_DataStructures_Vec3__
+  commentId: M:XIV.Core.Extensions.XIVMemoryExtensions.GetClosest``1(XIV.Core.DataStructures.XIVMemory{``0},System.Int32,XIV.Core.DataStructures.Vec3,System.Single@,XIV.Core.DataStructures.Vec3@,System.Func{``0,XIV.Core.DataStructures.Vec3})
+  name.vb: GetClosest(Of T)(XIVMemory(Of T), Integer, Vec3, Single, Vec3, Func(Of T, Vec3))
+  fullName: XIV.Core.Extensions.XIVMemoryExtensions.GetClosest<T>(XIV.Core.DataStructures.XIVMemory<T>, int, XIV.Core.DataStructures.Vec3, out float, out XIV.Core.DataStructures.Vec3, System.Func<T, XIV.Core.DataStructures.Vec3>)
+  fullName.vb: XIV.Core.Extensions.XIVMemoryExtensions.GetClosest(Of T)(XIV.Core.DataStructures.XIVMemory(Of T), Integer, XIV.Core.DataStructures.Vec3, Single, XIV.Core.DataStructures.Vec3, System.Func(Of T, XIV.Core.DataStructures.Vec3))
+  nameWithType: XIVMemoryExtensions.GetClosest<T>(XIVMemory<T>, int, Vec3, out float, out Vec3, Func<T, Vec3>)
+  nameWithType.vb: XIVMemoryExtensions.GetClosest(Of T)(XIVMemory(Of T), Integer, Vec3, Single, Vec3, Func(Of T, Vec3))
 - uid: XIV.Core.Extensions.XIVMemoryExtensions.GetTotalWeight*
   name: GetTotalWeight
   href: api/XIV.Core.Extensions.XIVMemoryExtensions.html#XIV_Core_Extensions_XIVMemoryExtensions_GetTotalWeight_
@@ -3051,6 +4506,22 @@ references:
   isSpec: "True"
   fullName: XIV.Core.Utils.ArrayUtils.Get2DIndex
   nameWithType: ArrayUtils.Get2DIndex
+- uid: XIV.Core.Utils.ArrayUtils.GetBuffer*
+  name: GetBuffer
+  href: api/XIV.Core.Utils.ArrayUtils.html#XIV_Core_Utils_ArrayUtils_GetBuffer_
+  commentId: Overload:XIV.Core.Utils.ArrayUtils.GetBuffer
+  isSpec: "True"
+  fullName: XIV.Core.Utils.ArrayUtils.GetBuffer
+  nameWithType: ArrayUtils.GetBuffer
+- uid: XIV.Core.Utils.ArrayUtils.GetBuffer``1(System.Int32)
+  name: GetBuffer<T>(int)
+  href: api/XIV.Core.Utils.ArrayUtils.html#XIV_Core_Utils_ArrayUtils_GetBuffer__1_System_Int32_
+  commentId: M:XIV.Core.Utils.ArrayUtils.GetBuffer``1(System.Int32)
+  name.vb: GetBuffer(Of T)(Integer)
+  fullName: XIV.Core.Utils.ArrayUtils.GetBuffer<T>(int)
+  fullName.vb: XIV.Core.Utils.ArrayUtils.GetBuffer(Of T)(Integer)
+  nameWithType: ArrayUtils.GetBuffer<T>(int)
+  nameWithType.vb: ArrayUtils.GetBuffer(Of T)(Integer)
 - uid: XIV.Core.Utils.ArrayUtils.Merge*
   name: Merge
   href: api/XIV.Core.Utils.ArrayUtils.html#XIV_Core_Utils_ArrayUtils_Merge_
@@ -6204,6 +7675,31 @@ references:
   isSpec: "True"
   fullName: XIV.Core.XIVMath.LineMath.GetClosestPointOnLineSegment
   nameWithType: LineMath.GetClosestPointOnLineSegment
+- uid: XIV.Core.XIVMath.LineMath.IsIntersect(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single)
+  name: IsIntersect(Vec3, Vec3, Vec3, Vec3, float)
+  href: api/XIV.Core.XIVMath.LineMath.html#XIV_Core_XIVMath_LineMath_IsIntersect_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_System_Single_
+  commentId: M:XIV.Core.XIVMath.LineMath.IsIntersect(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single)
+  name.vb: IsIntersect(Vec3, Vec3, Vec3, Vec3, Single)
+  fullName: XIV.Core.XIVMath.LineMath.IsIntersect(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, float)
+  fullName.vb: XIV.Core.XIVMath.LineMath.IsIntersect(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, Single)
+  nameWithType: LineMath.IsIntersect(Vec3, Vec3, Vec3, Vec3, float)
+  nameWithType.vb: LineMath.IsIntersect(Vec3, Vec3, Vec3, Vec3, Single)
+- uid: XIV.Core.XIVMath.LineMath.IsIntersect(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3@,System.Single)
+  name: IsIntersect(Vec3, Vec3, Vec3, Vec3, out Vec3, float)
+  href: api/XIV.Core.XIVMath.LineMath.html#XIV_Core_XIVMath_LineMath_IsIntersect_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3__System_Single_
+  commentId: M:XIV.Core.XIVMath.LineMath.IsIntersect(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3@,System.Single)
+  name.vb: IsIntersect(Vec3, Vec3, Vec3, Vec3, Vec3, Single)
+  fullName: XIV.Core.XIVMath.LineMath.IsIntersect(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, out XIV.Core.DataStructures.Vec3, float)
+  fullName.vb: XIV.Core.XIVMath.LineMath.IsIntersect(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3, Single)
+  nameWithType: LineMath.IsIntersect(Vec3, Vec3, Vec3, Vec3, out Vec3, float)
+  nameWithType.vb: LineMath.IsIntersect(Vec3, Vec3, Vec3, Vec3, Vec3, Single)
+- uid: XIV.Core.XIVMath.LineMath.IsIntersect*
+  name: IsIntersect
+  href: api/XIV.Core.XIVMath.LineMath.html#XIV_Core_XIVMath_LineMath_IsIntersect_
+  commentId: Overload:XIV.Core.XIVMath.LineMath.IsIntersect
+  isSpec: "True"
+  fullName: XIV.Core.XIVMath.LineMath.IsIntersect
+  nameWithType: LineMath.IsIntersect
 - uid: XIV.Core.XIVMath.LineMath.IsPointOnTheLine(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single)
   name: IsPointOnTheLine(Vec3, Vec3, Vec3, float)
   href: api/XIV.Core.XIVMath.LineMath.html#XIV_Core_XIVMath_LineMath_IsPointOnTheLine_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_System_Single_
@@ -6364,6 +7860,22 @@ references:
   commentId: T:XIV.Core.XIVMath.XIVMathInt
   fullName: XIV.Core.XIVMath.XIVMathInt
   nameWithType: XIVMathInt
+- uid: XIV.Core.XIVMath.XIVMathInt.Abs(System.Int32)
+  name: Abs(int)
+  href: api/XIV.Core.XIVMath.XIVMathInt.html#XIV_Core_XIVMath_XIVMathInt_Abs_System_Int32_
+  commentId: M:XIV.Core.XIVMath.XIVMathInt.Abs(System.Int32)
+  name.vb: Abs(Integer)
+  fullName: XIV.Core.XIVMath.XIVMathInt.Abs(int)
+  fullName.vb: XIV.Core.XIVMath.XIVMathInt.Abs(Integer)
+  nameWithType: XIVMathInt.Abs(int)
+  nameWithType.vb: XIVMathInt.Abs(Integer)
+- uid: XIV.Core.XIVMath.XIVMathInt.Abs*
+  name: Abs
+  href: api/XIV.Core.XIVMath.XIVMathInt.html#XIV_Core_XIVMath_XIVMathInt_Abs_
+  commentId: Overload:XIV.Core.XIVMath.XIVMathInt.Abs
+  isSpec: "True"
+  fullName: XIV.Core.XIVMath.XIVMathInt.Abs
+  nameWithType: XIVMathInt.Abs
 - uid: XIV.Core.XIVMath.XIVMathInt.Clamp(System.Int32,System.Int32,System.Int32)
   name: Clamp(int, int, int)
   href: api/XIV.Core.XIVMath.XIVMathInt.html#XIV_Core_XIVMath_XIVMathInt_Clamp_System_Int32_System_Int32_System_Int32_
@@ -6380,6 +7892,22 @@ references:
   isSpec: "True"
   fullName: XIV.Core.XIVMath.XIVMathInt.Clamp
   nameWithType: XIVMathInt.Clamp
+- uid: XIV.Core.XIVMath.XIVMathInt.IsPowerOfTwo(System.Int32)
+  name: IsPowerOfTwo(int)
+  href: api/XIV.Core.XIVMath.XIVMathInt.html#XIV_Core_XIVMath_XIVMathInt_IsPowerOfTwo_System_Int32_
+  commentId: M:XIV.Core.XIVMath.XIVMathInt.IsPowerOfTwo(System.Int32)
+  name.vb: IsPowerOfTwo(Integer)
+  fullName: XIV.Core.XIVMath.XIVMathInt.IsPowerOfTwo(int)
+  fullName.vb: XIV.Core.XIVMath.XIVMathInt.IsPowerOfTwo(Integer)
+  nameWithType: XIVMathInt.IsPowerOfTwo(int)
+  nameWithType.vb: XIVMathInt.IsPowerOfTwo(Integer)
+- uid: XIV.Core.XIVMath.XIVMathInt.IsPowerOfTwo*
+  name: IsPowerOfTwo
+  href: api/XIV.Core.XIVMath.XIVMathInt.html#XIV_Core_XIVMath_XIVMathInt_IsPowerOfTwo_
+  commentId: Overload:XIV.Core.XIVMath.XIVMathInt.IsPowerOfTwo
+  isSpec: "True"
+  fullName: XIV.Core.XIVMath.XIVMathInt.IsPowerOfTwo
+  nameWithType: XIVMathInt.IsPowerOfTwo
 - uid: XIV.Core.XIVMath.XIVMathInt.Max(System.Int32,System.Int32)
   name: Max(int, int)
   href: api/XIV.Core.XIVMath.XIVMathInt.html#XIV_Core_XIVMath_XIVMathInt_Max_System_Int32_System_Int32_
@@ -6412,6 +7940,22 @@ references:
   isSpec: "True"
   fullName: XIV.Core.XIVMath.XIVMathInt.Min
   nameWithType: XIVMathInt.Min
+- uid: XIV.Core.XIVMath.XIVMathInt.NextPowerOfTwo(System.Int32)
+  name: NextPowerOfTwo(int)
+  href: api/XIV.Core.XIVMath.XIVMathInt.html#XIV_Core_XIVMath_XIVMathInt_NextPowerOfTwo_System_Int32_
+  commentId: M:XIV.Core.XIVMath.XIVMathInt.NextPowerOfTwo(System.Int32)
+  name.vb: NextPowerOfTwo(Integer)
+  fullName: XIV.Core.XIVMath.XIVMathInt.NextPowerOfTwo(int)
+  fullName.vb: XIV.Core.XIVMath.XIVMathInt.NextPowerOfTwo(Integer)
+  nameWithType: XIVMathInt.NextPowerOfTwo(int)
+  nameWithType.vb: XIVMathInt.NextPowerOfTwo(Integer)
+- uid: XIV.Core.XIVMath.XIVMathInt.NextPowerOfTwo*
+  name: NextPowerOfTwo
+  href: api/XIV.Core.XIVMath.XIVMathInt.html#XIV_Core_XIVMath_XIVMathInt_NextPowerOfTwo_
+  commentId: Overload:XIV.Core.XIVMath.XIVMathInt.NextPowerOfTwo
+  isSpec: "True"
+  fullName: XIV.Core.XIVMath.XIVMathInt.NextPowerOfTwo
+  nameWithType: XIVMathInt.NextPowerOfTwo
 - uid: XIV.Core.XIVMath.XIVMathInt.Repeat(System.Int32,System.Int32)
   name: Repeat(int, int)
   href: api/XIV.Core.XIVMath.XIVMathInt.html#XIV_Core_XIVMath_XIVMathInt_Repeat_System_Int32_System_Int32_
@@ -6450,6 +7994,22 @@ references:
   isSpec: "True"
   fullName: XIV.Core.XIVMath.XIVMathf.Abs
   nameWithType: XIVMathf.Abs
+- uid: XIV.Core.XIVMath.XIVMathf.Acos(System.Single)
+  name: Acos(float)
+  href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_Acos_System_Single_
+  commentId: M:XIV.Core.XIVMath.XIVMathf.Acos(System.Single)
+  name.vb: Acos(Single)
+  fullName: XIV.Core.XIVMath.XIVMathf.Acos(float)
+  fullName.vb: XIV.Core.XIVMath.XIVMathf.Acos(Single)
+  nameWithType: XIVMathf.Acos(float)
+  nameWithType.vb: XIVMathf.Acos(Single)
+- uid: XIV.Core.XIVMath.XIVMathf.Acos*
+  name: Acos
+  href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_Acos_
+  commentId: Overload:XIV.Core.XIVMath.XIVMathf.Acos
+  isSpec: "True"
+  fullName: XIV.Core.XIVMath.XIVMathf.Acos
+  nameWithType: XIVMathf.Acos
 - uid: XIV.Core.XIVMath.XIVMathf.Asin(System.Single)
   name: Asin(float)
   href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_Asin_System_Single_
@@ -6482,6 +8042,38 @@ references:
   isSpec: "True"
   fullName: XIV.Core.XIVMath.XIVMathf.Atan
   nameWithType: XIVMathf.Atan
+- uid: XIV.Core.XIVMath.XIVMathf.Atan2(System.Single,System.Single)
+  name: Atan2(float, float)
+  href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_Atan2_System_Single_System_Single_
+  commentId: M:XIV.Core.XIVMath.XIVMathf.Atan2(System.Single,System.Single)
+  name.vb: Atan2(Single, Single)
+  fullName: XIV.Core.XIVMath.XIVMathf.Atan2(float, float)
+  fullName.vb: XIV.Core.XIVMath.XIVMathf.Atan2(Single, Single)
+  nameWithType: XIVMathf.Atan2(float, float)
+  nameWithType.vb: XIVMathf.Atan2(Single, Single)
+- uid: XIV.Core.XIVMath.XIVMathf.Atan2*
+  name: Atan2
+  href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_Atan2_
+  commentId: Overload:XIV.Core.XIVMath.XIVMathf.Atan2
+  isSpec: "True"
+  fullName: XIV.Core.XIVMath.XIVMathf.Atan2
+  nameWithType: XIVMathf.Atan2
+- uid: XIV.Core.XIVMath.XIVMathf.CeilToInt(System.Single)
+  name: CeilToInt(float)
+  href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_CeilToInt_System_Single_
+  commentId: M:XIV.Core.XIVMath.XIVMathf.CeilToInt(System.Single)
+  name.vb: CeilToInt(Single)
+  fullName: XIV.Core.XIVMath.XIVMathf.CeilToInt(float)
+  fullName.vb: XIV.Core.XIVMath.XIVMathf.CeilToInt(Single)
+  nameWithType: XIVMathf.CeilToInt(float)
+  nameWithType.vb: XIVMathf.CeilToInt(Single)
+- uid: XIV.Core.XIVMath.XIVMathf.CeilToInt*
+  name: CeilToInt
+  href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_CeilToInt_
+  commentId: Overload:XIV.Core.XIVMath.XIVMathf.CeilToInt
+  isSpec: "True"
+  fullName: XIV.Core.XIVMath.XIVMathf.CeilToInt
+  nameWithType: XIVMathf.CeilToInt
 - uid: XIV.Core.XIVMath.XIVMathf.Clamp(System.Single,System.Single,System.Single)
   name: Clamp(float, float, float)
   href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_Clamp_System_Single_System_Single_System_Single_
@@ -6514,6 +8106,22 @@ references:
   isSpec: "True"
   fullName: XIV.Core.XIVMath.XIVMathf.Clamp01
   nameWithType: XIVMathf.Clamp01
+- uid: XIV.Core.XIVMath.XIVMathf.CopySign(System.Single,System.Single)
+  name: CopySign(float, float)
+  href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_CopySign_System_Single_System_Single_
+  commentId: M:XIV.Core.XIVMath.XIVMathf.CopySign(System.Single,System.Single)
+  name.vb: CopySign(Single, Single)
+  fullName: XIV.Core.XIVMath.XIVMathf.CopySign(float, float)
+  fullName.vb: XIV.Core.XIVMath.XIVMathf.CopySign(Single, Single)
+  nameWithType: XIVMathf.CopySign(float, float)
+  nameWithType.vb: XIVMathf.CopySign(Single, Single)
+- uid: XIV.Core.XIVMath.XIVMathf.CopySign*
+  name: CopySign
+  href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_CopySign_
+  commentId: Overload:XIV.Core.XIVMath.XIVMathf.CopySign
+  isSpec: "True"
+  fullName: XIV.Core.XIVMath.XIVMathf.CopySign
+  nameWithType: XIVMathf.CopySign
 - uid: XIV.Core.XIVMath.XIVMathf.Cos(System.Single)
   name: Cos(float)
   href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_Cos_System_Single_
@@ -6542,6 +8150,22 @@ references:
   commentId: F:XIV.Core.XIVMath.XIVMathf.Epsilon
   fullName: XIV.Core.XIVMath.XIVMathf.Epsilon
   nameWithType: XIVMathf.Epsilon
+- uid: XIV.Core.XIVMath.XIVMathf.FloorToInt(System.Single)
+  name: FloorToInt(float)
+  href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_FloorToInt_System_Single_
+  commentId: M:XIV.Core.XIVMath.XIVMathf.FloorToInt(System.Single)
+  name.vb: FloorToInt(Single)
+  fullName: XIV.Core.XIVMath.XIVMathf.FloorToInt(float)
+  fullName.vb: XIV.Core.XIVMath.XIVMathf.FloorToInt(Single)
+  nameWithType: XIVMathf.FloorToInt(float)
+  nameWithType.vb: XIVMathf.FloorToInt(Single)
+- uid: XIV.Core.XIVMath.XIVMathf.FloorToInt*
+  name: FloorToInt
+  href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_FloorToInt_
+  commentId: Overload:XIV.Core.XIVMath.XIVMathf.FloorToInt
+  isSpec: "True"
+  fullName: XIV.Core.XIVMath.XIVMathf.FloorToInt
+  nameWithType: XIVMathf.FloorToInt
 - uid: XIV.Core.XIVMath.XIVMathf.IsCloseToMax(System.Single,System.Single,System.Single)
   name: IsCloseToMax(float, float, float)
   href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_IsCloseToMax_System_Single_System_Single_System_Single_
@@ -6599,15 +8223,15 @@ references:
   fullName.vb: XIV.Core.XIVMath.XIVMathf.Max(Single, Single)
   nameWithType: XIVMathf.Max(float, float)
   nameWithType.vb: XIVMathf.Max(Single, Single)
-- uid: XIV.Core.XIVMath.XIVMathf.Max(System.Single[])
-  name: Max(params float[])
-  href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_Max_System_Single___
-  commentId: M:XIV.Core.XIVMath.XIVMathf.Max(System.Single[])
-  name.vb: Max(ParamArray Single())
-  fullName: XIV.Core.XIVMath.XIVMathf.Max(params float[])
-  fullName.vb: XIV.Core.XIVMath.XIVMathf.Max(ParamArray Single())
-  nameWithType: XIVMathf.Max(params float[])
-  nameWithType.vb: XIVMathf.Max(ParamArray Single())
+- uid: XIV.Core.XIVMath.XIVMathf.Max(XIV.Core.DataStructures.XIVMemory{System.Single})
+  name: Max(XIVMemory<float>)
+  href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_Max_XIV_Core_DataStructures_XIVMemory_System_Single__
+  commentId: M:XIV.Core.XIVMath.XIVMathf.Max(XIV.Core.DataStructures.XIVMemory{System.Single})
+  name.vb: Max(XIVMemory(Of Single))
+  fullName: XIV.Core.XIVMath.XIVMathf.Max(XIV.Core.DataStructures.XIVMemory<float>)
+  fullName.vb: XIV.Core.XIVMath.XIVMathf.Max(XIV.Core.DataStructures.XIVMemory(Of Single))
+  nameWithType: XIVMathf.Max(XIVMemory<float>)
+  nameWithType.vb: XIVMathf.Max(XIVMemory(Of Single))
 - uid: XIV.Core.XIVMath.XIVMathf.Max*
   name: Max
   href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_Max_
@@ -6640,6 +8264,15 @@ references:
   fullName.vb: XIV.Core.XIVMath.XIVMathf.Normalize(Single, Single, Single)
   nameWithType: XIVMathf.Normalize(float, float, float)
   nameWithType.vb: XIVMathf.Normalize(Single, Single, Single)
+- uid: XIV.Core.XIVMath.XIVMathf.Normalize(XIV.Core.DataStructures.XIVMemory{System.Single})
+  name: Normalize(XIVMemory<float>)
+  href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_Normalize_XIV_Core_DataStructures_XIVMemory_System_Single__
+  commentId: M:XIV.Core.XIVMath.XIVMathf.Normalize(XIV.Core.DataStructures.XIVMemory{System.Single})
+  name.vb: Normalize(XIVMemory(Of Single))
+  fullName: XIV.Core.XIVMath.XIVMathf.Normalize(XIV.Core.DataStructures.XIVMemory<float>)
+  fullName.vb: XIV.Core.XIVMath.XIVMathf.Normalize(XIV.Core.DataStructures.XIVMemory(Of Single))
+  nameWithType: XIVMathf.Normalize(XIVMemory<float>)
+  nameWithType.vb: XIVMathf.Normalize(XIVMemory(Of Single))
 - uid: XIV.Core.XIVMath.XIVMathf.Normalize*
   name: Normalize
   href: api/XIV.Core.XIVMath.XIVMathf.html#XIV_Core_XIVMath_XIVMathf_Normalize_
@@ -6921,6 +8554,19 @@ references:
   isSpec: "True"
   fullName: XIV.Core.XIVMath.XIVRandom.rotation
   nameWithType: XIVRandom.rotation
+- uid: XIV.Core.XIVMath.XIVRandom.seed
+  name: seed
+  href: api/XIV.Core.XIVMath.XIVRandom.html#XIV_Core_XIVMath_XIVRandom_seed
+  commentId: P:XIV.Core.XIVMath.XIVRandom.seed
+  fullName: XIV.Core.XIVMath.XIVRandom.seed
+  nameWithType: XIVRandom.seed
+- uid: XIV.Core.XIVMath.XIVRandom.seed*
+  name: seed
+  href: api/XIV.Core.XIVMath.XIVRandom.html#XIV_Core_XIVMath_XIVRandom_seed_
+  commentId: Overload:XIV.Core.XIVMath.XIVRandom.seed
+  isSpec: "True"
+  fullName: XIV.Core.XIVMath.XIVRandom.seed
+  nameWithType: XIVRandom.seed
 - uid: XIV.Core.XIVMath.XIVRandom.value
   name: value
   href: api/XIV.Core.XIVMath.XIVRandom.html#XIV_Core_XIVMath_XIVRandom_value

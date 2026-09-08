@@ -148,18 +148,18 @@ Class ArrayExtensions  <a class="header-action link-secondary" title="View sourc
 </h2>
 
 
-  <a id="XIV_Core_Extensions_ArrayExtensions_Contains_" data-uid="XIV.Core.Extensions.ArrayExtensions.Contains*"></a>
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVContains_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVContains*"></a>
 
-  <h3 id="XIV_Core_Extensions_ArrayExtensions_Contains__1___0___System_Int32___0_" data-uid="XIV.Core.Extensions.ArrayExtensions.Contains``1(``0[],System.Int32,``0)">
-  Contains&lt;T&gt;(T[], int, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVContains__1___0___System_Int32___0_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVContains``1(``0[],System.Int32,``0)">
+  XIVContains&lt;T&gt;(T[], int, T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L203"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Contains&lt;T&gt;(this T[] array, int arrLen, T item)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool XIVContains&lt;T&gt;(this T[] array, int arrLen, T item)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -193,18 +193,18 @@ Class ArrayExtensions  <a class="header-action link-secondary" title="View sourc
 
 
 
-  <a id="XIV_Core_Extensions_ArrayExtensions_Contains_" data-uid="XIV.Core.Extensions.ArrayExtensions.Contains*"></a>
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVContains_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVContains*"></a>
 
-  <h3 id="XIV_Core_Extensions_ArrayExtensions_Contains__1___0___System_Int32___0_System_Int32__" data-uid="XIV.Core.Extensions.ArrayExtensions.Contains``1(``0[],System.Int32,``0,System.Int32@)">
-  Contains&lt;T&gt;(T[], int, T, out int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVContains__1___0___System_Int32___0_System_Int32__" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVContains``1(``0[],System.Int32,``0,System.Int32@)">
+  XIVContains&lt;T&gt;(T[], int, T, out int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Contains&lt;T&gt;(this T[] array, int arrLen, T item, out int index)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool XIVContains&lt;T&gt;(this T[] array, int arrLen, T item, out int index)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -240,18 +240,61 @@ Class ArrayExtensions  <a class="header-action link-secondary" title="View sourc
 
 
 
-  <a id="XIV_Core_Extensions_ArrayExtensions_Count_" data-uid="XIV.Core.Extensions.ArrayExtensions.Count*"></a>
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVContains_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVContains*"></a>
 
-  <h3 id="XIV_Core_Extensions_ArrayExtensions_Count__1___0___System_Int32_System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.ArrayExtensions.Count``1(``0[],System.Int32,System.Func{``0,System.Boolean})">
-  Count&lt;T&gt;(T[], int, Func&lt;T, bool&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVContains__1___0_____0_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVContains``1(``0[],``0)">
+  XIVContains&lt;T&gt;(T[], T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L208"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int Count&lt;T&gt;(this T[] array, int arrLen, Func&lt;T, bool&gt; condition)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool XIVContains&lt;T&gt;(this T[] array, T item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
+    <dd></dd>
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVCount_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVCount*"></a>
+
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVCount__1___0___System_Int32_System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVCount``1(``0[],System.Int32,System.Func{``0,System.Boolean})">
+  XIVCount&lt;T&gt;(T[], int, Func&lt;T, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int XIVCount&lt;T&gt;(this T[] array, int arrLen, Func&lt;T, bool&gt; condition)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -285,10 +328,56 @@ Class ArrayExtensions  <a class="header-action link-secondary" title="View sourc
 
 
 
-  <a id="XIV_Core_Extensions_ArrayExtensions_FilterBy_" data-uid="XIV.Core.Extensions.ArrayExtensions.FilterBy*"></a>
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVFilterBy_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVFilterBy*"></a>
 
-  <h3 id="XIV_Core_Extensions_ArrayExtensions_FilterBy__1___0___System_Int32_System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.ArrayExtensions.FilterBy``1(``0[],System.Int32,System.Func{``0,System.Boolean})">
-  FilterBy&lt;T&gt;(T[], int, Func&lt;T, bool&gt;)
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVFilterBy__1___0___System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVFilterBy``1(``0[],System.Func{``0,System.Boolean})">
+  XIVFilterBy&lt;T&gt;(T[], Func&lt;T, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves the items to the beginning of the array and creates a new <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory&lt;T&gt;</a> that has filtered items.
+This modifies the original array. You can use this if order doesn't matter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XIVMemory&lt;T&gt; XIVFilterBy&lt;T&gt;(this T[] array, Func&lt;T, bool&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
+    <dd></dd>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;T&gt;</dt>
+    <dd><p>A new <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory&lt;T&gt;</a> that has filtered items</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVFilterBy_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVFilterBy*"></a>
+
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVFilterBy__1___0___System_Int32_System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVFilterBy``1(``0[],System.Int32,System.Func{``0,System.Boolean})">
+  XIVFilterBy&lt;T&gt;(T[], int, Func&lt;T, bool&gt;)
   <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -298,7 +387,7 @@ This modifies the original array. You can use this if order doesn't matter.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static XIVMemory&lt;T&gt; FilterBy&lt;T&gt;(this T[] array, int arrLen, Func&lt;T, bool&gt; func)</code></pre>
+    <pre><code class="lang-csharp hljs">public static XIVMemory&lt;T&gt; XIVFilterBy&lt;T&gt;(this T[] array, int arrLen, Func&lt;T, bool&gt; func)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -333,18 +422,435 @@ This modifies the original array. You can use this if order doesn't matter.</p>
 
 
 
-  <a id="XIV_Core_Extensions_ArrayExtensions_RemoveAt_" data-uid="XIV.Core.Extensions.ArrayExtensions.RemoveAt*"></a>
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVFirstOrDefault_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVFirstOrDefault*"></a>
 
-  <h3 id="XIV_Core_Extensions_ArrayExtensions_RemoveAt__1___0___System_Int32_System_Int32_" data-uid="XIV.Core.Extensions.ArrayExtensions.RemoveAt``1(``0[],System.Int32,System.Int32)">
-  RemoveAt&lt;T&gt;(T[], int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVFirstOrDefault__1___0___System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVFirstOrDefault``1(``0[],System.Func{``0,System.Boolean})">
+  XIVFirstOrDefault&lt;T&gt;(T[], Func&lt;T, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the first occurrence of T or default</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T XIVFirstOrDefault&lt;T&gt;(this T[] array, Func&lt;T, bool&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
+    <dd></dd>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVFirstOrDefault_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVFirstOrDefault*"></a>
+
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVFirstOrDefault__1___0___System_Int32_System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVFirstOrDefault``1(``0[],System.Int32,System.Func{``0,System.Boolean})">
+  XIVFirstOrDefault&lt;T&gt;(T[], int, Func&lt;T, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the first occurrence of T or default</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T XIVFirstOrDefault&lt;T&gt;(this T[] array, int arrLen, Func&lt;T, bool&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
+    <dd></dd>
+    <dt><code>arrLen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVGetClosest_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVGetClosest*"></a>
+
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVGetClosest__1___0___System_Int32_XIV_Core_DataStructures_Vec3_System_Func___0_XIV_Core_DataStructures_Vec3__" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVGetClosest``1(``0[],System.Int32,XIV.Core.DataStructures.Vec3,System.Func{``0,XIV.Core.DataStructures.Vec3})">
+  XIVGetClosest&lt;T&gt;(T[], int, Vec3, Func&lt;T, Vec3&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the closest item to the given position based on a custom position retrieval function, and returns it.
+<typeparam name="T">Type of item</typeparam></p>
+<param name="arr">The array to look
+<param name="arrLen">The length of the <code class="paramref">arr</code>
+<param name="currPos">Current position to compare distances
+<param name="closestPoint">Closest point that is returned from <code class="paramref">getTPosFunc</code>
+<param name="getTPosFunc">Position retrieval function
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T XIVGetClosest&lt;T&gt;(this T[] arr, int arrLen, Vec3 currPos, Func&lt;T, Vec3&gt; getTPosFunc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arr</code> T[]</dt>
+    <dd></dd>
+    <dt><code>arrLen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>currPos</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>getTPosFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVGetClosest_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVGetClosest*"></a>
+
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVGetClosest__1___0___System_Int32_XIV_Core_DataStructures_Vec3_System_Single__XIV_Core_DataStructures_Vec3__System_Func___0_XIV_Core_DataStructures_Vec3__" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVGetClosest``1(``0[],System.Int32,XIV.Core.DataStructures.Vec3,System.Single@,XIV.Core.DataStructures.Vec3@,System.Func{``0,XIV.Core.DataStructures.Vec3})">
+  XIVGetClosest&lt;T&gt;(T[], int, Vec3, out float, out Vec3, Func&lt;T, Vec3&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the closest item to the given position based on a custom position retrieval function, and returns it.
+<typeparam name="T">Type of item</typeparam></p>
+<param name="arr">The array to look
+<param name="arrLen">The length of the <code class="paramref">arr</code>
+<param name="currPos">Current position to compare distances
+<param name="closestPoint">Closest point that is returned from <code class="paramref">getTPosFunc</code>
+<param name="getTPosFunc">Position retrieval function
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T XIVGetClosest&lt;T&gt;(this T[] arr, int arrLen, Vec3 currPos, out float distance, out Vec3 closestPoint, Func&lt;T, Vec3&gt; getTPosFunc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arr</code> T[]</dt>
+    <dd></dd>
+    <dt><code>arrLen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>currPos</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>closestPoint</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>getTPosFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVGetClosest_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVGetClosest*"></a>
+
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVGetClosest__1___0___System_Int32_XIV_Core_DataStructures_Vec3_System_Single__XIV_Core_DataStructures_Vec3__System_Func___0_XIV_Core_DataStructures_Vec3____0___" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVGetClosest``1(``0[],System.Int32,XIV.Core.DataStructures.Vec3,System.Single@,XIV.Core.DataStructures.Vec3@,System.Func{``0,XIV.Core.DataStructures.Vec3},``0[])">
+  XIVGetClosest&lt;T&gt;(T[], int, Vec3, out float, out Vec3, Func&lt;T, Vec3&gt;, T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the closest item to the given position based on a custom position retrieval function, and returns it.
+<typeparam name="T">Type of item</typeparam></p>
+<param name="arr">The array to look
+<param name="arrLen">The length of the <code class="paramref">arr</code>
+<param name="currPos">Current position to compare distances
+<param name="closestPoint">Closest point that is returned from <code class="paramref">getTPosFunc</code>
+<param name="getTPosFunc">Position retrieval function
+<param name="excludeArr">Excluded item array
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T XIVGetClosest&lt;T&gt;(this T[] arr, int arrLen, Vec3 currPos, out float distance, out Vec3 closestPoint, Func&lt;T, Vec3&gt; getTPosFunc, T[] excludeArr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arr</code> T[]</dt>
+    <dd></dd>
+    <dt><code>arrLen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>currPos</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>closestPoint</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>getTPosFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>excludeArr</code> T[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVGetClosest_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVGetClosest*"></a>
+
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVGetClosest__1___0___System_Int32_XIV_Core_DataStructures_Vec3_System_Single__XIV_Core_DataStructures_Vec3__System_Func___0_XIV_Core_DataStructures_Vec3____0___System_Int32_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVGetClosest``1(``0[],System.Int32,XIV.Core.DataStructures.Vec3,System.Single@,XIV.Core.DataStructures.Vec3@,System.Func{``0,XIV.Core.DataStructures.Vec3},``0[],System.Int32)">
+  XIVGetClosest&lt;T&gt;(T[], int, Vec3, out float, out Vec3, Func&lt;T, Vec3&gt;, T[], int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the closest item to the given position based on a custom position retrieval function, and returns it.
+<typeparam name="T">Type of item</typeparam></p>
+<param name="arr">The array to look
+<param name="arrLen">The length of the <code class="paramref">arr</code>
+<param name="currPos">Current position to compare distances
+<param name="closestPoint">Closest point that is returned from <code class="paramref">getTPosFunc</code>
+<param name="getTPosFunc">Position retrieval function
+<param name="excludeArr">Excluded item array
+<param name="excludeArrLen">Length of excluded item array
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T XIVGetClosest&lt;T&gt;(this T[] arr, int arrLen, Vec3 currPos, out float distance, out Vec3 closestPoint, Func&lt;T, Vec3&gt; getTPosFunc, T[] excludeArr, int excludeArrLen)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arr</code> T[]</dt>
+    <dd></dd>
+    <dt><code>arrLen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>currPos</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>closestPoint</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>getTPosFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>excludeArr</code> T[]</dt>
+    <dd></dd>
+    <dt><code>excludeArrLen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVIndexOf_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVIndexOf*"></a>
+
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVIndexOf__1___0___System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVIndexOf``1(``0[],System.Func{``0,System.Boolean})">
+  XIVIndexOf&lt;T&gt;(T[], Func&lt;T, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the index of the item that meets the requirements of giving <code class="paramref">func</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int XIVIndexOf&lt;T&gt;(this T[] array, Func&lt;T, bool&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
+    <dd></dd>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVIndexOf_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVIndexOf*"></a>
+
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVIndexOf__1___0___System_Int32_System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVIndexOf``1(``0[],System.Int32,System.Func{``0,System.Boolean})">
+  XIVIndexOf&lt;T&gt;(T[], int, Func&lt;T, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the index of the item that meets the requirements of giving <code class="paramref">func</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int XIVIndexOf&lt;T&gt;(this T[] array, int arrLen, Func&lt;T, bool&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
+    <dd></dd>
+    <dt><code>arrLen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVRemoveAt_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVRemoveAt*"></a>
+
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVRemoveAt__1___0___System_Int32_System_Int32_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVRemoveAt``1(``0[],System.Int32,System.Int32)">
+  XIVRemoveAt&lt;T&gt;(T[], int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L237"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] RemoveAt&lt;T&gt;(this T[] arr, int arrLen, int index)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] XIVRemoveAt&lt;T&gt;(this T[] arr, int arrLen, int index)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -378,18 +884,18 @@ This modifies the original array. You can use this if order doesn't matter.</p>
 
 
 
-  <a id="XIV_Core_Extensions_ArrayExtensions_RemoveIf_" data-uid="XIV.Core.Extensions.ArrayExtensions.RemoveIf*"></a>
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVRemoveIf_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVRemoveIf*"></a>
 
-  <h3 id="XIV_Core_Extensions_ArrayExtensions_RemoveIf__1___0___System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.ArrayExtensions.RemoveIf``1(``0[],System.Func{``0,System.Boolean})">
-  RemoveIf&lt;T&gt;(T[], Func&lt;T, bool&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVRemoveIf__1___0___System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVRemoveIf``1(``0[],System.Func{``0,System.Boolean})">
+  XIVRemoveIf&lt;T&gt;(T[], Func&lt;T, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L248"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] RemoveIf&lt;T&gt;(this T[] arr, Func&lt;T, bool&gt; condition)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] XIVRemoveIf&lt;T&gt;(this T[] arr, Func&lt;T, bool&gt; condition)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -421,18 +927,18 @@ This modifies the original array. You can use this if order doesn't matter.</p>
 
 
 
-  <a id="XIV_Core_Extensions_ArrayExtensions_RemoveIf_" data-uid="XIV.Core.Extensions.ArrayExtensions.RemoveIf*"></a>
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVRemoveIf_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVRemoveIf*"></a>
 
-  <h3 id="XIV_Core_Extensions_ArrayExtensions_RemoveIf__1___0___System_Int32_System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.ArrayExtensions.RemoveIf``1(``0[],System.Int32,System.Func{``0,System.Boolean})">
-  RemoveIf&lt;T&gt;(T[], int, Func&lt;T, bool&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVRemoveIf__1___0___System_Int32_System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVRemoveIf``1(``0[],System.Int32,System.Func{``0,System.Boolean})">
+  XIVRemoveIf&lt;T&gt;(T[], int, Func&lt;T, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] RemoveIf&lt;T&gt;(this T[] arr, int arrLen, Func&lt;T, bool&gt; condition)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] XIVRemoveIf&lt;T&gt;(this T[] arr, int arrLen, Func&lt;T, bool&gt; condition)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -466,18 +972,18 @@ This modifies the original array. You can use this if order doesn't matter.</p>
 
 
 
-  <a id="XIV_Core_Extensions_ArrayExtensions_Split_" data-uid="XIV.Core.Extensions.ArrayExtensions.Split*"></a>
+  <a id="XIV_Core_Extensions_ArrayExtensions_XIVSplit_" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVSplit*"></a>
 
-  <h3 id="XIV_Core_Extensions_ArrayExtensions_Split__1___0___System_Int32_System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.ArrayExtensions.Split``1(``0[],System.Int32,System.Func{``0,System.Boolean})">
-  Split&lt;T&gt;(T[], int, Func&lt;T, bool&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <h3 id="XIV_Core_Extensions_ArrayExtensions_XIVSplit__1___0___System_Int32_System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.ArrayExtensions.XIVSplit``1(``0[],System.Int32,System.Func{``0,System.Boolean})">
+  XIVSplit&lt;T&gt;(T[], int, Func&lt;T, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/ArrayExtensions.cs/#L213"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] Split&lt;T&gt;(this T[] array, int arrLen, Func&lt;T, bool&gt; condition)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] XIVSplit&lt;T&gt;(this T[] array, int arrLen, Func&lt;T, bool&gt; condition)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

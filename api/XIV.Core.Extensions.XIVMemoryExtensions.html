@@ -193,11 +193,274 @@ Class XIVMemoryExtensions  <a class="header-action link-secondary" title="View s
 
 
 
+  <a id="XIV_Core_Extensions_XIVMemoryExtensions_AsXIVMemory_" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory*"></a>
+
+  <h3 id="XIV_Core_Extensions_XIVMemoryExtensions_AsXIVMemory__1_System_Collections_Generic_IList___0__System_Int32_" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory``1(System.Collections.Generic.IList{``0},System.Int32)">
+  AsXIVMemory&lt;T&gt;(IList&lt;T&gt;, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/XIVMemoryExtensions.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an IList{T} to a XIVMemory{T}.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XIVMemory&lt;T&gt; AsXIVMemory&lt;T&gt;(this IList&lt;T&gt; array, int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</dt>
+    <dd><p>The input list to be converted.</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;T&gt;</dt>
+    <dd><p>A new instance of XIVMemory{T} containing the same elements as the input list.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of elements in the list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Extensions_XIVMemoryExtensions_AsXIVMemory_" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory*"></a>
+
+  <h3 id="XIV_Core_Extensions_XIVMemoryExtensions_AsXIVMemory__1_XIV_Core_DataStructures_XIVBuffer___0__" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory``1(XIV.Core.DataStructures.XIVBuffer{``0})">
+  AsXIVMemory&lt;T&gt;(XIVBuffer&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/XIVMemoryExtensions.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XIVMemory&lt;T&gt; AsXIVMemory&lt;T&gt;(this XIVBuffer&lt;T&gt; buffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="XIV.Core.DataStructures.XIVBuffer-1.html">XIVBuffer</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Extensions_XIVMemoryExtensions_AsXIVMemory_" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory*"></a>
+
+  <h3 id="XIV_Core_Extensions_XIVMemoryExtensions_AsXIVMemory__1_XIV_Core_DataStructures_XIVBuffer___0__System_Int32_" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.AsXIVMemory``1(XIV.Core.DataStructures.XIVBuffer{``0},System.Int32)">
+  AsXIVMemory&lt;T&gt;(XIVBuffer&lt;T&gt;, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/XIVMemoryExtensions.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XIVMemory&lt;T&gt; AsXIVMemory&lt;T&gt;(this XIVBuffer&lt;T&gt; buffer, int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="XIV.Core.DataStructures.XIVBuffer-1.html">XIVBuffer</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Extensions_XIVMemoryExtensions_Fill_" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.Fill*"></a>
+
+  <h3 id="XIV_Core_Extensions_XIVMemoryExtensions_Fill__1_XIV_Core_DataStructures_XIVMemory___0__XIV_Core_DataStructures_XIVMemory___0__" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.Fill``1(XIV.Core.DataStructures.XIVMemory{``0},XIV.Core.DataStructures.XIVMemory{``0})">
+  Fill&lt;T&gt;(XIVMemory&lt;T&gt;, XIVMemory&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/XIVMemoryExtensions.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Fill&lt;T&gt;(this XIVMemory&lt;T&gt; array, XIVMemory&lt;T&gt; values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Extensions_XIVMemoryExtensions_Fill_" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.Fill*"></a>
+
+  <h3 id="XIV_Core_Extensions_XIVMemoryExtensions_Fill__1_XIV_Core_DataStructures_XIVMemory___0____0___" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.Fill``1(XIV.Core.DataStructures.XIVMemory{``0},``0[])">
+  Fill&lt;T&gt;(XIVMemory&lt;T&gt;, params T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/XIVMemoryExtensions.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Fill&lt;T&gt;(this XIVMemory&lt;T&gt; array, params T[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>values</code> T[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Extensions_XIVMemoryExtensions_FilterBy_" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.FilterBy*"></a>
+
+  <h3 id="XIV_Core_Extensions_XIVMemoryExtensions_FilterBy__1_XIV_Core_DataStructures_XIVMemory___0__System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.FilterBy``1(XIV.Core.DataStructures.XIVMemory{``0},System.Func{``0,System.Boolean})">
+  FilterBy&lt;T&gt;(XIVMemory&lt;T&gt;, Func&lt;T, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/XIVMemoryExtensions.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves the items to the beginning of the array and creates a new <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory&lt;T&gt;</a> that has filtered items.
+This modifies the original array. You can use this if order doesn't matter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XIVMemory&lt;T&gt; FilterBy&lt;T&gt;(this XIVMemory&lt;T&gt; array, Func&lt;T, bool&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;T&gt;</dt>
+    <dd><p>A new <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory&lt;T&gt;</a> that has filtered items</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="XIV_Core_Extensions_XIVMemoryExtensions_FilterBy_" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.FilterBy*"></a>
 
   <h3 id="XIV_Core_Extensions_XIVMemoryExtensions_FilterBy__1_XIV_Core_DataStructures_XIVMemory___0__System_Int32_System_Func___0_System_Boolean__" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.FilterBy``1(XIV.Core.DataStructures.XIVMemory{``0},System.Int32,System.Func{``0,System.Boolean})">
   FilterBy&lt;T&gt;(XIVMemory&lt;T&gt;, int, Func&lt;T, bool&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/XIVMemoryExtensions.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/XIVMemoryExtensions.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Moves the items to the beginning of the array and creates a new <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory&lt;T&gt;</a> that has filtered items.
@@ -241,11 +504,123 @@ This modifies the original array. You can use this if order doesn't matter.</p>
 
 
 
+  <a id="XIV_Core_Extensions_XIVMemoryExtensions_GetClosest_" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.GetClosest*"></a>
+
+  <h3 id="XIV_Core_Extensions_XIVMemoryExtensions_GetClosest__1_XIV_Core_DataStructures_XIVMemory___0__System_Int32_XIV_Core_DataStructures_Vec3_System_Func___0_XIV_Core_DataStructures_Vec3__" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.GetClosest``1(XIV.Core.DataStructures.XIVMemory{``0},System.Int32,XIV.Core.DataStructures.Vec3,System.Func{``0,XIV.Core.DataStructures.Vec3})">
+  GetClosest&lt;T&gt;(XIVMemory&lt;T&gt;, int, Vec3, Func&lt;T, Vec3&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/XIVMemoryExtensions.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the closest item to the given position based on a custom position retrieval function, and returns it.
+<typeparam name="T">Type of item</typeparam></p>
+<param name="arr">The <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory&lt;T&gt;</a> to look
+<param name="arrLen">The length of the <code class="paramref">arr</code>
+<param name="currPos">Current position to compare distances
+<param name="closestPoint">Closest point that is returned from <code class="paramref">getTPosFunc</code>
+<param name="getTPosFunc">Position retrieval function
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetClosest&lt;T&gt;(this XIVMemory&lt;T&gt; arr, int arrLen, Vec3 currPos, Func&lt;T, Vec3&gt; getTPosFunc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arr</code> <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>arrLen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>currPos</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>getTPosFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Extensions_XIVMemoryExtensions_GetClosest_" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.GetClosest*"></a>
+
+  <h3 id="XIV_Core_Extensions_XIVMemoryExtensions_GetClosest__1_XIV_Core_DataStructures_XIVMemory___0__System_Int32_XIV_Core_DataStructures_Vec3_System_Single__XIV_Core_DataStructures_Vec3__System_Func___0_XIV_Core_DataStructures_Vec3__" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.GetClosest``1(XIV.Core.DataStructures.XIVMemory{``0},System.Int32,XIV.Core.DataStructures.Vec3,System.Single@,XIV.Core.DataStructures.Vec3@,System.Func{``0,XIV.Core.DataStructures.Vec3})">
+  GetClosest&lt;T&gt;(XIVMemory&lt;T&gt;, int, Vec3, out float, out Vec3, Func&lt;T, Vec3&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/XIVMemoryExtensions.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the closest item to the given position based on a custom position retrieval function, and returns it.
+<typeparam name="T">Type of item</typeparam></p>
+<param name="arr">The <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory&lt;T&gt;</a> to look
+<param name="arrLen">The length of the <code class="paramref">arr</code>
+<param name="currPos">Current position to compare distances
+<param name="closestPoint">Closest point that is returned from <code class="paramref">getTPosFunc</code>
+<param name="getTPosFunc">Position retrieval function
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetClosest&lt;T&gt;(this XIVMemory&lt;T&gt; arr, int arrLen, Vec3 currPos, out float distance, out Vec3 closestPoint, Func&lt;T, Vec3&gt; getTPosFunc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arr</code> <a class="xref" href="XIV.Core.DataStructures.XIVMemory-1.html">XIVMemory</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>arrLen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>currPos</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>closestPoint</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>getTPosFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="XIV_Core_Extensions_XIVMemoryExtensions_GetTotalWeight_" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.GetTotalWeight*"></a>
 
   <h3 id="XIV_Core_Extensions_XIVMemoryExtensions_GetTotalWeight__1_XIV_Core_DataStructures_XIVMemory___0__System_Func___0_System_Int32__" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.GetTotalWeight``1(XIV.Core.DataStructures.XIVMemory{``0},System.Func{``0,System.Int32})">
   GetTotalWeight&lt;T&gt;(XIVMemory&lt;T&gt;, Func&lt;T, int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/XIVMemoryExtensions.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/XIVMemoryExtensions.cs/#L187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Calculates the total weight of all items in a weighted collection using the provided weight function.</p>
@@ -293,7 +668,7 @@ This modifies the original array. You can use this if order doesn't matter.</p>
 
   <h3 id="XIV_Core_Extensions_XIVMemoryExtensions_PickWeighted__1_XIV_Core_DataStructures_XIVMemory___0__System_Func___0_System_Int32__" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.PickWeighted``1(XIV.Core.DataStructures.XIVMemory{``0},System.Func{``0,System.Int32})">
   PickWeighted&lt;T&gt;(XIVMemory&lt;T&gt;, Func&lt;T, int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/XIVMemoryExtensions.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/XIVMemoryExtensions.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Picks an item from a weighted collection using the provided weight function.</p>
@@ -341,7 +716,7 @@ This modifies the original array. You can use this if order doesn't matter.</p>
 
   <h3 id="XIV_Core_Extensions_XIVMemoryExtensions_PickWeighted__1_XIV_Core_DataStructures_XIVMemory___0__System_Int32_System_Func___0_System_Int32__" data-uid="XIV.Core.Extensions.XIVMemoryExtensions.PickWeighted``1(XIV.Core.DataStructures.XIVMemory{``0},System.Int32,System.Func{``0,System.Int32})">
   PickWeighted&lt;T&gt;(XIVMemory&lt;T&gt;, int, Func&lt;T, int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/XIVMemoryExtensions.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/Extensions/XIVMemoryExtensions.cs/#L166"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Picks an item from a weighted collection using the provided weight function and total weight.</p>

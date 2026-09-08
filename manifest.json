@@ -4,6 +4,90 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Algorithm.PerlinNoise1d.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Algorithm.PerlinNoise1d.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Algorithm.PerlinNoise1d",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Algorithm.PerlinNoise2d.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Algorithm.PerlinNoise2d.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Algorithm.PerlinNoise2d",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Algorithm.PoissonDiscSampler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Algorithm.PoissonDiscSampler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Algorithm.PoissonDiscSampler",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Algorithm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Algorithm",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Collections.DynamicArray-1.ForEachDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Collections.DynamicArray-1.ForEachDelegate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Collections.DynamicArray<T>.ForEachDelegate",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Collections.DynamicArray-1.RemoveDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Collections.DynamicArray-1.RemoveDelegate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Collections.DynamicArray<T>.RemoveDelegate",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/XIV.Core.Collections.DynamicArray-1.yml",
       "output": {
         ".html": {
@@ -74,6 +158,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.DataStructures.XIVBuffer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.DataStructures.XIVBuffer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.DataStructures.XIVBuffer<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/XIV.Core.DataStructures.XIVColor.yml",
       "output": {
         ".html": {
@@ -98,7 +196,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "XIV.Core.DataStructures.XIVMemory<T>",
-      "Summary": "<p sourcefile=\"api/XIV.Core.DataStructures.XIVMemory-1.yml\" sourcestartlinenumber=\"1\">Alternative structure to the <xref href=\"System.Memory%601\" data-throw-if-not-resolved=\"false\"></xref>.\nAnd also can be used as replacement of <xref href=\"System.Span%601\" data-throw-if-not-resolved=\"false\"></xref>.\nYou should use Memory and Span whenever it is possible.\nThis struct is useful when you want constraints.\n<example></example></p>\n<pre><code class=\"lang-csharp\">public class MemExampleBase{T} { }\npublic class MemExample{T} : MemExampleBase{XIVMemory{T}}\n    // public class XIVMemExample{T} : MemExampleBase{Span{T}} // not possible\n    // public class XIVMemExample{T} : MemExampleBase{Memory{T}} // possible\n{\n    void Example()\n    {\n        XIVMemory{T} xivMem = new XIVMemory{T}(new T[4], 0, 4);\n        XIVMemory{T} xivSliced = xivMem.Slice(1, 2);\n        XIVMemory{T} xivReversed = xivMem.reversed;\n        Memory{T} mem = new Memory{T}(new T[4], 0, 4);\n        Memory{T} memSliced = mem.Slice(1, 2);\n        // var memReversed = mem.reversed; // not possible\n    }\n}</code></pre>\n\n"
+      "Summary": "<p sourcefile=\"api/XIV.Core.DataStructures.XIVMemory-1.yml\" sourcestartlinenumber=\"1\">Alternative structure to the <xref href=\"System.Memory%601\" data-throw-if-not-resolved=\"false\"></xref>.\nAnd also can be used as replacement of <xref href=\"System.Span%601\" data-throw-if-not-resolved=\"false\"></xref>.\nYou should use Memory and Span whenever it is possible.\nThis struct is useful when you want constraints.</p>\n<example>\n<pre><code class=\"lang-csharp\">public class MemExampleBase{T} { }\npublic class MemExample{T} : MemExampleBase{XIVMemory{T}}\n    // public class XIVMemExample{T} : MemExampleBase{Span{T}} // not possible\n    // public class XIVMemExample{T} : MemExampleBase{Memory{T}} // possible\n{\n    void Example()\n    {\n        XIVMemory{T} xivMem = new XIVMemory{T}(new T[4], 0, 4);\n        XIVMemory{T} xivSliced = xivMem.Slice(1, 2);\n        XIVMemory{T} xivReversed = xivMem.reversed;\n        Memory{T} mem = new Memory{T}(new T[4], 0, 4);\n        Memory{T} memSliced = mem.Slice(1, 2);\n        // var memReversed = mem.reversed; // not possible\n    }\n}</code></pre>\n</example>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.DataStructures.XIVQuaternion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.DataStructures.XIVQuaternion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.DataStructures.XIVQuaternion",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -168,6 +280,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "XIV.Core.Extensions.StringHtmlTagExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Extensions.TypeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Extensions.TypeExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Extensions.TypeExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Extensions.Vec2Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Extensions.Vec2Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Extensions.Vec2Extensions",
       "Summary": null
     },
     {
@@ -702,11 +842,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "api/toc.json"
-        },
         ".html": {
           "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""
@@ -725,11 +865,11 @@
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "articles/toc.json"
-        },
         ".html": {
           "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
         }
       },
       "version": ""
@@ -748,11 +888,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "toc.json"
-        },
         ".html": {
           "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""

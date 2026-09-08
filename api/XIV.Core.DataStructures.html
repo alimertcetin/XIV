@@ -103,6 +103,10 @@ Structs
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Core.DataStructures.XIVBuffer-1.html">XIVBuffer&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="XIV.Core.DataStructures.XIVColor.html">XIVColor</a></dt>
       <dd></dd>
     </dl>
@@ -111,8 +115,8 @@ Structs
       <dd><p>Alternative structure to the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.memory-1">Memory&lt;T&gt;</a>.
 And also can be used as replacement of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span&lt;T&gt;</a>.
 You should use Memory and Span whenever it is possible.
-This struct is useful when you want constraints.
-<example></example></p>
+This struct is useful when you want constraints.</p>
+<example>
 <pre><code class="lang-csharp">public class MemExampleBase{T} { }
 public class MemExample{T} : MemExampleBase{XIVMemory{T}}
     // public class XIVMemExample{T} : MemExampleBase{Span{T}} // not possible
@@ -128,8 +132,12 @@ public class MemExample{T} : MemExampleBase{XIVMemory{T}}
         // var memReversed = mem.reversed; // not possible
     }
 }</code></pre>
-
+</example>
 </dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Core.DataStructures.XIVQuaternion.html">XIVQuaternion</a></dt>
+      <dd></dd>
     </dl>
 
 
