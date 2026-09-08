@@ -1,3 +1,63 @@
+# [1.7.0](https://github.com/alimertcetin/XIV/compare/v1.6.0...v1.7.0) (2026-09-08)
+
+
+### Bug Fixes
+
+* **.asmdef.meta:** Well, I'll just keep these. ([d48b8a2](https://github.com/alimertcetin/XIV/commit/d48b8a22bdd8c396cda3f497389fb7423e70b31f))
+* **PoissonDiscSampler:** Early return if gridWidth or gridHeight are invalid ([773ad3c](https://github.com/alimertcetin/XIV/commit/773ad3cf848bc1366f7870d7efc8cd8338a388a7))
+* **TypeExtensions.GetFieldOrPropertyValue:** Throws exception if propertyInfo is null ([67cfdef](https://github.com/alimertcetin/XIV/commit/67cfdefadb1ecb0e94ef28e2885b5dbe6b84f455))
+* **XIVPoolSystem:** Specify initialization option ([c0aa647](https://github.com/alimertcetin/XIV/commit/c0aa647c193999b9952606307b10889b37005d58))
+* **XIVRandom:** InitState now recreates Random instance ([f5ad8d3](https://github.com/alimertcetin/XIV/commit/f5ad8d30984f106406c13b565068d709630d1065))
+
+
+### Features
+
+* Add PerlinNosise1d, PerlinNosise2d and PoissonDiscSampler ([d6d0804](https://github.com/alimertcetin/XIV/commit/d6d080474a11e9522bbef0a754b1bba096cd0ec6))
+* Add TypeExtensions ([fdf55d6](https://github.com/alimertcetin/XIV/commit/fdf55d61b6f310199f2ecd1940ecf9b30b7ad177))
+* Add XIVQuaternion ([09782e8](https://github.com/alimertcetin/XIV/commit/09782e81f8361a2a5b5fe684c20f01ab7d93b7c2))
+* **ArrayExtensions.XIVGetClosest:** Add excludeArr with length ([0b59143](https://github.com/alimertcetin/XIV/commit/0b5914388bd8dafb7eac9900780f9b4308f7ca97))
+* **ArrayExtensions:** Add FilterBy overload ([63be22e](https://github.com/alimertcetin/XIV/commit/63be22eb00fe78d5182b1e218dae53901decacf8))
+* **ArrayExtensions:** Add GetClosest ([c3da5f6](https://github.com/alimertcetin/XIV/commit/c3da5f6cbb84c3d06b79bf61567ba45a3d2ef03f))
+* **ArrayExtensions:** Add XIVContains overload ([d39e45e](https://github.com/alimertcetin/XIV/commit/d39e45e80cdc63f804f0e2d519224c5e3e88f383))
+* **ArrayExtensions:** Add XIVGetClosest and XIVIndexOf ([90824ac](https://github.com/alimertcetin/XIV/commit/90824ac67da64ead6316ccd6e6a3057b4f226a33))
+* **ArrayUtils.GetBuffer:** Remove out parameter ([65d23c7](https://github.com/alimertcetin/XIV/commit/65d23c73acab4f602e91a8976c5b85bda7903ce8))
+* **ArrayUtils:** Add GetBuffer ([ffab804](https://github.com/alimertcetin/XIV/commit/ffab8048cef8d933f2df022a27ce323784f538e0))
+* **DynamicArray:** Add ForEach function and RemoveAll overload ([672ba0c](https://github.com/alimertcetin/XIV/commit/672ba0ca893d2f69bd2318978ad730738b07b69f))
+* **DynamicArray:** Add IncreaseCapacity and RemoveLast ([c58e845](https://github.com/alimertcetin/XIV/commit/c58e845e7f2beb15c9af5caf9a264d41d9914d5c))
+* **DynamicArray:** override ToString to display count ([84b44a8](https://github.com/alimertcetin/XIV/commit/84b44a85cb6f6519c66b3cf18e00e1dd33efca5a))
+* **IListExtensions:** Add XIVPickRandom overload ([5c89496](https://github.com/alimertcetin/XIV/commit/5c89496560b000930d0eb864b6b04388ebc889ab))
+* LineMath: Add IsIntersect to check intersections ([42551b0](https://github.com/alimertcetin/XIV/commit/42551b00420ad35faf5137aef86e17e6ac6e2fae))
+* **PerlinNoise:** Adapt new GetBuffer function ([2f17d35](https://github.com/alimertcetin/XIV/commit/2f17d3509ee24caaaf07078202a89803c7fe70f2))
+* **PoissonDiscSample:** Adapt new GetBuffer function ([fe56f9f](https://github.com/alimertcetin/XIV/commit/fe56f9f17fa9158dc90ecead9e2dcf897221969b))
+* Remove implicit conversions for Unity ([2e9da4a](https://github.com/alimertcetin/XIV/commit/2e9da4a2103a482f54241da5d7c8f5c15a7ae601))
+* **Timer:** Remove unity related stuff ([5f9f369](https://github.com/alimertcetin/XIV/commit/5f9f3698f54d7763463d047cbfdfae50d624525a))
+* **TypeExtensions:** Add GetMembers ([d4d4494](https://github.com/alimertcetin/XIV/commit/d4d449472cf4c543a47fac3240fa429b1c964434))
+* **Vec2:** Add Distance function to get distance between two vec2 ([be54e70](https://github.com/alimertcetin/XIV/commit/be54e708825d96e4985ee41df50362161effaa1c))
+* **Vec2:** Add normalized field to get normalized Vec2 ([555530d](https://github.com/alimertcetin/XIV/commit/555530d1e5745b7331f5a6ab82b80247c0677744))
+* **Vec2Extensions:** Add Vec2Extensions ([a69db42](https://github.com/alimertcetin/XIV/commit/a69db4281ac01f016ddcf0f0985e09add4156d02))
+* **Vec2:** Negate operator ([eb6551b](https://github.com/alimertcetin/XIV/commit/eb6551b76c06e2b43d3f573a2ef52dddda137abd))
+* **XIVBuffer:** Add XIVBuffer to dispose buffers without tracking ([e7503c3](https://github.com/alimertcetin/XIV/commit/e7503c3803fe5cdf67f4a9520aaa98155c691f38))
+* **XIVBuffer:** Better Dispose, implicit array conversion, ref indexer ([4a586ea](https://github.com/alimertcetin/XIV/commit/4a586eabbf80bae8b545a638de55deb931991c3c))
+* **XIVColor:** Add Lerp ([69002c4](https://github.com/alimertcetin/XIV/commit/69002c4060a13977b5ab1fcbe8542cf0158a2427))
+* **XIVMathf.Max:** Use XIVMemory instead of params ([0a46899](https://github.com/alimertcetin/XIV/commit/0a46899ba42ef2617c492d2a287c234d9864e04e))
+* **XIVMathf:** Add CeilToInt and FloorToInt ([a22b940](https://github.com/alimertcetin/XIV/commit/a22b940e534bddffbd841f667355df58b30e8a63))
+* **XIVMathf:** Add Normalize function ([dafa031](https://github.com/alimertcetin/XIV/commit/dafa03148f9714131a3a46cbac573a59b9e8c0b4))
+* **XIVMathInt:** Add Abs ([805078d](https://github.com/alimertcetin/XIV/commit/805078d8f77e2f0714ca2fa8017896902a4674f2))
+* **XIVMathInt:** Add MethodImplOptions attribute ([38177bb](https://github.com/alimertcetin/XIV/commit/38177bb6a8a75294aeb4a6afce2de3d27ef1c1d6))
+* **XIVMathInt:** Add NextPowerOfTwo function ([a72d3c9](https://github.com/alimertcetin/XIV/commit/a72d3c97b6a0539bfc3504219e1a90b69bed27c9))
+* **XIVMemoryExtensions:** Add AsXIVMemory to convert XIVBuffer easily ([6649611](https://github.com/alimertcetin/XIV/commit/6649611f74cc7c3a68e96d4c3e3c0f258a9b7118))
+* **XIVMemoryExtensions:** Add Fill function ([f790cc9](https://github.com/alimertcetin/XIV/commit/f790cc9733a3a09e53d319d6142d0ff4037ce3e5))
+* **XIVMemoryExtensions:** Add Fill function to fill array with the giving values ([718f946](https://github.com/alimertcetin/XIV/commit/718f946c975b70e11f4ae48ae25f64f2e1f58479))
+* **XIVMemoryExtensions:** Add FilterBy and AsXIVMemory overloads ([0e11734](https://github.com/alimertcetin/XIV/commit/0e11734fb470f992cc037dd993b1728ee835eaf2))
+* **XIVMemoryExtensions:** Add GetClosest ([aa47363](https://github.com/alimertcetin/XIV/commit/aa47363456432adee4071c623a20a9a10e013fb7))
+* **XIVMemory:** Keep track of array/list, IEnumerable<T> implementation ([b62cfc8](https://github.com/alimertcetin/XIV/commit/b62cfc8c068b3f6b919f8256fcdb9bba011f8fbd))
+* **XIVRandom:** Add seed variable ([c9c63d0](https://github.com/alimertcetin/XIV/commit/c9c63d0074353ff8adae7b6025ec5ca00406ea00))
+
+
+### Performance Improvements
+
+* **XIVColor:** Make predefined colors readonly ([2b2363b](https://github.com/alimertcetin/XIV/commit/2b2363b11c0143542def136168c455419daebea1))
+
 # [1.6.0](https://github.com/alimertcetin/XIV/compare/v1.5.0...v1.6.0) (2025-09-10)
 
 
