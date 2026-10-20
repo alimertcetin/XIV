@@ -50,6 +50,8 @@ namespace XIV.Core.Utils
         public ClassGenerator(string className, string classDefinitionLine, bool isInnerClass = false)
         {
             InitializeBuilders();
+            usings = new List<string>();
+            namespaces = new List<string>();
             this.className = className;
             this.isInnerClass = isInnerClass;
             WriteLine(classBuilder, classDefinitionLine);
@@ -81,7 +83,9 @@ namespace XIV.Core.Utils
                 AddUsing(classGenerator.usings[i]);
             }
             classGenerator.usings.Clear();
-            WriteLine(innerClassBuilder, classGenerator.EndClass());
+            
+            string innerBody = classGenerator.GetInnerClassBody();
+            WriteLineByLine(innerClassBuilder, innerBody);
         }
         
         public void AddField(string fieldName, string fieldValue, string returnType, string modifier = "", string accessModifier = "public")
@@ -123,7 +127,7 @@ namespace XIV.Core.Utils
 
         public void AddGetOnlyProperty(string line, string getBlockContent)
         {
-            if (memberBuilder.builder.Length > 0) WriteLine(memberBuilder);
+            if (memberBuilder != null && memberBuilder.builder.Length > 0) WriteLine(memberBuilder);
             WriteLine(memberBuilder, line);
             OpenBracket(memberBuilder);
             WritePropertyBlock("get", getBlockContent);
@@ -132,7 +136,7 @@ namespace XIV.Core.Utils
         
         public void AddGetSetProperty(string propertyDefinition, string getBlockContent, string setBlockContent)
         {
-            if (memberBuilder.builder.Length > 0) WriteLine(memberBuilder);
+            if (memberBuilder != null && memberBuilder.builder.Length > 0) WriteLine(memberBuilder);
             WriteLine(memberBuilder, propertyDefinition);
 
             OpenBracket(memberBuilder);
@@ -162,6 +166,16 @@ namespace XIV.Core.Utils
             CloseBracket(methodBuilder);
         }
 
+        internal string GetInnerClassBody()
+        {
+            if (attributeBuilder != null && attributeBuilder.builder.Length > 0)
+            {
+                classBuilder.builder.Insert(0, attributeBuilder.builder.ToString());
+            }
+            FillClassBody();
+            return classBuilder.builder.ToString();
+        }
+
         public string EndClass()
         {
             StringBuilder code = new StringBuilder(512);
@@ -169,21 +183,21 @@ namespace XIV.Core.Utils
             if (isInnerClass == false) code.AppendLine(GENERATION_TEXT);
             
             WriteUsings(code);
-            FillClassBody();
-
-            if (attributeBuilder.builder.Length > 0)
+            
+            if (attributeBuilder != null && attributeBuilder.builder.Length > 0)
             {
                 classBuilder.builder.Insert(0, attributeBuilder.builder.ToString());
             }
 
+            FillClassBody();
+
             code.Append(PutInsideNamespace());
-            ReleaseResources();
             return code.ToString();
         }
 
         void WriteUsings(StringBuilder code)
         {
-            if (usings.Count == 0) return;
+            if (usings == null || usings.Count == 0) return;
             for (var i = 0; i < usings.Count; i++)
             {
                 code.AppendLine("using " + usings[i] + ";");
@@ -212,7 +226,7 @@ namespace XIV.Core.Utils
         {
             void WriteInsideClass(Builder builder, string comment)
             {
-                if (builder.builder.Length == 0) return;
+                if (builder == null || builder.builder.Length == 0) return;
                 AddComment(comment, classBuilder, true);
                 WriteLineByLine(classBuilder, builder.builder.ToString());
             }
@@ -221,11 +235,16 @@ namespace XIV.Core.Utils
             WriteInsideClass(memberBuilder, "Members");
             WriteInsideClass(methodBuilder, "Functions");
             CloseBracket(classBuilder, " // class " + className);
+            
+            innerClassBuilder.builder.Clear();
+            memberBuilder.builder.Clear();
+            methodBuilder.builder.Clear();
+            attributeBuilder.builder.Clear();
         }
 
         string PutInsideNamespace()
         {
-            int count = namespaces.Count;
+            int count = namespaces?.Count ?? 0;
             if (isInnerClass || count == 0) return classBuilder.builder.ToString();
 
             Builder builder = new Builder();
@@ -261,13 +280,20 @@ namespace XIV.Core.Utils
 
         void WriteLineByLine(Builder builder, string text)
         {
-            if (text.Length == 0) return;
+            if (string.IsNullOrEmpty(text)) return;
             string intend = GetIntend(builder);
-            string[] splitted = text.Split(Environment.NewLine);
+            string[] splitted = text.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
             int length = splitted.Length;
             for (int i = 0; i < length; i++)
             {
-                builder.builder.AppendLine(intend + splitted[i]);
+                if (!string.IsNullOrEmpty(splitted[i]))
+                {
+                    builder.builder.AppendLine(intend + splitted[i]);
+                }
+                else
+                {
+                    builder.builder.AppendLine();
+                }
             }
         }
 
@@ -299,15 +325,6 @@ namespace XIV.Core.Utils
             WriteLine(builder, braceLine);
         }
 
-        void ReleaseResources()
-        {
-            classBuilder = null;
-            methodBuilder = null;
-            attributeBuilder = null;
-            usings = null;
-            namespaces = null;
-        }
-
         static string Space(string value, bool after = true)
         {
             if (string.IsNullOrEmpty(value)) return "";
@@ -317,7 +334,7 @@ namespace XIV.Core.Utils
 
         static bool IsNull(string value)
         {
-            return string.IsNullOrWhiteSpace(value) || string.IsNullOrEmpty(value);
+            return string.IsNullOrWhiteSpace(value);
         }
 
         static string GetIntend(Builder builder)
