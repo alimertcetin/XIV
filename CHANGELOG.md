@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/alimertcetin/XIV/compare/v1.7.0...v1.8.0) (2026-10-20)
+
+
+### Features
+
+* **ClassGenerator.cs:** More robust generator with null checks ([2941028](https://github.com/alimertcetin/XIV/commit/2941028a18b40bc8ed2efcc7de601d04ba7e0ea4))
+* **StringExtensions.cs:** Add more utilities ([d074110](https://github.com/alimertcetin/XIV/commit/d0741100897671ae6644a5b0597314cfb5a6d154))
+
 # [1.7.0](https://github.com/alimertcetin/XIV/compare/v1.6.0...v1.7.0) (2026-09-08)
 
 
