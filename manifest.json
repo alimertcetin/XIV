@@ -1,4 +1,5 @@
 {
+  "docfx_version": "2.81.0+ba844df625370a6bd7c1ecab0d0ec4d1d9128ac4",
   "source_base_path": "/home/runner/work/XIV/XIV/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
@@ -266,7 +267,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "XIV.Core.Extensions.StringExtensions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/XIV.Core.Extensions.StringExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for common string transformations.</p>\n"
     },
     {
       "type": "ManagedReference",

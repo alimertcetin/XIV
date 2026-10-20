@@ -3304,6 +3304,54 @@ references:
   commentId: T:XIV.Core.Extensions.StringExtensions
   fullName: XIV.Core.Extensions.StringExtensions
   nameWithType: StringExtensions
+- uid: XIV.Core.Extensions.StringExtensions.XIVEllipsify(System.String,System.Int32,System.String)
+  name: XIVEllipsify(string, int, string)
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVEllipsify_System_String_System_Int32_System_String_
+  commentId: M:XIV.Core.Extensions.StringExtensions.XIVEllipsify(System.String,System.Int32,System.String)
+  name.vb: XIVEllipsify(String, Integer, String)
+  fullName: XIV.Core.Extensions.StringExtensions.XIVEllipsify(string, int, string)
+  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVEllipsify(String, Integer, String)
+  nameWithType: StringExtensions.XIVEllipsify(string, int, string)
+  nameWithType.vb: StringExtensions.XIVEllipsify(String, Integer, String)
+- uid: XIV.Core.Extensions.StringExtensions.XIVEllipsify*
+  name: XIVEllipsify
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVEllipsify_
+  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVEllipsify
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.StringExtensions.XIVEllipsify
+  nameWithType: StringExtensions.XIVEllipsify
+- uid: XIV.Core.Extensions.StringExtensions.XIVMergeCamelCase(System.String)
+  name: XIVMergeCamelCase(string)
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVMergeCamelCase_System_String_
+  commentId: M:XIV.Core.Extensions.StringExtensions.XIVMergeCamelCase(System.String)
+  name.vb: XIVMergeCamelCase(String)
+  fullName: XIV.Core.Extensions.StringExtensions.XIVMergeCamelCase(string)
+  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVMergeCamelCase(String)
+  nameWithType: StringExtensions.XIVMergeCamelCase(string)
+  nameWithType.vb: StringExtensions.XIVMergeCamelCase(String)
+- uid: XIV.Core.Extensions.StringExtensions.XIVMergeCamelCase*
+  name: XIVMergeCamelCase
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVMergeCamelCase_
+  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVMergeCamelCase
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.StringExtensions.XIVMergeCamelCase
+  nameWithType: StringExtensions.XIVMergeCamelCase
+- uid: XIV.Core.Extensions.StringExtensions.XIVMergePascalCase(System.String)
+  name: XIVMergePascalCase(string)
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVMergePascalCase_System_String_
+  commentId: M:XIV.Core.Extensions.StringExtensions.XIVMergePascalCase(System.String)
+  name.vb: XIVMergePascalCase(String)
+  fullName: XIV.Core.Extensions.StringExtensions.XIVMergePascalCase(string)
+  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVMergePascalCase(String)
+  nameWithType: StringExtensions.XIVMergePascalCase(string)
+  nameWithType.vb: StringExtensions.XIVMergePascalCase(String)
+- uid: XIV.Core.Extensions.StringExtensions.XIVMergePascalCase*
+  name: XIVMergePascalCase
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVMergePascalCase_
+  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVMergePascalCase
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.StringExtensions.XIVMergePascalCase
+  nameWithType: StringExtensions.XIVMergePascalCase
 - uid: XIV.Core.Extensions.StringExtensions.XIVPadCenter(System.String,System.Int32)
   name: XIVPadCenter(string, int)
   href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVPadCenter_System_String_System_Int32_
@@ -3336,22 +3384,134 @@ references:
   isSpec: "True"
   fullName: XIV.Core.Extensions.StringExtensions.XIVSpace
   nameWithType: StringExtensions.XIVSpace
-- uid: XIV.Core.Extensions.StringExtensions.XIVTruncateWithChar(System.String,System.Int32,System.Char)
-  name: XIVTruncateWithChar(string, int, char)
-  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVTruncateWithChar_System_String_System_Int32_System_Char_
-  commentId: M:XIV.Core.Extensions.StringExtensions.XIVTruncateWithChar(System.String,System.Int32,System.Char)
-  name.vb: XIVTruncateWithChar(String, Integer, Char)
-  fullName: XIV.Core.Extensions.StringExtensions.XIVTruncateWithChar(string, int, char)
-  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVTruncateWithChar(String, Integer, Char)
-  nameWithType: StringExtensions.XIVTruncateWithChar(string, int, char)
-  nameWithType.vb: StringExtensions.XIVTruncateWithChar(String, Integer, Char)
-- uid: XIV.Core.Extensions.StringExtensions.XIVTruncateWithChar*
-  name: XIVTruncateWithChar
-  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVTruncateWithChar_
-  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVTruncateWithChar
+- uid: XIV.Core.Extensions.StringExtensions.XIVSplitCamelCase(System.String,System.String)
+  name: XIVSplitCamelCase(string, string)
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVSplitCamelCase_System_String_System_String_
+  commentId: M:XIV.Core.Extensions.StringExtensions.XIVSplitCamelCase(System.String,System.String)
+  name.vb: XIVSplitCamelCase(String, String)
+  fullName: XIV.Core.Extensions.StringExtensions.XIVSplitCamelCase(string, string)
+  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVSplitCamelCase(String, String)
+  nameWithType: StringExtensions.XIVSplitCamelCase(string, string)
+  nameWithType.vb: StringExtensions.XIVSplitCamelCase(String, String)
+- uid: XIV.Core.Extensions.StringExtensions.XIVSplitCamelCase*
+  name: XIVSplitCamelCase
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVSplitCamelCase_
+  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVSplitCamelCase
   isSpec: "True"
-  fullName: XIV.Core.Extensions.StringExtensions.XIVTruncateWithChar
-  nameWithType: StringExtensions.XIVTruncateWithChar
+  fullName: XIV.Core.Extensions.StringExtensions.XIVSplitCamelCase
+  nameWithType: StringExtensions.XIVSplitCamelCase
+- uid: XIV.Core.Extensions.StringExtensions.XIVSplitCase(System.String,System.String)
+  name: XIVSplitCase(string, string)
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVSplitCase_System_String_System_String_
+  commentId: M:XIV.Core.Extensions.StringExtensions.XIVSplitCase(System.String,System.String)
+  name.vb: XIVSplitCase(String, String)
+  fullName: XIV.Core.Extensions.StringExtensions.XIVSplitCase(string, string)
+  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVSplitCase(String, String)
+  nameWithType: StringExtensions.XIVSplitCase(string, string)
+  nameWithType.vb: StringExtensions.XIVSplitCase(String, String)
+- uid: XIV.Core.Extensions.StringExtensions.XIVSplitCase*
+  name: XIVSplitCase
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVSplitCase_
+  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVSplitCase
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.StringExtensions.XIVSplitCase
+  nameWithType: StringExtensions.XIVSplitCase
+- uid: XIV.Core.Extensions.StringExtensions.XIVSplitPascalCase(System.String,System.String)
+  name: XIVSplitPascalCase(string, string)
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVSplitPascalCase_System_String_System_String_
+  commentId: M:XIV.Core.Extensions.StringExtensions.XIVSplitPascalCase(System.String,System.String)
+  name.vb: XIVSplitPascalCase(String, String)
+  fullName: XIV.Core.Extensions.StringExtensions.XIVSplitPascalCase(string, string)
+  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVSplitPascalCase(String, String)
+  nameWithType: StringExtensions.XIVSplitPascalCase(string, string)
+  nameWithType.vb: StringExtensions.XIVSplitPascalCase(String, String)
+- uid: XIV.Core.Extensions.StringExtensions.XIVSplitPascalCase*
+  name: XIVSplitPascalCase
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVSplitPascalCase_
+  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVSplitPascalCase
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.StringExtensions.XIVSplitPascalCase
+  nameWithType: StringExtensions.XIVSplitPascalCase
+- uid: XIV.Core.Extensions.StringExtensions.XIVToCamelCase(System.String)
+  name: XIVToCamelCase(string)
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVToCamelCase_System_String_
+  commentId: M:XIV.Core.Extensions.StringExtensions.XIVToCamelCase(System.String)
+  name.vb: XIVToCamelCase(String)
+  fullName: XIV.Core.Extensions.StringExtensions.XIVToCamelCase(string)
+  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVToCamelCase(String)
+  nameWithType: StringExtensions.XIVToCamelCase(string)
+  nameWithType.vb: StringExtensions.XIVToCamelCase(String)
+- uid: XIV.Core.Extensions.StringExtensions.XIVToCamelCase*
+  name: XIVToCamelCase
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVToCamelCase_
+  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVToCamelCase
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.StringExtensions.XIVToCamelCase
+  nameWithType: StringExtensions.XIVToCamelCase
+- uid: XIV.Core.Extensions.StringExtensions.XIVToKebabCase(System.String)
+  name: XIVToKebabCase(string)
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVToKebabCase_System_String_
+  commentId: M:XIV.Core.Extensions.StringExtensions.XIVToKebabCase(System.String)
+  name.vb: XIVToKebabCase(String)
+  fullName: XIV.Core.Extensions.StringExtensions.XIVToKebabCase(string)
+  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVToKebabCase(String)
+  nameWithType: StringExtensions.XIVToKebabCase(string)
+  nameWithType.vb: StringExtensions.XIVToKebabCase(String)
+- uid: XIV.Core.Extensions.StringExtensions.XIVToKebabCase*
+  name: XIVToKebabCase
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVToKebabCase_
+  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVToKebabCase
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.StringExtensions.XIVToKebabCase
+  nameWithType: StringExtensions.XIVToKebabCase
+- uid: XIV.Core.Extensions.StringExtensions.XIVToPascalCase(System.String)
+  name: XIVToPascalCase(string)
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVToPascalCase_System_String_
+  commentId: M:XIV.Core.Extensions.StringExtensions.XIVToPascalCase(System.String)
+  name.vb: XIVToPascalCase(String)
+  fullName: XIV.Core.Extensions.StringExtensions.XIVToPascalCase(string)
+  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVToPascalCase(String)
+  nameWithType: StringExtensions.XIVToPascalCase(string)
+  nameWithType.vb: StringExtensions.XIVToPascalCase(String)
+- uid: XIV.Core.Extensions.StringExtensions.XIVToPascalCase*
+  name: XIVToPascalCase
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVToPascalCase_
+  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVToPascalCase
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.StringExtensions.XIVToPascalCase
+  nameWithType: StringExtensions.XIVToPascalCase
+- uid: XIV.Core.Extensions.StringExtensions.XIVToSnakeCase(System.String)
+  name: XIVToSnakeCase(string)
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVToSnakeCase_System_String_
+  commentId: M:XIV.Core.Extensions.StringExtensions.XIVToSnakeCase(System.String)
+  name.vb: XIVToSnakeCase(String)
+  fullName: XIV.Core.Extensions.StringExtensions.XIVToSnakeCase(string)
+  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVToSnakeCase(String)
+  nameWithType: StringExtensions.XIVToSnakeCase(string)
+  nameWithType.vb: StringExtensions.XIVToSnakeCase(String)
+- uid: XIV.Core.Extensions.StringExtensions.XIVToSnakeCase*
+  name: XIVToSnakeCase
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVToSnakeCase_
+  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVToSnakeCase
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.StringExtensions.XIVToSnakeCase
+  nameWithType: StringExtensions.XIVToSnakeCase
+- uid: XIV.Core.Extensions.StringExtensions.XIVToWords(System.String)
+  name: XIVToWords(string)
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVToWords_System_String_
+  commentId: M:XIV.Core.Extensions.StringExtensions.XIVToWords(System.String)
+  name.vb: XIVToWords(String)
+  fullName: XIV.Core.Extensions.StringExtensions.XIVToWords(string)
+  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVToWords(String)
+  nameWithType: StringExtensions.XIVToWords(string)
+  nameWithType.vb: StringExtensions.XIVToWords(String)
+- uid: XIV.Core.Extensions.StringExtensions.XIVToWords*
+  name: XIVToWords
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVToWords_
+  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVToWords
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.StringExtensions.XIVToWords
+  nameWithType: StringExtensions.XIVToWords
 - uid: XIV.Core.Extensions.StringExtensions.XIVTruncateWithDots(System.String,System.Int32)
   name: XIVTruncateWithDots(string, int)
   href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVTruncateWithDots_System_String_System_Int32_
