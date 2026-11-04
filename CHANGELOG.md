@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/alimertcetin/XIV/compare/v1.8.0...v1.9.0) (2026-11-04)
+
+
+### Features
+
+* **XIVMathInt:** Add PingPong function ([a07f3c4](https://github.com/alimertcetin/XIV/commit/a07f3c463d8d6fae38bb6be9ee67e033a2f6699d))
+
 # [1.8.0](https://github.com/alimertcetin/XIV/compare/v1.7.0...v1.8.0) (2026-10-20)
 
 
