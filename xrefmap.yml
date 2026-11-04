@@ -8116,6 +8116,22 @@ references:
   isSpec: "True"
   fullName: XIV.Core.XIVMath.XIVMathInt.NextPowerOfTwo
   nameWithType: XIVMathInt.NextPowerOfTwo
+- uid: XIV.Core.XIVMath.XIVMathInt.PingPong(System.Int32,System.Int32)
+  name: PingPong(int, int)
+  href: api/XIV.Core.XIVMath.XIVMathInt.html#XIV_Core_XIVMath_XIVMathInt_PingPong_System_Int32_System_Int32_
+  commentId: M:XIV.Core.XIVMath.XIVMathInt.PingPong(System.Int32,System.Int32)
+  name.vb: PingPong(Integer, Integer)
+  fullName: XIV.Core.XIVMath.XIVMathInt.PingPong(int, int)
+  fullName.vb: XIV.Core.XIVMath.XIVMathInt.PingPong(Integer, Integer)
+  nameWithType: XIVMathInt.PingPong(int, int)
+  nameWithType.vb: XIVMathInt.PingPong(Integer, Integer)
+- uid: XIV.Core.XIVMath.XIVMathInt.PingPong*
+  name: PingPong
+  href: api/XIV.Core.XIVMath.XIVMathInt.html#XIV_Core_XIVMath_XIVMathInt_PingPong_
+  commentId: Overload:XIV.Core.XIVMath.XIVMathInt.PingPong
+  isSpec: "True"
+  fullName: XIV.Core.XIVMath.XIVMathInt.PingPong
+  nameWithType: XIVMathInt.PingPong
 - uid: XIV.Core.XIVMath.XIVMathInt.Repeat(System.Int32,System.Int32)
   name: Repeat(int, int)
   href: api/XIV.Core.XIVMath.XIVMathInt.html#XIV_Core_XIVMath_XIVMathInt_Repeat_System_Int32_System_Int32_
