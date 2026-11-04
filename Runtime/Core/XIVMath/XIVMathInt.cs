@@ -7,7 +7,18 @@ namespace XIV.Core.XIVMath
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static int Repeat(int value, int length)
 		{
-			return value < 0 ? (value % length) + length : value % length;
+			if (length <= 0) return 0;
+			return ((value % length) + length) % length;
+		}
+		
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static int PingPong(int value, int length)
+		{
+			if (length <= 1) return 0;
+
+			int period = 2 * (length - 1);
+			value = Repeat(value, period);
+			return value < length ? value : period - value;
 		}
 		
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
