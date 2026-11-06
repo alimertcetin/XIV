@@ -18,6 +18,7 @@ namespace XIV.Core.XIVMath
 
         public static float Clamp(float val, float min, float max)
         {
+            if (min > max) throw new ArgumentOutOfRangeException(nameof(min), min, "Min must be less than Max.");
             return val > max ? max : val < min ? min : val;
         }
 
