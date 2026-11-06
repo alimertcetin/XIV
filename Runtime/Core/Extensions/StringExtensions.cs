@@ -63,6 +63,28 @@ namespace XIV.Core.Extensions
 
             return value.Substring(0, maxLength - ellipsis.Length) + ellipsis;
         }
+        
+        /// <summary>
+        /// Estimates the reading duration for a given text.
+        /// </summary>
+        /// <param name="text">The text to analyze.</param>
+        /// <param name="wordsPerMinute">Average reading speed (default is 225 wpm).</param>
+        /// <returns>A TimeSpan representing the estimated reading time.</returns>
+        public static TimeSpan XIVEstimateReadingTime(this string text, int wordsPerMinute = 225)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+            {
+                return TimeSpan.Zero;
+            }
+
+            // Count words by splitting on common whitespace characters and removing empty entries
+            int wordCount = text.Split(new[] { ' ', '\r', '\n', '\t' }, StringSplitOptions.RemoveEmptyEntries).Length;
+
+            // Calculate total minutes required
+            double totalMinutes = (double)wordCount / Math.Max(1, wordsPerMinute);
+
+            return TimeSpan.FromMinutes(totalMinutes);
+        }
 
         /// <summary>
         /// Splits PascalCase or camelCase words using the specified separator.
