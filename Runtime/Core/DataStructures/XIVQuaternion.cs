@@ -194,6 +194,14 @@ namespace XIV.Core.DataStructures
                 cx * cy * cz - sx * sy * sz
             );
         }
+        
+        /// <summary>
+        /// <inheritdoc cref="Euler(float, float, float)"/>
+        /// </summary>
+        public static XIVQuaternion Euler(Vec3 euler)
+        {
+            return Euler(euler.x, euler.y, euler.z);
+        }
 
         /// <summary>
         /// Creates a rotation around an axis by an angle in degrees.
