@@ -129,6 +129,13 @@ namespace XIV.Core.XIVMath
             CreateArcNonAlloc(start, end, Vec3.up, arr, 0, midPointDistance);
             return arr;
         }
+
+        public static Vec3[] CreateArc(float midPointDistance = 1f)
+        {
+            var arr = new Vec3[4];
+            CreateArcNonAlloc(Vec3.zero, Vec3.right, Vec3.up, arr, 0, midPointDistance);
+            return arr;
+        }
         
         public static CurveData GetCurveData(Vec3 p0, Vec3 p1, Vec3 p2, Vec3 p3, float t)
         {
