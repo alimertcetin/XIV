@@ -72,6 +72,16 @@ namespace XIV.Core.DataStructures
                 a.z * b.x - a.x * b.z,
                 a.x * b.y - a.y * b.x);
         }
+        
+        public static Vec3 Scale(Vec3 a, Vec3 b)
+        {
+            return new Vec3
+            {
+                x = a.x * b.x,
+                y = a.y * b.y,
+                z = a.z * b.z
+            };
+        }
 
         public static Vec3 Normalize(Vec3 vec)
         {
