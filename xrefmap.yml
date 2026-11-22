@@ -1200,6 +1200,19 @@ references:
   isSpec: "True"
   fullName: XIV.Core.DataStructures.Vec3.Normalize
   nameWithType: Vec3.Normalize
+- uid: XIV.Core.DataStructures.Vec3.Scale(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3)
+  name: Scale(Vec3, Vec3)
+  href: api/XIV.Core.DataStructures.Vec3.html#XIV_Core_DataStructures_Vec3_Scale_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_
+  commentId: M:XIV.Core.DataStructures.Vec3.Scale(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3)
+  fullName: XIV.Core.DataStructures.Vec3.Scale(XIV.Core.DataStructures.Vec3, XIV.Core.DataStructures.Vec3)
+  nameWithType: Vec3.Scale(Vec3, Vec3)
+- uid: XIV.Core.DataStructures.Vec3.Scale*
+  name: Scale
+  href: api/XIV.Core.DataStructures.Vec3.html#XIV_Core_DataStructures_Vec3_Scale_
+  commentId: Overload:XIV.Core.DataStructures.Vec3.Scale
+  isSpec: "True"
+  fullName: XIV.Core.DataStructures.Vec3.Scale
+  nameWithType: Vec3.Scale
 - uid: XIV.Core.DataStructures.Vec3.ToString
   name: ToString()
   href: api/XIV.Core.DataStructures.Vec3.html#XIV_Core_DataStructures_Vec3_ToString
@@ -2584,6 +2597,12 @@ references:
   fullName.vb: XIV.Core.DataStructures.XIVQuaternion.Euler(Single, Single, Single)
   nameWithType: XIVQuaternion.Euler(float, float, float)
   nameWithType.vb: XIVQuaternion.Euler(Single, Single, Single)
+- uid: XIV.Core.DataStructures.XIVQuaternion.Euler(XIV.Core.DataStructures.Vec3)
+  name: Euler(Vec3)
+  href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Euler_XIV_Core_DataStructures_Vec3_
+  commentId: M:XIV.Core.DataStructures.XIVQuaternion.Euler(XIV.Core.DataStructures.Vec3)
+  fullName: XIV.Core.DataStructures.XIVQuaternion.Euler(XIV.Core.DataStructures.Vec3)
+  nameWithType: XIVQuaternion.Euler(Vec3)
 - uid: XIV.Core.DataStructures.XIVQuaternion.Euler*
   name: Euler
   href: api/XIV.Core.DataStructures.XIVQuaternion.html#XIV_Core_DataStructures_XIVQuaternion_Euler_
@@ -3320,6 +3339,22 @@ references:
   isSpec: "True"
   fullName: XIV.Core.Extensions.StringExtensions.XIVEllipsify
   nameWithType: StringExtensions.XIVEllipsify
+- uid: XIV.Core.Extensions.StringExtensions.XIVEstimateReadingTime(System.String,System.Int32)
+  name: XIVEstimateReadingTime(string, int)
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVEstimateReadingTime_System_String_System_Int32_
+  commentId: M:XIV.Core.Extensions.StringExtensions.XIVEstimateReadingTime(System.String,System.Int32)
+  name.vb: XIVEstimateReadingTime(String, Integer)
+  fullName: XIV.Core.Extensions.StringExtensions.XIVEstimateReadingTime(string, int)
+  fullName.vb: XIV.Core.Extensions.StringExtensions.XIVEstimateReadingTime(String, Integer)
+  nameWithType: StringExtensions.XIVEstimateReadingTime(string, int)
+  nameWithType.vb: StringExtensions.XIVEstimateReadingTime(String, Integer)
+- uid: XIV.Core.Extensions.StringExtensions.XIVEstimateReadingTime*
+  name: XIVEstimateReadingTime
+  href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVEstimateReadingTime_
+  commentId: Overload:XIV.Core.Extensions.StringExtensions.XIVEstimateReadingTime
+  isSpec: "True"
+  fullName: XIV.Core.Extensions.StringExtensions.XIVEstimateReadingTime
+  nameWithType: StringExtensions.XIVEstimateReadingTime
 - uid: XIV.Core.Extensions.StringExtensions.XIVMergeCamelCase(System.String)
   name: XIVMergeCamelCase(string)
   href: api/XIV.Core.Extensions.StringExtensions.html#XIV_Core_Extensions_StringExtensions_XIVMergeCamelCase_System_String_
@@ -7473,6 +7508,15 @@ references:
   commentId: T:XIV.Core.XIVMath.BezierMath
   fullName: XIV.Core.XIVMath.BezierMath
   nameWithType: BezierMath
+- uid: XIV.Core.XIVMath.BezierMath.CreateArc(System.Single)
+  name: CreateArc(float)
+  href: api/XIV.Core.XIVMath.BezierMath.html#XIV_Core_XIVMath_BezierMath_CreateArc_System_Single_
+  commentId: M:XIV.Core.XIVMath.BezierMath.CreateArc(System.Single)
+  name.vb: CreateArc(Single)
+  fullName: XIV.Core.XIVMath.BezierMath.CreateArc(float)
+  fullName.vb: XIV.Core.XIVMath.BezierMath.CreateArc(Single)
+  nameWithType: BezierMath.CreateArc(float)
+  nameWithType.vb: BezierMath.CreateArc(Single)
 - uid: XIV.Core.XIVMath.BezierMath.CreateArc(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3,System.Single)
   name: CreateArc(Vec3, Vec3, float)
   href: api/XIV.Core.XIVMath.BezierMath.html#XIV_Core_XIVMath_BezierMath_CreateArc_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_System_Single_

@@ -431,7 +431,7 @@ Struct XIVQuaternion  <a class="header-action link-secondary" title="View source
 
   <h3 id="XIV_Core_DataStructures_XIVQuaternion_Angle_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_XIVQuaternion_" data-uid="XIV.Core.DataStructures.XIVQuaternion.Angle(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)">
   Angle(XIVQuaternion, XIVQuaternion)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L405"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the angular difference in degrees.</p>
@@ -470,7 +470,7 @@ Struct XIVQuaternion  <a class="header-action link-secondary" title="View source
 
   <h3 id="XIV_Core_DataStructures_XIVQuaternion_AngleAxis_System_Single_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.XIVQuaternion.AngleAxis(System.Single,XIV.Core.DataStructures.Vec3)">
   AngleAxis(float, Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L209"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a rotation around an axis by an angle in degrees.</p>
@@ -548,7 +548,7 @@ Struct XIVQuaternion  <a class="header-action link-secondary" title="View source
 
   <h3 id="XIV_Core_DataStructures_XIVQuaternion_Equals_System_Object_" data-uid="XIV.Core.DataStructures.XIVQuaternion.Equals(System.Object)">
   Equals(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L420"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L428"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
@@ -624,11 +624,48 @@ Struct XIVQuaternion  <a class="header-action link-secondary" title="View source
 
 
 
+  <a id="XIV_Core_DataStructures_XIVQuaternion_Euler_" data-uid="XIV.Core.DataStructures.XIVQuaternion.Euler*"></a>
+
+  <h3 id="XIV_Core_DataStructures_XIVQuaternion_Euler_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.XIVQuaternion.Euler(XIV.Core.DataStructures.Vec3)">
+  Euler(Vec3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a rotation from Euler angles in degrees.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XIVQuaternion Euler(Vec3 euler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>euler</code> <a class="xref" href="XIV.Core.DataStructures.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV.Core.DataStructures.XIVQuaternion.html">XIVQuaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="XIV_Core_DataStructures_XIVQuaternion_FromToRotation_" data-uid="XIV.Core.DataStructures.XIVQuaternion.FromToRotation*"></a>
 
   <h3 id="XIV_Core_DataStructures_XIVQuaternion_FromToRotation_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.XIVQuaternion.FromToRotation(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3)">
   FromToRotation(Vec3, Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L452"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L460"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a rotation that rotates from one direction to another.</p>
@@ -667,7 +704,7 @@ Struct XIVQuaternion  <a class="header-action link-secondary" title="View source
 
   <h3 id="XIV_Core_DataStructures_XIVQuaternion_GetHashCode" data-uid="XIV.Core.DataStructures.XIVQuaternion.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L433"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
@@ -737,7 +774,7 @@ Struct XIVQuaternion  <a class="header-action link-secondary" title="View source
 
   <h3 id="XIV_Core_DataStructures_XIVQuaternion_Lerp_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_XIVQuaternion_System_Single_" data-uid="XIV.Core.DataStructures.XIVQuaternion.Lerp(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion,System.Single)">
   Lerp(XIVQuaternion, XIVQuaternion, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L295"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Linearly interpolates between two rotations.</p>
@@ -778,7 +815,7 @@ Struct XIVQuaternion  <a class="header-action link-secondary" title="View source
 
   <h3 id="XIV_Core_DataStructures_XIVQuaternion_LerpFast_XIV_Core_DataStructures_XIVQuaternion__XIV_Core_DataStructures_XIVQuaternion__System_Single_" data-uid="XIV.Core.DataStructures.XIVQuaternion.LerpFast(XIV.Core.DataStructures.XIVQuaternion@,XIV.Core.DataStructures.XIVQuaternion@,System.Single)">
   LerpFast(in XIVQuaternion, in XIVQuaternion, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L308"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Fast linear interpolation.
@@ -824,7 +861,7 @@ Assumptions:</p>
 
   <h3 id="XIV_Core_DataStructures_XIVQuaternion_LookRotation_XIV_Core_DataStructures_Vec3_XIV_Core_DataStructures_Vec3_" data-uid="XIV.Core.DataStructures.XIVQuaternion.LookRotation(XIV.Core.DataStructures.Vec3,XIV.Core.DataStructures.Vec3)">
   LookRotation(Vec3, Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L226"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a rotation looking in the given forward direction.</p>
@@ -890,7 +927,7 @@ Assumptions:</p>
 
   <h3 id="XIV_Core_DataStructures_XIVQuaternion_RotateTowards_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_XIVQuaternion_System_Single_" data-uid="XIV.Core.DataStructures.XIVQuaternion.RotateTowards(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion,System.Single)">
   RotateTowards(XIVQuaternion, XIVQuaternion, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L370"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Rotates from one rotation towards another by a maximum angle.</p>
@@ -931,7 +968,7 @@ Assumptions:</p>
 
   <h3 id="XIV_Core_DataStructures_XIVQuaternion_RotateTowardsFast_XIV_Core_DataStructures_XIVQuaternion__XIV_Core_DataStructures_XIVQuaternion__System_Single_" data-uid="XIV.Core.DataStructures.XIVQuaternion.RotateTowardsFast(XIV.Core.DataStructures.XIVQuaternion@,XIV.Core.DataStructures.XIVQuaternion@,System.Single)">
   RotateTowardsFast(in XIVQuaternion, in XIVQuaternion, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L386"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Fast rotation towards another rotation.
@@ -977,7 +1014,7 @@ Assumptions:</p>
 
   <h3 id="XIV_Core_DataStructures_XIVQuaternion_Slerp_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_XIVQuaternion_System_Single_" data-uid="XIV.Core.DataStructures.XIVQuaternion.Slerp(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion,System.Single)">
   Slerp(XIVQuaternion, XIVQuaternion, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L323"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Spherically interpolates between two rotations.</p>
@@ -1018,7 +1055,7 @@ Assumptions:</p>
 
   <h3 id="XIV_Core_DataStructures_XIVQuaternion_SlerpFast_XIV_Core_DataStructures_XIVQuaternion__XIV_Core_DataStructures_XIVQuaternion__System_Single_" data-uid="XIV.Core.DataStructures.XIVQuaternion.SlerpFast(XIV.Core.DataStructures.XIVQuaternion@,XIV.Core.DataStructures.XIVQuaternion@,System.Single)">
   SlerpFast(in XIVQuaternion, in XIVQuaternion, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L352"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Fast spherical interpolation.
@@ -1066,7 +1103,7 @@ Assumptions:</p>
 
   <h3 id="XIV_Core_DataStructures_XIVQuaternion_ToAngleAxis_System_Single__XIV_Core_DataStructures_Vec3__" data-uid="XIV.Core.DataStructures.XIVQuaternion.ToAngleAxis(System.Single@,XIV.Core.DataStructures.Vec3@)">
   ToAngleAxis(out float, out Vec3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L406"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L414"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the rotation to angle-axis representation.</p>
@@ -1100,7 +1137,7 @@ Assumptions:</p>
 
   <h3 id="XIV_Core_DataStructures_XIVQuaternion_ToString" data-uid="XIV.Core.DataStructures.XIVQuaternion.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L438"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the fully qualified type name of this instance.</p>
@@ -1137,7 +1174,7 @@ Assumptions:</p>
 
   <h3 id="XIV_Core_DataStructures_XIVQuaternion_op_Addition_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_XIVQuaternion_" data-uid="XIV.Core.DataStructures.XIVQuaternion.op_Addition(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)">
   operator +(XIVQuaternion, XIVQuaternion)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L447"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1405,7 +1442,7 @@ Assumptions:</p>
 
   <h3 id="XIV_Core_DataStructures_XIVQuaternion_op_Subtraction_XIV_Core_DataStructures_XIVQuaternion_XIV_Core_DataStructures_XIVQuaternion_" data-uid="XIV.Core.DataStructures.XIVQuaternion.op_Subtraction(XIV.Core.DataStructures.XIVQuaternion,XIV.Core.DataStructures.XIVQuaternion)">
   operator -(XIVQuaternion, XIVQuaternion)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L444"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/XIV/blob/main/Runtime/Core/DataStructures/XIVQuaternion.cs/#L452"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
