@@ -1,3 +1,14 @@
+# [1.10.0](https://github.com/alimertcetin/XIV/compare/v1.9.0...v1.10.0) (2026-11-22)
+
+
+### Features
+
+* **BezierMath.cs:** Add CreateArc overload ([b4c977f](https://github.com/alimertcetin/XIV/commit/b4c977f6be0edea187db5a63da1111efbd4623e8))
+* **StringExtensions:** Add XIVEstimateReadingTime ([d0ba769](https://github.com/alimertcetin/XIV/commit/d0ba7699b5bee4a5e531c203003db81e5c6ef724))
+* **Vec3.cs:** Add Scale function ([8f930c6](https://github.com/alimertcetin/XIV/commit/8f930c6eb87166af5e8f0c9263a506c1f1d5a0db))
+* **XIVMathf.Clamp:** Throw exception if min is greater than max ([1630124](https://github.com/alimertcetin/XIV/commit/1630124c5292fd4d67d18b0459e9bb11984434f2))
+* **XIVQuaternion.cs:** Add Euler overload to use with Vec3 ([a322e24](https://github.com/alimertcetin/XIV/commit/a322e24c4a1d07a986b08da59f472249e26223b3))
+
 # [1.9.0](https://github.com/alimertcetin/XIV/compare/v1.8.0...v1.9.0) (2026-11-04)
 
 
